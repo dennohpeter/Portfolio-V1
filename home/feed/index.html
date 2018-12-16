@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Front End Developer | JavaScript | Angular 2+</title>
+	<atom:link href="https://jacekjeznach.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://jacekjeznach.com</link>
+	<description>Front end developer portfolio.  Main area of my expertise is front end development and everything related with this side of web.  HTML,CSS, JS (ES5,ES6), building small &#38; medium Web Apps, Angular , Vue.js, building custom plugins, features, animations and just coding layouts.</description>
+	<lastBuildDate>Sat, 08 Dec 2018 17:46:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Double ring animation</title>
+		<link>https://jacekjeznach.com/double-ring-animation/</link>
+		<pubDate>Sun, 22 Jan 2017 14:22:04 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Other]]></category>
+		<category><![CDATA[animation]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[less]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1348</guid>
+		<description><![CDATA[<p>Nice double ring animation built with HTML and CSS/LESS. You can see CODEPEN demo here:  https://codepen.io/fixcl/pen/lvCFr &#160; Code below: HTML Place main div that contains the animation &#60;div class="hoja"&#62;CODEPEN&#60;/div&#62; CSS/LESS The following less code creates double ring animation: @import url(http://fonts.googleapis.com/css?family=Open+Sans:700); @D:280px; // size control // diametro @R:(@D/2); // radio @B:(@R/8); @O: 0.6; // opacity @A: 2s; [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/double-ring-animation/">Double ring animation</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Nice double ring animation built with HTML and CSS/LESS.</p>
+<p>You can see CODEPEN demo here: <a href="https://codepen.io/fixcl/pen/lvCFr"> https://codepen.io/fixcl/pen/lvCFr</a></p>
+<p>&nbsp;</p>
+<p>Code below:</p>
+<h3>HTML</h3>
+<p>Place main div that contains the animation</p>
+<pre><code>
+<!-- autor: Marco Barría https://twitter.com/marco_bf -->
+&lt;div class="hoja"&gt;CODEPEN&lt;/div&gt;
+
+</code></pre>
+<h3>CSS/LESS</h3>
+<p>The following less code creates double ring animation:</p>
+<pre><code>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
+@D:280px; // size control // diametro
+
+@R:(@D/2); // radio
+
+@B:(@R/8);
+
+@O: 0.6; // opacity
+
+@A: 2s; // accelerate
+
+html,
+body{
+height: 100%;
+}
+
+body{
+overflow: hidden;
+}
+
+.hoja{
+color: rgb(220,220,226);
+position:absolute;
+top:50%; left:50%;
+margin-left:-@R;
+margin-top:-@R;
+width:@D;
+height:@D;
+text-align:center;
+font-family: 'Open Sans', sans-serif;
+font-size:@R/4;
+line-height:@D;
+-webkit-font-smoothing: antialiased;
+}
+
+.hoja:after,
+.hoja:before{
+content:"";
+border-radius:100%;
+position:absolute;
+top:0; left:0;
+width:100%;
+height:100%;
+transform-origin:center center;
+}
+
+.hoja:after{
+box-shadow: inset 0 @B 0 rgba(250, 250, 0, @O),
+inset @B 0 0 rgba(250, 200, 0, @O),
+inset 0 -@B 0 rgba(250, 150, 0, @O),
+inset -@B 0 0 rgba(250, 100, 0, @O);
+animation: rotar @A -0.5s linear infinite;
+}
+
+.hoja:before{
+box-shadow: inset 0 @B 0 rgba(0, 250, 250, @O),
+inset @B 0 0 rgba(0, 200, 200, @O),
+inset 0 -@B 0 rgba(0, 150, 200, @O),
+inset -@B 0 0 rgba(0, 200, 250, @O);
+animation: rotarIz @A -0.5s linear infinite;
+}
+
+@keyframes rotar{
+0%{
+transform:rotateZ(0deg) scaleX(1) scaleY(1);
+}
+50%{
+transform:rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+}
+100%{
+transform:rotateZ(360deg) scaleX(1) scaleY(1);
+}
+}
+
+@keyframes rotarIz{
+0%{
+transform:rotateZ(0deg) scaleX(1) scaleY(1);
+}
+50%{
+transform:rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+}
+100%{
+transform:rotateZ(-360deg) scaleX(1) scaleY(1);
+}
+}
+</code></pre>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/double-ring-animation/">Double ring animation</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>10 useful tips for WordPress dashboard customization</title>
+		<link>https://jacekjeznach.com/10-useful-tips-wordpress-dashboard-customization/</link>
+		<pubDate>Sun, 22 Jan 2017 13:55:05 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[WordPress]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1329</guid>
+		<description><![CDATA[<p>The dashboard is a very important part, as it is where you &#8211; the admin &#8211; publish content and control everything about your blog. In this article, I have compiled over 10 WordPress hacks and snippets for WordPress develoipers to customize the dashboard. Keep logged in on WordPress for a longer period A very handy code [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/10-useful-tips-wordpress-dashboard-customization/">10 useful tips for WordPress dashboard customization</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">The dashboard is a very important part, as it is where you &#8211; the admin &#8211; publish content and control everything about your blog. In this article, I have compiled over 10 WordPress hacks and snippets for WordPress develoipers to customize the dashboard.</span></span></span></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Keep logged in on WordPress for a longer period</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">A very handy code snippet, which enables to stay logged in for a longer period of time. Add the code to </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">functions.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> and adjust the amount of seconds if needed ( line 3).</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_filter( 'auth_cookie_expiration', 'stay_logged_in_for_1_year' );</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function stay_logged_in_for_1_year( $expire ) {</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">return 31556926; // 1 year in seconds</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://www.labnol.org/internet/wordpress-optimization-guide/3931/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Labnol</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Remove dashboard menus</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">When a WordPress developer builds blog for a client, it can be a good idea to remove access to some dashboard menus in order to avoid future problems such as the client “accidentally” deleting the custom </span></span></span><a href="http://catswhocode.com/go/themeforest.html" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>theme</b></span></span></span></a><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> they paid for.<br />
+Paste the code into </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">functions.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file from your theme directory. The following example will remove all menus named in the </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">$restricted</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> array.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function remove_menus () {</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">global $menu;</span></span></span>
+<span style="color: #444444;">                <span style="font-family: Consolas, courier;"><span style="font-size: medium;">$restricted = array(__('Dashboard'), __('Posts'), __('Media'), __('Links'), __('Pages'), __('Appearance'), __('Tools'), __('Users'), __('Settings'), __('Comments'), __('Plugins'));</span></span></span>
+<span style="color: #444444;">                <span style="font-family: Consolas, courier;"><span style="font-size: medium;">end ($menu);</span></span></span>
+<span style="color: #444444;">                <span style="font-family: Consolas, courier;"><span style="font-size: medium;">while (prev($menu)){</span></span></span>
+<span style="color: #444444;">                        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">$value = explode(' ',$menu[key($menu)][0]);</span></span></span>
+<span style="color: #444444;">                        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}</span></span></span>
+<span style="color: #444444;">                <span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('admin_menu', 'remove_menus');</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://hungred.com/how-to/remove-wordpress-admin-menu-affecting-wordpress-core-system/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Hungred</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Require a featured image before you can publish posts</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">If your blog layout is set to display a </span></span></span><a href="https://codex.wordpress.org/Post_Thumbnails" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>featured image</b></span></span></span></a><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">, it can be useful to prevent post publishing th post without the features image set.<br />
+This code has to be pasted into your </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">functions.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('save_post', 'wpds_check_thumbnail');</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('admin_notices', 'wpds_thumbnail_error');</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function wpds_check_thumbnail( $post_id ) {</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// change to any custom post type </span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">if( get_post_type($post_id) != 'post' )</span></span></span>
+<span style="color: #444444;">      <span style="font-family: Consolas, courier;"><span style="font-size: medium;">return;</span></span></span>
+
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">if ( ! has_post_thumbnail( $post_id ) ) {</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// set a transient to show the users an admin message</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">set_transient( "has_post_thumbnail", "no" );</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// unhook this function so it doesn't loop infinitely</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">remove_action('save_post', 'wpds_check_thumbnail');</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// update the post set it to draft</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">wp_update_post(array('ID' =&gt; $post_id, 'post_status' =&gt; 'draft'));</span></span></span>
+
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('save_post', 'wpds_check_thumbnail');</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">} else {</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">delete_transient( "has_post_thumbnail" );</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function wpds_thumbnail_error() {</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// check if the transient is set, and display the error message</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">if ( get_transient( "has_post_thumbnail" ) == "no" ) {</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">echo "&lt;div id='message' class='error'&gt;&lt;p&gt;&lt;strong&gt;You must add a Featured Image before publishing this. Don't panic, your post is saved.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;";</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">delete_transient( "has_post_thumbnail" );</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://wpsnipp.com/index.php/functions-php/require-featured-image-can-publish-post/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>WP Snipp</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Place a custom logo in dashboard</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">Just as a clients will love to see their own logo on WordPress login page, they might ask the WordPress developer to place it on the dashboard too.<br />
+Simply copy the code below and paste it to your </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">functions.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('admin_head', 'my_custom_logo');</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function my_custom_logo() {</span></span></span>
+<span style="color: #444444;">   <span style="font-family: Consolas, courier;"><span style="font-size: medium;">echo '&lt;style type="text/css"&gt;</span></span></span>
+<span style="color: #444444;">         <span style="font-family: Consolas, courier;"><span style="font-size: medium;">#header-logo { background-image: url('.get_bloginfo('template_directory').'/images/custom-logo.gif) !important; }&lt;/style&gt;';</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://www.smashingmagazine.com/2009/12/14/advanced-power-tips-for-wordpress-template-developers-reloaded/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Smashing Magazine</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Remove dashboard widgets</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">Introduced in WordPress 2.7, dashboard widgets can be pretty useful. For example, a WordPress developers can display your </span></span></span><a href="http://wordpress.org/extend/plugins/google-analytics-dashboard/"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Google Analytics stats</b></span></span></span></a><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">. Though, sometimes you don’t need it, or at least don’t need some of them.<br />
+The code below will allow you to remove WordPress’ dashboard widgets once you paste it in your </span></span></span><em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">functions.php</span></span></span></em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function example_remove_dashboard_widgets() {</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Globalize the metaboxes array, this holds all the widgets for wp-admin</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">global $wp_meta_boxes;</span></span></span>
+
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Remove the incomming links widget</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);       </span></span></span>
+
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Remove right now</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Hook into the 'wp_dashboard_setup' action to register our function</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('wp_dashboard_setup', 'example_remove_dashboard_widgets' );</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://hankis.me/modifying-the-wordpress-dashboard" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Hankis</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Add custom login logo</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">Although it is unimportant for the blog performance or usability, most clients will appreciate their own logo on the dashboard login page,.<br />
+The </span></span></span><a href="http://wordpress.org/extend/plugins/custom-admin-branding/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Custom admin branding</b></span></span></span></a><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> plugin can do that for you, as well as the following hack that you just have to paste in your </span></span></span><em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">functions.php</span></span></span></em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function my_custom_login_logo() {</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">echo '&lt;style type="text/css"&gt;</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">h1 a { background-image:url('.get_bloginfo('template_directory').'/images/custom-login-logo.gif) !important; }</span></span></span>
+<span style="color: #444444;">    <span style="font-family: Consolas, courier;"><span style="font-size: medium;">&lt;/style&gt;';</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('login_head', 'my_custom_login_logo');</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://www.wprecipes.com/customize-wordpress-login-logo-without-a-plugin" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>WPRecipes</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Add custom widgets to WordPress dashboard</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">With the previous example, I showed you how easy it is to remove unwanted dashboard widgets. The good news is that creating your own widgets isn’t hard either.<br />
+The well-commented code below should be self-explanatory. Just insert it in your </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">functions.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">, as usual.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function example_dashboard_widget_function() {</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Display whatever it is you want to show</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">echo "Hello World, I'm a great Dashboard Widget";</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">} </span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Create the function use in the action hook</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function example_add_dashboard_widgets() {</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">wp_add_dashboard_widget('example_dashboard_widget', 'Example Dashboard Widget', 'example_dashboard_widget_function');</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Hook into the 'wp_dashboard_setup' action to register our other functions</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('wp_dashboard_setup', 'example_add_dashboard_widgets' );</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://hankis.me/modifying-the-wordpress-dashboard" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Change WordPress dashboard colors</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">If you ever wanted to be able to change WordPress dashboard colors (as well as font or even display) without having to edit WordPress core files, you’ll like this hack for sure.<br />
+The following example features a basic style change (grey header is replaced by a blue one) but you can easily add as many styles as you wish within the </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">&lt;style&gt;</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> and </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">&lt;/style&gt;</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> tags.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function custom_colors() {</span></span></span>
+<span style="color: #444444;">   <span style="font-family: Consolas, courier;"><span style="font-size: medium;">echo '&lt;style type="text/css"&gt;#wphead{background:#069}&lt;/style&gt;';</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('admin_head', 'custom_colors');</span></span></span></pre>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Provide custom help messages</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">When Wordpress developers build a site for a client and they have problems with some parts of the dashboard, a good idea is to provide contextual help to the client.<br />
+The following hack will allow you to add a custom help messages for the blog admin. As usual, you only have to paste the code into your </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">functions.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function my_admin_help($text, $screen) {</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Check we're only on my Settings page</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">if (strcmp($screen, MY_PAGEHOOK) == 0 ) {</span></span></span>
+
+<span style="color: #444444;">                <span style="font-family: Consolas, courier;"><span style="font-size: medium;">$text = 'Here is some very useful information to help you use this plugin...';</span></span></span>
+<span style="color: #444444;">                <span style="font-family: Consolas, courier;"><span style="font-size: medium;">return $text;</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">// Let the default WP Dashboard help stuff through on other Admin pages</span></span></span>
+<span style="color: #444444;">        <span style="font-family: Consolas, courier;"><span style="font-size: medium;">return $text;</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action( 'contextual_help', 'my_admin_help' );</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://www.studiograsshopper.ch/code-snippets/wordpress-action-hook-contextual-help/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Studio Grasshopper</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Remove dashboard widgets for specific user roles</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">If you’re owning a multi-user blog, it may be useful to know how to hide some dashboard widgets to keep confidential information in a safe place.<br />
+The following code will remove the </span></span></span><em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">postcustom</span></span></span></em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> meta box for “author” (role 2). To apply the hack on your own blog, just copy the code below and paste it in your </span></span></span><em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">functions.php</span></span></span></em><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function customize_meta_boxes() {</span></span></span>
+<span style="color: #444444;">     <span style="font-family: Consolas, courier;"><span style="font-size: medium;">//retrieve current user info</span></span></span>
+<span style="color: #444444;">     <span style="font-family: Consolas, courier;"><span style="font-size: medium;">global $current_user;</span></span></span>
+<span style="color: #444444;">     <span style="font-family: Consolas, courier;"><span style="font-size: medium;">get_currentuserinfo();</span></span></span>
+
+<span style="color: #444444;">     <span style="font-family: Consolas, courier;"><span style="font-size: medium;">//if current user level is less than 3, remove the postcustom meta box</span></span></span>
+<span style="color: #444444;">     <span style="font-family: Consolas, courier;"><span style="font-size: medium;">if ($current_user-&gt;user_level &lt; 3)</span></span></span>
+<span style="color: #444444;">          <span style="font-family: Consolas, courier;"><span style="font-size: medium;">remove_meta_box('postcustom','post','normal');</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_action('admin_init','customize_meta_boxes');</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://www.smashingmagazine.com/2009/12/14/advanced-power-tips-for-wordpress-template-developers-reloaded/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Smashing Magazine</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Reduce amount of post revisions</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">Post revisions are very useful, but they also clutter your database. In order to save  space, you can consider limiting the amount of post revisions automatically saved by WordPress.<br />
+This code has to be pasted in your </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">wp-config.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file, located at the root of your WordPress install.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">define( 'WP_POST_REVISIONS', 3 );</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="https://codex.wordpress.org/Revisions" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>WordPress Codex</b></span></span></span></a></strong></p>
+<h2 class="western"><span style="color: #000000;"><span style="font-family: inherit;"><span style="font-size: xx-large;"><b>Disable WordPress Login Hints</b></span></span></span></h2>
+<p><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;">When you (or someone else) fails to login on your WordPress dashboard, an error message is displayed. While this can be useful to legit users, it can also give precious information to a potential hijacker.<br />
+Paste the code below into your </span></span></span><code class="western"><span style="color: #333333;"><span style="font-family: Monaco, Consolas, Courier;"><span style="font-size: small;">functions.php</span></span></span></code><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"> file to prevent login error messages to be displayed.</span></span></span></p>
+<pre class="western"><span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">function no_wordpress_errors(){</span></span></span>
+<span style="color: #444444;">  <span style="font-family: Consolas, courier;"><span style="font-size: medium;">return 'GET OFF MY LAWN !! RIGHT NOW !!';</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">}</span></span></span>
+<span style="color: #444444;"><span style="font-family: Consolas, courier;"><span style="font-size: medium;">add_filter( 'login_errors', 'no_wordpress_errors' );</span></span></span></pre>
+<p><strong><span style="color: #444444;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Source: </b></span></span></span></strong><strong><a href="http://www.labnol.org/internet/wordpress-optimization-guide/3931/" target="blank"><span style="color: #52c5f1;"><span style="font-family: 'Libre Franklin', serif;"><span style="font-size: medium;"><b>Labnol</b></span></span></span></a></strong></p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/10-useful-tips-wordpress-dashboard-customization/">10 useful tips for WordPress dashboard customization</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>First steps with Gulp.js</title>
+		<link>https://jacekjeznach.com/first-steps-with-gulp-js/</link>
+		<pubDate>Sun, 22 Jan 2017 13:26:16 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[task runner]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1326</guid>
+		<description><![CDATA[<p>Front end front end developers spend little time coding. Even if we ignore meetings, much of the job involves basic tasks your working day: Tasks must be repeated every time you make a change. You begin with good intentions but the infallible front end developer will forget to compress an image or two. Over time, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/first-steps-with-gulp-js/">First steps with Gulp.js</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p class="wp-special">Front end front end developers spend little time coding. Even if we ignore meetings, much of the job involves basic tasks your working day:</p>
+<div class="ArticleBox u-inline">Tasks must be repeated every time you make a change. You begin with good intentions but the infallible front end developer will forget to compress an image or two. Over time, tasks become increasingly arduous and time-consuming; you’ll dread the inevitable content and template changes. It’s mind-numbing, repetitive work. Would it be better to spend your time on more profitable jobs?</div>
+<p>If so, you need a <em>task runner.</em></p>
+<h2 id="thatsoundsscarilycomplicated">That Sounds Complicated!</h2>
+<p>Creating a build process will take time. It’s more complex than performing each task manually but, in long-term, you will save hours of effort, reduce human error and save your sanity. Adopt a pragmatic approach:</p>
+<ul>
+<li>automate the most irritating tasks first</li>
+<li>try not to over-complicate your build process; an hour or two is more than enough for the initial set-up</li>
+<li>choose task runner software and stick with it for a while.</li>
+</ul>
+<p>Part of the tools may be new to you but take a deep breath and concentrate on one thing at a time.</p>
+<h2 id="taskrunnerstheoptions">Task Runners: Gulp</h2>
+<p>Many issues were addressed in later editions but <a href="http://gulpjs.com/">Gulp</a> had already arrived and offered a number of improvements:</p>
+<ol>
+<li>Features such as file watching were built-in.</li>
+<li>Gulp plug-ins were <em>(mostly)</em> designed to do a single job.</li>
+<li>Gulp used JavaScript configuration code which was less verbose, easier to read, simpler to modify, and provided better flexibility.</li>
+<li>Gulp was faster because it uses <a href="https://www.sitepoint.com/basics-node-js-streams/">Node.js streams</a> to pass data through a series of piped plug-ins. Files were only written at the end of the task.</li>
+</ol>
+<p>Of course, Gulp itself isn’t perfect and new task runners such as <a href="http://broccolijs.com/">Broccoli.js</a>, <a href="http://brunch.io/">Brunch</a> and <a href="https://webpack.github.io/">webpack</a> have also been competing for front end developer attention. More recently, <a href="https://www.sitepoint.com/guide-to-npm-as-a-build-tool/">npm itself has been touted as a simpler option</a>. All have their pros and cons, but <a href="https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results#js-task-runners">Gulp remains the favorite and is currently used by more than 40% of web developers</a>.</p>
+<p>Gulp needs Node.js but, while Part JavaScript knowledge is beneficial, front end developers from all web programming faiths will find it useful.</p>
+<p>This guidedescribes how to use Gulp 3 – the most recent release version at the time of writing. Gulp 4 has been in development for Part time but remains a beta product. It’s possible to <a href="https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/">use or switch to Gulp 4</a> but I recommend sticking with version 3 until the final release.</p>
+<h2 id="step1installnodejs">Step 1: Node.js</h2>
+<p>Node.js can be downloaded for Windows, Mac and Linux from <a href="https://nodejs.org/download/">nodejs.org/download/</a>. There are different options for installing from binaries, package managers and docker images – full instructions are available.</p>
+<p><strong>Note for Windows users:</strong> Node.js and Gulp run on Windows but some plug-ins may not install or run if they depend on native Linux binaries such as image compression libraries. One option for Windows 10 users is the new <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">bash command-line</a>; this solves many issues but is a beta product and could introduce alternative problems.</p>
+<p>Once installed, open a command prompt and enter:</p>
+<pre class=" language-bash"><code class="bash language-bash">node -v
+</code></pre>
+<p>to reveal the version number. You’re about to make heavy use of <code class=" language-undefined">npm</code> – the Node.js package manager which is used to install modules. Examine its version number:</p>
+<pre class=" language-bash"><code class="bash language-bash">npm -v
+</code></pre>
+<p><strong>Note for Linux users:</strong> Node.js modules can be installed globally so they are available throughout your system. However, most users will not have permission to write to the global directories unless <code class=" language-undefined">npm</code> commands are prefixed with <code class=" language-undefined">sudo</code>. There are a number of <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">options to fix npm permissions</a> and tools such as <a href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">nvm can help</a> but I often change the default directory, e.g. on Ubuntu/Debian-based platforms:</p>
+<pre class=" language-bash"><code class="bash language-bash"><span class="token function">cd</span> ~
+<span class="token function">mkdir</span> .node_modules_global
+npm config <span class="token keyword">set</span> prefix<span class="token operator">=</span><span class="token variable">$HOME</span>/.node_modules_global
+npm <span class="token function">install</span> npm -g
+</code></pre>
+<p>Then add the following line to the end of <code class=" language-undefined">~/.bashrc</code>:</p>
+<pre class=" language-bash"><code class="bash language-bash"><span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"<span class="token variable">$HOME</span>/.node_modules_global/bin:<span class="token variable">$PATH</span>"</span>
+</code></pre>
+<p>and update with:</p>
+<pre class=" language-bash"><code class="bash language-bash"><span class="token function">source</span> ~/.bashrc
+</code></pre>
+<h2 id="step2installgulpglobally">Step 2: Install Gulp Globally</h2>
+<p>Install Gulp command-line interface globally so the <code class=" language-undefined">gulp</code> command can be run from any project folder:</p>
+<pre class=" language-bash"><code class="bash language-bash">npm <span class="token function">install</span> gulp-cli -g
+</code></pre>
+<p>Verify Gulp has installed with:</p>
+<pre class=" language-bash"><code class="bash language-bash">gulp -v
+</code></pre>
+<h2 id="step3configureyourproject">Step 3: Configure Your Bulid</h2>
+<p><strong>Note for Node.js projects:</strong> you can skip this step if you already have a <code class=" language-undefined">package.json</code> configuration file.</p>
+<p>Presume you have a new or pre-existing project in the folder <code class=" language-undefined">project1</code>. Navigate to this folder and initialize it with npm:</p>
+<pre class=" language-bash"><code class="bash language-bash"><span class="token function">cd</span> project1
+npm init
+</code></pre>
+<p>You will be asked a series of questions – enter a value or hit <strong>Return</strong> to accept defaults. A <code class=" language-undefined">package.json</code> file will be created on completion which stores your <code class=" language-undefined">npm</code> configuration settings.</p>
+<p>For the remainder of this article we’ll presume your project folder contains the following sub-folders:</p>
+<h3 id="srcfolderpreprocessedsourcefiles"><code class=" language-undefined">src</code> folder: pre-processed source files</h3>
+<p>This contains further sub-folders:</p>
+<ul>
+<li><code class=" language-undefined">html</code> – HTML source files</li>
+<li><code class=" language-undefined">images</code> — the original uncompressed images</li>
+<li><code class=" language-undefined">js</code> — multiple pre-processed script files</li>
+<li><code class=" language-undefined">scss</code> — multiple pre-processed Sass <code class=" language-undefined">.scss</code> files</li>
+</ul>
+<h3 id="buildfoldercompiledprocessedfiles"><code class=" language-undefined">build</code> folder: compiled/processed files</h3>
+<p>Gulp will create files and create sub-folders as necessary:</p>
+<ul>
+<li><code class=" language-undefined">html</code> – compiled static HTML files</li>
+<li><code class=" language-undefined">images</code> — compressed images</li>
+<li><code class=" language-undefined">js</code> — a single concatenated and minified JavaScript file</li>
+<li><code class=" language-undefined">css</code> — a single compiled and minified CSS file</li>
+</ul>
+<p>Your project will almost certainly be different but this structure is used for the examples below.</p>
+<p>Tip: If you’re on a Unix-based system and you just want to follow along with the tutorial, you can recreate the folder structure with the following command:</p>
+<pre class=" language-bash"><code class="bash language-bash"><span class="token function">mkdir</span> -p src/<span class="token punctuation">{</span>html,images,js,scss<span class="token punctuation">}</span> build/<span class="token punctuation">{</span>html,images,js,css<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="step4installgulplocally">Step 3a: Install Gulp</h2>
+<p>You can now install Gulp in your project folder using the command:</p>
+<pre class=" language-bash"><code class="bash language-bash">npm <span class="token function">install</span> gulp --save-dev
+</code></pre>
+<p>This installs Gulp as a development dependency and the <code class=" language-undefined">"devDependencies"</code> section of <code class=" language-undefined">package.json</code> is updated accordingly.</p>
+<h3 id="alternativedeploymentoptions"></h3>
+<h2 id="step4createagulpconfigurationfile">Step 4: Create a Gulpfile.js</h2>
+<p>Create a new <code class=" language-undefined">gulpfile.js</code> configuration file in the root of your project folder. Add some basic code to get begined:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// Gulp.js configuration</span>
+<span class="token keyword">var</span>
+  <span class="token comment" spellcheck="true">// modules</span>
+  gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// development mode?</span>
+  devBuild <span class="token operator">=</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">!==</span> <span class="token string">'production'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// folders</span>
+  folder <span class="token operator">=</span> <span class="token punctuation">{</span>
+    src<span class="token punctuation">:</span> <span class="token string">'src/'</span><span class="token punctuation">,</span>
+    build<span class="token punctuation">:</span> <span class="token string">'build/'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">;</span>
+</code></pre>
+<p>This references the Gulp module, sets a <code class=" language-undefined">devBuild</code> variable to <code class=" language-undefined">true</code> when running in development (or non-production mode) and defines the source and build folder locations.</p>
+<p>&nbsp;</p>
+<h2 id="step5creategulptasks">Step 5: Create new Gulp Tasks</h2>
+<p>On it’s own, Gulp does nothing. You must:</p>
+<ol>
+<li>install Gulp plug-ins, and</li>
+<li>write tasks which utilize those plug-ins to do something useful.</li>
+</ol>
+<p>It’s possible to write your own plug-ins but, since almost 3,000 are available, it’s unlikely you’ll ever need to. You can search using Gulp’s own directory at <a href="http://gulpjs.com/plugins/">gulpjs.com/plugins/</a>, on <a href="https://www.npmjs.com/">npmjs.com</a>, or search “gulp <em>something</em>” to harness the mighty power of Google.</p>
+<p>Gulp provides three primary task methods:</p>
+<ul>
+<li><code class=" language-undefined">gulp.task</code> – defines a new task with a name, optional array of dependencies and a function.</li>
+<li><code class=" language-undefined">gulp.src</code> – sets the folder where source files are located.</li>
+<li><code class=" language-undefined">gulp.dest</code> – sets the destination folder where build files will be placed.</li>
+</ul>
+<p>Any number of plug-in calls are set with <code class=" language-undefined">pipe</code> between the <code class=" language-undefined">.src</code> and <code class=" language-undefined">.dest</code>.</p>
+<h3 id="imagetask">Image Task</h3>
+<p>This is best demonstrated with an example so let’s create a basic task which compresses images and copies them to the appropriate <code class=" language-undefined">build</code> folder. Since this process could take time, we’ll only compress new and modified files. Two plug-ins can help us: <a href="https://www.npmjs.com/package/gulp-newer">gulp-newer</a> and <a href="https://www.npmjs.com/package/gulp-imagemin">gulp-imagemin</a>. Install them from the command-line:</p>
+<pre class=" language-bash"><code class="bash language-bash">npm <span class="token function">install</span> gulp-newer gulp-imagemin --save-dev
+</code></pre>
+<p>We can now reference both modules the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// Gulp.js configuration</span>
+
+<span class="token keyword">var</span>
+  <span class="token comment" spellcheck="true">// modules</span>
+  gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  newer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-newer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  imagemin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-imagemin'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>We can now define the image processing task itself as a function at the end of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// image processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'images'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> out <span class="token operator">=</span> folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'images/'</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'images/**/*'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">newer</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">imagemin</span><span class="token punctuation">(</span><span class="token punctuation">{</span> optimizationLevel<span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>All tasks are syntactically similar. This code:</p>
+<ol>
+<li>Creates a new task named <code class=" language-undefined">images</code>.</li>
+<li>Defines a function with a return value which…</li>
+<li>Defines an <code class=" language-undefined">out</code> folder where build files will be located.</li>
+<li>Sets the Gulp <code class=" language-undefined">src</code> source folder. The <code class=" language-undefined">/**/*</code> ensures that images in sub-folders are also processed.</li>
+<li>Pipes all files to the <code class=" language-undefined">gulp-newer</code> module. Source files that are newer than corresponding destination files are passed through. Everything else is removed.</li>
+<li>The remaining new or changed files are piped through <code class=" language-undefined">gulp-imagemin</code> which sets an optional <code class=" language-undefined">optimizationLevel</code>argument.</li>
+<li>The compressed images are output to the Gulp <code class=" language-undefined">dest</code> folder set by <code class=" language-undefined">out</code>.</li>
+</ol>
+<p>Save <code class=" language-undefined">gulpfile.js</code> and place a few images in your project’s <code class=" language-undefined">src/images</code> folder before running the task from the command line:</p>
+<pre class=" language-bash"><code class="bash language-bash">gulp images
+</code></pre>
+<p>All images are compressed accordingly and you will see output such as:</p>
+<pre class=" language-undefined"><code class=" language-undefined">Using file gulpfile.js
+Running 'imagemin'...
+Finished 'imagemin' in 5.71 ms
+gulp-imagemin: image1.png (saved 48.7 kB)
+gulp-imagemin: image2.jpg (saved 36.2 kB)
+gulp-imagemin: image3.svg (saved 12.8 kB)
+</code></pre>
+<p>Try running <code class=" language-undefined">gulpimages</code> again and nothing should happen because no newer images exist.</p>
+<h3 id="htmltask">HTML Task</h3>
+<p>We can now create a similar task which copies files from the source HTML folder. We can safely minify our HTML code to remove unnecessary whitespace and attributes using the <a href="https://www.npmjs.com/package/gulp-htmlclean">gulp-htmlclean</a> plug-in:</p>
+<pre class=" language-bash"><code class="bash language-bash">npm <span class="token function">install</span> gulp-htmlclean --save-dev
+</code></pre>
+<p>which is then referenced at the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token keyword">var</span>
+  <span class="token comment" spellcheck="true">// modules</span>
+  gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  newer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-newer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  imagemin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-imagemin'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  htmlclean <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-htmlclean'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>We can now create an <code class=" language-undefined">html</code> task at the end of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// HTML processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span>
+    out <span class="token operator">=</span> folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'html/'</span><span class="token punctuation">,</span>
+    page <span class="token operator">=</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">newer</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// minify production code</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>devBuild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    page <span class="token operator">=</span> page<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">htmlclean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> page<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>This reuses <code class=" language-undefined">gulp-newer</code> and introduces a couple of concepts:</p>
+<ol>
+<li>The <code class=" language-undefined">[images]</code> argument states that our <code class=" language-undefined">images</code> task must be run before processing the HTML (the HTML is likely to reference images). Any number of dependent tasks can be listed in this array and all will complete before the task function runs.</li>
+<li>We only pipe the HTML through <code class=" language-undefined">gulp-htmlclean</code> if <code class=" language-undefined">NODE_ENV</code> is set to <code class=" language-undefined">production</code>. Therefore, the HTML remains uncompressed during development which may be useful for debugging.</li>
+</ol>
+<p>Save <code class=" language-undefined">gulpfile.js</code> and run <code class=" language-undefined">gulp html</code> from the command line. Both the <code class=" language-undefined">html</code> and <code class=" language-undefined">images</code> tasks will run.</p>
+<h3 id="javascripttask">JavaScript Task</h3>
+<p>Too easy for you? Let’s process all our JavaScript files by building a basic module bundler. It will:</p>
+<ol>
+<li>ensure dependencies are loaded first using the <a href="https://www.npmjs.com/package/gulp-deporder">gulp-deporder</a> plug-in. This analyses comments at the top of each script to ensure correct ordering e.g. <code class=" language-undefined">// needs: defaults.js lib.js</code>.</li>
+<li>concatenate all script files into a single <code class=" language-undefined">main.js</code> file using <a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>, and</li>
+<li>remove all <code class=" language-undefined">console</code> and <code class=" language-undefined">debugging</code> statements with <a href="https://www.npmjs.com/package/gulp-strip-debug">gulp-strip-debug</a> and minimize code with <a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>. This step will only occur when running in production mode.</li>
+</ol>
+<p>Install the plug-ins:</p>
+<pre class=" language-bash"><code class="bash language-bash">npm <span class="token function">install</span> gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev
+</code></pre>
+<p>Reference them at the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token keyword">var</span>
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+  concat <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-concat'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  deporder <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-deporder'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  stripdebug <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-strip-debug'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  uglify <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-uglify'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>Then add a new <code class=" language-undefined">js</code> task:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// JavaScript processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'js'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">var</span> jsbuild <span class="token operator">=</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'js/**/*'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">deporder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token string">'main.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>devBuild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    jsbuild <span class="token operator">=</span> jsbuild
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">stripdebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">uglify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> jsbuild<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'js/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save then run <code class=" language-undefined">gulp js</code> to watch the magic happen!</p>
+<h3 id="csstask">CSS Task</h3>
+<p>Finally, let’s create a CSS task which compiles Sass <code class=" language-undefined">.scss</code> files to a single <code class=" language-undefined">.css</code> file using <a href="https://www.npmjs.com/package/gulp-sass">gulp-sass</a>. This is a Gulp plug-in for <a href="https://www.npmjs.com/package/node-sass">node-sass</a> which binds to the super-fast <a href="http://sass-lang.com/libsass">LibSass C/C++ port of the Sass engine</a> <em>(you won’t need to install Ruby)</em>. We’ll presume your primary Sass file <code class=" language-undefined">scss/main.scss</code> is responsible for loading all partials.</p>
+<p>Our task will also utilize the fabulous <a href="http://postcss.org/">PostCSS</a> via the <a href="https://github.com/postcss/gulp-postcss">gulp-postcss</a> plug-in. PostCSS needs its own set of plug-ins and we’ll install:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/postcss-assets">postcss-assets</a> to manage assets. This allows us to use properties such as <code class=" language-undefined">background: resolve('image.png');</code> to resolve file paths or <code class=" language-undefined">background: inline('image.png');</code> to inline data-encoded images.</li>
+<li><a href="https://www.npmjs.com/package/autoprefixer">autoprefixer</a> to automatically add vendor prefixes to CSS properties.</li>
+<li><a href="https://www.npmjs.com/package/css-mqpacker">css-mqpacker</a> to pack multiple references to the same CSS media query into a single rule.</li>
+<li><a href="https://www.npmjs.com/package/cssnano">cssnano</a> to minify the CSS code when running in production mode.</li>
+</ul>
+<p>First, install all the modules:</p>
+<pre class=" language-bash"><code class="bash language-bash">npm <span class="token function">install</span> gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano --save-dev
+</code></pre>
+<p>and reference them at the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token keyword">var</span>
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+  sass <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-sass'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  postcss <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-postcss'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  assets <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-assets'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  autoprefixer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'autoprefixer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  mqpacker <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'css-mqpacker'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  cssnano <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cssnano'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>We can now create a new <code class=" language-undefined">css</code> task at the end of <code class=" language-undefined">gulpfile.js</code>. Note the <code class=" language-undefined">images</code> task is set as a dependency because the <code class=" language-undefined">postcss-assets</code> plug-in can reference images during the build process. In addition, most plug-ins can be passed arguments – refer to their documentation for more information:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// CSS processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'css'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">var</span> postCssOpts <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token function">assets</span><span class="token punctuation">(</span><span class="token punctuation">{</span> loadPaths<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'images/'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function">autoprefixer</span><span class="token punctuation">(</span><span class="token punctuation">{</span> browsers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'last 2 versions'</span><span class="token punctuation">,</span> <span class="token string">'&gt; 2%'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  mqpacker
+  <span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>devBuild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    postCssOpts<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>cssnano<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'scss/main.scss'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">sass</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      outputStyle<span class="token punctuation">:</span> <span class="token string">'nested'</span><span class="token punctuation">,</span>
+      imagePath<span class="token punctuation">:</span> <span class="token string">'images/'</span><span class="token punctuation">,</span>
+      precision<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      errLogToConsole<span class="token punctuation">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">postcss</span><span class="token punctuation">(</span>postCssOpts<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'css/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save the file and run the task from the command line:</p>
+<pre class=" language-bash"><code class="bash language-bash">gulp css
+</code></pre>
+<h2 id="step6automatetasks">Step 6: Automate You Gulp Tasks</h2>
+<p>We’ve been running one task at a time. We can run them all in one command by adding a new <code class=" language-undefined">run</code> task to <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// run all tasks</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'run'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token string">'css'</span><span class="token punctuation">,</span> <span class="token string">'js'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save and enter <code class=" language-undefined">gulp run</code> at the command line to execute all tasks. Note I omitted the <code class=" language-undefined">images</code> task because it’s already set as a dependency for the <code class=" language-undefined">html</code> and <code class=" language-undefined">css</code> tasks.</p>
+<p>Is this still too much hard work? Gulp offers another method – <code class=" language-undefined">gulp.watch</code> – which can monitor your source files and run an appropriate task whenever a file is changed. The method is passed a folder and a list of tasks to execute when a change occurs. Let’s create a new <code class=" language-undefined">watch</code> task at the end of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// watch for changes</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'watch'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment" spellcheck="true">// image changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'images/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// html changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'html'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// javascript changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'js/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'js'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// css changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'scss/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'css'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Rather than running <code class=" language-undefined">gulp watch</code> immediately, let’s add a default task:</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token comment" spellcheck="true">// default task</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'default'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'run'</span><span class="token punctuation">,</span> <span class="token string">'watch'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save <code class=" language-undefined">gulpfile.js</code> and enter <code class=" language-undefined">gulp</code> at the command line. Your images, HTML, CSS and JavaScript will all be processed then Gulp will remain active watching for updates and re-running tasks as necessary. Hit Ctrl/Cmd + C to abort monitoring and return to the command line.</p>
+<h2 id="step7profit">Step 7: Yupi!</h2>
+<p>Other plug-ins you may find useful:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/gulp-load-plugins">gulp-load-plugins</a> – load all Gulp plug-in modules without <code class=" language-undefined">require</code> declarations</li>
+<li><a href="https://www.npmjs.com/package/gulp-preprocess">gulp-preprocess</a> – a simple HTML and JavaScript <a href="https://github.com/jsoverson/preprocess">preprocess</a>or</li>
+<li><a href="https://www.npmjs.com/package/gulp-less">gulp-less</a> – the <a href="http://lesscss.org/">Less CSS pre-processor</a> plug-in</li>
+<li><a href="https://www.npmjs.com/package/gulp-stylus">gulp-stylus</a> – the <a href="http://stylus-lang.com/">Stylus CSS pre-processor</a> plug-in</li>
+<li><a href="https://www.npmjs.com/package/gulp-sequence">gulp-sequence</a> – run a series of gulp tasks in a specific order</li>
+<li><a href="https://www.npmjs.com/package/gulp-plumber">gulp-plumber</a> – error handling which prevents Gulp stopping on failures</li>
+<li><a href="https://www.npmjs.com/package/gulp-size">gulp-size</a> – displays file sizes and savings</li>
+<li><a href="https://www.npmjs.com/package/gulp-nodemon">gulp-nodemon</a> – uses <a href="https://www.npmjs.com/package/nodemon">nodemon</a> to automatically rebegin Node.js applications when changes occur.</li>
+<li><a href="https://www.npmjs.com/package/gulp-util">gulp-util</a> – utility functions including logging and color-coding</li>
+</ul>
+<p>One useful method in <code class=" language-undefined">gulp-util</code> is <code class=" language-undefined">.noop()</code> which passes data straight through without performing any action. This could be used for cleaner development/production processing code, e.g.</p>
+<pre class=" language-javascript"><code class="javascript language-javascript"><span class="token keyword">var</span> gutil <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-util'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// HTML processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> out <span class="token operator">=</span> folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">newer</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>devBuild <span class="token operator">?</span> gutil<span class="token punctuation">.</span><span class="token function">noop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token function">htmlclean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Gulp can also call other Node.js modules – they don’t necessarily need to be plug-ins, e.g.</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/browser-sync">browser-sync</a> – automatically reload assets or refresh your browser when changes occur</li>
+<li><a href="https://www.npmjs.com/package/del">del</a> – delete files and folders (perhaps clean your <code class=" language-undefined">build</code> folder at the begin of every run).</li>
+</ul>
+<p>Invest a little time and Gulp could save many hours of development frustration. The advantages:</p>
+<ul>
+<li><a href="https://npmjs.org/browse/keyword/gulpplugin/">plug-ins are plentiful</a></li>
+<li>configuration using pipes is readable and easy to follow</li>
+<li><code class=" language-undefined">gulpfile.js</code> can be adapted and reused in other projects</li>
+<li>your total page weight can be reduced to improve performance</li>
+<li>you can simplify your deployment.</li>
+</ul>
+<p>Useful links:</p>
+<ul>
+<li><a href="http://gulpjs.com/">Gulp home page</a></li>
+<li><a href="https://npmjs.org/browse/keyword/gulpplugin/">Gulp plug-ins</a></li>
+<li><a href="https://www.npmjs.com/">npm home page</a></li>
+</ul>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/first-steps-with-gulp-js/">First steps with Gulp.js</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Even better font loading</title>
+		<link>https://jacekjeznach.com/even-better-font-loading/</link>
+		<pubDate>Thu, 12 Jan 2017 09:02:02 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[performance]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1306</guid>
+		<description><![CDATA[<p>Web fonts are  increasingly popular. Using web fonts allows to include and use specific fonts along with the assets of their websites.  Unfortunately, not all web fonts download instantaneously, which means there is some time during the load where the browser must show the webpage without the font. Many web fonts are quite large, causing [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/even-better-font-loading/">Even better font loading</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Web fonts are  increasingly popular. Using web fonts allows to include and use specific fonts along with the assets of their websites.  Unfortunately, not all web fonts download instantaneously, which means there is some time during the load where the browser must show the webpage without the font. Many web fonts are quite large, causing a long delay until the browser can use them.</p>
+<h3>Font Loading Policy</h3>
+<p>The browser should attempt to show a web page in the best way possible despite not being able to use a font due to an ongoing download. WebKit will always end up using the downloaded font when it is available; however, some fonts may require quite some time to complete downloading. For these fonts, WebKit will show elements with invisible text during the delay. Older versions of WebKit would continue to show this invisible text until the font completes downloading. Instead, newer versions of WebKit will show this invisible text for a maximum of 3 seconds, at which point it will switch to a local font chosen from the element’s style before finally switching to the downloaded font when the download completes.</p>
+<p>This new policy minimizes a flash of fallback text for fast-downloading fonts without making long-downloading fonts illegible indefinitely. The best part is that websites don’t have to do anything to adopt this new policy; all font loads will use it by default.</p>
+<h3>CSS Font Loading API</h3>
+<p>Different web authors may want different policies for headline fonts or for body fonts. With the <a href="http://www.w3.org/TR/css-font-loading/">CSS Font Loading API</a>, new in WebKit, web authors have complete control over their own font loading policy.</p>
+<p>This API exposes two main pieces to JavaScript: the <code>FontFace</code> interface and the <code>FontFaceSet</code> interface. <code>FontFace</code> represents the same concept as a CSS <code>@font-face</code> rule, so it contains information about a font like its url, weight, unicode-range, family, etc. The document’s <code>FontFaceSet</code> contains all the fonts the webpage can use for rendering. Each document has its own <code>FontFaceSet</code>, accessible via <code>document.fonts</code>.</p>
+<p>Using these objects to implement a particular font loading policy is straightforward. Once a <code>FontFace</code> has been constructed, the <code>load()</code> method initiates asynchronous downloading of the font data. It returns a <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></code> that is fulfilled when the download succeeds or rejected when the download fails. By chaining a handler to the returned promise, JavaScript can take action when the download finishes. Therefore, a website could implement a policy of using a fallback font immediately with no timeout by using the following <a href="https://jsfiddle.net/4swondyn/4/">code</a>:</p>
+<pre><code class="html"><span class="tag">&lt;<span class="keyword">div</span> <span class="keyword attribute">id</span>=<span class="attribute value string">"target"</span> <span class="keyword attribute">style</span>=<span class="attribute value string">"font-family: MyFallbackFont;"</span>&gt;</span>hamburgefonstiv<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+</code></pre>
+<pre><code class="js"><span class="keyword type">let</span> <span class="identifier">fontFace</span> <span class="operator">=</span> <span class="keyword operator">new</span> <span class="identifier">FontFace</span>(<span class="string">"MyWebFont"</span>, <span class="string">"url('MyWebFont.woff2') format('woff2'),
+    url('MyWebFont.woff') format('woff')"</span>);
+<span class="identifier">fontFace</span>.<span class="identifier">load</span>().<span class="identifier">then</span>(<span class="keyword type">function</span>(<span class="identifier">loadedFontFace</span>) {
+    <span class="identifier">document</span>.<span class="identifier">fonts</span>.<span class="identifier">add</span>(<span class="identifier">loadedFontFace</span>);
+    <span class="identifier">document</span>.<span class="identifier">getElementById</span>(<span class="string">"target"</span>).<span class="identifier">style</span>.<span class="identifier">fontFamily</span> <span class="operator">=</span> <span class="string">"MyWebFont"</span>;
+});
+</code></pre>
+<p>In this example, the element is styled declaratively to use <code>MyFallbackFont</code>. Then, JavaScript runs and starts requesting <code>MyWebFont</code>. If the font download is successful, the newly downloaded font is added to the document’s <code>FontFaceSet</code> and the element’s style is modified to use this new font.</p>
+<h3>WOFF 2</h3>
+<p>No matter which font loading policy is used, the user’s experience will be best when fonts download quickly. WebKit on macOS Sierra, iOS 10, and GTK supports a new, smaller font file format named “<a href="http://www.w3.org/TR/WOFF2/">WOFF 2</a>.” The fonts are smaller because they use advanced Brotli compression, which means that WOFF 2 fonts can download significantly faster than the same font represented with other common formats like WOFF, OpenType, and TrueType. WebKit also recognizes the <code>format("woff2")</code> identifier in the src property inside the CSS <code>@font-face</code> rule. Because not all browsers support WOFF 2 yet, it is possible to elegantly fall back to another format if the browser doesn’t support WOFF 2, like so:</p>
+<pre><code class="css"><span class="keyword">@font-face</span> {
+    <span class="attribute">font-family</span>: <span class="identifier">MyWebFont</span>;
+    <span class="attribute">src</span>: <span class="char">url("MyWebFont.woff2")</span> <span class="identifier">format</span>(<span class="string">"woff2"</span>),
+         <span class="char">url("MyWebFont.woff")</span> <span class="identifier">format</span>(<span class="string">"woff"</span>);
+}
+</code></pre>
+<p>In this example, browsers will use the format CSS function to selectively download whichever fonts they support. Because browsers will prefer fonts appearing earlier in the list over fonts appearing later, browsers encountering this code will always prefer the WOFF 2 font over the WOFF font if they support it.</p>
+<h3>unicode-range</h3>
+<p>Bandwidth is expensive (especially to mobile devices), so minimizing or eliminating font downloads is incredibly valuable. WebKit will now honor the <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range">unicode-range</a></code> CSS property for the purposes of font downloading. Consider the following <a href="https://jsfiddle.net/6aL8zoyx/3/">content</a>:</p>
+<pre><code class="css"><span class="keyword">@font-face</span> {
+    <span class="attribute">font-family</span>: <span class="identifier">MyWebFont</span>;
+    <span class="attribute">src</span>: <span class="char">url("MyWebFont-extended.woff2")</span> <span class="identifier">format</span>(<span class="string">"woff2"</span>),
+         <span class="char">url("MyWebFont-extended.woff")</span> <span class="identifier">format</span>(<span class="string">"woff"</span>);
+    <span class="attribute">unicode-range</span>: <span class="identifier">U</span><span class="number">+110</span><span class="number">-24</span><span class="identifier">F</span>;
+}
+
+<span class="keyword">@font-face</span> {
+    <span class="attribute">font-family</span>: <span class="identifier">MyWebFont</span>;
+    <span class="attribute">src</span>: <span class="char">url("MyWebFont.woff2")</span> <span class="identifier">format</span>(<span class="string">"woff2"</span>),
+         <span class="char">url("MyWebFont.woff")</span> <span class="identifier">format</span>(<span class="string">"woff"</span>);
+    <span class="attribute">unicode-range</span>: <span class="identifier">U</span><span class="number">+0</span><span class="identifier">-FF</span>;
+}
+</code></pre>
+<pre><code class="html"><span class="tag">&lt;<span class="keyword">div</span> <span class="keyword attribute">style</span>=<span class="attribute value string">"font-family: MyWebFont;"</span>&gt;</span>hamburgefonstiv<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+</code></pre>
+<p>In this content, none of the characters styled with <code>MyWebFont</code> fall within the <code>unicode-range</code>of the first CSS <code>@font-face</code> rule, which means that there is no reason to download it at all! It’s important to remember, however, that styling any character with a web font will always cause the last matching <code>@font-face</code> to be downloaded in order to correctly size the containing element according to the metrics of the font. Therefore, the most-common CSS <code>@font-face</code> rule should be listed last. Using unicode-range to partition fonts can eliminate font downloads entirely, thereby saving your users’ bandwidth and battery.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/even-better-font-loading/">Even better font loading</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Responsive tables</title>
+		<link>https://jacekjeznach.com/responsive-tables/</link>
+		<pubDate>Thu, 12 Jan 2017 08:48:41 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+		<category><![CDATA[rwd]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1301</guid>
+		<description><![CDATA[<p>This is an awesome solution for responsive tables with complex data.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/responsive-tables/">Responsive tables</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>This is an awesome solution for responsive tables with complex data.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/responsive-tables/">Responsive tables</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>12 Front End Developer responsibilities</title>
+		<link>https://jacekjeznach.com/front-end-developer-must/</link>
+		<pubDate>Thu, 12 Jan 2017 08:38:52 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[Personal]]></category>
+		<category><![CDATA[front-end]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1292</guid>
+		<description><![CDATA[<p>Because the front end developer is this central position and he is dealing with lots of different people, the job can be done better if they are paying attention A front end developer must pay attention at design If they aren&#8217;t a designer themselves, they know how important design is. They have good taste in design. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/front-end-developer-must/">12 Front End Developer responsibilities</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Because the front end developer is this central position and he is dealing with lots of different people, the job can be <em>done better</em> if they are paying attention</p>
+<p style="text-align: left;"><strong>A front end developer must pay attention at design</strong></p>
+<p>If they aren&#8217;t a designer themselves, they know how important design is. They have good taste in design. They know about the tools involved. They know where the design role fits into the process.</p>
+<p style="text-align: left;"><strong>A front end developer must be aware of the back end.</strong></p>
+<p>If they aren&#8217;t a back end coder themselves, they know how important the back end is. They know what the back end is capable of delivering and what it isn&#8217;t. They know the responsibilities back end developers have. They know the languages involved. They know how to ask for what they need on the front end.</p>
+<p style="text-align: left;"><strong>A front end developer must pay attention at the network.</strong></p>
+<p>They know that websites are delivered over the internet, a network, and that that network is a wild and sometimes unpredictable place. They know networks can be on or off, fast or slow, and reliable or unreliable.</p>
+<p style="text-align: left;"><strong>A front end developer is aware of performance.</strong></p>
+<p>If they aren&#8217;t entirely performance focused themselves, they know that performance is vital to a website&#8217;s success. They know performance is a complex world onto itself. They know there are quick wins and long term struggles. They know that so long as the back end is fast, the other 80% of the time a website is loading is a front end concern.</p>
+<p style="text-align: left;"><strong>A front end developer must pay attention at content strategy.</strong></p>
+<p>If they aren&#8217;t a content strategist themselves, they know that websites live and die by the content on them. They know that the lack of a content plan can cause problems that you may not be able to develop your way out of. They know that the people that use the website is what matters and those people need to find what they need and expect it to be in good shape.</p>
+<p style="text-align: left;"><strong>A front end developer is aware of databases.</strong></p>
+<p>The content lives there. The content must be in good shape. The front end developer can only work with what comes out of those databases. The front end developer needs to combine what comes out of those databases with templates to make the website happen.</p>
+<p style="text-align: left;"><strong>A front end developer must pay attention for testing.</strong></p>
+<p>So many kinds! Integration testing. Regression testing. User testing!</p>
+<p style="text-align: left;"><strong>A front end developer must be aware of systems.</strong></p>
+<p>They might be responsible for implementing a design system, or an icon system, or a coding style guide. They might have to create those systems themselves. They might need to document those systems.</p>
+<p style="text-align: left;"><strong>A front end developer must be aware of devops.</strong></p>
+<p>They are writing and committing code along with every other coder on the project, so they need to adhere to the same setup as everyone else. If they didn&#8217;t write the build system themselves, they know what it is, what it does, and what it is capable of. If they didn&#8217;t set up deployment themselves, they know how to use it.</p>
+<p style="text-align: left;"><strong>A front end developer must be aware of servers.</strong></p>
+<p>Without them, there is no website.</p>
+<p style="text-align: left;"><strong>A front end developer must be aware of accessibility.</strong></p>
+<p>If they aren&#8217;t well versed in building for accessibility themselves, they know that it&#8217;s important. They know how to test for it. They know who to talk to about it. They know there is quick wins and long term struggles regarding it.</p>
+<p style="text-align: left;"><strong>A front end developer must be aware of the device landscape.</strong></p>
+<p>They know the web is everywhere these days and a good website needs to meet users there. Big screens, little screens, touch screens, far away screens, black and white screens. The front end developer is aware of the unknown.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/front-end-developer-must/">12 Front End Developer responsibilities</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>8 useful &#038; tricky css techniques</title>
+		<link>https://jacekjeznach.com/useful-css-techniques/</link>
+		<pubDate>Sun, 08 Jan 2017 13:04:57 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[css]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1275</guid>
+		<description><![CDATA[<p>Gradually CSS is becoming more and more powerful and nowadays it allows a lot of possibilities for CSS developers. This article is a compilation of fresh, advanced tips and techniques to master your CSS skills. Warning: some techniques contained in this article are still considered as experimental. Make sure to check the browser compatibility before you [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/useful-css-techniques/">8 useful &#038; tricky css techniques</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<article id="post-6949" class="post-6949 post type-post status-publish format-standard has-post-thumbnail hentry category-css-2">Gradually CSS is becoming more and more powerful and nowadays it allows a lot of possibilities for CSS developers. This article is a compilation of fresh, advanced tips and techniques to master your CSS skills.</p>
+<hr />
+<div class="entry-content">
+<div class="box red">Warning: some techniques contained in this article are still considered as experimental. Make sure to check the browser compatibility before you implement them on a production site.</div>
+<h2>Using SVG for icons</h2>
+<p>SVG is supported by all modern browsers and scales well for all resolution types, so there’s no reason for CSS developers to continue using <code>.jpg</code> or <code>.gif</code> images for icons. Note the use of the <code>background-size</code> property to scale the background image on the on container size.</p>
+<pre>.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 82px;
+  background: url(kiwi.svg);
+  background-size: 100px 82px;
+}
+</pre>
+<p><strong>Source: <a href="https://css-tricks.com/using-svg/" target="blank">CSS Tricks</a></strong></p>
+<h2>Fixed table layouts</h2>
+<p>A widely supported but surprisingly little-known by CSS developers property which changes the way the tables are rendered and gives you a sturdier, more predictable layout.</p>
+<pre>table {
+  table-layout: fixed;
+}
+</pre>
+<p><strong>Source: <a href="https://css-tricks.com/fixing-tables-long-strings/" target="blank">CSS Tricks</a></strong></p>
+<h2>Curve text around a floated image</h2>
+<p>The <code>shape-outside</code> is a CSS property that allows geometric shapes to be set, in order to define an area for text to flow around.</p>
+<pre>.shape {
+  width: 300px;
+  float: left;
+  shape-outside: circle(50%);
+}
+</pre>
+<p>Here’s the result of the <code>.shape</code> class applied to the image:<br />
+<a href="https://jacekjeznach.com/wp-content/uploads/2017/01/exaple.jpg" rel="attachment wp-att-1284"><img class="alignnone size-full wp-image-1284" src="https://jacekjeznach.com/wp-content/uploads/2017/01/exaple.jpg" alt="exaple" srcset="https://jacekjeznach.com/wp-content/uploads/2017/01/exaple-250x115.jpg 250w, https://jacekjeznach.com/wp-content/uploads/2017/01/exaple-120x55.jpg 120w, https://jacekjeznach.com/wp-content/uploads/2017/01/exaple.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></a><br />
+<strong>Source: <a href="http://www.webdesignerdepot.com/2015/01/css-you-can-get-excited-about-in-2015/" target="blank">WebDesigner Depot</a></strong></p>
+<h2>Intrinsic Ratio Boxes</h2>
+<p>Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).</p>
+<pre>.container {
+  height: 0;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+.container div {
+  border: 2px dashed #ddd;  
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+</pre>
+<p><strong>Source: <a href="https://github.com/AllThingsSmitty/css-protips#intrinsic-ratio-boxes" target="blank">AllThingsSmitty</a></strong></p>
+<h2>Color fade on hover</h2>
+<p>A very easy way to make your links (or any other element) look better.</p>
+<pre>a {
+ color: #000;
+ -webkit-transition: color 1s ease-in; /*safari and chrome */
+ -moz-transition: color 1s ease-in; /* firefox */
+ -o-transition: color 1s ease-in; /* opera */
+}
+
+a:hover { 
+ color: #c00;
+}
+</pre>
+<p><strong>Source: <a href="http://jsfiddle.net/cardeo/e4jc6/" target="blank">Matt Lambert</a></strong></p>
+<h2>Style broken images</h2>
+<p>Broken images never look good, but it happens every now and then that one or two images on your site are broken. Using some advanced techniques, a CSS developer style broken images and provide custom error messages to your visitors.</p>
+<pre>img {  
+  min-height: 50px;
+}
+
+img:before {  
+  content: " ";
+  display: block;
+
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: calc(100% + 10px);
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  border: 2px dotted rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+img:after {  
+  content: "\f127" " Broken Image of " attr(alt);
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-family: FontAwesome;
+  color: rgb(100, 100, 100);
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+</pre>
+<p>Look what can be achieved with that technique: way better than browsers’ default, right?<br />
+<img src="http://www.catswhocode.com/blog/wp-content/uploads/2016/05/broken-image-css.jpg" alt="broken-image-css" data-lazy-loaded="true" /><br />
+<strong>Source: <a href="https://bitsofco.de/styling-broken-images/" target="blank">Bitsofco.de</a></strong></p>
+<h2>Empty and not empty attribute selectors</h2>
+<p>CSS3 makes it easy to apply different styles to an element, depending on whether a <code>data-*</code> attribute is empty or not. Have a look at the HTML code below:</p>
+<pre>&lt;div data-attr=""&gt;
+&lt;/div&gt;
+
+&lt;div data-attr="value"&gt;
+&lt;/div&gt;
+</pre>
+<p>And now, our CSS, with specific styling for any <code>div</code> element with an empty <code>data-attr</code> attribute:</p>
+<pre>div {
+  border: 1px solid gray;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+}
+
+/* Empty attribute selector */
+div[data-attr=''] {
+  background: red;
+}
+
+/* Not empty attribute selector */
+div:not([data-attr='']) {
+  background: green;
+}
+</pre>
+<p><strong>Source: <a href="http://codepen.io/starikovs/pen/tngqH" target="blank">Vacheslav Starikov</a></strong></p>
+<h2>Comma-Separated Lists</h2>
+<p>A little snippet to display an unordered list as a comma-separated list. Note the use of <code>:not(:last-child)</code> to ensure that the last list element won’t be followed by a comma.</p>
+<pre>ul &gt; li:not(:last-child)::after {
+  content: ",";
+}
+</pre>
+<p><strong>Source: <a href="https://github.com/AllThingsSmitty/css-protips#comma-separated-lists" target="blank">AllThingsSmitty</a></strong></p>
+</div>
+<footer class="entry-footer"></footer>
+</article>
+<div id="rel-container"></div>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/useful-css-techniques/">8 useful &#038; tricky css techniques</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Steps to make WordPress blog more secure</title>
+		<link>https://jacekjeznach.com/steps-to-make-wordpress-blog-more-secure/</link>
+		<pubDate>Sun, 08 Jan 2017 12:25:21 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1257</guid>
+		<description><![CDATA[<p>WordPress itself is a very secure platform. However, there&#8217;s a some mistakes that many WordPress users make and that can be exploited by potential attackers. In this article, I&#8217;m presenting you simple steps for maximum security. Stay updated As a rule of thumb, every time the WordPress core or a plugin you’re using has an available [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/steps-to-make-wordpress-blog-more-secure/">Steps to make WordPress blog more secure</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>WordPress itself is a very secure platform. However, there&#8217;s a some mistakes that many WordPress users make and that can be exploited by potential attackers. In this article, I&#8217;m presenting you simple steps for maximum security.</p>
+<hr />
+<div class="entry-content">
+<h2>Stay updated</h2>
+<p>As a rule of thumb, every time the WordPress core or a plugin you’re using has an available update, don&#8217;t forget to apply it. Updates bring new features, but also security fixes. Although WordPress has automatic background updates since version 3.7, you should always keep an eye on them, as automatic updates may sometimes fail to complete.</p>
+<p>Plugins are also a sensitive part of your WordPress installation. Remember to update them as soon as an update is available.</p>
+<h2>Pick a random user name</h2>
+<p>Attackers know that most people are using usernames such as “admin” or the url of their website. By picking a random user name, you’re making their task much more difficult.</p>
+</div>
+<h2>Always pick a strong password</h2>
+<p>It might seem like a obvious tip, but working with WordPress (and websites in general) every day, I can tell you that most people tend to use  weak passwords to protect something as important as their own website.</p>
+<p>A strong password has:</p>
+<ul>
+<li>at least 15 characters</li>
+<li>uppercase letters</li>
+<li>lowercase letters</li>
+<li>numbers</li>
+<li>symbols, such as <code>` ! " ? $ ? % ^ &amp; * ( ) _ - + = { [ } ] :</code></li>
+</ul>
+<p>A strong password is not:</p>
+<ul>
+<li>your login or username</li>
+<li>your name, your friend’s name, your family member’s name, or a common name</li>
+<li>a dictionary word</li>
+<li>like your previous passwords</li>
+<li>your date of birth</li>
+<li>a keyboard pattern, such as qwerty, asdfghjkl, or 12345678</li>
+</ul>
+<p>Need help to pick a super strong password? Head over this <a href="https://strongpasswordgenerator.com/" target="blank">simple but efficient web app</a>.</p>
+<div class="entry-content">
+<h2>Host your website on a reliable web host</h2>
+<p>Especially if you’re on a shared server (this is the case of most small websites such as a personal blog), attackers can use corrupted files on the server, even if they aren’t yours, to spread on other websites hosted on the server. This can’t be fully stopped by you alone, this is why you need to be sure that your web host is super serious about security and offers a strong customer support that will always be helpful in case of any problems.</p>
+<p>&nbsp;</p>
+<h2>Make regular backups</h2>
+<p>If a problem happens, it is essential for every developer to have a backup of both your database and files, so you can restore it to your server. Backups can be done manually or using a plugin such as <a href="https://wordpress.org/plugins/wp-database-backup/" target="blank">WP Database Backup</a>. Your web host can also make regular back-ups of your website and database.</p>
+<h2>Use .htaccess to protect wp-login</h2>
+<p>Password protecting your <code>wp-login.php</code> file can add an extra layer to your server. Because password protecting wp-admin can break any plugin that uses ajax on the front end, it’s usually sufficient to just protect <code>wp-login.php</code>.</p>
+<p>To do this, you will need to create a <code>.htpasswd</code> file. To do so, go to <a href="http://www.htaccesstools.com/htpasswd-generator/" target="blank">htpasswd generator</a> and follow the instructions. Once you have your file ready, upload it to your server.</p>
+<p>Once done, you need to tell <code>.htaccess</code> where it’s at. Assuming you’ve put <code>.htpasswd</code> in your user’s home directory and your htpasswd username is mysecretuser, then you put this in your <code>.htaccess</code> file:</p>
+<pre># Stop Apache from serving .ht* files
+&lt;Files ~ "^\.ht"&gt;
+Order allow,deny
+Deny from all
+&lt;/Files&gt;
+
+# Protect wp-login
+&lt;Files wp-login.php&gt;
+AuthUserFile ~/.htpasswd
+AuthName "Private access"
+AuthType Basic
+require user mysecretuser
+&lt;/Files&gt;
+</pre>
+<p>If you’re looking for a plugin instead of doing it by yourself, have a look at <a href="https://wordpress.org/plugins/askapache-password-protect/" target="blank">AskApache Password Protect</a>. Please note though, that it hasn’t been updated in a year. I haven’t tried it myself so I can’t really neither recommend nor not recommend this plugin.</p>
+<h2>Remove unnecessary error messages</h2>
+<p>Login error messages are useful, but unfortunately, they can also provide information to attackers.</p>
+<p>To get rid of login errors display on your <code>wp-login.php</code> page, open your <code>functions.php</code> file and append the code below to it:</p>
+<pre>add_filter('login_errors',create_function('$a', "return null;"));</pre>
+<h2>Be careful with plugins and themes</h2>
+<p>Basically, everything a developer adds to your WordPress install (Themes and Plugins) potentially contains vulnerable code. In fact, anyone can write and offer a plugin or <a href="http://catswhocode.com/go/themeforest.html" target="blank">theme</a>.</p>
+<p>When choosing a plugin or a theme, make sure that:</p>
+<ul>
+<li>You get it from a reliable source, such as the official WordPress.org repositories</li>
+<li>The plugin/theme is well maintained and has been updated recently</li>
+<li>The plugin has a significant number of installs and/or ratings</li>
+</ul>
+<p>Premium themes and plugins that you can find available for free might often contain malicious code injected in them. Sure, a premium theme or a plugin is an investment, but the average $60 you’ll spend is a lot cheaper than the help of a developer or security expert to help you with a broken or a hijacked website. Established premium theme/plugin sellers as such as <a href="http://catswhocode.com/go/elegantthemes.html" target="blank">ElegantThemes</a>, <a href="http://catswhocode.com/go/themeforest.html" target="blank">ThemeForest</a> or <a href="http://catswhocode.com/go/themify.html" target="blank">Themify</a> are very serious about security.</p>
+<h2>Rename your database tables</h2>
+<p>By default, WordPress uses <code>wp_</code> to prefix your database tables. While it can be easily changed when installing WordPress, unfortunately most developers don’t modify the default prefix. It makes it easier for attackers to target your database.</p>
+<p>Happily, there’s a handy plugin called <a href="https://wordpress.org/plugins/db-prefix-change/" target="blank">DB Prefix Change</a> which allows you to easily change your database prefix from the default <code>wp_</code> to something unique and virtually impossible to guess.</p>
+<h2>Disable file editing</h2>
+<p>WordPress features a built-in file editor, which can be very useful to edit your theme on the fly. Unfortunately, if an attacker gains access to your WordPress dashboard as an administrator, he will be able to edit your files, and do much damage. For this reason, you might want to disable WordPress built-in file editor and use a regular FTP program to edit your theme files instead.</p>
+<p>To do so, simply paste the code below into your <code>wp-config.php</code> file, which is located at the root of your WordPress install.</p>
+<pre>define('DISALLOW_FILE_EDIT', true);</pre>
+<h2>Make use of the All In One WP Security &amp; Firewall plugin</h2>
+<p>The All In One WordPress Security plugin will take your website security to a whole new level. Designed and written by expert developers, it reduces security risk by checking for vulnerabilities, and by implementing and enforcing the latest recommended WordPress security practices and techniques.</p>
+<p>Install All In One WP Security from your WordPress dashboard or download it from <a href="https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/" target="blank">here</a>.</p>
+</div>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/steps-to-make-wordpress-blog-more-secure/">Steps to make WordPress blog more secure</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>WPfillme</title>
+		<link>https://jacekjeznach.com/wpfillme/</link>
+		<pubDate>Sat, 11 Jun 2016 08:47:00 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[typography]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1174</guid>
+		<description><![CDATA[<p>Based on the capabilities of the WordPress TinyMCE editor, WPFill.Me creates filler content designed specifically for robust CSS testing in the WordPress environment.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/wpfillme/">WPfillme</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Based on the capabilities of the WordPress TinyMCE editor, WPFill.Me creates filler content designed specifically for robust CSS testing in the WordPress environment.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/wpfillme/">WPfillme</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Swiper</title>
+		<link>https://jacekjeznach.com/swiper/</link>
+		<pubDate>Thu, 02 Jun 2016 17:33:57 +0000</pubDate>
+		<dc:creator><![CDATA[jeznacki13]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+		<category><![CDATA[jquery plugins]]></category>
+		<category><![CDATA[slider]]></category>
+
+		<guid isPermaLink="false">https://jacekjeznach.com/?p=1170</guid>
+		<description><![CDATA[<p>Most modern mobile touch slider with hardware accelerated transitions and amazing native behavior.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/swiper/">Swiper</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Most modern mobile touch slider with hardware accelerated transitions and amazing native behavior.</p>
+<p>The post <a rel="nofollow" href="https://jacekjeznach.com/swiper/">Swiper</a> appeared first on <a rel="nofollow" href="https://jacekjeznach.com">Front End Developer | JavaScript | Angular 2+</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

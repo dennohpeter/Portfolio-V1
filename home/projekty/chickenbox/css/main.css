@@ -1,0 +1,1653 @@
+@font-face {
+    font-family: 'DINProRegular';
+    src: url('din/dinpro-regular.eot');
+    src: url('din/dinpro-regular.eot?#iefix') format('embedded-opentype'),
+         url('din/dinpro-regular.woff') format('woff'),
+         url('din/dinpro-regular.ttf') format('truetype'),
+         url('din/dinpro-regular.svg#DINProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINProBold';
+    src: url('din/dinpro-bold.eot');
+    src: url('din/dinpro-bold.eot') format('embedded-opentype'),
+         url('din/dinpro-bold.woff') format('woff'),
+         url('din/dinpro-bold.ttf') format('truetype'),
+         url('din/dinpro-bold.svg#DINProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINProBlack';
+    src: url('din/dinpro-black.eot');
+    src: url('din/dinpro-black.eot') format('embedded-opentype'),
+         url('din/dinpro-black.woff') format('woff'),
+         url('din/dinpro-black.ttf') format('truetype'),
+         url('din/dinpro-black.svg#DINProBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINProCondBold';
+    src: url('din/dinpro-condbold.eot');
+    src: url('din/dinpro-condbold.eot') format('embedded-opentype'),
+    url('din/dinpro-condbold.woff') format('woff'),
+    url('din/dinpro-condbold.ttf') format('truetype'),
+    url('din/dinpro-condbold.svg#DINProCondBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINProCondBlack';
+    src: url('din/dinpro-condblack.eot');
+    src: url('din/dinpro-condblack.eot') format('embedded-opentype'),
+    url('din/dinpro-condblack.woff') format('woff'),
+    url('din/dinpro-condblack.ttf') format('truetype'),
+    url('din/dinpro-condblack.svg#DINProCondBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+body{
+
+
+
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    background: url(../img/background.jpg) no-repeat center -354px;
+    background-color: #4d0d09;
+
+
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+
+   min-height:680px;
+   height:100%;
+   overflow-y: auto;
+   overflow-x: hidden;
+   display: block;
+    
+}
+body {overflow: hidden;display:block;height:100% !important;}
+
+.f-left{
+ float:left;
+}
+
+/* AJAX LOADER */
+
+#ajax-load{
+    width:960px;
+    margin: 0px auto 0 auto;
+    top:60px;
+    height:640px;
+    position:relative;
+}
+
+#logo-short {
+    margin:70px auto 0 auto;
+    display: block;
+    width: 264px;
+}
+#logo-short span {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    color:#fff;
+    font-family: DINProCondBlack;
+}
+#logo-short span em {
+    font-style: normal;
+}
+
+#scroll-box {
+    margin:40px auto 0 auto;
+    display: block;
+    width: 264px;
+    text-align: center;
+
+}
+#scroll-box img {
+    position:relative;
+    left:9px;
+}
+#scroll-box span {
+  color:#fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  color:#fff;
+  font-family: DINProCondBold;
+  display: block;
+  margin-top:12px;
+}
+
+/* PAGES */
+
+#page {
+    width:960px;
+    margin: 0px auto 0 auto;
+    top:17px;
+    height:640px;
+    position:relative;
+
+}
+#logo {
+    position: absolute;
+    left:40px;
+    top:0px;
+    z-index:999;
+}
+
+.icons-belt {
+  position:absolute;
+  top:-15px;
+  right:0;    
+    
+}
+
+.ico {
+   display:block;
+   width:28px;
+   height:27px;
+   margin-left:7px;   
+   background-repeat:no-repeat;
+   background-position:top right;
+}
+
+
+/* indrigents icons */
+
+.ico:hover {
+   background-position:bottom right;
+}
+
+.wings-ico {
+  background-image:url(../img/icons/wings-ico.png) ;
+}
+.filets-ico{
+  background-image:url(../img/icons/filets-ico.png) ;
+}
+.nuggets-ico{
+  background-image:url(../img/icons/nuggets-ico.png) ;
+}
+.sauce-ico{
+  background-image:url(../img/icons/souce-ico.png) ;
+}
+.frites-ico{
+  background-image:url(../img/icons/frites-ico.png) ;
+}
+.salad-ico{
+  background-image:url(../img/icons/salad-ico.png) ;
+}
+.drink-ico{
+  background-image:url(../img/icons/drink-ico.png) ; 
+}
+
+/* set container */
+
+.set {
+   position:absolute;
+   top:20px;
+   width:960px;
+   left:0;
+   height:685px;
+   text-align:center;
+   display: none;
+   z-index: 1;
+}
+
+
+/* LInks
+=============================================== */
+
+.link {
+   position:absolute;
+   width:100px;
+   height:100px;  
+   margin-right:-20px;    
+   display:block;
+   background:url(../img/layout/transp.png) repeat;
+   text-decoration: none;
+   
+}
+
+.chicken1-link {
+   bottom:170px;
+   width:190px;
+   height:122px;
+   right:75px;
+   z-index:15;  
+}
+.chicken2-link {
+  right:255px;
+  bottom:265px;
+  z-index:15; 
+  width:170px;
+}
+.chicken3-link {
+  right:70px;
+  bottom:310px;
+  z-index:15;
+  width:160px;
+}
+.chicken4-link {
+  right:160px;
+  bottom:390px;
+  z-index:15;
+  width:120px;
+  height:60px;    
+}
+.chicken5-link {
+  right:310px;
+  bottom:390px;
+  z-index:15;
+  width:110px;
+  height:60px;    
+}
+
+
+.sauce1-link {
+   bottom:160px;
+   width:90px; 
+   height:60px;    
+   right:390px; 
+   z-index:15;  
+}
+.sauce2-link {
+   bottom:195px;
+   width:80px; 
+   height:50px;    
+   right:515px; 
+   z-index:15;   
+}
+.sauce3-link {
+   bottom:220px;
+   width:70px; 
+   height:50px;    
+   right:450px; 
+   z-index:15;   
+}
+
+.drink-link {
+  bottom:295px;
+   width:95px; 
+   height:160px;
+   right:790px; 
+   z-index:16;  
+}
+.salad-link {
+  bottom:240px;
+  width:170px; 
+  height:180px;    
+  right:630px; 
+  z-index:15;  
+}
+.frites-link {
+  bottom:165px;
+  width:200px; 
+  height:95px;    
+  right:740px; 
+  z-index:16;  
+
+}
+.box-link {
+  bottom:310px;
+  width:210px; 
+  height:280px;    
+  right:420px; 
+  z-index:15;  
+}
+
+
+
+/*============== chicken links:hovers*/
+.link > span {
+    z-index:14;
+}
+.chicken5-link > span,
+.chicken4-link > span,
+.chicken3-link > span,
+.chicken2-link > span,
+.chicken1-link > span {
+   position:absolute;
+   top:-85px;
+   display:block;
+   white-space: nowrap; 
+   width:auto;    
+   left:45%;
+   font-size:14px;
+   color:#ffffff;
+   font-family: 'DINProBold';
+   font-weight: normal;
+   text-align:left;  
+   line-height:14px;
+   border-bottom:1px solid #fff;
+   padding-bottom:7px;
+   padding-right:4px;
+   padding-left:2px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+     -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+   transform: rotate(-4deg);
+   display:none;
+}
+.chicken5-link > span{
+    left:30%;
+}
+
+/* lines */
+.chicken5-link > span span,
+.chicken4-link > span span,
+.chicken3-link > span span,
+.chicken2-link > span span,
+.chicken1-link > span span {
+   display:block;
+   width:1px;
+   background:#fff;
+   height:64px;
+   position:absolute;
+   left:0;
+   bottom:-65px;
+    -webkit-transform: rotate(4deg) translate(-3px,0);
+    -moz-transform: rotate(4deg) translate(-3px,0);
+    -ms-transform: rotate(4deg) translate(-3px,0);
+    -o-transform: rotate(4deg) translate(-3px,0);
+    transform: rotate(4deg) translate(-3px,0);
+}
+.chicken5-link > span span,
+.chicken4-link > span span {
+    height:64px;
+    position:absolute;
+    left:0;
+    bottom:-65px;
+
+}
+
+/* dots */
+
+.chicken5-link > span img,
+.chicken4-link > span img,
+.chicken3-link > span img,
+.chicken2-link > span img,
+.chicken1-link > span img {
+   position:absolute;
+   bottom:-2px;
+   right:-1px;
+   display:none;
+}
+
+
+/* =============sauce links:hovers */
+
+
+.sauce3-link > span,
+.sauce2-link > span,
+.sauce1-link > span {
+    position:absolute;
+    top:-40px;
+    display:block;
+    white-space: nowrap;
+    width:auto;
+    left:45%;
+    font-size:14px;
+    color:#ffffff;
+    font-family: 'DINProBold';
+    font-weight: normal;
+    text-align:left;
+    line-height:14px;
+    border-bottom:1px solid #fff;
+    padding-bottom:7px;
+    padding-right:4px;
+    padding-left:5px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    display:none;
+}
+.sauce2-link > span,
+.sauce3-link > span {
+    left:-55%;
+}
+
+.sauce3-link > span span,
+.sauce2-link > span span,
+.sauce1-link > span span {
+    display:block;
+    width:1px;
+    background:#fff;
+    height:15px;
+    position:absolute;
+    left:0;
+    bottom:-16px;
+    -webkit-transform: rotate(4deg) translate(-1px,0);
+    -moz-transform: rotate(4deg) translate(-1px,0);
+    -ms-transform: rotate(4deg) translate(-1px,0);
+    -o-transform: rotate(4deg) translate(-1px,0);
+    transform: rotate(4deg) translate(-1px,0);
+}
+.sauce2-link > span span,
+.sauce3-link > span span {
+    left:auto;
+    right:0;
+    -webkit-transform: rotate(4deg) translate(0px,0);
+    -moz-transform: rotate(4deg) translate(0px,0);
+    -ms-transform: rotate(4deg) translate(0px,0);
+    -o-transform: rotate(4deg) translate(0px,0);
+    transform: rotate(4deg) translate(0px,0);
+}
+.sauce3-link > span img,
+.sauce2-link > span img,
+.sauce1-link > span img {
+    position:absolute;
+    bottom:-2px;
+    right:-1px;
+    display:none;
+}
+
+.sauce2-link > span img,
+.sauce3-link > span img {
+    left:-1px;
+    right:auto;
+}
+
+/* =============additions links:hovers */
+
+.drink-link > span,
+.frites-link > span,
+.salad-link > span {
+    position:absolute;
+    top:-50px;
+    display:block;
+    white-space: nowrap;
+    width:auto;
+    left:15%;
+    font-size:14px;
+    color:#ffffff;
+    font-family: 'DINProBold';
+    font-weight: normal;
+    text-align:left;
+    line-height:14px;
+    border-bottom:1px solid #fff;
+    padding-bottom:7px;
+    padding-right:4px;
+    padding-left:5px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    display:none;
+}
+.drink-link > span {
+    left:-15%;
+    top:-20px;
+}
+.frites-link > span {
+    top:-38px;
+}
+.drink-link > span span,
+.frites-link > span span,
+.salad-link > span span {
+    display:block;
+    width:1px;
+    background:#fff;
+    height:40px;
+    position:absolute;
+    right:0;
+    bottom:-41px;
+    -webkit-transform: rotate(4deg) translate(-1px,0);
+    -moz-transform: rotate(4deg) translate(-1px,0);
+    -ms-transform: rotate(4deg) translate(-1px,0);
+    -o-transform: rotate(4deg) translate(-1px,0);
+    transform: rotate(4deg) translate(-1px,0);
+}
+.drink-link > span span {
+    height:30px;
+    bottom:-31px;
+}
+.drink-link > span img,
+.frites-link > span img,
+.salad-link > span img {
+    position:absolute;
+    bottom:-2px;
+    left:-1px;
+    display:none;
+}
+
+
+/*
+ elements / images
+ ===================================== */
+
+ 
+.chicken1 {
+   position:absolute;     
+   bottom:127px;
+   right:-20px; 
+   z-index:12;    
+}
+.chicken2 {
+  position:absolute; 
+  right:175px;
+  bottom:230px;
+  z-index:6; 
+  width:250px;
+  height:auto;       
+}
+.chicken3 {
+  position:absolute; 
+  right:-5px;
+  bottom:280px;
+  z-index:4; 
+  width:240px;
+  height:auto;    
+}
+.chicken4 {
+  position:absolute; 
+  right:110px;
+  bottom:355px;
+  z-index:3; 
+  width:180px;
+  height:auto;    
+}
+.chicken5 {
+  position:absolute;         
+  right:260px;
+  bottom:355px;
+  z-index:2; 
+  width:180px;
+  height:auto;  
+}
+
+.box {
+  bottom:295px;    
+  right:360px;    
+  position:absolute;  
+  z-index:5;
+}
+.sauce1 {
+  z-index:11;
+  bottom:75px;
+  right:300px;    
+  position:absolute; 
+}
+.sauce2 {
+  z-index:10;
+  bottom:104px;
+  right:415px;
+  position:absolute;
+}
+.sauce3 {
+ z-index:9;
+ bottom:133px;
+ right:347px;    
+ position:absolute; 
+ width:170px;    
+}
+.drink {
+  position:absolute; 
+  z-index:6; 
+  right:755px;    
+  bottom:230px; 
+
+}
+.salad {
+  position:absolute; 
+  z-index:7; 
+  right:585px;    
+  bottom:164px;    
+}
+
+.frites {
+  position:absolute;
+  z-index:8;
+  right:660px;    
+  bottom:135px; 
+    
+}
+
+/* nav elements */
+
+.lipton-area {
+    position:absolute;
+    top:15px;
+    right:0;
+}
+.lipton-area .lipton-link {
+   float:right;
+   border:2px solid #ededed;
+   font-family: 'DINProBlack';
+   font-size:10.5px;
+   height:24px;
+   line-height:24px;
+   width:88px;
+   background: url('../img/layout/more.png') no-repeat top right;
+   z-index:1;
+   position:relative;
+   top:8px;
+   margin-left: 9px;
+}
+.lt-ie9 .lipton-area .lipton-link {
+    line-height: 25px;
+}
+.lipton-area .lipton-link a{
+    font-family: 'DINProBlack';
+    font-size:10px;
+    color:#912a27;
+    text-decoration:none;
+    text-transform:uppercase;
+    display:block;
+    height:24px;
+    text-align: center;
+    margin-right: 28px;
+}
+.lipton-area p {
+    float: right;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 13px;
+    font-family: 'dinprobold';
+    font-weight: normal;
+    word-spacing: 1px;
+}
+.lipton-area p b {
+    font-family: 'dinproblack';
+}
+
+.iteration-number {
+   border:2px solid #ffffff;
+   position:relative;
+   font-size:13px;
+   color:#fff;
+   font-family: 'DINProBold';
+   font-weight: normal;
+   line-height:22px;
+   padding-left:7px;
+   height:23px;
+   overflow:hidden;
+   margin-right:13px;
+   float:left;
+   overflow: hidden;
+
+}
+.iteration-number b {
+    float:left;
+    font-weight: normal;
+    height:23px;
+}
+.iteration-number span {
+  background:#fff;
+  float:right;
+  height:23px;
+  color:#e5664f;
+  font-size:16px;
+  padding-left:10px;
+  padding-right:8px;
+  margin-left:6px;
+    
+}
+.lt-ie8 .iteration-number span {
+    float:none;
+}
+
+.iteration-number.big {
+    display:none;
+}
+.your-set {display:none;}
+
+
+.define-set {
+    border:2px solid #ededed;
+    position:absolute;
+    left:414px;
+    bottom:27px;
+    font-family: 'DINProBlack';
+    font-size:11px;
+    background: url('../img/layout/define-set.png') no-repeat top right;
+    height:24px;
+    line-height:24px;
+    width:196px;
+    text-align: center;
+    z-index:1;
+}
+.lt-ie9 .define-set {
+    line-height: 25px;
+}
+.define-set a {
+  font-family: 'DINProBlack';
+  font-size:10px;
+  color:#912a27;
+  text-decoration:none;
+  text-transform:uppercase;
+  display:block;
+  height:24px;
+  margin-right:28px;
+}
+
+.random-set {
+    background:  url("../img/layout/random-set.png") no-repeat right top ;
+    border: 2px solid #EDEDED;
+    bottom: 27px;
+    font-family: 'DINProBlack';
+    font-size: 11px;
+    height: 24px;
+    left: 0;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    width: 168px;
+    z-index:1;
+}
+.lt-ie9 .random-set {
+    line-height: 25px;
+}
+.random-set a {
+    color: #912A27;
+    display: block;
+    font-family: 'DINProBlack';
+    font-size: 10px;
+    height: 24px;
+    margin-right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.share {
+  border:2px solid #ededed; 
+  position:absolute;
+  right:0;
+  bottom:27px;
+  font-family: 'DINProBlack';
+  font-size:11px;
+  height:24px;
+  line-height:24px;
+  width:99px;  
+  background:#ededed url('../img/layout/share.png') no-repeat top right;
+  z-index:1;
+}
+.lt-ie9 .share {
+    line-height: 25px;
+}
+.share a {
+  font-family: 'DINProBlack';
+  font-size:10px;
+  color:#912a27;
+  text-decoration:none;
+  text-transform:uppercase;  
+  display:block;
+  height:24px;    
+  padding-left:5px;
+}
+
+.main-title {
+    font-weight: normal;
+    font-family: 'DINProCondBold';
+    color:#ededed;
+    font-size: 29px;
+    line-height: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom:24px;
+    left:0;
+    z-index:1;
+}
+.main-title span {
+    font-weight: normal;
+    display: block;
+    font-size: 19px;
+    position: relative;
+    top:6px;
+}
+
+.lt-ie9 .main-title {
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+.lt-ie9  .main-title span {
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+
+
+/* ==========================================================================
+   SKOMPUNUJ ZESTAW
+   ========================================================================== */
+
+.define-screen {
+    height: 550px;
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 960px;
+}
+
+.define-screen > div {
+    display:none;
+    position: relative;
+    width:960px;
+    height: 550px;
+}
+
+.define-screen > div.active {
+    display:block;
+}
+
+
+.define-screen >  .info-box {
+    display:block;
+    color:#fff;
+    font-family: 'DINProBold';
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    border-bottom:1px solid  #ffffff;
+    padding-bottom:7px;
+    text-align: right;
+    padding-left:3px;
+    float:right;
+    position: absolute;
+    width: 140px;
+    top:-140px;
+    right:0;
+}
+.define-screen >  .info-box img {
+    position: absolute;
+    bottom:-2px;
+    left:-1px;
+}
+
+
+/* ========================choose box screen*/
+
+.box-large {
+    position: absolute;
+    top:34px;
+    left:422px;
+
+}
+.box-small {
+    position: absolute;
+    top:65px;
+    left:181px;
+}
+
+.box-choose {
+    width:230px;
+    text-align: center;
+    line-height:18px;
+}
+
+.box-choose.first {
+    position: absolute;
+    left:580px;
+    top:385px;
+}
+.box-choose.last {
+    position: absolute;
+    left:178px;
+    top:385px;
+}
+
+.box-choose span {
+
+   font-size:14px;
+   color:#fff;
+   font-family: 'DINProBold';
+   font-weight: normal;
+   text-transform: uppercase;
+}
+
+
+/*
+ ========================== indigents screens
+*******/
+
+/* button etc.*/
+
+.box-choosen,
+.show-next {
+    border:2px solid #ededed;
+    position:absolute;
+    right:346px;
+    bottom:27px;
+    text-align: center;
+    font-family: 'DINProBlack';
+    font-size:11px;
+    color:#912a27;
+    text-decoration:none;
+    height:24px;
+    padding-right:28px;
+    line-height:24px;
+    width:72px;
+    font-size:10px;
+    background: url('../img/layout/next.png') no-repeat top right;
+}
+
+.ie9 .box-choosen,
+.ie9 .show-next {
+    line-height:26px;
+}
+
+
+
+.show-prev {
+    border:2px solid #ededed;
+    position:absolute;
+    left:345px;
+    text-align: center;
+    bottom:27px;
+    font-family: 'DINProBlack';
+    font-size:11px;
+    color:#912a27;
+    text-decoration:none;
+    height:24px;
+    line-height:24px;
+    width:72px;
+    font-size:10px;
+    background:url('../img/layout/prev.png') no-repeat top left;
+    padding-left:28px;
+}
+.ie9 .show-prev {
+    line-height:25px;
+}
+
+
+.checkbox2,
+.checkbox {
+    display: block;
+    border: 2px solid #ededed;
+    width:232px;
+    margin: 0 auto;
+    color:#fff;
+    font-family: 'DINProBold';
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    height:32px;
+    line-height: 31px;
+    position:relative;
+    margin:360px auto 0 auto;
+    padding-right:33px;
+}
+.checkbox2 {
+    margin-top:0;
+    width:225px;
+    font-family: 'DINProBold';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom:13px;
+}
+.checkbox2 span,
+.checkbox span {
+  width:31px;
+  height:32px;
+  position: absolute;
+  right: 0;
+  top:0;
+  border-left: 2px solid #ededed;
+}
+.checkbox2.active span,
+.checkbox.active span {
+    background: url(../img/layout/checked.png) no-repeat center center;
+}
+
+
+
+/*
+ ========================== columns
+*******/
+
+.one-third {
+   width:33.3333%;
+   float:left;
+   height:390px;
+   position: relative;
+   top:25px;
+   z-index:2;
+}
+.one-half {
+    width:50%;
+    float:left;
+    height:390px;
+    position: relative;
+    top:25px;
+}
+
+.additional-col {
+    float:left;
+    position:absolute;
+    top:100px;
+    z-index:3;
+}
+
+.additional-col.left {
+    left:0;
+    right:auto;
+
+
+}
+.additional-col.right {
+    right:0;
+    left:auto;
+}
+
+.lt-ie8 .additional-col{ width: 265px;}
+
+
+
+
+/*
+ ========================== images
+*******/
+
+.one-half > img,
+.one-third > img{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.one-third:first-child > img{
+   width:260px;
+   left:55px;
+   top:145px;
+
+}
+
+.one-third:first-child  + .one-third > img{
+
+   left:45px;
+   top:190px;
+}
+
+.one-third:first-child  + .one-third + .one-third > img{
+    width:260px;
+    left:75px;
+    top:145px;
+
+}
+/*sosy trzy kolumny*/
+
+#choose-sauce .one-third:first-child > img{
+    width:230px;
+    left:60px;
+    top:160px;
+
+}
+#choose-sauce  .one-third:first-child  + .one-third > img{
+    width:260px;
+    left:65px;
+    top:170px;
+}
+
+#choose-sauce  .one-third:first-child  + .one-third + .one-third > img{
+    width:230px;
+    left:105px;
+    top:160px;
+
+}
+
+/* kurczaki - dwie klumny dla 5 ciu kurczakow kolumny*/
+
+.additional-col > img {
+    position:absolute;
+    width:215px;
+    top:4px;
+}
+
+.additional-col.right > img {
+     right:245px;
+}
+.additional-col.left > img {
+    left:305px;
+ }
+
+/* sosy maly */
+
+.one-half > img {
+     left:232px;
+     top:170px;
+     width:250px;
+ }
+.one-half + .one-half > img {
+    left:75px;
+    top:170px;
+    width:250px;
+}
+
+
+/* dodatki */
+
+.one-third.addition:first-child > img{
+    width:220px;
+    left:-6px;
+    top:70px;
+
+}
+
+.one-third.addition:first-child  + .one-third > img{
+    width:370px;
+    left:43px;
+    top:80px;
+}
+
+.one-third.addition:first-child  + .one-third + .one-third > img{
+    width:264px;
+    left: 40px;
+    top: 132px;
+
+}
+
+/*
+ ========================== small slider
+*******/
+
+.small-slider{
+   width:100%;
+   border:2px solid #ededed;
+   height:32px;
+   overflow: hidden;
+   line-height: 32px;
+   position:relative;
+   margin:360px auto 0 auto;
+}
+
+
+.small-slider ul {
+    overflow: hidden;
+    display: block;
+    width:700px;
+    margin:0;
+    padding: 0;
+    color:#fff;
+    font-family: 'DINProBold';
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+.small-slider ul  li {
+    padding:0;
+    margin:0;
+    list-style: none;
+    line-height:31px;
+}
+.small-slider > a {
+   width:31px;
+   height:32px;
+   display:block;
+   position:absolute;
+   top:0;
+   line-height: 0;
+   font-size: 0;
+   text-indent: -3000px;
+}
+.small-slider > a.next {
+   border-right:2px solid #ededed;
+   left:0;
+    background: url(../img/layout/arrow_left.png) no-repeat center center;
+}
+.small-slider > a.prev {
+    border-left:2px solid #ededed;
+    right:0;
+    background: url(../img/layout/arrow_right.png) no-repeat center center;
+}
+.small-slider > div{
+    width:199px;
+    height:32px;
+    overflow: hidden;
+    line-height: 32px;
+    margin:0 auto;
+}
+
+.small-slider li {
+    width:199px;
+    float:left;
+}
+
+/* three sliders in row */
+
+.one-third .small-slider {
+  width:265px;
+}
+.one-third:first-child .small-slider {
+    float:left;
+}
+.one-third:first-child +.one-third + .one-third .small-slider {
+    float:right;
+}
+.additional-col .small-slider {
+    width:265px;
+    margin-top:0;
+}
+
+/* two sliders in row */
+
+.one-half .small-slider {
+    width:265px;
+    float:right;
+    margin-right:31px;
+}
+.one-half + .one-half .small-slider {
+   float:left;
+   margin-left:31px;
+}
+
+/*
+ ========================== steps header
+*******/
+
+.steps {
+    position:absolute;
+    top:-70px;
+    right:-20px;
+    width:410px;
+    color:#fff;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: 'DINProCondBlack';
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.steps span {
+    font-size: 16px;
+    display: block;
+}
+
+/*
+ ========================== final views
+*******/
+#page.result-set .lipton-area,
+#page.result-set .iteration-number{
+    display:none;
+}
+#page.result-set .iteration-number.big {
+    display:block
+}
+#page.result-set .your-set {
+    display:block;
+}
+
+
+.your-set {
+    width:601px;
+    position: absolute;
+    bottom:86px;
+    right:10px;
+    text-align: left;
+    z-index: 80;
+}
+.your-set em {
+    display: block;
+    float:none;
+    clear:both;
+    font-size: 28px;
+    font-family: DINProCondBold;
+    font-weight: normal;
+    color:#fff;
+    font-style: normal;
+    text-transform: uppercase;
+    position: relative;
+    top:2px;
+}
+.your-set > span {
+   font-size: 24px;
+    font-family: DINProCondBold;
+    font-weight: normal;
+    color:#fff;
+    font-style: normal;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.iteration-number.big {
+    height:32px;
+    line-height: 31px;
+}
+
+.iteration-number.big b {
+    font-size: 17px;
+    padding-left: 2px;
+}
+.iteration-number.big span {
+    height:36px;
+    font-size: 22px;
+    font-family: DINProBold;
+    font-weight: normal;
+    color:#87110e;
+    margin-left: 8px;
+    min-width: 68px;
+    text-align: center;
+
+}
+.lt-ie9 .your-set em  {font-size: 25px;}
+.lt-ie9 .your-set > span {font-size: 20px;}
+
+
+/* ==========================================================================
+   LIPTON PAGE
+   ========================================================================== */
+
+#lipton {
+    position:absolute;
+    top:20px;
+    width:900px;
+    left:60px;
+    height:685px;
+    text-align:center;
+    display:none;
+    z-index:0;
+}
+
+.lipton-bottle-large{
+    position:absolute;
+    left:-115px;
+    top:93px;
+    z-index:5;
+}
+.lipton-title{
+    position:absolute;
+    z-index:4;
+    left:575px;
+    top:127px;
+}
+.lipton-close{
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+#lipton .box {
+     right:300px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

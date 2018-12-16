@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>OBI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/special/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/special/jquery.fancybox.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/ie.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script src="js/vendor/jquery.fancybox.js"></script>
+    <script src="js/vendor/jquery.bxslider.js"></script>
+    <script src="js/vendor/jquery.validate.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYvmQ2B6POFobiC0koUPCJLzgjhTrSbTs&sensor=false"> </script>
+
+    <!--[if lte IE 8 ]>
+    <script type="text/javascript" src="js/vendor/selectivizr-min.js"></script>
+    <![endif]-->
+
+</head>
+    <body>
+
+            <!-- STORE SELCTION POPUP  -->
+            <div style="display:none">
+                <div id="store-select-box">
+                    <h1>Wählen Sie Ihren BAumarkt im raum Rosenheim:</h1>
+                    <div class="markt">
+                        <a class="pic" href="">
+                            <img src="media/layout/markt1.jpg" width="160" height="109" />
+                        </a>
+
+                        <h2>
+                            <a href="">
+                                Baumarkt<br/> Rosenheim-Aicherpark
+                            </a>
+                        </h2>
+                        <p>
+                            Georg-Aicher-Str. 18<br/>
+                            83026 Rosenheim
+                        </p>
+
+                    </div>
+                    <div class="markt">
+                        <a class="pic" href="">
+                            <img src="media/layout/markt2.jpg" width="160" height="109" />
+                        </a>
+
+                        <h2>
+                            <a href="">
+                                Baumarkt<br/> Raubling - Inntalstern
+                            </a>
+                        </h2>
+                        <p>
+                            Hochstraß 5<br/>
+                            83064 Raubling
+                        </p>
+
+                    </div>
+                    <div class="markt">
+                        <a class="pic" href="">
+                            <img src="media/layout/markt3.jpg" width="160" height="109" />
+                        </a>
+
+                        <h2>
+                            <a href="">
+                                Baumarkt<br/> Stephanskirchen - Ziegelberg
+                            </a>
+                        </h2>
+                        <p>
+                            Hofmühlstr. 54<br/>
+                            83071 Stephanskirchen
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-wrap">
+
+            <!-- TOP START -->
+
+            <div id="top-bar">
+
+                <div class="w-holder">
+
+                    <ul class="cleared-list nav-list mobile-landscape-hidden">
+                        <li>
+                            <span class="marker-ico f-left"></span> <b>Mein Holzfachmarkt:</b>  <a href="#store-select-box" class="markt" id="store-select">OBI Markt Rosenheim-Aicherpark</a>
+                        </li>
+                        <li>
+                            <span class="clock-ico f-left"></span> <b>Öffnungszeiten & Anfahrt:</b> <a href="#">hier</a>
+                        </li>
+                        <li>
+                            <span class="phone-ico f-left"></span>  <b>Tel.:</b>  08031 2396-0
+                        </li>
+
+                    </ul>
+
+
+                    <!-- mobile and tablet  -->
+
+                    <a id="mobile-nav-link" data-dropdown="mobile-nav-dropdown" class="mobile-nav-btn withDrop mobile-landscape-visible" href="show-mobile-menu">
+                        <img src="media/layout/icons/mobile_menu_ico.png" alt="Mobile menu ico" width="23" height="13" />
+                    </a>
+
+                    <div class="siteSearch f-right tablet-visible mobile-hidden">
+                        <form accept-charset="utf-8" method="get" action="_self">
+
+                            <input type="text" placeholder="Suchbegriff ..." name="" autocomplete="off"/>
+                            <input type="submit" value="Los" />
+
+                        </form>
+                    </div>
+
+                    <a data-dropdown="mobile-search-dropdown" href="#" class="mobile-search-btn f-right withDrop">
+                        <img src="media/layout/icons/magnifying-glass-ico.png" width="14" height="14" alt="magnifying-glass"/>
+                    </a>
+
+
+                    <a data-dropdown="mobile-markt-dropdown" class="fake-selectBox mobile-markt-selector mobile-landscape-visible withDrop" >
+                        <span class="fake-selectBox-label">OBI Aicherpark</span>
+                        <span class="fake-selectBox-arrow"></span>
+                    </a>
+
+                    <!-- mobile and tablet end   -->
+
+                </div>
+            </div>
+
+            <header id="main-header">
+                 <div class="w-holder">
+
+                     <a id="logo" href="index.html"><img src="media/layout/obi-logo.png" width="193" height="111" alt="OBI logo" /></a>
+
+                     <ul id="main-site-menu" class="cleared-list mobile-landscape-hidden">
+                         <li>
+                             <a href="">Aktuell</a>
+                         </li>
+                         <li>
+                             <a href="">Sortiment</a>
+                         </li>
+                         <li class="current">
+                             <a href="events.html">Events</a>
+                         </li>
+                         <li>
+                             <a href="">Services</a>
+                         </li>
+                         <li>
+                             <a href="">Unternehmen</a>
+                         </li>
+                     </ul>
+
+                     <div class="siteSearch f-right tablet-hidden">
+                         <form accept-charset="utf-8" method="get" action="_self">
+
+                             <input type="text" placeholder="Suchbegriff ..." name="" autocomplete="off"/>
+                             <input type="submit" value="Los" />
+
+                         </form>
+                     </div>
+
+
+                 </div>
+            </header>
+
+            <!-- TOP END -->
+
+
+
+            <!-- MAIN IMAGE SECTION START -->
+
+            <section id="main-image-section">
+
+                <div class="w-holder">
+
+                    <div class="single-photo">
+                        <img src="media/temp/head_photo4.jpg" width="984" height="340" alt="Head photo" />
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- MAIN IMAGE SECTION END -->
+
+            <!-- CONTENT SECTION START -->
+
+            <section id="main-content" class="htmlarea-content-body">
+                <div class="w-holder">
+
+                    <nav class="breadcrumbs mobile-hidden">
+                        <a href="">Home &nbsp;>&nbsp;</a><a href="">Events   &nbsp;>&nbsp; </a><span>Übersicht</span>
+                    </nav>
+
+                    <div class="left-col">
+
+                        <h1>Bei uns ist was los:<br/>
+                            Aktuelle Events und Veranstaltungen</h1>
+
+                        <article class="stadard-article">
+
+                            <a href="" class="pic"><img src="media/temp/article_pic1.jpg" width="232" height="153" alt="" /></a>
+                            <div class="cont">
+                                <p><a href=""><b>Kinderbasteln</b></a>
+                                <br/><b>26.10.2013 - 10 - 16 Uhr</b></p>
+
+                                <p>Wir wissen, was Kindern Spaß macht. Aus diesem Grund bietet wir am Samstag den 26.10.2013 wieder das Kinderbasteln in allen OBI Baumärkten im Raum Rosenheim an.</p>
+                                <div class="standard-button arrowed f-left ">
+                                    <a href="">Mehr erfahren <span></span></a>
+
+                                </div>
+                            </div>
+                        </article>
+                        <article class="stadard-article">
+
+                            <a href="" class="pic"><img src="media/temp/article_pic2.jpg" width="232" height="153" alt="" /></a>
+                            <div class="cont">
+                                <p><a href=""><b>Verkaufsoffener Sonntag</b></a>
+                                    <br/><b>27.10.2013 - 08 - 17 Uhr</b></p>
+
+                                <p>Die OBI Baumärkte im Raum Rosenheim laden am Sonntag den 27.10.2013 zum verkaufsoffenen Sonntag! Neben zahlreichen Rabatte winkt ein tolles Gewinnspiel mit attraktiven Preisen.</p>
+                                <div class="standard-button arrowed f-left ">
+                                    <a href="">Mehr erfahren <span></span></a>
+
+                                </div>
+                            </div>
+                        </article>
+                        <article class="stadard-article">
+
+                            <a href="" class="pic"><img src="media/temp/article_pic3.jpg" width="232" height="153" alt="" /></a>
+                            <div class="cont">
+                                <p><a href=""><b>Große Schlachtpartie</b></a>
+                                    <br/><b>09.11.2013 - 10 - 17 Uhr</b></p>
+
+                                <p>Herbstzeit bedeutet Schlachtpartiezeit bei OBI. Aus diesem Grund findet am
+                                    Samstag den 09.11.2013 die große Schlachtpartie bei OBI statt. Ein schmack-
+                                    haftes Buffet wartet darauf, verspeist zu werden.</p>
+                                <div class="standard-button arrowed f-left ">
+                                    <a href="">Mehr erfahren <span></span></a>
+
+                                </div>
+                            </div>
+                        </article>
+                        <article class="stadard-article">
+
+                            <a href="" class="pic"><img src="media/temp/article_pic4.jpg" width="232" height="153" alt="" /></a>
+                            <div class="cont">
+                                <p><a href=""><b>Sonderposten Verkauf</b></a>
+                                    <br/><b>15.11.2013 - 08 - 17 Uhr</b></p>
+
+                                <p>Der OBI Sonderposten Verkauf startet wieder. Achtung, aufgepasst: Jetzt muss alles raus - Sonderposten zum Sonderpreis. Ab 15.11.2013 in den OBI Filialen im Raum Rosenheim.</p>
+                                <div class="standard-button arrowed f-left ">
+                                    <a href="">Mehr erfahren <span></span></a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <aside id="right-col" class="right-col">
+
+                        <!-- Slider desktop version -->
+                        <div class="aside-slider mobile-landscape-hidden">
+
+                            <div class="slide">
+                                <figure class="grey-box">
+                                  <a href=""><img src="media/temp/boxadv1.jpg" width="231" height="209" alt="adv" /></a>
+                                  <figcaption>
+                                     <h2>Aktuelle Angebote - für schnäppchenjäger</h2>
+                                     <p>Stöbern Sie in unseren aktuellen Angeboten. Wir freuen uns auf Sie.</p>
+                                  </figcaption>
+                                </figure>
+
+                                <figure class="grey-box product">
+                                    <a href=""><img src="media/temp/boxprod1.jpg" width="227" height="102" alt="adv" /></a>
+                                    <figcaption>
+                                        <p>Gartenmöbelgruppe Nina II</p>
+                                        <h2>€ 199.99 <small>statt 210.00</small></h2>
+                                    </figcaption>
+                                </figure>
+                             </div>
+                            <div class="slide">
+                                <figure class="grey-box">
+                                    <a href=""><img src="media/temp/boxadv1.jpg" width="231" height="209" alt="adv" /></a>
+                                    <figcaption>
+                                        <h2>Aktuelle Angebote - für schnäppchenjäger</h2>
+                                        <p>Stöbern Sie in unseren aktuellen Angeboten. Wir freuen uns auf Sie.</p>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="grey-box product">
+                                    <a href=""><img src="media/temp/boxprod1.jpg" width="227" height="102" alt="adv" /></a>
+                                    <figcaption>
+                                        <p>Gartenmöbelgruppe Nina II</p>
+                                        <h2>€ 199.99 <small>statt 210.00</small></h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide">
+                                <figure class="grey-box">
+                                    <a href=""><img src="media/temp/boxadv1.jpg" width="231" height="209" alt="adv" /></a>
+                                    <figcaption>
+                                        <h2>Aktuelle Angebote - für schnäppchenjäger</h2>
+                                        <p>Stöbern Sie in unseren aktuellen Angeboten. Wir freuen uns auf Sie.</p>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="grey-box product">
+                                    <a href=""><img src="media/temp/boxprod1.jpg" width="227" height="102" alt="adv" /></a>
+                                    <figcaption>
+                                        <p>Gartenmöbelgruppe Nina II</p>
+                                        <h2>€ 199.99 <small>statt 210.00</small></h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                         </div>
+
+                        <!-- Slider mobile version -->
+                        <div class="aside-slider desktop-hidden mobile-landscape-visible">
+
+                            <div class="slide">
+                                <figure class="grey-box">
+                                    <a href=""><img src="media/temp/boxadv1.jpg" width="231" height="209" alt="adv" /></a>
+                                    <figcaption>
+                                        <h2>Aktuelle Angebote - für schnäppchenjäger</h2>
+                                        <p>Stöbern Sie in unseren aktuellen Angeboten. Wir freuen uns auf Sie.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide">
+                                <figure class="grey-box product">
+                                    <a href=""><img src="media/temp/boxprod1square.jpg" width="231" height="213" alt="prod" /></a>
+                                    <figcaption>
+                                        <p>Gartenmöbelgruppe Nina II</p>
+                                        <h2>€ 199.99 <small>statt 210.00</small></h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide">
+                                <figure class="grey-box">
+                                    <a href=""><img src="media/temp/boxadv1.jpg" width="231" height="209" alt="adv" /></a>
+                                    <figcaption>
+                                        <h2>Aktuelle Angebote - für schnäppchenjäger</h2>
+                                        <p>Stöbern Sie in unseren aktuellen Angeboten. Wir freuen uns auf Sie.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide">
+                                <figure class="grey-box product">
+                                    <a href=""><img src="media/temp/boxprod1square.jpg" width="231" height="213" alt="prod" /></a>
+                                    <figcaption>
+                                        <p>Gartenmöbelgruppe Nina II</p>
+                                        <h2>€ 199.99 <small>statt 210.00</small></h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide">
+                                <figure class="grey-box">
+                                    <a href=""><img src="media/temp/boxadv1.jpg" width="231" height="209" alt="adv" /></a>
+                                    <figcaption>
+                                        <h2>Aktuelle Angebote - für schnäppchenjäger</h2>
+                                        <p>Stöbern Sie in unseren aktuellen Angeboten. Wir freuen uns auf Sie.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide">
+                                <figure class="grey-box product">
+                                    <a href=""><img src="media/temp/boxprod1square.jpg" width="231" height="213" alt="prod" /></a>
+                                    <figcaption>
+                                        <p>Gartenmöbelgruppe Nina II</p>
+                                        <h2>€ 199.99 <small>statt 210.00</small></h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+
+            <!-- CONTENT SECTION END -->
+
+            <!-- CONTENT SECTION BOTTOM START  -->
+
+            <section id="content-bottom">
+                <div class="w-holder">
+
+
+                   <div class="banners-row">
+                        <div class="picture-linkbox col_1-4">
+                            <a href="">
+                                <img class="pic" src="media/temp/link_banner_1.jpg" width="231" height="97" alt="banner_1" />
+                                <span class="title">Anhängerverleih</span>
+                                <span class="round-btn"><img src="media/layout/icons/round_arrow_green.png" width="31" height="31" alt="green round arrow" /></span>
+
+                            </a>
+                        </div>
+
+                        <div class="picture-linkbox  col_1-4">
+                            <a href="">
+                                <img class="pic" src="media/temp/link_banner_2.jpg" width="231" height="97" alt="banner_2" />
+                                <span class="title">Lieferservice</span>
+                                <span class="round-btn"><img src="media/layout/icons/round_arrow_green.png" width="31" height="31" alt="green round arrow" /></span>
+                            </a>
+                        </div>
+
+                        <div class="picture-linkbox  col_1-4">
+                            <a href="">
+                                <img class="pic" src="media/temp/link_banner_3.jpg" width="231" height="97" alt="banner_3" />
+                                <span class="title">Finanzierungs - service</span>
+                                <span class="round-btn"><img src="media/layout/icons/round_arrow_green.png" width="31" height="31" alt="green round arrow" /></span>
+
+                            </a>
+                        </div>
+
+                        <div class="picture-linkbox  col_1-4">
+                            <a href="">
+                                <img class="pic" src="media/temp/link_banner_4.jpg" width="231" height="97" alt="banner_4" />
+                                <span class="title">OBI Top-Kundenkarte</span>
+                                <span class="round-btn"><img src="media/layout/icons/round_arrow_green.png" width="31" height="31" alt="green round arrow" /></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!--social icons -->
+                    <div class="social-icons">
+
+                        <div><a class="facebook-ico" href="">FACEBOOK<small>Like us</small></a></div>
+
+                        <div><a class="twitter-ico" href="">Twitter<small>Erfahre mehr</small></a></div>
+
+                        <div><a class="youtube-ico" href="">Youtube<small>Klick dich rein</small></a></div>
+
+                        <div><a class="mail-ico" href="">Newsletter<small>Stets auf dem Laufenden</small></a></div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- CONTENT SECTION BOTTOM END  -->
+
+
+            <!--  FOOTER START  -->
+
+            <footer id="main-footer">
+                <div class="w-holder mobile-landscape-hidden">
+
+                      <div class="col_1-4">
+                           <dl>
+                               <dt><a href="">Aktuell</a></dt>
+                           </dl>
+                          <dl>
+                              <dt><a href="">Sortiment</a></dt>
+                              <dd><a href="">» Böden & Teppiche</a></dd>
+                              <dd><a href="">» Türen</a></dd>
+                              <dd><a href="">» Holz im Garten</a></dd>
+                              <dd><a href="">» Wand & Decke</a></dd>
+                              <dd><a href="">» Bauen mit Holz</a></dd>
+                              <dd><a href="">» Küchenstudio</a></dd>
+                          </dl>
+                          <dl>
+                              <dt><a href="">Events</a></dt>
+                          </dl>
+                      </div>
+                      <div class="col_1-4">
+
+                          <dl>
+                              <dt><a href="">Services</a></dt>
+                              <dd><a href="">» Kontakt</a></dd>
+                              <dd><a href="">» Standorte</a></dd>
+                              <dd><a href="">» Öffnungszeiten & Anfahrt</a></dd>
+                              <dd><a href="">» Newsletter</a></dd>
+                              <dd><a href="">» OBI Top-Kundenkarte</a></dd>
+                          </dl>
+
+                          <dl>
+                              <dd><a href="">» HARO Infothek</a></dd>
+                              <dd><a href="">» Informationsfilme</a></dd>
+                              <dd><a href="">» Welche OBI-Markt ist der richtige für mich?</a></dd>
+                          </dl>
+
+                      </div>
+                      <div class="col_1-4">
+
+                          <dl>
+                              <dt><a href="">Unternehmen</a></dt>
+                              <dd><a href="">» Über uns</a></dd>
+                              <dd><a href="">» Karrriere/Jobs</a></dd>
+                              <dd><a href="">» Kontakt & Bewerbung</a></dd>
+                              <dd><a href="">» Ausbildung bei uns</a></dd>
+                          </dl>
+
+                          <dl>
+                              <dd><a href="">» AGB</a></dd>
+                              <dd><a href="">» Datenschutz</a></dd>
+                              <dd><a href="">» Impressum</a></dd>
+                          </dl>
+
+                      </div>
+                    <div class="col_1-4">
+                        <h3>Baumarkt wählen</h3>
+                        3 x rund um Rosenheim.<br/>
+                        Jetzt auswählen:
+                        <div class="picture-linkbox mini tablet-hidden">
+                            <a href="">
+                                <img class="pic" src="media/temp/link_banner_2.jpg" width="231" height="97" alt="banner_2" />
+                                <span class="title">Stephanskirchen</span>
+                                <span class="round-btn"><img src="media/layout/icons/round_arrow_green.png" width="31" height="31" alt="green round arrow" /></span>
+                            </a>
+                        </div>
+
+                        <div class="picture-linkbox mini tablet-hidden">
+                            <a href="">
+                                <img class="pic" src="media/temp/link_banner_3.jpg" width="231" height="97" alt="banner_3" />
+                                <span class="title">Raubling</span>
+                                <span class="round-btn"><img src="media/layout/icons/round_arrow_green.png" width="31" height="31" alt="green round arrow" /></span>
+
+                            </a>
+                        </div>
+                        <br/><br/>
+                        <select class="standard-select desktop-hidden" name="standort">
+                             <option name="" value="0">Standort wählen ...</option>
+                             <option name="" value="">Standort 1</option>
+                             <option name="" value="">Standort 2</option>
+                             <option name="" value="">Standort 3</option>
+                        </select>
+
+                        <select class="standard-select desktop-hidden" name="region">
+                            <option name="" value="0">Region wählen ...</option>
+                            <option name="" value="">Region 1</option>
+                            <option name="" value="">Region 2</option>
+                            <option name="" value="">Region 3</option>
+                        </select>
+
+                    </div>
+
+                </div>
+            </footer>
+
+            <nav id="bottom-bar">
+                <div class="w-holder">
+                    <ul class="cleared-list">
+                        <li>
+                            © W9 GmbH 2013
+                        </li>
+
+                        <li>
+                            <a href="">AGB</a>
+                        </li>
+                        <li class="mobile-hidden">
+                            <a href="">Datenschutz</a>
+                        </li>
+                        <li class="mobile-hidden">
+                            <a href="">Sitemap</a>
+                        </li>
+                        <li>
+                            <a href="">Impressum</a>
+                        </li>
+                   </ul>
+
+                </div>
+            </nav>
+
+            <!--  FOOTER END  -->
+
+         </div>
+
+
+        <!-- mobile and tablet TOP - DROPDOWNS  -->
+
+        <div id="mobile-nav-dropdown" data-parent="mobile-nav-btn" class="dropdown-silver">
+            <span><img src="media/layout/icons/mobile_menu_ico_h.png" height="13" width="23" alt="mobile menu" /></span>
+            <div class="bg">
+                 <ul class="cleared-list capitalize">
+                    <li>
+                        <a href="">Aktuell</a>
+                    </li>
+                    <li>
+                        <a href="">Sortiment</a>
+                    </li>
+                    <li>
+                        <a href="">Events</a>
+                    </li>
+                    <li>
+                        <a href="">Services</a>
+                    </li>
+                    <li>
+                        <a href="">Unternehmen</a>
+                    </li>
+                </ul>
+                <div class="up"></div>
+           </div>
+        </div>
+
+        <div id="mobile-search-dropdown" data-parent="mobile-search-btn" class="dropdown-silver right">
+
+            <span><img src="media/layout/icons/magnifying-glass-ico-orange.png" height="14" width="14" alt="mobile menu" /></span>
+            <div class="bg">
+                <div class="siteSearch">
+                    <form accept-charset="utf-8" method="get" action="_self">
+
+                        <input type="text" placeholder="Suchbegriff ..." name="" autocomplete="off"/>
+                        <input type="submit" value="Los" />
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="mobile-markt-dropdown" data-parent="mobile-markt-selector"  class="dropdown-silver">
+            <div class="bg">
+                <ul class="cleared-list">
+                    <li>
+                        <a href="">OBI Aicherpark</a>
+                    </li>
+                    <li>
+                        <a href="">OBI Stephanskirchen</a>
+                    </li>
+                    <li>
+                        <a href="">OBI Raubling</a>
+                    </li>
+                </ul>
+                <div class="up"></div>
+            </div>
+         </div>
+
+
+        <!-- mobile and tablet end  -->
+
+        <script src="js/various_libs.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>

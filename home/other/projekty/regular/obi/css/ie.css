@@ -1,0 +1,116 @@
+/* ==========================================================================
+   SITE TOP
+   ========================================================================== */
+
+.lt-ie8 .siteSearch input[type="submit"] {
+    line-height: 28px;
+}
+.lt-ie9 .siteSearch input[type=text]{
+    line-height: 32px;
+}
+
+
+/* ==========================================================================
+   SITE CONTENT
+   ========================================================================== */
+
+
+/* GRID */
+
+.lt-ie8 .col_1-4{
+    width:23.5%;
+    float:left;
+    margin-right:2%;
+    padding-right: 0;
+
+}
+.lt-ie8 .col_1-4:nth-child(4n){
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.lt-ie8 .col_1-2{
+    width:48%;
+    float:left;
+    margin-right:4%;
+    height: 100%;
+}
+.lt-ie8 .col_1-2 + .col_1-2{
+    width: 48%;
+    padding-right: 0;
+
+}
+.lt-ie8 .col_3-7.padding15{
+    width:36%;
+    float:left;
+    border:none;
+    margin-right: 2%;
+}
+.lt-ie8 .col_4-7.padding15 {
+    width:53%;
+    float: left;
+}
+
+.lt-ie8 .social-icons div {
+    width:23.5%;
+    float:left;
+    margin-right:2%;
+    padding-right: 0;
+
+}
+.lt-ie8 .social-icons div:nth-child(4n){
+    margin-right: 0;
+    padding-right: 0;
+
+}
+.lt-ie8  .banners-row  {
+    margin-bottom:30px ;
+    overflow: hidden;
+}
+
+/* round button */
+
+.lt-ie8 .picture-linkbox .round-btn {
+    bottom:5px;
+}
+.lt-ie8 .picture-linkbox.mini .round-btn {
+    bottom: 3px;
+}
+
+
+/* forms */
+
+.lt-ie8  .form li {
+   overflow: visible;
+}
+.lt-ie8 .form li .half {
+    width: 48.9%;
+}
+
+/* sliders */
+
+.lt-ie9 #content-slider .bx-pager.bx-default-pager .bx-pager-item a {border-right:1px solid #000; border-left: 0;}
+
+.lt-ie9 #home-slider-banners .slide .picture-linkbox a {
+    display: block;
+    height: 101px;
+    width: 231px;
+}
+/* share section */
+
+.lt-ie9 #share-section {
+    position: absolute;
+    right:0;
+    bottom: 11px;
+}
+
+
+
+/* ==========================================================================
+   SITE BOTTOM
+   ========================================================================== */
+
+.lt-ie8 #bottom-bar li {
+  float:left;
+  margin-top: 9px;
+}

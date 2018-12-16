@@ -1,0 +1,319 @@
+/* ==========================================================================
+   MAIN HEADER
+   ========================================================================== */
+
+.main-header {
+    position: fixed;
+    z-index:4;
+    top:0;
+    padding: 25px 0;
+    width: 100%;
+    background: #fff;
+    background: rgba(255,255,255,0.93);
+    -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+    box-shadow: 0px 0px 3px 2px #cccccc;
+}
+.no-boxshadow .main-header{
+    border-bottom: 1px solid #cccccc;
+}
+.main-header + .main-content {
+    margin-top: 43px;
+}
+/* --------------------- LOGO   ----------------------------- */
+
+.main-header .logo {
+    margin-left: 24px;
+    margin-top: -2px;
+}
+
+/* ------------------------- HEAD LOGIN   -------------------- */
+
+.head-login .btn {
+    float: right;
+    margin-right: 28px;
+}
+.head-login.logged {
+    position: relative;
+    padding-right: 10px;
+
+}
+.head-login.logged:hover .head-activity {
+    display: block;
+}
+
+/* ------------ user info*/
+.head-login .user-info {
+    color:#ff445e;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    line-height: 36px;
+    padding-right: 60px;
+    display: block;
+}
+.head-login .user-info img {
+   width: 45px;
+   height:45px;
+   border-radius: 45px;
+   margin-left: 10px;
+   position: absolute;
+   right:0;
+   top:-5px;
+}
+.head-login .user-info span {
+    background:#ff445e;
+    color:#fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 45px;
+    display: block;
+    position: absolute;
+    top:-14px;
+    right: -2px;
+}
+
+/* ----------- users activity */
+.head-login .head-activity{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width:380px;
+    right:5px;
+    top:36px;
+    padding-top: 15px;
+    z-index: 999999;
+}
+.head-login .head-activity .arr{
+    width: 17px;
+    height: 7px;
+    background: url(../img/arr.png) no-repeat left 1px;
+    position: absolute;
+    right:18px;
+    top:8px;
+
+}
+.head-login .head-activity ul {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+    box-shadow: 0px 0px 3px 2px #cccccc;
+}
+.head-login .head-activity  li {
+    list-style: none;
+    font-size:12px;
+    padding: 14px 14px 14px 65px;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    color: #818181;
+}
+.head-login .head-activity li img {
+   width: 36px;
+   height: 36px;
+   border-radius: 36px;
+   position: absolute;
+   left:15px;
+   top:15px;;
+}
+.head-login .head-activity li p {
+    margin: 0;
+}
+.head-login .head-activity .user-link {
+    color:#21d7de;
+    text-decoration: none;
+}
+.head-login .head-activity .poll-link{
+   color: #434343;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+.head-login .head-activity .time {
+    color:#b8b8b8;
+    font-size: 10px;
+}
+.head-login .head-activity .last {
+    padding: 0;
+    text-align: center;
+}
+.head-login .head-activity .last a {
+    font-size:12px;
+    background:#f1f1f1 ;
+    line-height:46px;
+    display: block;
+    color:#333333;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* ------------------------ HEAD SEARCH   --------------------- */
+
+.head-search {
+    position: absolute;
+    width:52%;
+    left:24%;
+}
+
+.head-search form {
+    width:70%;
+    width: -moz-calc(100% - 135px);
+    width: -webkit-calc(100% - 135px);
+    width: calc(100% - 135px);
+    margin-right: 22px;
+}
+.head-search input[type="submit"]{
+    float: left;
+    width: 44px;
+    height: 36px;
+    font-size: 0;
+    line-height: 0;
+    border: 0;
+    background: url(../img/sprite.png) no-repeat top left;
+}
+.head-search input[type="text"]{
+    float: left;
+    height: 36px;
+    width:74%;
+    width: -moz-calc(100% - 78px);
+    width: -webkit-calc(100% - 78px);
+    width: calc(100% - 78px);
+    background:#f1f1f1;
+    border: 0;
+    padding: 0 17px;
+    font-size: 12px;
+    color:#363636;
+}
+
+.head-search ::-webkit-input-placeholder{
+    color:#363636;
+}
+.head-search ::-moz-placeholder{
+    color:#363636;
+}
+.head-search :-moz-placeholder{
+    color:#363636;
+}
+.head-search :-ms-input-placeholder {
+    color:#363636;
+}
+
+.lt-ie9 .head-search input[type="text"]{
+    line-height: 36px;
+}
+
+/* ==========================================================================
+  MAIN FOOTER
+  ========================================================================== */
+
+.main-footer{
+   background: #e2e2e2;
+   padding: 26px 24px 25px 24px;
+   font-size: 12px;
+   overflow: hidden;
+   position: absolute;
+   bottom:0;
+   left:0;
+   right: 0;
+
+}
+
+.main-footer ul  {
+   list-style: none;
+   margin:0;
+   padding: 0;
+}
+
+.main-footer ul li {
+  display: inline;
+  color: #838383;
+  margin:0;
+  padding: 0;
+
+}
+
+.main-footer ul li a {
+   color: #00baaf;
+   text-decoration: none;
+   line-height: 12px;
+}
+
+.main-footer p {
+   font-size: 13px;
+   color:#7a7a7a;
+   padding: 0;
+   margin:0;
+   line-height: 12px;
+}
+
+
+/* ==========================================================================
+  MENU
+  ========================================================================== */
+
+.menu {
+    float:left;
+    width:257px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+    box-shadow: 0px 0px 3px 2px #cccccc;
+}
+.menu ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+.menu li {
+    border-bottom: 1px solid #ececec;
+    border-top:1px solid #f9f9f9;
+    padding: 0 20px;
+}
+.menu li:last-child {border-bottom: 0;}
+.menu li > a {
+    font-size: 12px;
+    font-weight: 600;
+    color:#333333;
+    text-decoration: none;
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+.menu li > a.expandable {
+    padding-left: 28px;
+    background: url(../img/sprite.png) no-repeat -60px 2px;
+}
+.menu li.open > a.expandable {
+    background-position: -60px -21px ;
+}
+
+.menu li .submenu{
+    padding-bottom: 20px;
+    display: none;
+}
+.menu li .submenu span {
+    float: right;
+    color: #bebdbd;
+    font-weight: 300;
+    font-size: 12px;
+}
+.menu li .submenu .ico {margin-top: 9px;}
+.menu li .submenu a{
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    color:#8b8b8b;
+    text-decoration: none;
+    line-height: 30px;
+    padding-left: 28px;
+    padding-right: 8px;
+    font-weight: 300;
+}
+.menu li .submenu a.active {
+    color:#ff445e;
+}
+
+
+.main-content.account-section .menu {
+    display: none;
+}

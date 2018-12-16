@@ -1,0 +1,155 @@
+/* -----------------  SIMPLE SELECT  ---------------- */
+
+.hidden_select_container {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.simpleselect,
+.simpleselect * {
+    box-sizing: content-box;
+}
+
+.simpleselect {
+    position: relative;
+    height: 29px;
+    text-transform: uppercase;
+    color: #434343;
+    font-size: 9px;
+}
+
+.simpleselect .options {
+    width: 100%;
+}
+
+.simpleselect .placeholder {
+    padding: 6px 40px 6px 10px;
+    line-height: 18px;
+    cursor: pointer;
+}
+.simpleselect .options .option {
+    padding: 6px 10px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.simpleselect .placeholder,
+.simpleselect .options {
+    background: #f7f7f7;
+    border: 1px solid #c6c6c6;
+}
+
+.simpleselect .placeholder {
+    position: relative;
+}
+
+.simpleselect .placeholder:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 14px;
+    width: 8px;
+    background: url(../img/sprite.png) no-repeat 0 -250px;
+}
+
+
+
+.simpleselect .options {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.simpleselect .options .option.active {
+    background: #fff;
+}
+
+/* iCheck plugin Minimal skin, black
+----------------------------------- */
+.icheckbox_minimal,
+.iradio_minimal {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url(../img/minimal.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal {
+    background-position: 0 0;
+}
+
+.icheckbox_minimal.checked {
+    background-position: -40px 0;
+}
+.icheckbox_minimal.disabled {
+    background-position: -60px 0;
+    cursor: default;
+}
+.icheckbox_minimal.checked.disabled {
+    background-position: -80px 0;
+}
+
+.iradio_minimal {
+    background-position: -100px 0;
+}
+
+.iradio_minimal.checked {
+    background-position: -140px 0;
+}
+.iradio_minimal.disabled {
+    background-position: -160px 0;
+    cursor: default;
+}
+.iradio_minimal.checked.disabled {
+    background-position: -180px 0;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox_minimal,
+    .iradio_minimal {
+        background-image: url(../img/minimal@2x.png);
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}
+
+
+.icheckbox_minimal2,
+.iradio_minimal2 {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    background: url(../img/minimal2.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minima2l {
+    background-position: 0 0;
+}
+
+.icheckbox_minimal2.checked {
+    background-position: -27px 0;
+}
+.icheckbox_minimal2.disabled {
+    background-position: -60px 0;
+    cursor: default;
+}
+.icheckbox_minimal2.checked.disabled {
+    background-position: -80px 0;
+}

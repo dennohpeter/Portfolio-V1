@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-nav-el.css">
+
+    <link rel="stylesheet" href="css/third-party.css">
+
+    <link rel="stylesheet" media="(max-width: 1200px)" href="css/media-desktop-s.css">
+    <link rel="stylesheet" media="(max-width: 960px)" href="css/media-tablet.css" />
+    <link rel="stylesheet" media="(max-width: 760px)" href="css/media-mobile.css" />
+
+
+    <script src="js/libs/modernizr.min.js"></script>
+
+</head>
+<body>
+
+    <!-- ------------  HEADER ---------- -->
+
+    <header class="main-header">
+
+        <a href="index.html" class="logo f_left"><img src="img/logo.png" alt="OpenPolls - logo" /></a>
+
+
+        <div class="head-login f_right mobile-hidden">
+
+            <a href="" class="btn primary">SIGN UP</a>
+            <a href="" class="btn neutral with-ico">SIGN IN <i class="fa fa-lock">&#xf023;</i></a>
+
+        </div>
+
+        <div class="head-search mobile-hidden">
+
+            <form class="f_left">
+                <input type="text" value="" placeholder="Search fo a poll" />
+                <input type="submit" />
+            </form>
+
+            <a href="" class="btn tertiary f_right mobile-hidden">OPEN A POLL</a>
+
+        </div>
+
+        <a  class="mobile-menu mobile-visible  f_right" href=""></a>
+        <a  class="mobile-search mobile-visible f_right" href=""></a>
+
+
+    </header>
+
+
+    <div class="main-content">
+
+
+        <!-- ------------  MENU ---------- -->
+
+        <aside class="menu mobile-hidden">
+            <ul>
+                <li>
+                    <a class="expandable" href="">PROFILE</a>
+                    <div class="submenu">
+                        <a href="profile_openedpolls.html">Opened Polls <span>12</span></a>
+                        <a  href="profile_comments.html">My Comments <span>12</span></a>
+                        <a href="">My Watchlist <span>12</span></a>
+                        <a href="profile_settings.html">Settings <span class="ico ico-user"></span></a>
+                    </div>
+                </li>
+                <li>
+                    <a class="expandable" href="">NETWORK</a>
+                    <div class="submenu">
+                        <a href="subscription_followers.html">Followers <span>12</span></a>
+                        <a href="subscription_following.html">Following <span>12</span></a>
+                    </div>
+                </li>
+                <li>
+                    <a class="expandable" href="">Categories</a>
+                    <div class="submenu">
+                        <a href="">Category one</a>
+                        <a href="">Category two</a>
+                        <a href="">Category three</a>
+                        <a href="">Category four</a>
+                        <a href="">Category five</a>
+                        <a href="">Category six</a>
+                        <a href="">Category seven</a>
+                        <a href="">Category eight</a>
+
+                    </div>
+                </li>
+                <li class="mobile-visible">
+                    <a href="">OPEN A POLL</a>
+                </li>
+                <li class="mobile-visible">
+                    <a href="">SIGN UP</a>
+                </li>
+                <li class="mobile-visible">
+                    <a href="">SIGN IN</a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <section class="right-col-flex">
+
+            <section class="open-poll-page">
+
+                <header>
+                    <h2>
+                      Open a Poll
+                    </h2>
+                </header>
+
+                <form class="form-theme-1" action="" >
+                    <ul>
+                        <li>
+                            <input id="poll-title-input" type="text" placeholder="Type Your Question" value="" />
+                        </li>
+                        <li>
+                            <textarea id="poll-desc-input" name="" cols="30" rows="5" placeholder="Additional Details"></textarea>
+                        </li>
+                        <li class="gray-select">
+                            <select id="poll-cat-select" class="selectpicker">
+                                <option value="0">Select Category</option>
+                                <option value="CATEGORY ONE">Category one</option>
+                                <option value="CATEGORY TWO">Category two</option>
+                                <option value="CATEGORY THREE">Category three</option>
+                                <option value="CATEGORY FOUR">Category foun</option>
+                                <option value="CATEGORY FIVE">Category five</option>
+                            </select>
+                        </li>
+                        <li class="inline-two gray-select">
+
+                            <div>
+                                <select id="poll-privacy-select" class="selectpicker">
+                                    <option value="public">Open to public</option>
+                                    <option value="followers">Open to followers</option>
+                                    <option value="password">Password protected</option>
+                                </select>
+                            </div>
+                            <div class="privacy-public">
+                                <select class="selectpicker">
+                                    <option>Australia</option>
+                                    <option></option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                </select>
+                            </div>
+
+                            <div class="privacy-password hidden">
+                                <input type="password" placeholder="Password"/>
+                            </div>
+
+                            <div class="clear"></div>
+                        </li>
+                        <li class="expandable">
+                            <label class="inline-checkbox"><input type="checkbox" name="" />Add media</label>
+                        </li>
+                        <li class="hidden">
+
+                            <input type="file" />
+                            <input type="text" placeholder="Video Link"/>
+
+                        </li>
+                        <li class="expandable">
+                            <label class="inline-checkbox"><input type="checkbox" name="" />Add tags</label>
+                        </li>
+                        <li class="hidden">
+                            <input type="text" placeholder="Add Tags (separate by comma or space)"/>
+                        </li>
+                        <li class="expandable">
+                            <label class="inline-checkbox"><input type="checkbox" name="" />Add expiry</label>
+                        </li>
+                        <li class="hidden inline-three gray-select">
+                            <div class="inline-three-short">
+                                <select class="selectpicker">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                </select>
+                            </div>
+                            <div class="inline-three-medium">
+                                <select class="selectpicker">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                </select>
+                            </div>
+                            <div class="inline-three-medium">
+                                <select class="selectpicker">
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                    <option>2012</option>
+                                </select>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="hidden">
+                            <input type="text" placeholder="Add Tags (separate by comma or space)"/>
+                        </li>
+                        <li>
+                            <label class="inline-checkbox"><input type="checkbox" name="" />Allow comments</label>
+                        </li>
+                        <li>
+                            <label class="inline-checkbox"><input type="checkbox" name="" />Allow sharing</label>
+                        </li>
+                        <li>
+                            <label class="inline-checkbox"><input type="checkbox" name="" />Allow embeding</label>
+                        </li>
+                        <li>
+                            <label class="inline-checkbox"><input type="checkbox" name="" />Notify followers</label>
+                        </li>
+
+                        <li>
+                            <input class="btn primary f_right submit" type="submit" value="OPEN POLL"/>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+
+                </form>
+
+            </section>
+
+            <!-- ------------  POll ---------- -->
+            <div class="item poll sample">
+
+                <a class="poll-cat" href="">CATEGORY</a>
+                <a class="poll-pic" href="">
+                    <img src="img/tmp/grid-image7.jpg" alt="Poll"/>
+                </a>
+                <div class="poll-user">
+                    <a href=""><img src="img/tmp/user-ico2.jpg" alt="user"/></a>
+                    <p><small>OPENED BY</small> <a href="">BRIAN JONES</a></p>
+                </div>
+
+                <h3>
+                    Here is the question that the poster is asking?
+                </h3>
+                <p class="poll-desc">
+                    Here is the question that the. <a href="">more</a>
+                </p>
+
+                <div class="vote-block" data-yes="50" data-no="50">
+
+                    <a href="" class="btn secondary btn-large yes-btn">Yes</a>
+                    <a href="" class="btn primary btn-large no-btn">No</a>
+
+                    <span class="vote-yes"></span>
+                    <span class="vote-no"></span>
+
+                </div>
+
+                <footer class="poll-nav">
+                    <em class="floater"></em>
+                    <div class="f_left">
+                            <span>
+                                <i class="ico ico-chart"></i>
+                                104
+                            </span>
+                            <span>
+                               <i class="ico ico-clock"></i>
+                               2d
+                            </span>
+                    </div>
+
+                    <div class="f_right">
+                        <a href=""><i class="ico ico-share"></i></a>
+                        <a href=""><i class="ico ico-code"></i></a>
+                        <a href=""><i class="ico ico-star"></i></a>
+                    </div>
+                </footer>
+
+            </div>
+
+            <div class="clear"></div>
+
+        </section>
+
+
+    </div>
+    <!-- ------------  FOOTER ---------- -->
+
+    <footer class="main-footer">
+
+        <ul class="f_left">
+            <li><a href="">ABOUT</a></li>
+            <li>- <a href="">TERMS OF SERVICE</a></li>
+            <li>- <a href="">PRIVACY POLICY</a></li>
+            <li>- <a href="">FEEDBACK</a></li>
+            <li>- <a href="">CONTACT</a></li>
+        </ul>
+
+        <p class="f_right">Copyright © 2014 Open Polls</p>
+
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.velocity/0.11.7/jquery.velocity.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

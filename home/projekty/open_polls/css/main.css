@@ -1,0 +1,1425 @@
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+html {
+    font-size: 12px;
+    line-height: 1.4;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background:url(../img/bg/body_bg.jpg);
+    font-family: 'Open Sans', sans-serif;
+    padding-top:87px;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+a:hover, a:active, a:focus,* {
+    outline: 0;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+input:focus::-moz-placeholder{
+    opacity: 0;
+}
+input:focus:-moz-placeholder{
+    opacity: 0;
+}
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+/* ========================================================================================================
+
+                                               HELPER CLASSES
+
+========================================================================================================= */
+
+.f_left {
+  float: left;
+}
+.f_right {
+   float: right;
+}
+.clear {
+    clear: both;
+    float: none !important;
+    margin: 0 !important;
+}
+.mobile-visible {
+    display: none;
+}
+.align-c {
+    text-align: center;
+}
+.align-r {
+    text-align: right;
+}
+.f-small {
+    font-size: 10px;
+}
+.white_bg {
+   background: #ffffff !important;
+
+}
+.gray_bg {
+  background: #f6f6f6 !important;
+}
+.shadow {
+    -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+    box-shadow: 0px 0px 3px 2px #cccccc;
+}
+
+.red {
+    color:#ff445e ;
+}
+/* ========================================================================================================
+
+                                              CONTENT CONTAINER/STRUCTURE HOLDERS
+
+========================================================================================================= */
+
+.main-content {
+    margin: 0 auto;
+    min-height: 500px;
+    padding: 0 50px;
+}
+
+/* ACCOUNT SING IN/UP VARIANT */
+
+.main-content.account-section {
+    width:950px;
+    margin:0 auto;
+    padding:0;
+}
+
+.main-content.account-section > .f_left {
+    width: 589px;
+    padding: 0 5px;
+}
+
+.right-col-flex {
+    margin-left: 276px;
+    position: relative;
+}
+
+/* variant with profile item */
+.item.follower.follower-profile + .right-col-flex {
+    margin-left: 552px;
+}
+
+
+/* ========================================================================================================
+
+                                              BUTTONS
+
+========================================================================================================= */
+
+
+.btn {
+ display: inline-block;
+ font-weight: 600;
+ font-size:12px;
+ text-decoration: none;
+ background: #434343;
+ color:#fff;
+ line-height: 36px;
+ padding:0 16px;
+ border: 0;
+}
+/* ------------- BUTTONS SIZES  -------------- */
+
+.btn-large {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* ------------- BUTTONS COLORS  -------------- */
+
+.btn.primary {
+  background: #ff445e;
+}
+.btn.secondary {
+    background:#21d7de;
+}
+.btn.tertiary {
+    background: #f1f1f1;
+    color:#434343;
+}
+.btn.neutral {
+    background: transparent;
+    color:#434343;
+}
+
+/* ------------- BUTTONS WITH ICONS  -------------- */
+
+.btn.with-ico {
+    position: relative;
+}
+.btn .fa-lock {
+  font-size: 13px;
+  font-weight: normal;
+  color:#797979;
+  position: absolute;
+  right:0px;
+  top:50%;
+  margin-top: -6px;
+}
+
+/* ------------- LOAD MORE BUTTON -------------- */
+
+.btn-load-more {
+   background: #fff;
+   border-radius: 5px;
+   width:282px;
+   text-align: center;
+   color:#999696;
+   font-size: 12px;
+   padding: 12px 0;
+   margin:0 auto;
+   display: block;
+   text-decoration: none;
+    -webkit-box-shadow: 0px 0px 2px 1px #cccccc;
+    box-shadow: 0px 0px 2px 1px #cccccc;
+}
+.btn-load-more .fa {
+    font-size: 20px;
+    vertical-align: -2px;
+    margin-left: 16px;
+
+}
+
+/* ------------- BUTTON SOCIAL -------------- */
+
+.btn-social {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  overflow: hidden;
+  display: block;
+  line-height: 38px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+.btn-social .fa {
+   float:left;
+   width: 41px;
+   height: 38px;
+   font-size: 17px;
+   text-align: center;
+   line-height: 39px;
+   margin-right: 15px;
+   border-right:1px solid #000;
+   border-right:1px solid rgba(0,0,0,0.1);
+}
+.btn-social.g-plus {
+   background: #df4a32;
+}
+.btn-social.facebook {
+  background: #49639f;
+}
+.btn-social.twitter {
+  background: #00abf0;
+}
+/* ========================================================================================================
+
+                                               ICONS
+
+========================================================================================================= */
+
+.ico {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+.ico-chart {
+  background-position: 0 -118px;
+  width: 10px;
+  height: 15px;
+}
+.ico-clock {
+   background-position: -108px -118px;
+   width: 15px;
+   height: 15px;
+}
+
+.ico-share {
+  background-position: -20px -118px;
+  width: 15px;
+  height: 15px;
+}
+
+.ico-code {
+  background-position: -46px -118px;
+  width: 20px;
+  height: 15px;
+}
+.ico-star {
+  background-position: -78px -118px;
+  width: 16px;
+  height: 15px;
+}
+
+.ico-user {
+    background-position: 0px -229px;
+    width: 12px;
+    height: 12px;
+}
+.ico-ok {
+    background-position: -66px -159px;
+    width: 15px;
+    height: 16px;
+}
+.ico-bad {
+    background-position: -91px -159px;
+    width: 15px;
+    height: 16px;
+}
+
+/* ========================================================================================================
+
+                                               FORMS
+
+========================================================================================================= */
+
+.form-theme-1  ul{
+    margin: 0;
+    padding: 0;
+}
+.form-theme-1 ul  li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* ------------- INPUTS -------------- */
+
+.form-theme-1 input[type='text'],
+.form-theme-1 input[type='email'],
+.form-theme-1 input[type='password']{
+   border:1px solid #e3e3e3;
+   display: block;
+   height: 36px;
+   width: 100%;
+   padding: 0 15px;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;
+   font-size: 13px;
+   color: #989898;
+   border-radius:0;
+    -webkit-appearance: none;
+}
+
+/* ------------- TEXTAREA -------------- */
+
+.form-theme-1 textarea {
+
+    border:1px solid #e3e3e3;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 21px;
+    color: #989898;
+    border-radius:0;
+    -webkit-appearance: none;
+
+}
+
+/* ------------- SELECTS -------------- */
+
+.form-theme-1 .simpleselect  {
+   font-size: 13px;
+   color: #989898;
+   height: 36px;
+   text-transform: none;
+   line-height: 36px;
+}
+.form-theme-1 .simpleselect .placeholder {
+   background: #fff;
+   border:1px solid #e3e3e3;
+   padding: 0 25px 0 15px;
+   height: 34px;
+   line-height: 34px;
+}
+.form-theme-1 .simpleselect .placeholder:after {
+    background-position: 0 -246px;
+    right:9px;
+}
+.form-theme-1 .simpleselect .options {
+    background: #fff;
+    border:1px solid #e3e3e3;
+    line-height: 34px;
+
+}
+.form-theme-1 .simpleselect .options .option {
+    line-height: 34px;
+    padding: 0 15px 0 15px;
+}
+.form-theme-1 .simpleselect .options .option.active {
+    background: #fafafa;
+}
+
+/* gray variant */
+
+.form-theme-1 .gray-select .simpleselect .options,
+.form-theme-1 .gray-select .simpleselect .placeholder{
+  background: #f6f6f6;
+}
+
+/* ------------- SUBMIT -------------- */
+.form-theme-1 .submit {
+    margin-top: 15px;
+    border-radius:0;
+}
+
+/* ------------- RADIO INPUT -------------- */
+
+.form-theme-1 label ~ .inline-radio {
+   padding: 0 0 0 10px;
+   display: inline;
+}
+
+.form-theme-1 .inline-radio div {margin-right: 10px;margin-top: -3px;}
+
+/* ------------- CHECKBOX INPUT -------------- */
+
+.form-theme-1 .inline-checkbox {line-height: 28px;cursor: pointer}
+.form-theme-1 .inline-checkbox div {margin-right: 10px;margin-top: -3px;}
+
+/* ------------- FILE INPUT -------------- */
+
+.form-theme-1 .NFI-button {
+    display: inline-block;
+    font-weight: 600;
+    font-size:12px;
+    text-decoration: none;
+    background: #434343;
+    color:#fff;
+    line-height: 36px;
+    padding:0 16px;
+    text-transform: uppercase;
+    border: 0;
+    position: absolute !important;
+    top:0;
+    right:0;
+}
+.form-theme-1 .NFI-wrapper {
+    width: 100%;
+    position: relative;
+}
+.form-theme-1 .NFI-filename {
+    padding: 0 0px 0 15px !important;
+}
+
+
+/* ------------- LABELS -------------- */
+
+.form-theme-1 label {
+  display: block;
+  font-size: 13px;
+  color: #989898;
+  line-height: 35px;
+  clear: both;
+}
+.form-theme-1 label.inline {display: inline;}
+
+/* ------------- THREE IN ROW -------------- */
+
+.form-theme-1 .inline-three > div {
+    float: left;
+    margin-left: 3%;
+}
+.form-theme-1 .inline-three > div:first-child,
+.form-theme-1 .inline-three > label + div {
+    margin-left: 0;
+}
+.form-theme-1 .inline-three-short {
+    width: 20%;
+}
+.form-theme-1 .inline-three-medium {
+    width: 37%;
+}
+
+/* ------------- TWO IN ROW -------------- */
+
+.form-theme-1 .inline-two > div {
+  width: 49%;
+  float: left;
+}
+.form-theme-1 .inline-two > div:first-child {margin-right: 2%;}
+
+
+/* ------------- EXPANDABLE FIELDS -------------- */
+
+.form-theme-1 .expand + .hidden {
+    display: block !important;
+}
+
+
+
+/*------------------  */
+
+.lt-ie9 .form-theme-1 input{
+   line-height: 36px;
+}
+
+
+/* ========================================================================================================
+
+                                              UNIQUE SECTIONS
+
+========================================================================================================= */
+
+
+/* ==========================================================================
+ ACCOUNT SECTION
+========================================================================== */
+
+
+.account-section h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color:#3d3d3d;
+    margin:30px 0 0 0;
+}
+
+.account-section p {
+    font-size: 16px;
+    color: #8c8c8c;
+    margin: 15px 0;
+}
+
+.account-section p a {
+    color:#ff445e;
+}
+
+.account-section img {
+    max-width: 100%;
+}
+
+/* ------------- SIGN UP IN -------------- */
+
+.account-section .sign-up-in {
+  width:285px;
+  padding:0 33px 25px 33px;
+}
+.account-section .sign-up-in header {
+   margin-bottom:40px;
+}
+.account-section .sign-up-in header a {
+    color:#ff445e;
+    font-size: 12px;
+    display: block;
+    margin: 12px 0;
+}
+
+.account-section .sign-up-in .red {text-decoration: none;margin-bottom: -8px;}
+
+
+/* ==========================================================================
+ USER PROFILE
+========================================================================== */
+
+.profile-settings {
+  width: 415px;
+  padding: 30px 40px;
+  overflow: hidden;
+  float: left;
+}
+
+/* ------------- PROFILE DETAILS LIST -------------- */
+
+.profile-details {
+  margin: 15px 0 0 0;
+  padding: 0;
+  float: left;
+  width: 50%;
+}
+.profile-details li {
+  margin-bottom: 20px;
+  display: block;
+}
+.profile-details li a {
+    color: #ff445e;
+    text-decoration: none;
+}
+.profile-details .editable-field + input,
+.profile-details .editable-field + textarea {
+    display: none;
+}
+.profile-details li > b {
+    margin-bottom:5px;
+    display: block;
+}
+.profile-details .editable-field span {
+    color: #818181;
+}
+
+
+
+/* ------------- PROFILE SETTINGS LIST -------------- */
+
+.profile-settings-nav {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.profile-settings-nav a {
+    color: #ff445e;
+}
+
+/* ---------- user pic */
+.profile-settings-nav li.user-pic {
+    margin-bottom:50px;
+}
+.profile-settings-nav li.user-pic div  {
+    border: 6px solid #e7e7e7;
+    border-radius: 72px;
+    height: 72px;
+    width: 72px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.profile-settings-nav li.user-pic img {
+    border-radius: 72px;
+}
+.profile-settings-nav li {
+    margin-bottom:10px ;
+}
+.profile-settings-nav li.checkbox-item{
+    margin-top:30px;
+}
+
+/* ---------- checkbox */
+
+.profile-settings-nav label {
+    color:#989898;
+}
+.profile-settings-nav .icheckbox_minimal{
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+/* ==========================================================================
+POLL SINGLE PAGE
+========================================================================== */
+
+.poll-single-page {
+  width:auto;
+  margin-right: 276px;
+  -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+  box-shadow: 0px 0px 3px 2px #cccccc;
+  background: #fff;
+}
+.poll-single-page + .item {
+  position: absolute;
+  top:0;
+  right:0;
+}
+.poll-single-page .export-link {
+  font-size: 10px;
+  color: #818181;
+  background:#f1f1f1;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+/* ==========================================================================
+OPEN POLL  PAGE
+========================================================================== */
+
+.open-poll-page {
+  width: 370px;
+  -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+  box-shadow: 0px 0px 3px 2px #cccccc;
+  background: #fff;
+  min-height: 500px;
+  float: left;
+  padding: 0px 48px 30px 48px;
+}
+.open-poll-page + .item {float: left;margin-left: 18px;}
+
+.open-poll-page h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color:#3d3d3d;
+    margin:30px 0 35px 0;
+    text-align: center;
+}
+/* ========================================================================================================
+
+                                               MODULES
+
+========================================================================================================= */
+
+
+/* ==========================================================================
+ LISTING CONTROL
+========================================================================== */
+
+.listing-control {
+    padding: 23px 50px 23px 50px;
+}
+
+/* ------------- GRID/LIST SWITCH  -------------- */
+
+.listing-switch{
+   float: left;
+}
+.listing-switch .ico-list,
+.listing-switch .ico-grid {
+    width:34px;
+    height:29px;
+    background: #fff;
+    margin-right: 7px;
+    border: 1px solid #c8c8c8;
+    background-image:url(../img/sprite.png);
+    background-repeat: no-repeat;
+}
+.listing-switch .ico-list.active,
+.listing-switch .ico-grid.active {
+    border-color:#3f3f3f;
+}
+
+.listing-switch .ico-grid {
+    background-position: 1px -44px;
+}
+.listing-switch .ico-list{
+    background-position: 1px -80px;
+}
+
+
+/* ------------- LISTING FILTER  -------------- */
+
+.listing-filter {
+ float: right;
+}
+.listing-filter .simpleselect {
+     width: 110px;
+}
+/* ==========================================================================
+VOTE BLOCK
+========================================================================== */
+
+.vote-block {
+    width: 142px;
+    height: 32px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.vote-block .btn {
+  float: left;
+  width:50%;
+  padding: 0;
+  line-height: 32px;
+}
+.vote-block.voted {
+  width: 214px;
+}
+.vote-block.voted .btn {display: none}
+
+.vote-no,
+.vote-yes {
+    display: none;
+    display: block;
+    width:50%;
+    height: 100%;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    line-height: 32px;
+}
+.vote-yes sub {
+    position: static;
+}
+.vote-no sub {
+    position: static;
+    padding-right: 5px;
+}
+.vote-block.voted .vote-yes {
+    background:#21d7de;
+    text-align: left;
+    text-indent: 5px;
+}
+
+.vote-block.voted .vote-no {
+    background:#ff445e;
+    text-align: right;
+}
+
+/* ==========================================================================
+VOTES MAP
+========================================================================== */
+
+.votes-map {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.votes-map .map-div {
+    width: 100%;
+    height: 405px;
+    max-width: 100%;
+}
+.votes-map.not-voted .map-cover {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: #eaeaea;
+    opacity: 0.8;
+
+}
+
+/* ------------- CONTROLS  -------------- */
+
+.votes-map .zoom-controls {
+    width: 29px;
+    height: 57px;
+    margin-top: 13px;
+    margin-right: 16px;
+
+}
+.votes-map .zoom-controls .zoom-in {
+  background: url(../img/sprite.png) no-repeat right 0;
+  width: 29px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.votes-map .zoom-controls .zoom-out {
+    background: url(../img/sprite.png) no-repeat right -28px;
+    width: 29px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* ------------- MAP FILTER   -------------- */
+
+.votes-map .map-filter{
+    position: absolute;
+    top:0;
+    left:0;
+    background: #434343;
+    font-size: 12px;
+    color: #fff;
+    width: 110px;
+    border: 1px solid #626262;
+    overflow: hidden;
+}
+.votes-map .map-filter .filter-switch{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px 10px 13px;
+    overflow: hidden;
+}
+.votes-map .map-filter .filter-switch .fa {
+    float: right;
+    margin-top: 3px;
+}
+.votes-map .map-filter ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.votes-map .map-filter ul li {
+    border-bottom: 1px solid #626262;
+}
+.votes-map .map-filter ul li label{
+    color:#898989;
+    cursor: pointer;
+    display: block;
+    margin: 8px 23px 8px 13px;
+}
+.votes-map .map-filter ul li .checked + span {
+    color:#fff;
+}
+.votes-map .map-filter ul li  .icheckbox_minimal2 {
+  margin-top: -2px;
+  margin-right:10px;
+}
+
+.votes-map.not-voted .filter-cover {
+    background: #434343;
+    opacity: 0.01;
+    filter:alpha(opacity=01);
+    position: absolute;
+    top:32px;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+/* ========================================================================================================
+
+                                               LISTINGS/GRID
+
+========================================================================================================= */
+
+.item {
+    width:257px;
+    background: #fff;
+    margin-bottom: 22px;
+    -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+    box-shadow: 0px 0px 3px 2px #cccccc;
+    text-align: center;
+    position: relative;
+}
+
+/* ==========================================================================
+POLLS GRID
+========================================================================== */
+
+
+.item.poll h3 {
+    font-size: 16px;
+    line-height: 25px;
+    color:#262626;
+    font-weight: normal;
+    margin:2px 0 0 0;
+    padding:0 20px;
+}
+
+/*------- picture */
+.item.poll .poll-pic img {
+    max-width: 100%;
+    min-width: 100%;
+}
+.item.poll .poll-pic {
+    z-index: 0;
+    position: relative;
+}
+/*------- category */
+
+.item.poll .poll-cat {
+    position: absolute;
+    top:0;
+    right:0;
+    background: #333333;
+    color: #fff;
+    font-size: 9px;
+    text-decoration: none;
+    padding: 6px;
+    z-index: 1;
+}
+
+/*-------- user div */
+
+.item.poll .poll-user {
+    text-align: center;
+    font-size: 9px;
+    color:#999696;
+    margin-top:22px;
+    position: relative;
+    z-index:2;
+}
+.item.poll  .poll-user > a {
+    border: 6px solid #e7e7e7;
+    border-radius: 72px;
+    height: 72px;
+    width: 72px;
+    display: inline-block;
+    overflow: hidden;
+}
+.item.poll .poll-user img {
+    border-radius: 72px;
+    background-clip: padding-box;
+}
+.item.poll .poll-user a {
+    color:#21ded3;
+    text-decoration: none;
+}
+
+.item.poll .poll-pic + .poll-user {
+    margin-top: -42px;
+
+}
+/*-------- description */
+
+.item.poll .poll-desc {
+    font-size: 12px;
+    color:#818181;
+    padding:0 20px;
+    line-height: 19px;
+}
+.item.poll .poll-desc a {
+    color:#21ded3;
+    text-decoration: none;
+}
+.item.poll .vote-block {
+    margin:20px auto;
+}
+
+.item.poll .poll-nav {
+    background: #f1f1f1;
+    padding: 13px 10px;
+    color:#aeaeae;
+    font-size: 12px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.item.poll .poll-nav .ico {
+    position: relative;
+    top:3px;
+    margin-left: 8px;
+}
+
+.item.poll .floater {display: none}
+
+/*-------- comment */
+
+.item.poll .poll-comment {
+  padding-left: 77px;
+  position: relative;
+  text-align: left;
+  padding: 15px 15px 6px 77px;
+}
+.item.poll .poll-comment .pic {
+    border: 2px solid #e7e7e7;
+    border-radius: 38px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    left:21px;
+    top:15px;
+}
+.item.poll .poll-comment .pic img {
+    border-radius: 38px;
+    background-clip: padding-box;
+}
+
+.item.poll .poll-comment.voted-yes .pic{
+  border: 2px solid #ff445e;
+}
+.item.poll .poll-comment.voted-no .pic{
+   border: 2px solid #21d7de;
+}
+
+.item.poll .poll-comment small {
+   color:#4d4d4d;
+   font-size: 9px;
+   display: block;
+   margin-bottom: 4px;
+   font-weight: 600;
+}
+.item.poll .poll-comment p {
+   margin: 0;
+   font-size: 12px;
+   color:#818181;
+   line-height: 20px;
+}
+
+/* ==========================================================================
+FOLLOWERS GRID
+========================================================================== */
+
+.item.follower {
+    text-align: center;
+}
+
+/* item follower profile variant */
+.item.follower.follower-profile {
+  background: #fafafa;
+  width: 257px;
+  float: left;
+  margin-left: 19px;
+}
+
+
+
+/* -------------- picture */
+.item.follower .follower-pic{
+    border: 6px solid #e7e7e7;
+    border-radius: 70px;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    overflow: hidden;
+    margin:22px auto 10px auto;
+}
+.item.follower .follower-pic img {
+    border-radius: 70px;
+    background-clip: padding-box;
+}
+
+/* -------------- name/location */
+
+.item.follower .follower-name{
+  display: block;
+  text-decoration: none;
+  color:#434343;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.item.follower .follower-location{
+  display: block;
+  color:#aeaeae;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* -------------- subscribe */
+
+.item.follower .follower-sub {
+   margin-bottom: 20px;
+   display: inline-block;
+   color: #818181;
+   font-size: 12px;
+   padding-left: 21px;
+   background: url(../img/sprite.png) no-repeat bottom left;
+}
+
+/* -------------- follow buttons */
+
+.item.follower .follow-btns {
+   text-align: center;
+   margin-bottom: 10px;
+}
+.item.follower .follow-btns.followed .follow-btn{
+   display: none;
+}
+.item.follower .follow-btns.unfollowed .unfollow-btn{
+  display: none;
+}
+
+/* -------------- activity */
+.item.follower .follower-activity span {
+  font-size: 9px;
+  color:#aeaeae;
+  padding: 0 4px;
+}
+.item.follower .follower-activity em {
+  color:#434343;
+  font-style: normal;
+  padding: 0 2px;
+  font-weight: 600;
+}
+
+/* -------------- follower info */
+
+.item.follower .follower-info {
+    text-align: left;
+    margin: 39px 25px;
+}
+.item.follower .follower-info dt {
+    font-size: 12px;
+    color: #434343;
+    font-weight: 600;
+}
+.item.follower .follower-info dd{
+    font-size: 12px;
+    color: #818181;
+    line-height: 21px;
+    margin-bottom: 21px;
+}
+.item.follower .follower-info dd a{
+    font-size: 12px;
+    color: #818181;
+}
+
+/* -------------- stats/bottom bar */
+
+.item.follower .follower-stats{
+    background: #f1f1f1;
+    padding: 13px 15px;
+    color:#aeaeae;
+    font-size: 10px;
+    font-weight: normal;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.item.follower .follower-stats em {
+    font-style: normal;
+    padding: 0 3px;
+    color:#434343;
+    font-weight: 600;
+}
+.item.follower.follower-profile .follower-stats{
+    font-size: 12px;
+    line-height: 12px;
+}
+
+/* ==========================================================================
+POLLS LIST
+========================================================================== */
+
+.polls-list .item{
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 3px 2px #cccccc;
+    box-shadow: 0px 0px 3px 2px #cccccc;
+    position: relative;
+    margin:0 0 13px 0;
+    padding: 20px 475px 40px 20px;
+    width: auto;
+    text-align: left;
+}
+.polls-list .item h3 a,
+.polls-list .item h3 {
+    font-size: 14px;
+    line-height: 21px;
+    color:#262626;
+    font-weight: normal;
+    margin:0 0 5px 0;
+    padding:0;
+    text-decoration: none;
+}
+.polls-list .item .poll-pic{display: none}
+
+.polls-list .item .poll-desc {
+    font-size: 12px;
+    color:#818181;
+    padding:0;
+    margin:0;
+}
+.polls-list .item  .poll-desc a {
+    color:#21ded3;
+    text-decoration: none;
+}
+.polls-list .item .poll-user img {display: none}
+
+.polls-list .item .poll-user {
+    font-size: 9px;
+    color:#999696;
+    position: absolute;
+    bottom:20px;
+}
+.polls-list .item  .poll-user > a {display: none}
+.polls-list .item  .poll-user a {
+    color:#21ded3;
+    text-decoration: none;
+}
+.polls-list .item  .poll-user p {margin: 0}
+
+.polls-list .item .poll-cat {
+    position: absolute;
+    top:0;
+    right:0;
+    background: #333333;
+    color: #fff;
+    font-size: 9px;
+    text-decoration: none;
+    padding: 6px;
+    z-index:2;
+}
+
+.polls-list .item .vote-block{
+    position: absolute;
+    right:250px;
+    top:50%;
+    margin-top:-16px;
+    text-align: center;
+}
+
+.polls-list .item .poll-nav {
+    background: #f1f1f1;
+    padding: 0 20px;
+    color:#aeaeae;
+    font-size: 12px;
+    font-weight: normal;
+    overflow: hidden;
+    width: 180px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.polls-list .item .poll-nav .ico {
+    position: relative;
+    top:3px;
+    margin-left: 8px;
+}
+.polls-list .item .floater {
+    height:50%;
+    width: 100%;
+    display: block;
+    margin-top: -6px;
+}
+
+/* ==========================================================================
+POLL COMMENTS LIST
+========================================================================== */
+
+.poll-comments-list {
+    padding: 40px 40px 20px 40px;
+}
+.poll-comments-list h3 {
+  font-size: 12px;
+  font-weight: 700;
+  color:#434343;
+}
+.poll-comments-list ul {
+  width: 85%;
+}
+.poll-comments-list ul li{
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    margin: 40px 0;
+    padding-left: 88px;
+    position: relative;
+}
+/* -------------- comment field  */
+
+.poll-comments-list  textarea {
+    border:1px solid #e3e3e3;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 21px;
+    color: #989898;
+    border-radius:0;
+    -webkit-appearance: none;
+}
+
+/* -------------- user picture */
+
+.poll-comments-list .user-pic {
+    border:4px solid #e7e7e7;
+    border-radius: 50px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top: -32px;
+}
+.poll-comments-list .user-pic img {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+/* -------------- user name & date */
+
+.poll-comments-list .user-name {
+  font-size:12px;
+  color:#e7e7e7;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.poll-comments-list .comment-date {
+   font-size: 9px;
+   color: #818181;
+}
+.poll-comments-list p {
+  color:#434343;
+  line-height:21px;
+  margin: 6px 0;
+}
+/* -------------- comment nav */
+
+.poll-comments-list .comment-nav {
+    color:#c4c4c4;
+}
+.poll-comments-list .comment-nav  a.comment-reply {
+   text-decoration: none;
+   color:#818181;
+   font-size: 11px;
+   font-weight: 600;
+   margin-right: 8px;
+}
+.poll-comments-list .comment-nav span{
+  padding: 0 8px;
+  font-size: 11px;
+}
+.poll-comments-list .comment-nav .ico {
+    margin: 0px 4px 0 4px;
+    vertical-align: -4px;
+}
+
+/* -------------- voted colors */
+.poll-comments-list li.voted-yes .user-pic{
+  border-color: #21d7de;
+}
+.poll-comments-list li.voted-yes .comment-nav span,
+.poll-comments-list li.voted-yes .user-name {
+  color:#21d7de;
+}
+
+.poll-comments-list li.voted-no .user-pic{
+   border-color:#ff445e;
+}
+
+.poll-comments-list li.voted-no .comment-nav span,
+.poll-comments-list li.voted-no .user-name{
+   color:#ff445e;
+}
+
+
