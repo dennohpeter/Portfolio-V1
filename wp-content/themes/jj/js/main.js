@@ -49,7 +49,7 @@ app.ui = {
 
             app.ui.preloader.preloaderInit(rel);
 
-           
+
 
 			app.ajax = $.ajax({
 				type: 'GET', url: url+'?ajax=true'
@@ -59,7 +59,7 @@ app.ui = {
 
 				var cont = $(msg).filter("#page");
 				app.ui.contents = cont.contents();
-			   
+
 				app.ajax = null;
 			});
 
@@ -69,7 +69,7 @@ app.ui = {
 
 			});
 
-           
+
 
             return true;
 
@@ -143,7 +143,7 @@ app.ui = {
 app.ui.preloader = {
 
     checkProgress:function(rel){
-	
+
 	        if (app.ajax === null){
 
 				$("#page").html(app.ui.contents);
@@ -158,17 +158,17 @@ app.ui.preloader = {
                 setTimeout(function(){
 				  app.ui.pageInit(rel);
                 },10);
-			  
+
 			}else {
-			
+
 			  setTimeout(function(){
-			  
+
 				 app.ui.preloader.checkProgress(rel);
-			  
+
 			  },50);
-			
-			
-			
+
+
+
 			}
 	},
     preloaderInit:function(rel){
@@ -178,7 +178,7 @@ app.ui.preloader = {
          if(document.querySelector('.bg')){
 		   TweenMax.to( $('.bg'), 0.4 ,{opacity:0.2,scale:0.85,ease: Power4.easeOut});
 		 }
-      
+
 
     },
     preloaderCheckRequest:function(rel){
@@ -242,7 +242,7 @@ $(function () {
 
 
     }
-	
+
 	//jQuery('#vide').vide({mp4: 'https://jacekjeznach.com/wp-content/themes/jj/js/vid.mp4'},{playbackRate: 0.5,});
 
 
@@ -300,7 +300,6 @@ if(requested != 'true'){
     }
 
     TweenMax.to($('.container')[0], 0.4, {opacity: 1, ease: Power2.easeIn});
-    TweenMax.to($('#awwwards')[0], 0.4, {right: 0, delay: 0.9});
 
 }
 
@@ -315,9 +314,9 @@ navigator.serviceWorker.getRegistrations().then(function(registrations) {
 caches.keys().then(function(cacheNames) {
   return Promise.all(
     cacheNames.map(function(cacheName) {
-      
+
        return caches.delete(cacheName);
-      
+
     })
   );
 });
