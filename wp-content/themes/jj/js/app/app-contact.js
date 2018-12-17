@@ -370,7 +370,7 @@ window.initialize = function() {
 
   var image = '../wp-content/themes/jj/img/marker.png';  //Removed var path
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(51.272223,22.500727),
+    position: new google.maps.LatLng(-1.2820479999999999,36.8205824),
     animation: google.maps.Animation.DROP,
     icon: image
 
