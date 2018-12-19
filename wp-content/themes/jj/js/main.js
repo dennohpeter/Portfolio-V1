@@ -243,7 +243,7 @@ $(function () {
 
     }
 
-	//jQuery('#vide').vide({mp4: 'https://jacekjeznach.com/wp-content/themes/jj/js/vid.mp4'},{playbackRate: 0.5,});
+	//jQuery('#vide').vide({mp4: '//wp-content/themes/jj/js/vid.mp4'},{playbackRate: 0.5,});
 
 
 });
