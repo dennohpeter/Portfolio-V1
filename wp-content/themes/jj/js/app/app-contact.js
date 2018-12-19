@@ -88,7 +88,7 @@ app.contact = {
 
 
         alertify.log(msg2);
-
+        console.log(path);
         $.post( path + "mail.php", $( "#contact" ).serialize(),function( data ) {
 
           if(data == '11'){
