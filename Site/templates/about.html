@@ -1,13 +1,12 @@
 <!doctype html>
+{% load staticfiles %}
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="https://pbs.twimg.com/profile_images/601407094277873664/WT2mk28E_400x400.jpg" />
-  <title>
-    About me | Dennis Peterson
-  </title>
+  <title> About me | Dennis Peterson </title>
   <link rel="canonical" href="/about/" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="article" />
@@ -40,20 +39,20 @@
     padding: 0 !important;
   }
   </style>
-  <link rel='stylesheet' id='wp-pagenavi-css'  href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' %}" media='all' />
-  <link rel='stylesheet' id='jayjay-css'  href="{% static 'wp-content/themes/jj/style.css?ver=1.0' %} media='all' />
-  <link rel='https://api.w.org/' href='wp-json/' />
-  <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacekjeznach.com%2Fabout%2F" />
-  <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacekjeznach.com%2Fabout%2F&#038;format=xml" />
-  <link rel="icon" type="image/png" href="{% static 'wp-content/themes/jj/fav/transparentme.png">
+  <link rel='stylesheet' id='wp-pagenavi-css'  href="{% static '../wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' %}" media='all' />
+  <link rel='stylesheet' id='jayjay-css'  href="{% static '../wp-content/themes/jj/style.css?ver=1.0' %}" media='all' />
+  <!-- <link rel='https://api.w.org/' href='wp-json/' /> -->
+  <link rel="alternate" type="application/json+oembed" href="{% static 'wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacekjeznach.com%2Fabout%2F' %}" />
+  <link rel="alternate" type="text/xml+oembed" href="{% static 'wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacekjeznach.com%2Fabout%2F&#038;format=xml' %}" />
+  <link rel="icon" type="image/png" href="{% static '../wp-content/themes/jj/fav/transparentme.png' %}">
   <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/third-party.css">
-  <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css">
-  <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css">
+  <link rel="stylesheet" href="{% static '../wp-content/themes/jj/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static '../wp-content/themes/jj/css/third-party.css' %}">
+  <link rel="stylesheet" href="{% static '../wp-content/themes/jj/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static '../wp-content/themes/jj/css/main.css' %}">
   <script>
-  var path = "{% static 'wp-content/themes/jj/";
+  var path = "{% static '../wp-content/themes/jj/' %}";
   var requested = "";
   var errmsg ='<div class="error-info animated fadeInUp"><span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
   var msg1 ="Please fill in all required fields";
@@ -65,8 +64,8 @@
   var msg7 = "Double click to add more elements.";
   var msg8 = "Scroll to zoom in/out";
   </script>
-  <script src="{% static 'wp-content/themes/jj/js/vendor/jquery-1.11.2.min.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/vide.js"></script>
+  <script src="{% static '../wp-content/themes/jj/js/vendor/jquery-1.11.2.min.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/vide.js' %}"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2wqe1uDfotYB_e-YIq8anlmLIxcy3Yhs&v=3.exp&amp;"></script>
 </head>
 <body class="page page-id-13 page-template page-template-template-about page-template-template-about-php about">
@@ -77,8 +76,8 @@
   </script>
   <div id="nav_bar">
     <a class="logo" rel="index" href="/">
-      <img src="{% static 'wp-content/themes/jj/img/logo.png" alt="Wordpress Developer Logo, Web Developer Logo , Front End Developer Logo" />
-      <img src="{% static 'wp-content/themes/jj/img/logo_sub.png" alt="Wordpress Developer, Web Developer , Front End Developer" />
+      <img src="{% static '../wp-content/themes/jj/img/logo.png' %}" alt="Wordpress Developer Logo, Web Developer Logo , Front End Developer Logo" />
+      <img src="{% static '../wp-content/themes/jj/img/logo_sub.png' %}" alt="Wordpress Developer, Web Developer , Front End Developer" />
     </a>
     <nav class="en">
       <a rel="index" href="/" class="home-link ">
@@ -169,7 +168,7 @@
         <p>
           &nbsp;
         </p>
-        <img style="max-width:95%;margin-top: 40px;" src="{% static 'wp-content/themes/jj/img/timeline.png" alt=""/>
+        <img style="max-width:95%;margin-top: 40px;" src="{% static '../wp-content/themes/jj/img/timeline.png' %}" alt=""/>
         <div class="clear">
         </div>
       </div>
@@ -189,7 +188,7 @@
   </div>
   <div class="preloader">
     <div class="inner">
-      <img src="{% static 'wp-content/themes/jj/img/logopreload.png"
+      <img src="{% static '../wp-content/themes/jj/img/logopreload.png' %}"
       alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader"/>
       <span>
         Dennis is thinking
@@ -204,21 +203,21 @@
   </div>
   <div id="rotate">
   </div>
-  <script type='text/javascript' src='wp-includes/js/wp-embed.min.js?ver=5600043c36802d51cde71399f3d25aeb'></script>
+  <script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min.js?ver=5600043c36802d51cde71399f3d25aeb' %}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/plugins.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/vendor/magicwall.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/vendor/tagcanvas.js"></script>
+  <script src="{% static '../wp-content/themes/jj/js/plugins.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/vendor/magicwall.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/vendor/tagcanvas.js' %}"></script>
   <script>
   var app = {};
   app.ajax = null;
   </script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-home.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-about.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-contact.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-gallery.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-skills.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-text.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/main.js"></script>
+  <script src="{% static '../wp-content/themes/jj/js/app/app-home.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/app/app-about.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/app/app-contact.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/app/app-gallery.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/app/app-skills.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/app/app-text.js' %}"></script>
+  <script src="{% static '../wp-content/themes/jj/js/main.js' %}"></script>
 </body>
 </html>

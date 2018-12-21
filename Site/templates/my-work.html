@@ -1,4 +1,5 @@
 <!doctype html>
+{% load staticfiles %}
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ">
 <head>
 <meta charset="UTF-8">
@@ -43,38 +44,38 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='wp-pagenavi-css'  href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' %}" media='all' />
-<link rel='stylesheet' id='jayjay-css'  href="{% static 'wp-content/themes/jj/style.css?ver=1.0' %} media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href="{% static '../wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' %}" media='all' />
+<link rel='stylesheet' id='jayjay-css'  href="{% static '../wp-content/themes/jj/style.css?ver=1.0' %} media='all' />
 <link rel='https://api.w.org/' href='wp-json/' />
 <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacekjeznach.com%2Fmy-work%2F" />
 <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacekjeznach.com%2Fmy-work%2F&#038;format=xml" />
-<link rel="apple-touch-icon" sizes="57x57" href="{% static 'wp-content/themes/jj/fav/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="{% static 'wp-content/themes/jj/fav/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="{% static 'wp-content/themes/jj/fav/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="{% static 'wp-content/themes/jj/fav/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="{% static 'wp-content/themes/jj/fav/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="{% static 'wp-content/themes/jj/fav/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="{% static 'wp-content/themes/jj/fav/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="{% static 'wp-content/themes/jj/fav/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="{% static 'wp-content/themes/jj/fav/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="{% static 'wp-content/themes/jj/fav/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="{% static 'wp-content/themes/jj/fav/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="{% static 'wp-content/themes/jj/fav/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{% static 'wp-content/themes/jj/fav/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="57x57" href="{% static '../wp-content/themes/jj/fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="{% static '../wp-content/themes/jj/fav/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{% static '../wp-content/themes/jj/fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{% static '../wp-content/themes/jj/fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static '../wp-content/themes/jj/fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{% static '../wp-content/themes/jj/fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{% static '../wp-content/themes/jj/fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="{% static '../wp-content/themes/jj/fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{% static '../wp-content/themes/jj/fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="{% static '../wp-content/themes/jj/fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static '../wp-content/themes/jj/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="{% static '../wp-content/themes/jj/fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static '../wp-content/themes/jj/fav/favicon-16x16.png">
 <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/third-party.css">
-<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css">
-<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css">
- <script src="{% static 'wp-content/themes/jj/js/vendor/modernizr-2.8.3.min.js">
+<link rel="stylesheet" href="{% static '../wp-content/themes/jj/css/third-party.css">
+<link rel="stylesheet" href="{% static '../wp-content/themes/jj/css/normalize.css">
+<link rel="stylesheet" href="{% static '../wp-content/themes/jj/css/main.css">
+ <script src="{% static '../wp-content/themes/jj/js/vendor/modernizr-2.8.3.min.js">
 
 </script>
  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
 
 </script>
  <script>
-var path = "{% static 'wp-content/themes/jj/";
+var path = "{% static '../wp-content/themes/jj/";
 </script>
 
 </head>
@@ -82,7 +83,7 @@ var path = "{% static 'wp-content/themes/jj/";
 <div class="wall-top">
 <div class="width-holder">
  <a href="/wall">
-<img src="{% static 'wp-content/themes/jj/img/wall-logo.png" alt="Web Developer Wall, Wordpress Developer wall"/>
+<img src="{% static '../wp-content/themes/jj/img/wall-logo.png" alt="Web Developer Wall, Wordpress Developer wall"/>
 
 </a>
  <small>
@@ -95,7 +96,7 @@ Front End Developer / Web Developer / WordPress
 <div class="width-holder">
 <div class="wall-cont">
  <a href="/" class="logo-big">
-<img src="{% static 'wp-content/themes/jj/img/wall-logo.png" alt="Web Developer Wall, Wordpress Developer wall"/>
+<img src="{% static '../wp-content/themes/jj/img/wall-logo.png" alt="Web Developer Wall, Wordpress Developer wall"/>
 
 </a>
 <h1>
@@ -643,13 +644,13 @@ wp plugin
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js">
 
 </script>
- <script src="{% static 'wp-content/themes/jj/js/plugins.js">
+ <script src="{% static '../wp-content/themes/jj/js/plugins.js">
 
 </script>
- <script src="{% static 'wp-content/themes/jj/js/vendor/jquery.waypoints.js">
+ <script src="{% static '../wp-content/themes/jj/js/vendor/jquery.waypoints.js">
 
 </script>
- <script src="{% static 'wp-content/themes/jj/js/wall.js">
+ <script src="{% static '../wp-content/themes/jj/js/wall.js">
 
 </script>
 

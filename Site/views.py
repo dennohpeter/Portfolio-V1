@@ -6,16 +6,16 @@ def home(request):
 
 
 def about(request):
-    return render(request, "about/index.html")
+    return render(request, "about.html")
 
 
 def skills(request):
-    return render(request, "skills/index.html")
+    return render(request, "skills.html")
 
 
 def portfolio(request):
-    return render(request, "portfolio/index.html")
+    return render(request, "portfolio.html")
 
 
 def contact(request):
-    return render(request, "contact/index.html")
+    return render(request, "contact.html")

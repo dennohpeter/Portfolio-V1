@@ -1,6 +1,4 @@
 $ = jQuery.noConflict();
-
-
 app.ui = {
   contents: null,
   particlesArgs: [],
