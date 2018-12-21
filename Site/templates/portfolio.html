@@ -1,3 +1,4 @@
+<!doctype html>
 {% load staticfiles %}
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ">
 <head>
@@ -28,7 +29,7 @@
 	<meta name="google-site-verification" content="g9SAxEndbghY9_WUBSquul5etmdU9cQCBxosyFH0UU0">
 	<meta name="yandex-verification" content="59f3ef5564afe27c">
 	<script type="text/javascript">
-	window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/jacekjeznach.com\/../wp-includes\/js\/wp-emoji-release.min.js?ver=5600043c36802d51cde71399f3d25aeb"}};
+	window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/jacekjeznach.com\/../{% static 'wp-includes\/js\/wp-emoji-release.min.js"}};
 	!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}
 	function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
 
@@ -47,18 +48,18 @@
 		padding: 0 !important;
 	}
 	</style>
-	<link rel="stylesheet" id="wp-pagenavi-css" href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' %}" media="all">
-	<link rel="stylesheet" id="jayjay-css" href="{% static 'wp-content/themes/jj/style.css?ver=1.0" media="all">
+	<link rel="stylesheet" id="wp-pagenavi-css" href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css' %}" media="all">
+	<link rel="stylesheet" id="jayjay-css" href="{% static 'wp-content/themes/jj/style.css" media="all">
 	<link rel="https://api.w.org/" href="wp-json/">
-	<link rel="icon" type="image/png" href="{% static 'wp-content/themes/jj/fav/transparentme.png' %}"">
+	<link rel="icon" type="image/png" href="{% static 'wp-content/themes/jj/fav/transparentme.png' %}">
 	<link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/font-awesome.min.css">
-	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/third-party.css">
-	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css">
-	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css">
+	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/third-party.css' %}">
+	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css' %}">
 	<script>
-	var path = "{% static 'wp-content/themes/jj/";
+	var path = "{% static 'wp-content/themes/jj/' %}";
 	var requested = "";
 	var errmsg ='<div class="error-info animated fadeInUp"> <span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
 
@@ -85,8 +86,8 @@
 	</script>
 	<div id="nav_bar">
 		<a class="logo" rel="index" href="/">
-			<img src="{% static 'wp-content/themes/jj/img/logo.png' %}"" alt="Wordpress Developer Logo, Web Developer Logo , Front End Developer Logo">
-			<img src="{% static 'wp-content/themes/jj/img/logo_sub.png' %}"" alt="Wordpress Developer, Web Developer , Front End Developer">
+			<img src="{% static 'wp-content/themes/jj/img/logo.png' %}" alt="Wordpress Developer Logo, Web Developer Logo , Front End Developer Logo">
+			<img src="{% static 'wp-content/themes/jj/img/logo_sub.png' %}" alt="Wordpress Developer, Web Developer , Front End Developer">
 		</a>
 		<nav class="en">
 			<a rel="index" href="/" class="home-link">
@@ -189,7 +190,7 @@
 				<li data-thumb="{% static 'wp-content/uploads/2015/05/Home-IT-Switch-e1478003448682.jpeg' %}" data-index="13" class="" style="perspective: 600px; display: none; width: 270px; height: 286px; left: 0px; top: 858px; z-index: 0; overflow: visible;">
 					<div class="magicwall-wrap" style="transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1); transform-origin: 50% 50% 0px; opacity: 1;">
 						<div class="hover-content vcenter"></div>
-						<a href="{% static 'wp-content/uploads/2015/05/Contact-IT-Switch.png' %}"" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a><a href="{% static 'wp-content/uploads/2015/05/MYOB-IT-Switch.png' %}"" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a><a href="{% static 'wp-content/uploads/2015/05/1.png' %}"" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a><a href="{% static 'wp-content/uploads/2015/05/2.png' %}"" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a>
+						<a href="{% static 'wp-content/uploads/2015/05/Contact-IT-Switch.png' %}" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a><a href="{% static 'wp-content/uploads/2015/05/MYOB-IT-Switch.png' %}" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a><a href="{% static 'wp-content/uploads/2015/05/1.png' %}" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a><a href="{% static 'wp-content/uploads/2015/05/2.png' %}" title="<a href=&quot;http://itswitch.esy.es/&quot; target=&quot;blank&quot;>http://itswitch.esy.es/</a>" class="colorbox cboxElement" rel="magicwall16"></a>
 						<div class="magicwall-thumb" style="background-image: url({% static 'wp-content/uploads/2015/05/Home-IT-Switch-e1478003448682.jpeg' %});; background-position: center center; background-repeat: no-repeat; background-size: cover; opacity: 1; display: block;"></div>
 					</div>
 				</li>
@@ -221,7 +222,7 @@
 				<li data-thumb="{% static 'wp-content/uploads/2015/05/Bez-nazwy-8.jpg' %}" data-index="7" class="magicwall-grid-item" style="perspective: 600px; display: block; z-index: 0; width: 270px; height: 286px; left: 270px; top: 858px; overflow: visible;">
 					<div class="magicwall-wrap" style="transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1); transform-origin: 50% 50% 0px; opacity: 1;">
 						<div class="hover-content vcenter"></div>
-						<a href="{% static 'wp-content/uploads/2015/05/Wybory-do-Parlamentu-Europejskiego-2014-kandydaci-PO-1.jpg' %}" title="<a href=&quot;http://jacekjeznach.com/projekty/platforma1/index.html&quot; target=&quot;blank&quot;>PO EU Elections</a>" class="colorbox cboxElement" rel="magicwall110"></a><a href="{% static 'wp-content/uploads/2015/05/12.png' %}"" title="<a href=&quot;http://jacekjeznach.com/projekty/platforma1/index.html&quot; target=&quot;blank&quot;>PO EU Elections</a>" class="colorbox cboxElement" rel="magicwall110"></a><a href="{% static 'wp-content/uploads/2015/05/22.png' %}"" title="<a href=&quot;http://jacekjeznach.com/projekty/platforma1/index.html&quot; target=&quot;blank&quot;>PO EU Elections</a>" class="colorbox cboxElement" rel="magicwall110"></a>
+						<a href="{% static 'wp-content/uploads/2015/05/Wybory-do-Parlamentu-Europejskiego-2014-kandydaci-PO-1.jpg' %}" title="<a href=&quot;http://jacekjeznach.com/projekty/platforma1/index.html&quot; target=&quot;blank&quot;>PO EU Elections</a>" class="colorbox cboxElement" rel="magicwall110"></a><a href="{% static 'wp-content/uploads/2015/05/12.png' %}" title="<a href=&quot;http://jacekjeznach.com/projekty/platforma1/index.html&quot; target=&quot;blank&quot;>PO EU Elections</a>" class="colorbox cboxElement" rel="magicwall110"></a><a href="{% static 'wp-content/uploads/2015/05/22.png' %}" title="<a href=&quot;http://jacekjeznach.com/projekty/platforma1/index.html&quot; target=&quot;blank&quot;>PO EU Elections</a>" class="colorbox cboxElement" rel="magicwall110"></a>
 						<div class="magicwall-thumb" style="background-image: url({% static 'wp-content/uploads/2015/05/Bez-nazwy-8.jpg' %}&quot;); background-position: center center; background-repeat: no-repeat; background-size: cover; opacity: 1; display: block;"></div>
 					</div>
 				</li>
@@ -234,7 +235,7 @@
 					</div>
 				</li>
 				TTE
-				<li data-thumb="{% static 'wp-content/uploads/2017/10/ttelo.png' %}"" data-index="11" style="perspective: 600px; display: none; z-index: 0; overflow: visible;">
+				<li data-thumb="{% static 'wp-content/uploads/2017/10/ttelo.png' %}" data-index="11" style="perspective: 600px; display: none; z-index: 0; overflow: visible;">
 					<div class="magicwall-wrap" style="transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1); transform-origin: 50% 50% 0px; opacity: 1;">
 						<div class="hover-content vcenter"></div>
 						<a href="{% static 'wp-content/uploads/2017/10/About-To-The-End.jpg' %}" title="<a href=&quot;https://totheend.co.uk/&quot; target=&quot;_blank&quot;>https://totheend.co.uk/</a>" class="colorbox cboxElement" rel="magicwall112"></a><a href="{% static 'wp-content/uploads/2017/10/To-The-End-Audience-Engagement-Agency-We-🖤-Content-Marketing.jpg' %}" title="<a href=&quot;https://totheend.co.uk/&quot; target=&quot;_blank&quot;>https://totheend.co.uk/</a>" class="colorbox cboxElement" rel="magicwall112"></a><a href="{% static 'wp-content/uploads/2017/10/Contact-To-The-End.jpg' %}" title="<a href=&quot;https://totheend.co.uk/&quot; target=&quot;_blank&quot;>https://totheend.co.uk/</a>" class="colorbox cboxElement" rel="magicwall112"></a><a href="{% static 'wp-content/uploads/2017/10/Bez-nazwy-2.jpg' %}" title="<a href=&quot;https://totheend.co.uk/&quot; target=&quot;_blank&quot;>https://totheend.co.uk/</a>" class="colorbox cboxElement" rel="magicwall112"></a>
@@ -276,7 +277,7 @@
 				<li data-thumb="{% static 'wp-content/uploads/2015/05/Bez-nazwy-23.jpg' %}" data-index="18" class="" style="perspective: 600px; display: none; z-index: 0; overflow: visible; width: 270px; height: 286px; left: 270px; top: 286px;">
 					<div class="magicwall-wrap" style="transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1); transform-origin: 50% 50% 0px; opacity: 1;">
 						<div class="hover-content vcenter"></div>
-						<a href="{% static 'wp-content/uploads/2015/05/OBI.jpg' %}" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a><a href="{% static 'wp-content/uploads/2015/05/OBI2.jpg' %}" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a><a href="{% static 'wp-content/uploads/2015/05/23.png' %}"" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a><a href="{% static 'wp-content/uploads/2015/05/Best-Online-Responsive-Website-Testing-tool-Supports-localhost-Testing.png' %}"" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a>
+						<a href="{% static 'wp-content/uploads/2015/05/OBI.jpg' %}" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a><a href="{% static 'wp-content/uploads/2015/05/OBI2.jpg' %}" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a><a href="{% static 'wp-content/uploads/2015/05/23.png' %}" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a><a href="{% static 'wp-content/uploads/2015/05/Best-Online-Responsive-Website-Testing-tool-Supports-localhost-Testing.png' %}" title="<a href=&quot;http://jacekjeznach.com/other/projekty/regular/obi/startseite.html&quot; target=&quot;_blank&quot;>OBI BAUMARKT</a>" class="colorbox cboxElement" rel="magicwall117"></a>
 						<div class="magicwall-thumb" style="background-image: url({% static 'wp-content/uploads/2015/05/Bez-nazwy-23.jpg' %}&quot;); background-position: center center; background-repeat: no-repeat; background-size: cover; opacity: 1; display: block;"></div>
 					</div>
 				</li>
@@ -284,12 +285,12 @@
 				<li data-thumb="{% static 'wp-content/uploads/2015/05/Bez-nazwy-6.jpg' %}" data-index="15" class="" style="perspective: 600px; display: none; z-index: 0; overflow: visible; width: 270px; height: 286px; left: 270px; top: 572px;">
 					<div class="magicwall-wrap" style="transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1); transform-origin: 50% 50% 0px; opacity: 1;">
 						<div class="hover-content vcenter"></div>
-						<a href="{% static 'wp-content/uploads/2015/05/Testimonials-CQC-Solutions.png' %}"" title="<a href=&quot;http://www.cqc-solutions.com/&quot; target=&quot;blank&quot;>http://www.cqc-solutions.com/</a>" class="colorbox cboxElement" rel="magicwall118"></a><a href="{% static 'wp-content/uploads/2015/05/Welcome-to-CQC-Solutions-creating-coherence-between-people-processes-and-systems..png' %}"" title="<a href=&quot;http://www.cqc-solutions.com/&quot; target=&quot;blank&quot;>http://www.cqc-solutions.com/</a>" class="colorbox cboxElement" rel="magicwall118"></a>
+						<a href="{% static 'wp-content/uploads/2015/05/Testimonials-CQC-Solutions.png' %}" title="<a href=&quot;http://www.cqc-solutions.com/&quot; target=&quot;blank&quot;>http://www.cqc-solutions.com/</a>" class="colorbox cboxElement" rel="magicwall118"></a><a href="{% static 'wp-content/uploads/2015/05/Welcome-to-CQC-Solutions-creating-coherence-between-people-processes-and-systems..png' %}" title="<a href=&quot;http://www.cqc-solutions.com/&quot; target=&quot;blank&quot;>http://www.cqc-solutions.com/</a>" class="colorbox cboxElement" rel="magicwall118"></a>
 						<div class="magicwall-thumb" style="background-image: url({% static 'wp-content/uploads/2015/05/Bez-nazwy-6.jpg' %}&quot;); background-position: center center; background-repeat: no-repeat; background-size: cover; opacity: 1; display: block;"></div>
 					</div>
 				</li>
 				VW
-				<li data-thumb="{% static 'wp-content/uploads/2015/05/Bez-nazwy-2-1.png' %}"" data-index="3" class="magicwall-grid-item" style="perspective: 600px; display: block; z-index: 0; overflow: visible; width: 270px; height: 286px; left: 270px; top: 286px;">
+				<li data-thumb="{% static 'wp-content/uploads/2015/05/Bez-nazwy-2-1.png' %}" data-index="3" class="magicwall-grid-item" style="perspective: 600px; display: block; z-index: 0; overflow: visible; width: 270px; height: 286px; left: 270px; top: 286px;">
 					<div class="magicwall-wrap" style="transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1); transform-origin: 50% 50% 0px; opacity: 1;">
 						<div class="hover-content vcenter"></div>
 						<div class="magicwall-thumb" style="background-image: url({% static 'wp-content/uploads/2015/05/Bez-nazwy-2-1.png' %}"&quot;); background-position: center center; background-repeat: no-repeat; background-size: cover; opacity: 1; display: block;"></div>
@@ -318,7 +319,7 @@
 	</div>
 	<div class="preloader" style="display: none; transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0);">
 		<div class="inner">
-			<img src="{% static 'wp-content/themes/jj/img/logopreload.png' %}"" alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader">
+			<img src="{% static 'wp-content/themes/jj/img/logopreload.png' %}" alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader">
 			<span>
 				Dennis is thinking
 			</span>
@@ -331,7 +332,7 @@
 		</div>
 	</div>
 	<div id="rotate"></div>
-	<script type="text/javascript" src="{% static 'wp-includes/js/wp-embed.min.js?ver=5600043c36802d51cde71399f3d25aeb' %}"></script>
+	<script type="text/javascript" src="{% static 'wp-includes/js/wp-embed.min.js' %}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 	<script src="{% static 'wp-content/themes/jj/js/plugins.js' %}"></script>
 	<script src="{% static 'wp-content/themes/jj/js/vendor/magicwall.js' %}"></script>

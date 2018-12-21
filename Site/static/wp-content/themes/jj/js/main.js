@@ -27,16 +27,10 @@ app.ui = {
       }
 
       $('a.logo').removeClass('active');
-
-
       return false;
     });
-
-
   },
   pageLoad: function (url, rel) {
-
-
     if (app.ajax !== null) {
 
       return false;
@@ -65,13 +59,8 @@ app.ui = {
         $("#page").html(errmsg);
 
       });
-
-
       return true;
-
     }
-
-
   },
   pageInit: function (rel) {
 

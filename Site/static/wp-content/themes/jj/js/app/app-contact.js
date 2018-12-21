@@ -1,16 +1,11 @@
 app.contact = {
 
   init:function(){
-
-
-
     $(".contact h1").blast({
       delimiter: "character",
       tag: "span"
     });
     a = 0;
-
-
     $(".contact .blast").each(function(){
 
       var el = $(this);
@@ -26,10 +21,6 @@ app.contact = {
       a = a + 100;
 
     });
-
-
-
-
     setTimeout(function(){
 
       $(".contact .blast").removeClass('animated bounceIn');
@@ -66,27 +57,12 @@ app.contact = {
       b =b + 100;
 
     });
-
-
     window.initialize();
-
-
-
-
     $('#submit').click(function(){
-
-
       app.contact.validate();
-
-
       if($('.contact-form .required').size()  > 0 ){
-
-
         alertify.error(msg1);
-
       }else {
-
-
         alertify.log(msg2);
         console.log(path);
         $.post( path + "mail.php", $( "#contact" ).serialize(),function( data ) {
@@ -94,7 +70,6 @@ app.contact = {
           if(data == '11'){
 
             alertify.success(msg3);
-
 
             $('.contact-form .required').removeClass('required');
             $('.contact-form input[type="text"],.contact-form input[type="email"],.contact-form textarea').val('');
@@ -147,12 +122,7 @@ app.contact = {
       $('textarea').parent().removeClass('required');
 
     }
-
-
-
   }
-
-
 }
 
 function validateEmail(email) {
@@ -364,11 +334,9 @@ window.initialize = function() {
       }
     ];
   }
-
-
   map.setOptions({styles: styles});
 
-  var image = '{% static '../wp-content/themes/jj/img/marker.png';  //Removed var path
+  var image = "{% static 'wp-content/themes/jj/img/marker.png' %};  //Removed var path
   var marker = new google.maps.Marker({
     position: new google.maps.LatLng(-1.2820479999999999,36.8205824),
     animation: google.maps.Animation.DROP,
@@ -379,15 +347,7 @@ window.initialize = function() {
   marker.setMap(map);
 
   google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
-
-
     $('.inf-map').addClass('animated fadeInUp');
     $('#map').css('opacity',1);
-
-
-
-
   });
-
-
 }
