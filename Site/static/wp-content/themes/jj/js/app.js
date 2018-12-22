@@ -130,7 +130,7 @@
 	    this.stage = new PIXI.Container();
 	    this.imgContainer = new PIXI.Container();
 	    this.imageCounter = 0;
-	    this.displacementSprite = PIXI.Sprite.fromImage("{% static 'wp-content/themes/jj/assets/images/distortion/dmap-clouds-01.jpg' %}");
+	    this.displacementSprite = PIXI.Sprite.fromImage("static/wp-content/themes/jj/images/distortion/dmap-clouds-01.jpg");
 	    this.displacementFilter = new PIXI.filters.DisplacementFilter(this.displacementSprite);
 	    this.currentMap = {};
 	    this.mapCounter = 0;
@@ -262,7 +262,7 @@
 
 	      this.currentMap = this.mapArray[this.mapCounter];
 	      console.log(this.currentMap);
-	      this.displacementSprite = PIXI.Sprite.fromImage("{% static 'wp-content/themes/jj/assets/images/distortion/{}' %}" %(this.currentMap.image));
+	      this.displacementSprite = PIXI.Sprite.fromImage("static/wp-content/themes/jj/images/distortion/" + this.currentMap.image);
 	      this.displacementFilter = new PIXI.filters.DisplacementFilter(this.displacementSprite);
 	      this.createFilters();
 	    }
@@ -275,7 +275,7 @@
 	      var _this2 = this;
 
 	      this.bgArray.map(function (image) {
-	        var bg = PIXI.Sprite.fromImage("{% static 'wp-content/themes/jj/assets/images/bg/{}.jpg' %}" %(image));
+	        var bg = PIXI.Sprite.fromImage("static/wp-content/themes/jj/images/bg/"+image+ ".jpg");
 
 	        // Set image anchor to the center of the image
 	        bg.anchor.x = 0.5;
