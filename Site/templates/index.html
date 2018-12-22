@@ -55,6 +55,146 @@
 		jQuery('body').addClass('second');
 	}
 	</script>
+	<style>
+	section {
+		width: 100vw;
+		position: relative;
+		top: 0;
+	}
+	.section-wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 0 30%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	#section1 .section-wrap {
+		width: 100%;
+		left: 0;
+		padding: 100px 10%;
+	}
+	#section1 .btn {
+		margin: 60px auto 0;
+		position: absolute;
+		bottom: 35%;
+		left: calc(50vw - 114px);
+	}
+
+	#section1 .bar1 {
+		left: 0;
+		width: 33.333%;
+		background: url("{% static 'wp-content/themes/jj/img/bar_1-01.svg' %}") no-repeat;
+		background-position: bottom center;
+		background-size: 100% auto;
+	}
+
+	#section1 .bar2 {
+		left: 33.333%;
+		width: 33.333%;
+		background: url("{% static 'wp-content/themes/jj/img/bar_2-01.svg' %}") no-repeat;
+		background-position: top center;
+		background-size: 100% auto;
+	}
+
+	#section1 .bar3 {
+		left: 66.666%;
+		width: 33.333%;
+		background: url("{% static 'wp-content/themes/jj/img/bar_3-01.svg' %}") no-repeat;
+		background-position: bottom center;
+		background-size: 100% auto;
+	}
+
+	#section1 .bg-letter.mobile {
+		background: url("{% static 'wp-content/themes/jj/img/mobile.svg' %}") top center no-repeat;
+		background-size: 100% auto;
+	}
+
+	#section1 p {
+		margin: 40px auto 0;
+		text-align: center;
+	}
+	.letter-transition {
+		text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
+		will-change: transform;
+	}
+	.letter-transition div span {
+		opacity: 0;
+		width: auto;
+		min-width: 10px;
+		display: inline-block;
+		vertical-align: top;
+		transition: all 1.2s ease, color 3s linear;
+		text-align: center;
+	}
+
+	.black-bg {
+		background: #171819;
+	}
+	.black-bg.transition {
+		top: calc(-65vh - 200px);
+	}
+	.bg-letter {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		transition: background 2s ease;
+		border-right: 1px solid #000;
+		will-change: background-position;
+	}
+	.bg-letter.bg-center {
+		background-position: center center !important;
+	}
+	.bg-letter.mobile {
+		display: none;
+		width: 100%;
+	}
+	#section1 .section-wrap {
+		width: 100%;
+		left: 0;
+		padding: 100px 10%;
+	}
+
+	#section1 .btn {
+		margin: 60px auto 0;
+		position: absolute;
+		bottom: 35%;
+		left: calc(50vw - 114px);
+	}
+
+	/* #section1 .bar1 {
+		left: 0;
+		width: 33.333%;
+		background: url("{% static 'wp-content/themes/jj/img/bar_1.png' %}") no-repeat;
+		background-position: bottom center;
+		background-size: 100% auto;
+	}
+
+	#section1 .bar2 {
+		left: 33.333%;
+		width: 33.333%;
+		background: url("{% static 'wp-content/themes/jj/img/bar_2.png' %}") no-repeat;
+		background-position: top center;
+		background-size: 100% auto;
+	}
+
+	#section1 .bar3 {
+		left: 66.666%;
+		width: 33.333%;
+		background: url("{% static 'wp-content/themes/jj/img/bar_3.png' %}") no-repeat;
+		background-position: bottom center;
+		background-size: 100% auto;
+	}
+
+	#section1 p {
+		margin: 40px auto 0;
+		text-align: center;
+	} */
+	</style>
 	<div id="nav_bar">
 		<a class="logo" rel="index" href="/">
 			<img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
@@ -62,183 +202,186 @@
 		</a>
 		<nav class="en">
 			<a rel="index" href="/" class="home-link active">
-				<i class="icon-hom">
-				</i>
+				<i class="icon-hom"></i>
 			</a>
 			<a rel="about" href="/about/" class="">
-				<i class="icon-prof">
-				</i>
+				<i class="icon-prof"></i>
 			</a>
 			<a rel="skills" href="/skills/" class="">
-				<i class="icon-gear">
-				</i>
+				<i class="icon-gear"></i>
 			</a>
 			<a rel="gallery" href="/portfolio/" class="">
-				<i class="icon-eye">
-				</i>
+				<i class="icon-eye"></i>
 			</a>
 			<a rel="contact" href="/contact/" class="">
-				<i class="icon-mail">
-				</i>
+				<i class="icon-mail"></i>
 			</a>
 		</nav>
 		<ul>
 			<li>
 				<a href="https://twitter.com/dennohpeter" target="_blank">
-					<i class="fa fa-twitter">
-					</i>
+					<i class="fa fa-twitter"></i>
 				</a>
 			</li>
 			<li>
 				<a href="https://www.linkedin.com/in/dennis-peterson-563752149/" target="_blank">
-					<i class="fa fa-linkedin">
-					</i>
+					<i class="fa fa-linkedin"></i>
 				</a>
 			</li>
 			<li>
 				<a href="https://www.facebook.com/dennohpeterson" target="_blank">
-					<i class="fa fa-facebook">
-					</i>
+					<i class="fa fa-facebook"></i>
 				</a>
 			</li>
 			<li>
 				<a href="/feed/" target="_blank">
-					<i class="fa fa-rss">
-					</i>
+					<i class="fa fa-rss"></i>
 				</a>
 			</li>
 		</ul>
 		<a id="mobile-link" href="">
-			<i class="fa fa-bars">
-			</i>
+			<i class="fa fa-bars"></i>
 		</a>
 	</div>
-	<div id="page" class="en">
-		<div class="container home-page" style="opacity: 1;">
-			<span class="tags top-tags">
-				&nbsp;&nbsp;&nbsp;&lt;body&gt;
-			</span>
-			<div class="text-zone">
-				<h1 aria-label=" Hi, I’m Dennis,web developer." class="blast-root">
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						H
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						i
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						,
-					</span>
-					<br>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						I
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						’
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						m
-					</span>
-					<!-- <img src="{% static 'wp-content//themes/jj/img/jj.png' %}" alt="Wordpress Developer Name, Web Developer Name" class="animation-logo"> -->
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						D
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						e
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						n
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						n
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						i
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						s
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						,
-					</span>
-					<br>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						w
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						e
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						b
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						d
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						e
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						v
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						e
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						l
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						o
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						p
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						e
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						r
-					</span>
-					<span class="blast" aria-hidden="true" style="opacity: 1;">
-						.
-					</span>
-				</h1>
-				<h2>
-					Front End Developer / JavaScript / Angular 2+
-				</h2>
-				<a rel="contact" href="/contact/" class="flat-button">
-					CONTACT ME
-				</a>
-			</div>
-			<span class="tags bottom-tags">&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</span>
-			<div id="bulb" class="bulb">
-				<a class="animated" href=""></a>
+	<!-- <div id="page" class="en">
+	<div class="container home-page" style="opacity: 1;">
+	<span class="tags top-tags">
+	&nbsp;&nbsp;&nbsp;&lt;body&gt;
+</span>
+<div class="text-zone">
+<h1 aria-label=" Hi, I’m Dennis,web developer." class="blast-root">
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+H
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+i
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+,
+</span>
+<br>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+I
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+’
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+m
+</span>
+<img src="{% static 'wp-content//themes/jj/img/jj.png' %}" alt="Wordpress Developer Name, Web Developer Name" class="animation-logo">
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+D
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+e
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+n
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+n
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+i
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+s
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+,
+</span>
+<br>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+w
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+e
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+b
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+d
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+e
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+v
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+e
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+l
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+o
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+p
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+e
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+r
+</span>
+<span class="blast" aria-hidden="true" style="opacity: 1;">
+.
+</span>
+</h1>
+<h2>
+Front End Developer / JavaScript / Angular 2+
+</h2>
+<a rel="contact" href="/contact/" class="flat-button">
+CONTACT ME
+</a>
+</div>
+<span class="tags bottom-tags">&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</span>
+<div id="bulb" class="bulb">
+<a class="animated" href=""></a>
+</div>
+</div>
+<div class="bg" style="opacity: 1;">
+</div>
+</div> -->
+<section class="section" id="section1" style="height: 615px;">
+	<div id="fader-intro" class="bg black-bg"></div>
+	<div class="bg-letter mobile"></div>
+	<div class="bg-letter bar1"></div>
+	<div class="bg-letter bar2"></div>
+	<div class="bg-letter bar3"></div>
+
+	<div class="section-wrap">
+		<h1 class="letter-transition"><div>I'm </div> <div class="color"> a Fullstack</div> <div>dev</div><br><div>based in </div> <div class="color">Kisumu,Ke.</div></h1>
+		<p>Scroll to discover my projects</p>
+	</div>
+</section>
+
+<div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;">
+</div>
+<div class="preloader">
+	<div class="inner">
+		<img src="{% static 'wp-content//themes/jj/img/logopreload.png' %}" alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader">
+		<span>Dennis is thinking</span>
+		<div class="progress-bar">
+			<div class="progress-bar_bg">
+				<div></div>
 			</div>
 		</div>
-		<div class="bg" style="opacity: 1;">
-		</div>
 	</div>
-	<div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;">
-	</div>
-	<div class="preloader">
-		<div class="inner">
-			<img src="{% static 'wp-content//themes/jj/img/logopreload.png' %}" alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader">
-			<span>Dennis is thinking</span>
-			<div class="progress-bar">
-				<div class="progress-bar_bg">
-					<div></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="rotate"></div>
-	<script type="text/javascript" src="{% static 'wp-includes/js/wp-embed.min.js' %}"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-	<script src="{% static 'wp-content//themes/jj/js/plugins.js' %}"></script>
-	<script src="{% static 'wp-content//themes/jj/js/vendor/magicwall.js' %}"></script>
-	<script src="{% static 'wp-content//themes/jj/js/vendor/tagcanvas.js' %}"></script>
-	<script>
-	var app = {};
-	app.ajax = null;
+</div>
+<div id="rotate"></div>
+<script type="text/javascript" src="{% static 'wp-includes/js/wp-embed.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="{% static 'wp-content//themes/jj/js/plugins.js' %}"></script>
+<script src="{% static 'wp-content//themes/jj/js/vendor/magicwall.js' %}"></script>
+<script src="{% static 'wp-content//themes/jj/js/vendor/tagcanvas.js' %}"></script>
+<script>
+var app = {};
+app.ajax = null;
 </script>
 <script src="{% static 'wp-content//themes/jj/js/app/app-home.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/app/app-about.js' %}"></script>
@@ -247,6 +390,9 @@
 <script src="{% static 'wp-content//themes/jj/js/app/app-skills.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/app/app-text.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/main.js' %}"></script>
+<script src="{% static 'wp-content//themes/jj/js/vendor/pixi.min.js' %}"></script>
+<script src="{% static 'wp-content//themes/jj/js/vendor/TweenLite.min.js' %}"></script>
+<script src="{% static 'wp-content//themes/jj/js/app.js' %}"></script>
 <!-- Code injected by live-server -->
 <script type="text/javascript">
 // <![CDATA[  <-- For SVG support
