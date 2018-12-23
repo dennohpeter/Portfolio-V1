@@ -48,168 +48,22 @@
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2wqe1uDfotYB_e-YIq8anlmLIxcy3Yhs&v=3.exp&amp"></script> -->
 	<!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/5/intl/en_gb/common.js"></script> -->
 	<!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/5/intl/en_gb/util.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="{% static 'wp-content//themes/jj/css/jquery.fullpage.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'wp-content//themes/jj/css/style.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'wp-content//themes/jj/css/desktop.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'wp-content//themes/jj/css/z-index.min.css' %}" />
 </head>
-<body class="home page page-id-11 page-template page-template-template-home page-template-template-home-php">
-	<script>
-	if (sessionStorage.intro) {
-		jQuery('body').addClass('second');
-	}
-	</script>
-	<style>
-	section {
-		width: 100vw;
-		position: relative;
-		top: 0;
-	}
-	.section-wrap {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		padding: 0 30%;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		text-align: center;
-	}
-	#section1 .section-wrap {
-		width: 100%;
-		left: 0;
-		padding: 100px 10%;
-	}
-	#section1 .btn {
-		margin: 60px auto 0;
-		position: absolute;
-		bottom: 35%;
-		left: calc(50vw - 114px);
-	}
-
-	#section1 .bar1 {
-		left: 0;
-		width: 33.333%;
-		background: url("{% static 'wp-content/themes/jj/img/bar_1-01.svg' %}") no-repeat;
-		background-position: bottom center;
-		background-size: 100% auto;
-	}
-
-	#section1 .bar2 {
-		left: 33.333%;
-		width: 33.333%;
-		background: url("{% static 'wp-content/themes/jj/img/bar_2-01.svg' %}") no-repeat;
-		background-position: top center;
-		background-size: 100% auto;
-	}
-
-	#section1 .bar3 {
-		left: 66.666%;
-		width: 33.333%;
-		background: url("{% static 'wp-content/themes/jj/img/bar_3-01.svg' %}") no-repeat;
-		background-position: bottom center;
-		background-size: 100% auto;
-	}
-
-	#section1 .bg-letter.mobile {
-		background: url("{% static 'wp-content/themes/jj/img/mobile.svg' %}") top center no-repeat;
-		background-size: 100% auto;
-	}
-
-	#section1 p {
-		margin: 40px auto 0;
-		text-align: center;
-	}
-	.letter-transition {
-		text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
-		will-change: transform;
-	}
-	.letter-transition div span {
-		opacity: 0;
-		width: auto;
-		min-width: 10px;
-		display: inline-block;
-		vertical-align: top;
-		transition: all 1.2s ease, color 3s linear;
-		text-align: center;
-	}
-
-	.black-bg {
-		background: #171819;
-	}
-	.black-bg.transition {
-		top: calc(-65vh - 200px);
-	}
-	.bg-letter {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		transition: background 2s ease;
-		border-right: 1px solid #000;
-		will-change: background-position;
-	}
-	.bg-letter.bg-center {
-		background-position: center center !important;
-	}
-	.bg-letter.mobile {
-		display: none;
-		width: 100%;
-	}
-	#section1 .section-wrap {
-		width: 100%;
-		left: 0;
-		padding: 100px 10%;
-	}
-
-	#section1 .btn {
-		margin: 60px auto 0;
-		position: absolute;
-		bottom: 35%;
-		left: calc(50vw - 114px);
-	}
-
-	/* #section1 .bar1 {
-	left: 0;
-	width: 33.333%;
-	background: url("{% static 'wp-content/themes/jj/img/bar_1.png' %}") no-repeat;
-	background-position: bottom center;
-	background-size: 100% auto;
-}
-
-#section1 .bar2 {
-left: 33.333%;
-width: 33.333%;
-background: url("{% static 'wp-content/themes/jj/img/bar_2.png' %}") no-repeat;
-background-position: top center;
-background-size: 100% auto;
-}
-
-#section1 .bar3 {
-left: 66.666%;
-width: 33.333%;
-background: url("{% static 'wp-content/themes/jj/img/bar_3.png' %}") no-repeat;
-background-position: bottom center;
-background-size: 100% auto;
-}
-
-#section1 p {
-margin: 40px auto 0;
-text-align: center;
-} */
-.jello-canvas {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh !important;
-	z-index: 1;
-	opacity: 0.7;
-}
-body {
-	background: #000;
-}
+<style media="screen">
 #fullpage {
 	z-index: 2;
 }
 </style>
+<body class="home page page-id-11 page-template page-template-template-home page-template-template-home-php">
+	<!-- <script>
+	if (sessionStorage.intro) {
+	jQuery('body').addClass('second');
+}
+</script> -->
 <div id="nav_bar">
 	<a class="logo" rel="index" href="/">
 		<img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
@@ -362,87 +216,109 @@ CONTACT ME
 <div class="bg" style="opacity: 1;">
 </div>
 </div> -->
-<div id="fullpage">
 <div id="jello-container" class="jello-container"></div>
 <canvas id="focus" class="disabled"></canvas>
 <div class="click-focus"></div>
 <div class="canvas-hover-zone"></div>
-<section class="section" id="section1" style="height: 615px;">
-	<div id="fader-intro" class="bg black-bg"></div>
-	<div class="bg-letter mobile"></div>
-	<div class="bg-letter bar1"></div>
-	<div class="bg-letter bar2"></div>
-	<div class="bg-letter bar3"></div>
 
-	<div class="section-wrap">
-		<h1 class="letter-transition"><div>I'm </div> <div class="color"> a Fullstack</div> <div>dev</div><br><div>based in </div> <div class="color">Kisumu,Ke.</div></h1>
-		<p>Scroll to discover my projects</p>
+<div id="fullpage">
+	<canvas id="wave" class="disabled"></canvas>
+	<section class="section" id="section1" style="height: 615px;">
+		<div id="fader-intro" class="bg-2 black-bg"></div>
+		<div class="bg-letter mobile"></div>
+		<div class="bg-letter bar1"></div>
+		<div class="bg-letter bar2"></div>
+		<div class="bg-letter bar3"></div>
+
+		<div class="section-wrap">
+			<h1 class="letter-transition"><div>I'm </div> <div class="color"> a Fullstack</div> <div>dev</div><br><div>based in </div> <div class="color">Kisumu,Ke.</div></h1>
+			<p>Scroll to discover my projects</p>
+		</div>
+	</section>
+
+	<div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;">
 	</div>
-</section>
-
-<div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;">
-</div>
-<div class="preloader">
-	<div class="inner">
-		<img src="{% static 'wp-content//themes/jj/img/logopreload.png' %}" alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader">
-		<span>Dennis is thinking</span>
-		<div class="progress-bar">
-			<div class="progress-bar_bg">
-				<div></div>
+	<div class="preloader">
+		<div class="inner">
+			<img src="{% static 'wp-content//themes/jj/img/logopreload.png' %}" alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader">
+			<span>Dennis is thinking</span>
+			<div class="progress-bar">
+				<div class="progress-bar_bg">
+					<div></div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div id="rotate"></div>
-<script type="text/javascript" src="{% static 'wp-includes/js/wp-embed.min.js' %}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-<script src="{% static 'wp-content//themes/jj/js/plugins.js' %}"></script>
-<script src="{% static 'wp-content//themes/jj/js/vendor/magicwall.js' %}"></script>
-<script src="{% static 'wp-content//themes/jj/js/vendor/tagcanvas.js' %}"></script>
-<script>
-var app = {};
-app.ajax = null;
+	<div id="rotate"></div>
+	<script type="text/javascript" src="{% static 'wp-includes/js/wp-embed.min.js' %}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<!-- <script src="{% static 'wp-content//themes/jj/js/plugins.js' %}"></script> -->
+	<!-- <script src="{% static 'wp-content//themes/jj/js/vendor/magicwall.js' %}"></script> -->
+	<!-- <script src="{% static 'wp-content//themes/jj/js/vendor/tagcanvas.js' %}"></script> -->
+	<script>
+	var app = {};
+	app.ajax = null;
 </script>
 <script src="{% static 'wp-content//themes/jj/js/app/app-home.js' %}"></script>
-<script src="{% static 'wp-content//themes/jj/js/app/app-about.js' %}"></script>
-<script src="{% static 'wp-content//themes/jj/js/app/app-contact.js' %}"></script>
+<!-- <script src="{% static 'wp-content//themes/jj/js/app/app-about.js' %}"></script> -->
+<!-- <script src="{% static 'wp-content//themes/jj/js/app/app-contact.js' %}"></script> -->
 <script src="{% static 'wp-content//themes/jj/js/app/app-gallery.js' %}"></script>
-<script src="{% static 'wp-content//themes/jj/js/app/app-skills.js' %}"></script>
+<!-- <script src="{% static 'wp-content//themes/jj/js/app/app-skills.js' %}"></script> -->
 <script src="{% static 'wp-content//themes/jj/js/app/app-text.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/main.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/vendor/pixi.min.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/vendor/TweenLite.min.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/app.js' %}"></script>
 <!-- Code injected by live-server -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 // <![CDATA[  <-- For SVG support
-if ('WebSocket' in window) {
-	(function() {
-		function refreshCSS() {
-			var sheets = [].slice.call(document.getElementsByTagName("link"));
-			var head = document.getElementsByTagName("head")[0];
-			for (var i = 0; i < sheets.length; ++i) {
-				var elem = sheets[i];
-				head.removeChild(elem);
-				var rel = elem.rel;
-				if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-					var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-					elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-				}
-				head.appendChild(elem);
-			}
-		}
-		var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-		var address = protocol + window.location.host + window.location.pathname + '/ws';
-		var socket = new WebSocket(address);
-		socket.onmessage = function(msg) {
-			if (msg.data == 'reload') window.location.reload();
-			else if (msg.data == 'refreshcss') refreshCSS();
-		};
-		console.log('Live reload enabled.');
-	})();
+// if ('WebSocket' in window) {
+(function() {
+function refreshCSS() {
+var sheets = [].slice.call(document.getElementsByTagName("link"));
+var head = document.getElementsByTagName("head")[0];
+for (var i = 0; i < sheets.length; ++i) {
+var elem = sheets[i];
+head.removeChild(elem);
+var rel = elem.rel;
+if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+}
+head.appendChild(elem);
+}
+}
+var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+var address = protocol + window.location.host + window.location.pathname + '/ws';
+var socket = new WebSocket(address);
+socket.onmessage = function(msg) {
+if (msg.data == 'reload') window.location.reload();
+else if (msg.data == 'refreshcss') refreshCSS();
+};
+console.log('Live reload enabled.');
+})();
 }
 // ]]>
+</script> -->
+<script type="text/javascript" src="{% static 'wp-content//themes/jj/js/jquery.fullpage.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'wp-content//themes/jj/js/canvas.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'wp-content//themes/jj/js/script.min.js' %}"></script>
+
+<script type="text/javascript">
+
+focusGradient();
+rectGradient();
+
+titleSpanizer();
+
+
+
+txtTransition = $('.letter-transition div span')
+
+for (var i = 0; i < txtTransition.length; i++) {
+	var random = Math.floor(Math.random() * 100) + -60;
+	$(txtTransition[i]).css({'transform': 'translateY('+random+'px)'});
+}
 </script>
 <div id="cboxOverlay" style="display: none;">
 </div>
