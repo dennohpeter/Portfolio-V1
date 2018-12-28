@@ -1,0 +1,50 @@
+.bg-letter {
+  z-index: 1; }
+
+.cross.cross-close {
+  z-index: 28; }
+
+#wave {
+  z-index: 21; }
+
+#focus {
+  z-index: 25; }
+
+.click-focus {
+  z-index: 28; }
+
+.canvas-hover-zone {
+  z-index: 27; }
+
+.section-wrap {
+  z-index: 11; }
+
+nav {
+  z-index: 1001; }
+
+.project-header {
+  z-index: 14; }
+
+.border-lg {
+  z-index: 14; }
+
+.project-header h3 {
+  z-index: 15; }
+
+.project-content {
+  z-index: 16; }
+
+.about-contact {
+  z-index: 28; }
+
+#close-nav {
+  z-index: 14; }
+
+.btn {
+  z-index: 100; }
+
+.wave-container {
+  z-index: 10; }
+
+#loading {
+  z-index: 1002; }
