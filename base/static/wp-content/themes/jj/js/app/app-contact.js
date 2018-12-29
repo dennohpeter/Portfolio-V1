@@ -135,7 +135,7 @@ window.initialize = function() {
 
 
   var mapOptions = {
-    center: new google.maps.LatLng(51.272223,22.500727),
+    center: new google.maps.LatLng(-4.05466, 39.6635),
     zoom:5,
     disableDefaultUI: true
   };
@@ -337,7 +337,7 @@ window.initialize = function() {
   map.setOptions({styles: styles});
 
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(-1.2820479999999999,36.8205824),
+    position: new google.maps.LatLng(-4.05466, 39.6635),
     animation: google.maps.Animation.DROP,
     icon: image
 
