@@ -243,11 +243,6 @@ body {
     width: 20px;
     height: 100%; }
 
-section {
-  width: 100vw;
-  position: relative;
-  top: 0;
-}
   section p {
     width: 400px;
     text-align: left;
