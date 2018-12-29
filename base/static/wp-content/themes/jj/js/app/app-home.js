@@ -3,7 +3,7 @@ app.home = {
     init:function(){
 
 		TweenMax.to( document.querySelector('.bg'), 0.4 ,{opacity:1 ,ease: Power2.easeIn});
-	     
+
 
 
 		var mySVG = $('svg').drawsvg({duration:8000});
@@ -20,8 +20,8 @@ app.home = {
             delimiter: "character",
             tag: "span"
         });
-		
-		
+
+
 
 
         a = 0;
