@@ -139,7 +139,7 @@ input:focus {
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-
+/* 
 @font-face {
 	font-family:'Font-Name';
 	src:url('fonts/font-name.eot');
@@ -149,7 +149,7 @@ input:focus {
 		url('fonts/font-name.svg#font-name') format('svg');
     font-weight:normal;
     font-style:normal;
-}
+} */
 
 /*------------------------------------*\
     RESPONSIVE
