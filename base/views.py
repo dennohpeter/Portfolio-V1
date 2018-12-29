@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def home(request):
@@ -19,3 +19,7 @@ def portfolio(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+
+def feed(request):
+    return redirect("http://dennohpeter.pythonanywhere.com")
