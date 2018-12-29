@@ -27,8 +27,8 @@
 	<link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="{% static 'wp-content//themes/jj/css/font-awesome.min.css' %}">
-	<!-- <link rel="stylesheet" href="{% static 'wp-content//themes/jj/css/third-party.css' %}"> -->
-	<!-- <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css' %}"> -->
+	<link rel="stylesheet" href="{% static 'wp-content//themes/jj/css/third-party.css' %}">
+	<link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css' %}">
 	<link rel="stylesheet" href="{% static 'wp-content//themes/jj/css/main.css' %}">
 	<script>
 	var path = "{% static 'wp-content//themes/jj/' %}";
@@ -210,9 +210,9 @@
 <script src="{% static 'wp-content//themes/jj/js/app/app-text.js' %}"></script>
 <script src="{% static 'wp-content//themes/jj/js/main.js' %}"></script>
 <!-- Code injected by live-server -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 // <![CDATA[  <-- For SVG support
-// if ('WebSocket' in window) {
+if ('WebSocket' in window) {
 (function() {
 function refreshCSS() {
 var sheets = [].slice.call(document.getElementsByTagName("link"));
@@ -238,7 +238,8 @@ else if (msg.data == 'refreshcss') refreshCSS();
 console.log('Live reload enabled.');
 })();
 // ]]>
-</script> -->
+}
+</script>
 
 
 <div id="cboxOverlay" style="display: none;">
