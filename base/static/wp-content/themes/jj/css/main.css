@@ -344,7 +344,7 @@ body {
   min-height: 566px;
   position: absolute;
   opacity:0;
-  top:5%;
+  /* top:5%; */
   margin: 0 auto;
   z-index: 1;
   -webkit-transform-style: preserve-3d;
@@ -407,7 +407,7 @@ body {
 
 /*================================================== HOME page ============================================== */
 
-/* .home-page .text-zone{
+.home-page .text-zone{
   position: absolute;
   left:10%;
   top: 50%;
@@ -419,12 +419,12 @@ body {
 }
 .home-page .text-zone a {
   font-weight: normal;
-} */
+}
 .home-page h1 {
-  color: #fff;
-  font-size: 56px;
+  /* color: #fff; */
+  /* font-size: 56px; */
   line-height: 53px;
-  margin: 0;
+  /* margin: 0; */
   font-family: font-file-82132;
   font-weight: normal;
 }
