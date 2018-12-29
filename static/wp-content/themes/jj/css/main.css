@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ccciao');
-  src:  url('../fonts/icomoon.eot?ccciao#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?ccciao') format('truetype'),
-  url('../fonts/icomoon.woff?ccciao') format('woff'),
-  url('../fonts/icomoon.svg?ccciao#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf') format('truetype'),
+  url('../fonts/icomoon.woff') format('woff'),
+  url('../fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1674,7 +1674,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     right: 0;
     bottom:0;
     z-index: 9999999999999;
-    display: block, !important;
+    display: block !important;
     opacity: 1 !important;
   }
   #page {
@@ -2074,5 +2074,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   81.48% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   83.98% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
 }
 }
