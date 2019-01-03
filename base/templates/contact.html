@@ -31,30 +31,13 @@
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/third-party.css' %}?version=1">
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css' %}?version=1">
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css' %}?version=1">
-  <script>
-  var path = "{% static 'wp-content/themes/jj/' %}";
-  var requested = "";
-  var errmsg ='<div class="error-info animated fadeInUp"><span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
-  var msg1 ="Please fill in all required fields";
-  var msg2 = "Please wait. Processing";
-  var msg3 = "Your e-mail has been successfully sent. Thank You!";
-  var msg4 = "Failed to send your message. Please try later or contact me directly denispeterson96@gmail.com.";
-  var msg5 = "Please note these are not my designs.";
-  var msg6 = "Just the code.";
-  var msg7 = "Double click to add more elements.";
-  var msg8 = "Scroll to zoom in/out";
-  var image = "{% static 'wp-content/themes/jj/img/marker.png' %}";  //Removed var path
-  </script>
-  <script src="{% static 'wp-content/themes/jj/js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/vide.js' %}?version=1"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2wqe1uDfotYB_e-YIq8anlmLIxcy3Yhs&v=3.exp&amp;"></script>
-</head>
+  </head>
 <body class="page page-id-20 page-template page-template-template-contact page-template-template-contact-php contact">
-  <script>
+  <!-- <script>
   if (sessionStorage.intro) {
     jQuery('body').addClass('second');
   }
-  </script>
+  </script> -->
   <div id="nav_bar">
     <a class="logo" rel="index" href="/">
     <img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
@@ -110,7 +93,7 @@
     </ul>
     <a id="mobile-link" href=""><i class="fa fa-bars"></i></a>
   </div>
-  <div id="page" class="en">
+  <!-- <div id="page" class="en">
     <div class="container contact">
       <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
       <div class="text-zone">
@@ -161,10 +144,9 @@
         &lt;/html&gt;
       </span>
     </div>
-  </div>
-  <div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;">
-  </div>
-  <div class="preloader">
+  </div> -->
+  <!-- <div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;"></div> -->
+  <!-- <div class="preloader">
     <div class="inner">
       <img src="{% static 'wp-content/themes/jj/img/logopreload.png' %}"
       alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader"/>
@@ -175,23 +157,41 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="rotate"></div>
-  <script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min.js' %}?version=1"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-  <script src="{% static 'wp-content/themes/jj/js/plugins.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/vendor/magicwall.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/vendor/tagcanvas.js' %}?version=1"></script>
-  <script>
+  </div> -->
+  <!-- <div id="rotate"></div> -->
+  <!-- <script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min.js' %}?version=1"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/plugins.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/vendor/magicwall.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/vendor/tagcanvas.js' %}?version=1"></script> -->
+  <!-- <script>
   var app = {};
   app.ajax = null;
-  </script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-home.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-about.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-contact.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-gallery.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-skills.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/app/app-text.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/main.js' %}?version=1"></script>
+  </script> -->
+  <!-- <script>
+    var path = "{% static 'wp-content/themes/jj/' %}";
+    var requested = "";
+    var errmsg ='<div class="error-info animated fadeInUp"><span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
+    var msg1 ="Please fill in all required fields";
+    var msg2 = "Please wait. Processing";
+    var msg3 = "Your e-mail has been successfully sent. Thank You!";
+    var msg4 = "Failed to send your message. Please try later or contact me directly denispeterson96@gmail.com.";
+    var msg5 = "Please note these are not my designs.";
+    var msg6 = "Just the code.";
+    var msg7 = "Double click to add more elements.";
+    var msg8 = "Scroll to zoom in/out";
+    var image = "{% static 'wp-content/themes/jj/img/marker.png' %}";  //Removed var path
+  </script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/vendor/jquery-1.11.2.min.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/vide.js' %}?version=1"></script> -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2wqe1uDfotYB_e-YIq8anlmLIxcy3Yhs&v=3.exp&amp;"></script> -->
+
+  <!-- <script src="{% static 'wp-content/themes/jj/js/app/app-home.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/app/app-about.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/app/app-contact.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/app/app-gallery.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/app/app-skills.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/app/app-text.js' %}?version=1"></script> -->
+  <!-- <script src="{% static 'wp-content/themes/jj/js/main.js' %}?version=1"></script> -->
 </body>
 </html>
