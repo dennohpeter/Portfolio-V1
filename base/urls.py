@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^portfolio/$', views.portfolio, name='portfolio'),
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^feed/$', views.feed, name='feed'),
+    url(r'^my_work/$', views.my_work, name='my_work'),
     ]

@@ -23,3 +23,7 @@ def contact(request):
 
 def feed(request):
     return redirect("http://dennohpeter.pythonanywhere.com")
+
+
+def my_work(request):
+    return render(request, "my-work.html")
