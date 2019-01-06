@@ -7,10 +7,8 @@
 {% block ogdescription %} content="projekty/toucan/individual_idea US &hellip;" {% endblock %}
   {% block ogurl %} content="/my-work/" {% endblock %}
   {% block twitterdescription %} content="My Work Section" {% endblock %}
+  {% block twittertitle %} content="My Work | Dennis Peterson" {% endblock %}
   <meta property="og:site_name" content="Dennis Peterson" />
-  <meta name="twitter:title" content="My Work | Dennis Peterson" />
-  <meta name="twitter:site" content="@dennohpeter" />
-  <meta name="twitter:creator" content="@dennohpeter" />
   <link rel='stylesheet' id='wp-pagenavi-css'  href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css' %}?version=1" media='all' />
   <link rel='stylesheet' id='jayjay-css'  href="{% static 'wp-content/themes/jj/style.css' %}?version=1" media='all' />
   <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
@@ -20,7 +18,7 @@
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css' %}?version=1">
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css' %}?version=1">
 </head>
-<body class="jj-wall">
+<body {% block bodyclass %} class="jj-wall" {% endblock %}>
   <div class="wall-top">
     <div class="width-holder">
       <a href="/wall">

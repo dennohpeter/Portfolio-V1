@@ -8,12 +8,7 @@
 	{% block ogurl %} content="https://dennispeter.org/" {% endblock %}
 {% block description %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}
 {% block twitterdescription %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}
-	<meta name="twitter:title" content="DP - Back End Developer | Python | Linux">
-	<meta name="twitter:site" content="@dennohpeter">
-	<meta name="twitter:creator" content="@dennohpeter">
-	<link rel="icon" type="image/png" href="{% static 'wp-content//themes/jj/fav/transparentme.png' %}">
-	<link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+{% block twittertitle %} content="DP - Back End Developer | Python | Linux" {% endblock %}
 	<link rel="stylesheet" id="jayjay-css" href="{% static 'wp-content//themes/jj/style.css' %}?version=1" media="all">
 	<link rel="stylesheet" href="{% static 'wp-content//themes/jj/css/font-awesome.min.css' %}?version=1">
 	<link rel="stylesheet" href="{% static 'wp-content//themes/jj/css/third-party.css' %}?version=1">
@@ -26,8 +21,9 @@
 z-index: 2;
 }
 </style> -->
-<body class="home page page-id-11 page-template page-template-template-home page-template-template-home-php">
-<!-- <div id="page"  class="en">
+<body {% block bodyclass %} class="home page page-id-11 page-template page-template-template-home page-template-template-home-php" {% endblock %}>
+{% block content %}
+ <div id="page"  class="en">
 <section class="section container home-page" id="section1" style="height: 615px;">
 <div class="bg-letter bar1"></div>
 <div class="bg-letter bar2"></div>
@@ -92,7 +88,7 @@ c-76 9 -138 45 -220 126 -84 83 -124 142 -255 372 -48 85 -89 156 -90 158 -2
 -17z" style="stroke-dasharray: 86.3521, 86.3521; stroke-dashoffset: 0;"></path></g>
 </svg>
 </div>
-</div> -->
+</div>
 
 <!-- Code injected by live-server -->
 <!-- <script type="text/javascript">
@@ -154,5 +150,4 @@ console.log('Live reload enabled.');
 </div>
 </div> -->
 <!-- <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div> -->
-</body>
-</html>
+{% endblock %}

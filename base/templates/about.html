@@ -2,19 +2,14 @@
 {% load staticfiles %}
 <title> About me | Dennis Peterson </title>
   {% block canonical %} href="/about/" {% endblock %}
-  {% block ogtype %} content="article" {% endblock %} />
+  {% block ogtype %} content="article" {% endblock %}
   {% block ogtitle %} content="About me | Dennis Peterson" {% endblock %}
 {% block ogdescription %} content="Everything started with passion to be a Linux Nerd. 2016" {% endblock %}
   {% block ogurl %} content="/about/" {% endblock %}
 {% block twitterdescription %} content="Everything started with passion to be a Linux Nerd. 2016" {% endblock %}
+{% block twittertitle %} content="About me | Dennis Peterson" {% endblock %}
   <meta property="og:site_name" content="Full Stack Developer | Python | Linux Nerd" />
   <meta property="article:publisher" content="https://www.facebook.com/dennohpeterson" />
-  <meta name="twitter:title" content="About me | Dennis Peterson" />
-  <meta name="twitter:site" content="@dennohpeter" />
-  <meta name="twitter:creator" content="@dennohpeter" />
-  <link rel="icon" type="image/png" href="{% static 'wp-content/themes/jj/fav/transparentme.png' %}">
-  <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' id='wp-pagenavi-css'  href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css' %}?version=1" media='all' />
   <link rel='stylesheet' id='jayjay-css'  href="{% static 'wp-content/themes/jj/style.css' %}?version=1" media='all' />
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/font-awesome.min.css' %}?version=1">
@@ -22,8 +17,9 @@
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css' %}?version=1">
   <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css' %}?version=1">
   </head>
-<body class="page page-id-13 page-template page-template-template-about page-template-template-about-php about">
-  <!-- <div id="page" class="en">
+<body {% block bodyclass %} class="page page-id-13 page-template page-template-template-about page-template-template-about-php about" {% endblock %}>
+{% block content %}
+<div id="page" class="en">
     <div class="container about">
       <span class="tags top-tags">
         &nbsp;&nbsp;&nbsp;&lt;body&gt;
@@ -76,6 +72,5 @@
       &lt;/html&gt;
     </span>
   </div>
-</div> -->
-</body>
-</html>
+</div>
+{% endblock %}
