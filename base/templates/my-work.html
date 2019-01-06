@@ -1,6 +1,6 @@
 <!doctype html>
 {% load staticfiles %}
-<title>My Work | Dennis Peterson </title>
+{% block title %} My Work | Dennis Peterson  {% endblock %}
 {% block canonical %} href="/my-work/" {% endblock %}
 {% block ogtype %} content="article" {% endblock %}
 {% block ogtitle %} content="My Work | Dennis Peterson" {% endblock %}
@@ -8,373 +8,371 @@
 {% block ogurl %} content="/my-work/" {% endblock %}
 {% block twitterdescription %} content="My Work Section" {% endblock %}
 {% block twittertitle %} content="My Work | Dennis Peterson" {% endblock %}
-<body {% block bodyclass %} class="jj-wall" {% endblock %}>
-  <div class="wall-top">
-    <div class="width-holder">
-      <a href="/wall">
-        <img src="{% static 'wp-content/themes/jj/img/wall-logo.png' %}" alt="Web Developer Wall, Wordpress Developer wall"/>
+{% block bodyclass %} class="jj-wall" {% endblock %}
+<div class="wall-top">
+  <div class="width-holder">
+    <a href="/wall">
+      <img src="{% static 'wp-content/themes/jj/img/wall-logo.png' %}" alt="Web Developer Wall, Wordpress Developer wall"/>
 
-      </a>
-      <small>
-        Front End Developer / Web Developer / WordPress
-      </small>
-
-    </div>
+    </a>
+    <small>
+      Front End Developer / Web Developer / WordPress
+    </small>
 
   </div>
-  <div class="width-holder">
-    <div class="wall-cont">
-      <a href="/" class="logo-big">
-        <img src="{% static 'wp-content/themes/jj/img/wall-logo.png' %}" alt="Web Developer Wall, Wordpress Developer wall"/>
-      </a>
-      <h1>WALL</h1>
-      <div class="left-col">
-        <div class="posts">
-          <div id="blog_loop">
-            <div class="post-article single">
-              <div class="post-content">
-                <div class="blog-post-title">
-                  <h5><a>My Work</a></h5>
-                </div>
-                <div class="post-date">
-                  <h2>Feb 2016</h2>
-                </div>
-                <div class="blog-post-content text-div">
-                  <h2>
-                    Front end templates (HTML/CSS/JS)
-                  </h2>
-                  <p>
-                    <strong>
-                      Toucan (HTML/CSS/JS templates)
-                    </strong>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/toucan/">
-                      //projekty/toucan/
-                    </a>
+</div>
+<div class="width-holder">
+  <div class="wall-cont">
+    <a href="/" class="logo-big">
+      <img src="{% static 'wp-content/themes/jj/img/wall-logo.png' %}" alt="Web Developer Wall, Wordpress Developer wall"/>
+    </a>
+    <h1>WALL</h1>
+    <div class="left-col">
+      <div class="posts">
+        <div id="blog_loop">
+          <div class="post-article single">
+            <div class="post-content">
+              <div class="blog-post-title">
+                <h5><a>My Work</a></h5>
+              </div>
+              <div class="post-date">
+                <h2>Feb 2016</h2>
+              </div>
+              <div class="blog-post-content text-div">
+                <h2>
+                  Front end templates (HTML/CSS/JS)
+                </h2>
+                <p>
+                  <strong>
+                    Toucan (HTML/CSS/JS templates)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/toucan/stream.html" target="_blank">
-                      //projekty/toucan/stream.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/toucan/">
+                    //projekty/toucan/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/toucan/search.html" target="_blank">
-                      //projekty/toucan/search.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/toucan/stream.html" target="_blank">
+                    //projekty/toucan/stream.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/toucan/profile.html" target="_blank">
-                      //projekty/toucan/profile.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/toucan/search.html" target="_blank">
+                    //projekty/toucan/search.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/toucan/members.html" target="_blank">
-                      //projekty/toucan/members.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/toucan/profile.html" target="_blank">
+                    //projekty/toucan/profile.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/toucan/individual_idea.html" target="_blank">
-                      //projekty/toucan/individual_idea.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/toucan/members.html" target="_blank">
+                    //projekty/toucan/members.html
+                  </a>
 
-                  </p>
-                  <p>
-                    &nbsp;
-                  </p>
-                  <p>
-                    <strong>
-                      Platforma Obywatelska gov
-                    </strong>
-                    <strong>
-                      (HTML/CSS/JS templates)
-                    </strong>
+                </p>
+                <p>
+                  <a href="//projekty/toucan/individual_idea.html" target="_blank">
+                    //projekty/toucan/individual_idea.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/platforma1/" target="_blank">
-                      //projekty/platforma1/
-                    </a>
+                </p>
+                <p>
+                  &nbsp;
+                </p>
+                <p>
+                  <strong>
+                    Platforma Obywatelska gov
+                  </strong>
+                  <strong>
+                    (HTML/CSS/JS templates)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/platforma1/okreg.html" target="_blank">
-                      //projekty/platforma1/okreg.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/platforma1/" target="_blank">
+                    //projekty/platforma1/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/platforma1/kandydat.html" target="_blank">
-                      //projekty/platforma1/kandydat.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/platforma1/okreg.html" target="_blank">
+                    //projekty/platforma1/okreg.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/platforma1/aktualnosc.html" target="_blank">
-                      //projekty/platforma1/aktualnosc.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/platforma1/kandydat.html" target="_blank">
+                    //projekty/platforma1/kandydat.html
+                  </a>
 
-                  </p>
-                  <p>
-                    &nbsp;
-                  </p>
-                  <p>
-                    <strong>
-                      OBI  (HTML/CSS/JS templates)
-                    </strong>
+                </p>
+                <p>
+                  <a href="//projekty/platforma1/aktualnosc.html" target="_blank">
+                    //projekty/platforma1/aktualnosc.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//other/projekty/regular/obi/startseite.html">
-                      //other/projekty/regular/obi/startseite.html
-                    </a>
+                </p>
+                <p>
+                  &nbsp;
+                </p>
+                <p>
+                  <strong>
+                    OBI  (HTML/CSS/JS templates)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <a href="//other/projekty/regular/obi/drive-in.html">
-                      //other/projekty/regular/obi/drive-in.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//other/projekty/regular/obi/startseite.html">
+                    //other/projekty/regular/obi/startseite.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//other/projekty/regular/obi/ratgeber.html">
-                      //other/projekty/regular/obi/ratgeber.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//other/projekty/regular/obi/drive-in.html">
+                    //other/projekty/regular/obi/drive-in.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//other/projekty/regular/obi/services-kontakt.html">
-                      //other/projekty/regular/obi/services-kontakt.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//other/projekty/regular/obi/ratgeber.html">
+                    //other/projekty/regular/obi/ratgeber.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Open Polls (HTML/CSS/JS templates)
-                    </strong>
+                </p>
+                <p>
+                  <a href="//other/projekty/regular/obi/services-kontakt.html">
+                    //other/projekty/regular/obi/services-kontakt.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/open_polls/">
-                      //projekty/open_polls/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Open Polls (HTML/CSS/JS templates)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/open_polls/poll_open.html">
-                      //projekty/open_polls/poll_open.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/open_polls/">
+                    //projekty/open_polls/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/open_polls/poll_opened.html">
-                      //projekty/open_polls/poll_opened.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/open_polls/poll_open.html">
+                    //projekty/open_polls/poll_open.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/open_polls/profile_settings.html">
-                      //projekty/open_polls/profile_settings.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/open_polls/poll_opened.html">
+                    //projekty/open_polls/poll_opened.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/open_polls/subscription_profile.html">
-                      //projekty/open_polls/subscription_profile.html
-                    </a>
+                </p>
+                <p>
+                  <a href="//projekty/open_polls/profile_settings.html">
+                    //projekty/open_polls/profile_settings.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Sonabend (HTML/CSS/JS templates)
-                    </strong>
+                </p>
+                <p>
+                  <a href="//projekty/open_polls/subscription_profile.html">
+                    //projekty/open_polls/subscription_profile.html
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://jacekjeznach.e-kei.pl/sonabend/">
-                      http://jacekjeznach.e-kei.pl/sonabend/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Sonabend (HTML/CSS/JS templates)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Chickenbox (HTML/CSS/JS templates)
-                    </strong>
+                </p>
+                <p>
+                  <a href="http://jacekjeznach.e-kei.pl/sonabend/">
+                    http://jacekjeznach.e-kei.pl/sonabend/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="//projekty/chickenbox/">
-                      //projekty/chickenbox/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Chickenbox (HTML/CSS/JS templates)
+                  </strong>
 
-                  </p>
-                  <p>
-                    &nbsp;
-                  </p>
-                  <h2>
-                    FRONT END + CMS
-                  </h2>
-                  <p>
-                    <strong>
-                      Feedback (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a href="//projekty/chickenbox/">
+                    //projekty/chickenbox/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://www.feedbk.pl/" target="_blank">
-                      http://www.feedbk.pl/
-                    </a>
+                </p>
+                <p>
+                  &nbsp;
+                </p>
+                <h2>
+                  FRONT END + CMS
+                </h2>
+                <p>
+                  <strong>
+                    Feedback (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Greta Stockholm (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a href="http://www.feedbk.pl/" target="_blank">
+                    http://www.feedbk.pl/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a class="gmail_msg" href="https://gretastockholm.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://gretastockholm.com/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNHcX7f80pxJfjAVJBONJdE1pZ_2Lg">
-                      https://gretastockholm.com/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Greta Stockholm (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Exceldent (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a class="gmail_msg" href="https://gretastockholm.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://gretastockholm.com/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNHcX7f80pxJfjAVJBONJdE1pZ_2Lg">
+                    https://gretastockholm.com/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a class="gmail_msg" href="https://exceldent.pl/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://exceldent.pl/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNHNfQmL8EBk8XHUlTkJnLANmFrjww">
-                      https://exceldent.pl/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Exceldent (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      UKv s US (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a class="gmail_msg" href="https://exceldent.pl/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://exceldent.pl/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNHNfQmL8EBk8XHUlTkJnLANmFrjww">
+                    https://exceldent.pl/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a class="gmail_msg" href="http://ukvsus.jeznacki13.usermd.net/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://ukvsus.jeznacki13.usermd.net/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNFDFidnjtnTUAud6w_No2JEKcBMTw">
-                      http://ukvsus.jeznacki13.<wbr />
-                      usermd.net/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    UKv s US (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      IT Switch (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a class="gmail_msg" href="http://ukvsus.jeznacki13.usermd.net/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://ukvsus.jeznacki13.usermd.net/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNFDFidnjtnTUAud6w_No2JEKcBMTw">
+                    http://ukvsus.jeznacki13.<wbr />
+                    usermd.net/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://itswitch.esy.es/">
-                      http://itswitch.esy.es/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    IT Switch (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Villas Away (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a href="http://itswitch.esy.es/">
+                    http://itswitch.esy.es/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://www.villasaway.co.uk/">
-                      http://www.villasaway.co.uk/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Villas Away (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Mizaco (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a href="http://www.villasaway.co.uk/">
+                    http://www.villasaway.co.uk/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://new.mizaco.pl/" target="_blank">
-                      http://new.mizaco.pl/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Mizaco (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Classical Comics (CMS)
-                    </strong>
-                    <br />
-                    <a href="http://www.classicalcomics.com/">
-                      http://www.classicalcomics.com/
-                    </a>
+                </p>
+                <p>
+                  <a href="http://new.mizaco.pl/" target="_blank">
+                    http://new.mizaco.pl/
+                  </a>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Club Inc. (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <strong>
+                    Classical Comics (CMS)
+                  </strong>
+                  <br />
+                  <a href="http://www.classicalcomics.com/">
+                    http://www.classicalcomics.com/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://www.clubincorporated.com/">
-                      http://www.clubincorporated.com/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Club Inc. (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      CQC Solutions (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a href="http://www.clubincorporated.com/">
+                    http://www.clubincorporated.com/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://www.cqc-solutions.com/" target="_blank">
-                      http://www.cqc-solutions.com/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    CQC Solutions (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Amplitude Creative (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a href="http://www.cqc-solutions.com/" target="_blank">
+                    http://www.cqc-solutions.com/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://www.amplitudecreative.co.uk/">
-                      http://www.amplitudecreative.co.uk/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    Amplitude Creative (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      ECIIA.EU (CMS)
-                    </strong>
+                </p>
+                <p>
+                  <a href="http://www.amplitudecreative.co.uk/">
+                    http://www.amplitudecreative.co.uk/
+                  </a>
 
-                  </p>
-                  <p>
-                    <a href="http://www.eciia.eu/" target="_blank">
-                      http://www.eciia.eu/
-                    </a>
+                </p>
+                <p>
+                  <strong>
+                    ECIIA.EU (CMS)
+                  </strong>
 
-                  </p>
-                  <p>
-                    <strong>
-                      Interiomarine (CMS)
-                    </strong>
-                    <br />
-                    <a class="gmail_msg" href="http://interiomarine.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://interiomarine.com/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNFbw31USyaN2v8mf0UuC0l46PiuAw">
-                      http://interiomarine.com/
-                    </a>
+                </p>
+                <p>
+                  <a href="http://www.eciia.eu/" target="_blank">
+                    http://www.eciia.eu/
+                  </a>
 
-                  </p>
+                </p>
+                <p>
+                  <strong>
+                    Interiomarine (CMS)
+                  </strong>
+                  <br />
+                  <a class="gmail_msg" href="http://interiomarine.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://interiomarine.com/&amp;source=gmail&amp;ust=1486453974450000&amp;usg=AFQjCNFbw31USyaN2v8mf0UuC0l46PiuAw">
+                    http://interiomarine.com/
+                  </a>
 
-                </div>
+                </p>
 
               </div>
 
@@ -385,175 +383,177 @@
         </div>
 
       </div>
-      <div class="sidebar">
-        <div class="widget widget_categories">
-          <h6>
-            Categories
-          </h6>
-          <ul>
-            <li class="cat-item cat-item-43">
-              <a href="//category/htmlcss/" >
-                HTML/CSS
-              </a>
-            </li>
-            <li class="cat-item cat-item-1">
-              <a href="//category/other/" >
-                Other
-              </a>
-            </li>
-            <li class="cat-item cat-item-48">
-              <a href="//category/personal/" >
-                Personal
-              </a>
-            </li>
-            <li class="cat-item cat-item-9">
-              <a href="//category/tools/" >
-                Tools
-              </a>
 
-            </li>
-            <li class="cat-item cat-item-45">
-              <a href="//category/tutorials/" >
-                Tutorials
-              </a>
-
-            </li>
-            <li class="cat-item cat-item-44">
-              <a href="//category/wordpress/" >
-                WordPress
-              </a>
-
-            </li>
-
-          </ul>
-
-        </div>
-        <div class="widget widget_tag_cloud">
-          <h6>
-            Tags
-          </h6>
-          <div class="tagcloud">
-            <a href='//tag/animation/' class='tag-link-37' title='8 topics' style='font-size: 18.705882352941pt;'>
-              animation
+    </div>
+    <div class="sidebar">
+      <div class="widget widget_categories">
+        <h6>
+          Categories
+        </h6>
+        <ul>
+          <li class="cat-item cat-item-43">
+            <a href="//category/htmlcss/" >
+              HTML/CSS
             </a>
-            <a href='//tag/bootstrap/' class='tag-link-35' title='1 topic' style='font-size: 8pt;'>
-              bootstrap
+          </li>
+          <li class="cat-item cat-item-1">
+            <a href="//category/other/" >
+              Other
             </a>
-            <a href='//tag/css/' class='tag-link-46' title='2 topics' style='font-size: 10.964705882353pt;'>
-              css
+          </li>
+          <li class="cat-item cat-item-48">
+            <a href="//category/personal/" >
+              Personal
             </a>
-            <a href='//tag/education/' class='tag-link-25' title='2 topics' style='font-size: 10.964705882353pt;'>
-              edu
-            </a>
-            <a href='//tag/fonts/' class='tag-link-17' title='8 topics' style='font-size: 18.705882352941pt;'>
-              fonts
-            </a>
-            <a href='//tag/form/' class='tag-link-32' title='1 topic' style='font-size: 8pt;'>
-              form
-            </a>
-            <a href='//tag/framework/' class='tag-link-11' title='7 topics' style='font-size: 17.882352941176pt;'>
-              framework
-            </a>
-            <a href='//tag/front-end/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>
-              front-end
-            </a>
-            <a href='//tag/grid/' class='tag-link-6' title='1 topic' style='font-size: 8pt;'>
-              grid
-            </a>
-            <a href='//tag/images/' class='tag-link-30' title='5 topics' style='font-size: 15.905882352941pt;'>
-              images
-            </a>
-            <a href='//tag/jquery-plugins/' class='tag-link-7' title='13 topics' style='font-size: 22pt;'>
-              jquery plugins
-            </a>
-            <a href='//tag/less/' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>
-              less
-            </a>
-            <a href='//tag/mobile-2/' class='tag-link-23' title='6 topics' style='font-size: 17.058823529412pt;'>
-              mobile
-            </a>
-            <a href='//tag/mvc/' class='tag-link-28' title='4 topics' style='font-size: 14.588235294118pt;'>
-              mvc
-            </a>
-            <a href='//tag/newsletter-2/' class='tag-link-20' title='3 topics' style='font-size: 12.941176470588pt;'>
-              newsletter
-            </a>
-            <a href='//tag/online-tool/' class='tag-link-14' title='10 topics' style='font-size: 20.188235294118pt;'>
-              online tool
-            </a>
-            <a href='//tag/parallax/' class='tag-link-38' title='1 topic' style='font-size: 8pt;'>
-              parallax
-            </a>
-            <a href='//tag/performance/' class='tag-link-26' title='6 topics' style='font-size: 17.058823529412pt;'>
-              performance
-            </a>
-            <a href='//tag/polyfil/' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>
-              polyfil
-            </a>
-            <a href='//tag/rwd-2/' class='tag-link-12' title='7 topics' style='font-size: 17.882352941176pt;'>
-              rwd
-            </a>
-            <a href='//tag/sass/' class='tag-link-29' title='4 topics' style='font-size: 14.588235294118pt;'>
-              SASS
-            </a>
-            <a href='//tag/scroll/' class='tag-link-39' title='1 topic' style='font-size: 8pt;'>
-              scroll
-            </a>
-            <a href='//tag/security/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>
-              security
-            </a>
-            <a href='//tag/select/' class='tag-link-21' title='3 topics' style='font-size: 12.941176470588pt;'>
-              select
-            </a>
-            <a href='//tag/seo/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>
-              seo
-            </a>
-            <a href='//tag/slider/' class='tag-link-42' title='1 topic' style='font-size: 8pt;'>
-              slider
-            </a>
-            <a href='//tag/starter/' class='tag-link-33' title='1 topic' style='font-size: 8pt;'>
-              starter
-            </a>
-            <a href='//tag/task-runner/' class='tag-link-50' title='1 topic' style='font-size: 8pt;'>
-              task runner
-            </a>
-            <a href='//tag/test/' class='tag-link-15' title='10 topics' style='font-size: 20.188235294118pt;'>
-              test
-            </a>
-            <a href='//tag/twitter/' class='tag-link-36' title='1 topic' style='font-size: 8pt;'>
-              twitter
-            </a>
-            <a href='//tag/typography/' class='tag-link-40' title='3 topics' style='font-size: 12.941176470588pt;'>
-              typography
-            </a>
-            <a href='//tag/video/' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>
-              video
-            </a>
-            <a href='//tag/wordpress-2/' class='tag-link-19' title='9 topics' style='font-size: 19.529411764706pt;'>
-              wordpress
-            </a>
-            <a href='//tag/wp-plugin/' class='tag-link-41' title='1 topic' style='font-size: 8pt;'>
-              wp plugin
+          </li>
+          <li class="cat-item cat-item-9">
+            <a href="//category/tools/" >
+              Tools
             </a>
 
-          </div>
+          </li>
+          <li class="cat-item cat-item-45">
+            <a href="//category/tutorials/" >
+              Tutorials
+            </a>
 
-        </div>
+          </li>
+          <li class="cat-item cat-item-44">
+            <a href="//category/wordpress/" >
+              WordPress
+            </a>
+
+          </li>
+
+        </ul>
 
       </div>
-      <div style="clear: both">
+      <div class="widget widget_tag_cloud">
+        <h6>
+          Tags
+        </h6>
+        <div class="tagcloud">
+          <a href='//tag/animation/' class='tag-link-37' title='8 topics' style='font-size: 18.705882352941pt;'>
+            animation
+          </a>
+          <a href='//tag/bootstrap/' class='tag-link-35' title='1 topic' style='font-size: 8pt;'>
+            bootstrap
+          </a>
+          <a href='//tag/css/' class='tag-link-46' title='2 topics' style='font-size: 10.964705882353pt;'>
+            css
+          </a>
+          <a href='//tag/education/' class='tag-link-25' title='2 topics' style='font-size: 10.964705882353pt;'>
+            edu
+          </a>
+          <a href='//tag/fonts/' class='tag-link-17' title='8 topics' style='font-size: 18.705882352941pt;'>
+            fonts
+          </a>
+          <a href='//tag/form/' class='tag-link-32' title='1 topic' style='font-size: 8pt;'>
+            form
+          </a>
+          <a href='//tag/framework/' class='tag-link-11' title='7 topics' style='font-size: 17.882352941176pt;'>
+            framework
+          </a>
+          <a href='//tag/front-end/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>
+            front-end
+          </a>
+          <a href='//tag/grid/' class='tag-link-6' title='1 topic' style='font-size: 8pt;'>
+            grid
+          </a>
+          <a href='//tag/images/' class='tag-link-30' title='5 topics' style='font-size: 15.905882352941pt;'>
+            images
+          </a>
+          <a href='//tag/jquery-plugins/' class='tag-link-7' title='13 topics' style='font-size: 22pt;'>
+            jquery plugins
+          </a>
+          <a href='//tag/less/' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>
+            less
+          </a>
+          <a href='//tag/mobile-2/' class='tag-link-23' title='6 topics' style='font-size: 17.058823529412pt;'>
+            mobile
+          </a>
+          <a href='//tag/mvc/' class='tag-link-28' title='4 topics' style='font-size: 14.588235294118pt;'>
+            mvc
+          </a>
+          <a href='//tag/newsletter-2/' class='tag-link-20' title='3 topics' style='font-size: 12.941176470588pt;'>
+            newsletter
+          </a>
+          <a href='//tag/online-tool/' class='tag-link-14' title='10 topics' style='font-size: 20.188235294118pt;'>
+            online tool
+          </a>
+          <a href='//tag/parallax/' class='tag-link-38' title='1 topic' style='font-size: 8pt;'>
+            parallax
+          </a>
+          <a href='//tag/performance/' class='tag-link-26' title='6 topics' style='font-size: 17.058823529412pt;'>
+            performance
+          </a>
+          <a href='//tag/polyfil/' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>
+            polyfil
+          </a>
+          <a href='//tag/rwd-2/' class='tag-link-12' title='7 topics' style='font-size: 17.882352941176pt;'>
+            rwd
+          </a>
+          <a href='//tag/sass/' class='tag-link-29' title='4 topics' style='font-size: 14.588235294118pt;'>
+            SASS
+          </a>
+          <a href='//tag/scroll/' class='tag-link-39' title='1 topic' style='font-size: 8pt;'>
+            scroll
+          </a>
+          <a href='//tag/security/' class='tag-link-47' title='1 topic' style='font-size: 8pt;'>
+            security
+          </a>
+          <a href='//tag/select/' class='tag-link-21' title='3 topics' style='font-size: 12.941176470588pt;'>
+            select
+          </a>
+          <a href='//tag/seo/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>
+            seo
+          </a>
+          <a href='//tag/slider/' class='tag-link-42' title='1 topic' style='font-size: 8pt;'>
+            slider
+          </a>
+          <a href='//tag/starter/' class='tag-link-33' title='1 topic' style='font-size: 8pt;'>
+            starter
+          </a>
+          <a href='//tag/task-runner/' class='tag-link-50' title='1 topic' style='font-size: 8pt;'>
+            task runner
+          </a>
+          <a href='//tag/test/' class='tag-link-15' title='10 topics' style='font-size: 20.188235294118pt;'>
+            test
+          </a>
+          <a href='//tag/twitter/' class='tag-link-36' title='1 topic' style='font-size: 8pt;'>
+            twitter
+          </a>
+          <a href='//tag/typography/' class='tag-link-40' title='3 topics' style='font-size: 12.941176470588pt;'>
+            typography
+          </a>
+          <a href='//tag/video/' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>
+            video
+          </a>
+          <a href='//tag/wordpress-2/' class='tag-link-19' title='9 topics' style='font-size: 19.529411764706pt;'>
+            wordpress
+          </a>
+          <a href='//tag/wp-plugin/' class='tag-link-41' title='1 topic' style='font-size: 8pt;'>
+            wp plugin
+          </a>
+
+        </div>
 
       </div>
 
     </div>
+    <div style="clear: both">
+
+    </div>
 
   </div>
-  <script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min.js' %}?version=1"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js' %}?version=1"></script>
-  <script src="{% static 'wp-content/themes/jj/js/vendor/modernizr-2.8.3.min.js' %}?version=1"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-  <script>
-  var path = "{% static 'wp-content/themes/jj/' %}";
+
+</div>
+<script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min.js' %}?version=1"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js' %}?version=1"></script>
+<script src="{% static 'wp-content/themes/jj/js/vendor/modernizr-2.8.3.min.js' %}?version=1"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<script>
+var path = "{% static 'wp-content/themes/jj/' %}";
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 <script src="{% static 'wp-content/themes/jj/js/plugins.js' %}?version=1"></script>

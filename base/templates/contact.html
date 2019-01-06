@@ -1,6 +1,6 @@
 <!doctype html>
 {% load staticfiles %}
-<title>Contact | Dennis Peterson</title>
+{% block title %} Contact | Dennis Peterson  {% endblock %}
 {% block canonical %} href="/contact/ {% endblock %}
 {% block ogtype %} content="article" {% endblock %}
 {% block ogtitle %} content="Contact | Dennis Peterson" {% endblock %}
@@ -9,58 +9,58 @@
 {% block description %} content="Web developer portfolio, looking for great remote/freelance propositions.Contact me!" {% endblock %}
 {% block twitterdescription %} content="Web developer portfolio, looking for great remote/freelance propositions.Contact me!" {% endblock %}
 {% block twittertitle %} content="Contact | Dennis Peterson" {% endblock %}
-<body {% block bodyclass %} class="page page-id-20 page-template page-template-template-contact page-template-template-contact-php contact" {% endblock %}>
-  {% block content %}
-  <div id="page" class="en">
-    <div class="container contact">
-      <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
-      <div class="text-zone">
-        <h1>Contact me</h1>
-        <p>If you have any questions, please don&#8217;t hesitate to contact using form below&#8230;</p>
-        <div class="contact-form">
-          <form id="contact" autocomplete="off">
-            <ul>
-              <li class="half">
-                <input class="input__field input__field--hoshi" placeholder="Name" type="text" name="name" />
-                <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
-              </li>
-              <li class="half">
-                <input class="input__field input__field--hoshi" placeholder="Email" type="email" name="email" />
-                <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
-              </li>
-              <li>
-                <input class="input__field input__field--hoshi" placeholder="Subject" type="text" name="subject" />
-                <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
-              </li>
-              <li>
-                <textarea class="input__field input__field--hoshi" placeholder="Message" name="msg"></textarea>
-                <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
-              </li>
-              <li class="submit">
-                <input id="submit" type="submit" class="flat-button" value="SEND"/>
-              </li>
-            </ul>
-          </form>
-        </div>
+{% block bodyclass %} class="page page-id-20 page-template page-template-template-contact page-template-template-contact-php contact" {% endblock %}
+{% block content %}
+<div id="page" class="en">
+  <div class="container contact">
+    <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+    <div class="text-zone">
+      <h1>Contact me</h1>
+      <p>If you have any questions, please don&#8217;t hesitate to contact using form below&#8230;</p>
+      <div class="contact-form">
+        <form id="contact" autocomplete="off">
+          <ul>
+            <li class="half">
+              <input class="input__field input__field--hoshi" placeholder="Name" type="text" name="name" />
+              <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+            </li>
+            <li class="half">
+              <input class="input__field input__field--hoshi" placeholder="Email" type="email" name="email" />
+              <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+            </li>
+            <li>
+              <input class="input__field input__field--hoshi" placeholder="Subject" type="text" name="subject" />
+              <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+            </li>
+            <li>
+              <textarea class="input__field input__field--hoshi" placeholder="Message" name="msg"></textarea>
+              <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+            </li>
+            <li class="submit">
+              <input id="submit" type="submit" class="flat-button" value="SEND"/>
+            </li>
+          </ul>
+        </form>
       </div>
-      <div class="inf-map">
-        Dennis Peterson,<br/>
-        Maseno,Mombasa, Kenya.<br/>
-        <br/>
+    </div>
+    <div class="inf-map">
+      Dennis Peterson,<br/>
+      Maseno,Mombasa, Kenya.<br/>
+      <br/>
+      <span>
         <span>
-          <span>
-            @
-          </span>
-          : &#100;&#101;&#110;&#105;&#115;&#112;&#101;&#116;&#101;&#114;&#115;&#111;&#110;&#057;&#054;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+          @
         </span>
-      </div>
-      <div class="map-wrap">
-        <div id="map"></div>
-      </div>
-      <span class="tags bottom-tags">
-        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/>
-        &lt;/html&gt;
+        : &#100;&#101;&#110;&#105;&#115;&#112;&#101;&#116;&#101;&#114;&#115;&#111;&#110;&#057;&#054;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
       </span>
     </div>
+    <div class="map-wrap">
+      <div id="map"></div>
+    </div>
+    <span class="tags bottom-tags">
+      &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/>
+      &lt;/html&gt;
+    </span>
   </div>
-  {% endblock %}
+</div>
+{% endblock %}
