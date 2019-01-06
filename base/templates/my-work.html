@@ -1,23 +1,13 @@
 <!doctype html>
 {% load staticfiles %}
-  <title>My Work | Dennis Peterson </title>
-  {% block canonical %} href="/my-work/" {% endblock %}
-  {% block ogtype %} content="article" {% endblock %}
-  {% block ogtitle %} content="My Work | Dennis Peterson" {% endblock %}
+<title>My Work | Dennis Peterson </title>
+{% block canonical %} href="/my-work/" {% endblock %}
+{% block ogtype %} content="article" {% endblock %}
+{% block ogtitle %} content="My Work | Dennis Peterson" {% endblock %}
 {% block ogdescription %} content="projekty/toucan/individual_idea US &hellip;" {% endblock %}
-  {% block ogurl %} content="/my-work/" {% endblock %}
-  {% block twitterdescription %} content="My Work Section" {% endblock %}
-  {% block twittertitle %} content="My Work | Dennis Peterson" {% endblock %}
-  <meta property="og:site_name" content="Dennis Peterson" />
-  <link rel='stylesheet' id='wp-pagenavi-css'  href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css' %}?version=1" media='all' />
-  <link rel='stylesheet' id='jayjay-css'  href="{% static 'wp-content/themes/jj/style.css' %}?version=1" media='all' />
-  <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' %}?version=1">
-  <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/third-party.css' %}?version=1">
-  <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/normalize.css' %}?version=1">
-  <link rel="stylesheet" href="{% static 'wp-content/themes/jj/css/main.css' %}?version=1">
-</head>
+{% block ogurl %} content="/my-work/" {% endblock %}
+{% block twitterdescription %} content="My Work Section" {% endblock %}
+{% block twittertitle %} content="My Work | Dennis Peterson" {% endblock %}
 <body {% block bodyclass %} class="jj-wall" {% endblock %}>
   <div class="wall-top">
     <div class="width-holder">
