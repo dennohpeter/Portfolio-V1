@@ -1,19 +1,11 @@
 <!doctype html>
 {% load staticfiles %}
-<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj-pIma2sXfAhVHcCsKHWsxBJYQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F211387776229590668%2F&psig=AOvVaw2_BRhW31RnhPadxVVHuMa8&ust=1546195688233011" />
-  <title>Skills &amp; Experience | Dennis Peterson </title>
+<title>Skills &amp; Experience | Dennis Peterson </title>
   <meta name="description" content="The scope of my work is a large part of the front end development (HTML, CSS, JS, Angular JS) and open source CMS-es like Wordpress, Drupal,"/>
-  <meta name="robots" content="noodp"/>
-  <link rel="canonical" href="/skills/" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Skills &amp; Experience | Dennis Peterson" />
-  <meta property="og:description" content="The scope of my work is a large part of the front end development (HTML, CSS, JS, Angular JS) and open source CMS-es like Wordpress, Drupal," />
+  {% block canonical %} href="/skills/" {% endblock %}
+  {% block ogtype %} content="article" {% endblock %}
+  {% block ogtitle %} content="Skills &amp; Experience | Dennis Peterson" {% endblock %}
+  {% block ogdescription %} content="The scope of my work is a large part of the front end development (HTML, CSS, JS, Angular JS) and open source CMS-es like Wordpress, Drupal," {% endblock %}
   <meta property="og:url" content="/skills/" />
   <meta property="og:site_name" content="Full Stack Developer | Python | Linux Nerd" />
   <meta property="article:publisher" content="https://www.facebook.com/dennohpeterson" />

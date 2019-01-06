@@ -1,16 +1,10 @@
 <!doctype html>
 {% load staticfiles %}
-<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Work | Dennis Peterson </title>
-  <link rel="canonical" href="//my-work/" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="My Work | Dennis Peterson" />
-  <meta property="og:description" content="projekty/toucan/individual_idea US &hellip;" />
+  {% block canonical %} href="/my-work/" {% endblock %}
+  {% block ogtype %} content="article" {% endblock %}
+  {% block ogtitle %} content="My Work | Dennis Peterson" {% endblock %}
+{% block ogdescription %} content="projekty/toucan/individual_idea US &hellip;" {% endblock %}
   <meta property="og:url" content="//my-work/" />
   <meta property="og:site_name" content="Dennis Peterson" />
   <meta name="twitter:card" content="summary" />
