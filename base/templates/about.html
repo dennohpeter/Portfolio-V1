@@ -4,8 +4,8 @@
   {% block canonical %} href="/about/" {% endblock %}
   {% block ogtype %} content="article" {% endblock %} />
   {% block ogtitle %} content="About me | Dennis Peterson" {% endblock %}
-  <meta property="og:description" content="Everything started with passion to be a Linux Nerd. 2016 " />
-  <meta property="og:url" content="/about/" />
+{% block ogdescription %} content="Everything started with passion to be a Linux Nerd. 2016" {% endblock %}
+  {% block ogurl %} content="/about/" {% endblock %}
   <meta property="og:site_name" content="Full Stack Developer | Python | Linux Nerd" />
   <meta property="article:publisher" content="https://www.facebook.com/dennohpeterson" />
   <meta name="twitter:card" content="summary" />

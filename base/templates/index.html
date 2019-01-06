@@ -4,11 +4,9 @@
 	{% block canonical %}  href="https://dennispeter.org/" {% endblock %}
 	{% block ogtype %} content="website" {% endblock %}
 	{% block ogtitle %} content="DP - Full Stack Developer | Python | Linux" {% endblock %}
-	<meta property="og:description" content="I'm Dennis Peterson, Fullstack Developer.This is my personal website">
-	<meta name="description" content="I'm Dennis Peterson, Fullstack Developer.This is my personal website">
-	<meta property="og:url" content="https://dennispeter.org/">
-	<meta property="og:site_name" content="Full Stack Developer | Python | Linux">
-	<meta name="robots" content="noodp">
+{% block ogdescription %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website" {% endblock %}
+	{% block ogurl %} content="https://dennispeter.org/" {% endblock %}
+{% block description %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:description" content="I'm Dennis Peterson, Fullstack Developer.This is my personal website">
 	<meta name="twitter:title" content="DP - Back End Developer | Python | Linux">
