@@ -21,15 +21,15 @@
   <meta name="twitter:title" {% block twittertitle %} {% endblock %}>
   <meta name="twitter:site" {% block twittersite %} content="@dennohpeter" {% endblock %}>
   <meta name="twitter:creator" content="@dennohpeter">
-  <link rel="icon" type="image/png" href="{% static 'wp-content//themes/jj/fav/transparentme.png' %}">
-  <link rel='stylesheet' type="text/css" id='wp-pagenavi-css'  href="{% static 'wp-content/plugins/wp-pagenavi/pagenavi-css.css' %}?version=1" media='all' />
-  <link rel='stylesheet' type="text/css" id='jayjay-css'  href="{% static 'wp-content/themes/jj/style.css' %}?version=1" media='all' />
+  <link rel="icon" type="image/png" href="{% static 'fav/transparentme.png' %}">
+  <link rel='stylesheet' type="text/css" id='wp-pagenavi-css'  href="{% static 'css/pagenavi-css.css' %}?version=1" media='all' />
+  <link rel='stylesheet' type="text/css" id='jayjay-css'  href="{% static 'style.css' %}?version=1" media='all' />
   <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="{% static 'wp-content/themes/jj/css/font-awesome.min.css' %}?version=1">
-  <link rel="stylesheet" type="text/css" href="{% static 'wp-content/themes/jj/css/third-party.css' %}?version=1">
-  <link rel="stylesheet" type="text/css" href="{% static 'wp-content/themes/jj/css/normalize.css' %}?version=1">
-  <link rel="stylesheet" type="text/css" href="{% static 'wp-content/themes/jj/css/main.css' %}?version=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}?version=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/third-party.css' %}?version=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}?version=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}?version=1">
   {% block desktopcss %} {% endblock %}
 </head>
 <body {% block bodyclass %} {% endblock %}>
@@ -96,7 +96,7 @@ app.ajax = null;
 <div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;"></div>
 <div class="preloader">
   <div class="inner">
-    <img src="{% static 'wp-content/themes/jj/img/logopreload.png' %}"
+    <img src="{% static 'img/logopreload.png' %}"
     alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader"/>
     <span>
       Dennis is thinking
@@ -111,26 +111,26 @@ app.ajax = null;
 </div>
 <div id="rotate"></div>
 <!--javascript staticfiles  -->
-<script src="{% static 'wp-content//themes/jj/js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
-<script src="{% static 'wp-content//themes/jj/js/vide.js' %}?version=1"></script>
+<script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
+<script src="{% static 'js/vide.js' %}?version=1"></script>
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2wqe1uDfotYB_e-YIq8anlmLIxcy3Yhs&v=3.exp&amp;"></script> -->
 <!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/5/intl/en_gb/common.js"></script> -->
 <!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/5/intl/en_gb/util.js"></script> -->
-<script src="{% static 'wp-content/themes/jj/js/app/app-home.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/app/app-about.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/app/app-contact.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/app/app-gallery.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/app/app-skills.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/app/app-text.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/main.js' %}?version=1"></script>
+<script src="{% static 'js/app/app-home.js' %}?version=1"></script>
+<script src="{% static 'js/app/app-about.js' %}?version=1"></script>
+<script src="{% static 'js/app/app-contact.js' %}?version=1"></script>
+<script src="{% static 'js/app/app-gallery.js' %}?version=1"></script>
+<script src="{% static 'js/app/app-skills.js' %}?version=1"></script>
+<script src="{% static 'js/app/app-text.js' %}?version=1"></script>
+<script src="{% static 'js/main.js' %}?version=1"></script>
 
 <script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min.js' %}?version=1"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-<script src="{% static 'wp-content/themes/jj/js/plugins.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/vendor/magicwall.js' %}?version=1"></script>
-<script src="{% static 'wp-content/themes/jj/js/vendor/tagcanvas.js' %}?version=1"></script>
+<script src="{% static 'js/plugins.js' %}?version=1"></script>
+<script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
+<script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script>
 <script>
-var path = "{% static 'wp-content/themes/jj/' %}";
+var path = "{% static '' %}";
 var requested = "";
 var errmsg ='<div class="error-info animated fadeInUp"><span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
 var msg1 ="Please fill in all required fields";
@@ -141,7 +141,7 @@ var msg5 = "Please note these are not my designs.";
 var msg6 = "Just the code.";
 var msg7 = "Double click to add more elements.";
 var msg8 = "Scroll to zoom in/out";
-var image = "{% static 'wp-content/themes/jj/img/marker.png' %}";  //Removed var path
+var image = "{% static 'img/marker.png' %}";  //Removed var path
 </script>
 </body>
 </html>
