@@ -351,6 +351,10 @@ body {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.home-page {
+  height: 100%;
+  top: 0px;
+}
 
 .container.magicwall {
   height: 100%;
