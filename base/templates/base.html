@@ -30,7 +30,7 @@
   <link rel="stylesheet" type="text/css" href="{% static 'wp-content/themes/jj/css/third-party.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'wp-content/themes/jj/css/normalize.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'wp-content/themes/jj/css/main.css' %}?version=1">
-  <link rel="stylesheet" type="text/css" href="{% static 'wp-content//themes/jj/css/desktop.min.css' %}?version=1" /> <!-- used for positioning the two crosses -->
+  {% block desktopcss %} {% endblock %}
 </head>
 <body {% block bodyclass %} {% endblock %}>
   <script>
