@@ -10,21 +10,21 @@
   #section1 .btn{
     bottom:38%
   }
-  section h3.letter-transition{
+  .home-page h3.letter-transition{
     font-size:58px
   }
 }
 @media (max-width:1180px){
-  #wave{
+  #wave1{
     top:-38%;left:-16.5%;transform:scale(.4)
   }
-  section h3.letter-transition{
+  .home-page h3.letter-transition{
     font-size:46px;padding-left:calc(10% + 140px);top:40%
   }
   .role{
     padding:40px calc(4% - 40px)
   }
-  .role .container{
+  .role .home-page{
     padding:0 20px
   }
   .project-content{
@@ -42,15 +42,7 @@
   .contact{
     font-size:36px
   }
-  .about h3{
-    font-size:42px
-  }
-  .about p{
-    font-size:14px
-  }
-  .about-contact h3{
-    font-size:56px
-  }
+
   .img-wrapper{
     height:34vh
   }
@@ -72,31 +64,22 @@
   #focus,.cross{
     transform:scale(.6)
   }
-  .about-contact h3{
-    font-size:33px
-  }
-  .about-contact p,section p{
-    font-size:12px
-  }
-  .about-contact .wrapper{
-    padding:100px 16% 40px 100px
-  }
   #focus{
     pointer-events:none
   }
   #section1 .section-wrap{
     width:80%;padding-left:20%
   }
-  section p{
+  .home-page p{
     width:100%;padding:0 40px
   }
-  section h3.letter-transition{
+  .home-page h3.letter-transition{
     font-size:32px
   }
   .project-header .cross.last{
     top:28%
   }
-  .role .container{
+  .role .home-page{
     padding:0 10px;max-width:192px;width:auto
   }
   .role{
@@ -111,7 +94,7 @@
 
 }
 @media (max-width:480px),(max-aspect-ratio:6 / 5){
-  #wave,.bg-letter,.img-wrapper{
+  #wave1,.bg-letter,.img-wrapper{
     display:none
   }
   .bg-letter.mobile,.role .btn{
@@ -180,7 +163,7 @@
   .role{
     top:36vh;width:calc(100% - 40px);margin-left:40px
   }
-  .role .container{
+  .role .home-page{
     display:block;margin-bottom:20px;color:#fff;font-size:11px
   }
   .role .btn{
@@ -189,26 +172,11 @@
   .role h4{
     font-size:14px
   }
-  section h3.letter-transition{
+  .home-page h3.letter-transition{
     top:34%;font-size:26px;padding-left:100px
   }
-  section .bg.gradient{
+  .home-page .bg.gradient{
     top:0
-  }
-  .project-content{
-    position:absolute;width:100%;margin-top:calc(36vh + 200px)
-  }
-  .project-content video{
-    display:none
-  }
-  .project .bg.gradient{
-    height:36vh
-  }
-  .video-gif{
-    display:block;width:70%;margin:0 auto
-  }
-  .video-gif img{
-    width:100%
   }
   .txt{
     font-size:15px;padding:20px
@@ -228,38 +196,14 @@
   .img-block:nth-of-type(3) p{
     margin-top:-300px
   }
-  #tatoue h3.letter-transition{
-    width:285px
-  }
-  #tatoue .project-content .txt{
-    font-size:16px
-  }
-  #mpp h3.letter-transition{
-    width:304px;font-size:17px
-  }
   footer .wrap{
     height:31vh;padding:36px
   }
   footer .wrap .txt{
     font-size:16px;padding:0
   }
-  .about,.contact{
-    width:calc(100% - 40px);height:calc(50% - 20px);left:20px
-  }
   .linkedin{
     margin-top:10px;width:40px
-  }
-  .about-contact .wrapper{
-    width:80%;padding:80px 40px 40px 80px
-  }
-  .about-contact .cross.cross-close{
-    left:calc(80vw - 55px)
-  }
-  .about-contact .wrapper h3{
-    font-size:32px
-  }
-  .about-contact .wrapper p{
-    font-size:12px
   }
 
 }

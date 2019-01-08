@@ -26,11 +26,11 @@
   <link rel='stylesheet' type="text/css" id='jayjay-css'  href="{% static 'style.css' %}?version=1" media='all' />
   <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  {% block desktopcss %} {% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/third-party.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}?version=1">
-  <!-- {% block desktopcss %} {% endblock %} -->
   <script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
   <script src="{% static 'js/vide.js' %}?version=1"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script>
