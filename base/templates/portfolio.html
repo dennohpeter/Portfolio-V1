@@ -227,66 +227,6 @@
 		</ul>
 	</div>
 </div>
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	<![CDATA[	// For SVG support
-	if ('WebSocket' in window) {
-		(function() {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					head.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					head.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function(msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			console.log('Live reload enabled.');
-		})();
-	}
-	]]>
-</script>
-<div id="cboxOverlay" style="display: none;"></div>
-<div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
-	<div id="cboxWrapper">
-		<div>
-			<div id="cboxTopLeft" style="float: left;"></div>
-			<div id="cboxTopCenter" style="float: left;"></div>
-			<div id="cboxTopRight" style="float: left;"></div>
-		</div>
-		<div style="clear: left;">
-			<div id="cboxMiddleLeft" style="float: left;"></div>
-			<div id="cboxContent" style="float: left;">
-				<div id="cboxTitle" style="float: left;"></div>
-				<div id="cboxCurrent" style="float: left;"></div>
-				<button type="button" id="cboxPrevious"></button>
-				<button type="button" id="cboxNext"></button>
-				<button id="cboxSlideshow"></button>
-				<div id="cboxLoadingOverlay" style="float: left;"></div>
-				<div id="cboxLoadingGraphic" style="float: left;"></div>
-			</div>
-			<div id="cboxMiddleRight" style="float: left;"></div>
-		</div>
-		<div style="clear: left;">
-			<div id="cboxBottomLeft" style="float: left;"></div>
-			<div id="cboxBottomCenter" style="float: left;"></div>
-			<div id="cboxBottomRight" style="float: left;"></div>
-		</div>
-	</div>
-	<div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
-</div>
 <div id="alertify-cover" class="alertify-cover alertify-cover-hidden"></div>
 <section id="alertify" class="alertify alertify-hidden"></section>
 <section id="alertify-logs" class="alertify-logs alertify-logs-hidden"></section>
