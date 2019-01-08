@@ -30,17 +30,16 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/third-party.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}?version=1">
-  {% block desktopcss %} {% endblock %}
+  <!-- {% block desktopcss %} {% endblock %} -->
+  <script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
+  <script src="{% static 'js/vide.js' %}?version=1"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script>
 </head>
 <body {% block bodyclass %} {% endblock %}>
   <script>
-  if (sessionStorage.intro) {
-    jQuery('body').addClass('second');
-  }
-</script>
-<script>
-var app = {};
-app.ajax = null;
+    if (sessionStorage.intro) {
+      jQuery('body').addClass('second');
+    }
 </script>
 <div id="nav_bar">
   <a class="logo" rel="index" href="/">
@@ -111,11 +110,15 @@ app.ajax = null;
 </div>
 <div id="rotate"></div>
 <!--javascript staticfiles  -->
-<script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
-<script src="{% static 'js/vide.js' %}?version=1"></script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2wqe1uDfotYB_e-YIq8anlmLIxcy3Yhs&v=3.exp&amp;"></script> -->
-<!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/5/intl/en_gb/common.js"></script> -->
-<!-- <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/5/intl/en_gb/util.js"></script> -->
+<script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="{% static 'js/plugins.js' %}?version=1"></script>
+<script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
+<script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script>
+<script>
+var app = {};
+app.ajax = null;
+</script>
 <script src="{% static 'js/app/app-home.js' %}?version=1"></script>
 <script src="{% static 'js/app/app-about.js' %}?version=1"></script>
 <script src="{% static 'js/app/app-contact.js' %}?version=1"></script>
@@ -123,12 +126,6 @@ app.ajax = null;
 <script src="{% static 'js/app/app-skills.js' %}?version=1"></script>
 <script src="{% static 'js/app/app-text.js' %}?version=1"></script>
 <script src="{% static 'js/main.js' %}?version=1"></script>
-
-<script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-<script src="{% static 'js/plugins.js' %}?version=1"></script>
-<script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
-<script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script>
 <script>
 var path = "{% static '' %}";
 var requested = "";
