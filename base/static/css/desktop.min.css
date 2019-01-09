@@ -21,22 +21,9 @@
   .role .home-page{
     padding:0 20px
   }
-  .project-content{
-    margin-top:calc(65vh + 130px);padding-left:40px
-  }
-  .contact .letter{
-    font-size:400px
-  }
   .txt{
     font-size:18px
   }
-  footer .wrap .txt{
-    font-size:24px
-  }
-  .contact{
-    font-size:36px
-  }
-
   .img-wrapper{
     height:34vh
   }
@@ -66,17 +53,11 @@
   .home-page h3.letter-transition{
     font-size:32px
   }
-  .project-header .cross.last{
-    top:28%
-  }
   .role .home-page{
     padding:0 10px;max-width:192px;width:auto
   }
   .role{
     padding:30px 20px
-  }
-  .contact .letter{
-    font-size:300px
   }
   .click-focus{
     width:400px;height:300px;top:calc(50vh - 150px);left:calc(50vw - 200px)
@@ -128,18 +109,6 @@
   }
   .click-focus{
     width:300px;left:calc(50vw - 150px)
-  }
-  .project-header{
-    height:36vh;top:0
-  }
-  .project-header .cross{
-    transform:scale(.4)
-  }
-  .project-header .cross.first{
-    top:2%;left:10%
-  }
-  .project-header .cross.last{
-    top:0;left:60%
   }
   .role{
     top:36vh;width:calc(100% - 40px);margin-left:40px
