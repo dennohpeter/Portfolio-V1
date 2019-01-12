@@ -1,0 +1,139 @@
+@media (max-width:1440px){
+  #focus{transform:scale(.7)
+  }
+  #section1 .btn{
+    bottom:38%
+  }
+  .home-page h3.letter-transition{
+    font-size:58px
+  }
+}
+@media (max-width:1180px){
+  #wave1{
+    top:-38%;left:-16.5%;transform:scale(.4)
+  }
+  .home-page h3.letter-transition{
+    font-size:46px;padding-left:calc(10% + 140px);top:40%
+  }
+  .role{
+    padding:40px calc(4% - 40px)
+  }
+  .role .home-page{
+    padding:0 20px
+  }
+  .txt{
+    font-size:18px
+  }
+  .img-wrapper{
+    height:34vh
+  }
+  .txt-loading{
+    font-size:200px;top:30%
+  }
+  .number{
+    font-size:150px
+  }
+  .click-focus{
+    width:600px;height:400px;top:calc(50vh - 200px);left:calc(50vw - 300px)
+  }
+}
+@media (max-width:890px){
+  #focus,.cross{
+    transform:scale(.6)
+  }
+  #focus{
+    pointer-events:none
+  }
+  #section1 .section-wrap{
+    width:80%;padding-left:20%
+  }
+  .home-page p{
+    width:100%;padding:0 40px
+  }
+  .home-page h3.letter-transition{
+    font-size:32px
+  }
+  .role .home-page{
+    padding:0 10px;max-width:192px;width:auto
+  }
+  .role{
+    padding:30px 20px
+  }
+  .click-focus{
+    width:400px;height:300px;top:calc(50vh - 150px);left:calc(50vw - 200px)
+  }
+
+}
+@media (max-width:480px),(max-aspect-ratio:6 / 5){
+  #wave1,.bg-letter,.img-wrapper{
+    display:none
+  }
+  .bg-letter.mobile,.role .btn{
+    display:block
+  }
+  .txt-loading{
+    font-size:80px;top:41%
+  }
+  #fp-nav{
+    width:40px
+  }
+  nav{
+    top:46px;left:-50px
+  }
+  nav ul li{
+    font-size:13px;margin-right:20px
+  }
+  #fp-nav.fp-show-active.right ul{
+    left:-8px
+  }
+  #close-nav ul li .fp-tooltip.right.close,#fp-nav ul li .fp-tooltip.right.close{
+    height:12px;left:-114px
+  }
+  .btn{
+    letter-spacing:3px;font-size:9px;height:40px;padding-top:15px
+  }
+  .section-wrap{
+    padding:0 0 0 60px
+  }
+  #section1 .section-wrap{
+    width:100%;padding:0 0 0 40px
+  }
+  #section1 .btn{
+    left:calc(50vw - 64px);margin-left:0
+  }
+  .btn{
+    max-width:168px;margin-left:calc(50vw - 124px)
+  }
+  #focus{
+    transform:scale(.4) rotate(90deg)
+  }
+  .click-focus{
+    width:300px;left:calc(50vw - 150px)
+  }
+  .role{
+    top:36vh;width:calc(100% - 40px);margin-left:40px
+  }
+  .role .home-page{
+    display:block;
+    margin-bottom:20px;
+    color:#fff;font-size:11px
+  }
+  .role .btn{
+    margin:0
+  }
+  .role h4{
+    font-size:14px
+  }
+  .home-page h3.letter-transition{
+    top:34%;font-size:26px;padding-left:100px
+  }
+  .home-page .bg.gradient{
+    top:0;
+  }
+  .txt{
+    font-size:15px;padding:20px
+  }
+  .txt p{
+    width:auto
+  }
+}
