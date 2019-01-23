@@ -56,24 +56,24 @@
     }
 </script>
 <div id="nav_bar">
-  <a class="logo" rel="index" href="/">
+  <a class="logo" rel="index" href="{% url 'home' %}">
     <img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
     <span style="color: #ffffff; padding-left: 8px; letter-spacing: 2px;">Dennis</span>
   </a>
   <nav class="en">
-    <a rel="index" href="/" class="home-link active">
+    <a rel="index" href="{% url 'home' %}" class="home-link active">
       <i class="icon-hom"></i>
     </a>
-    <a rel="about" href="/about/" class="">
+    <a rel="about" href="{% url 'about' %}" class="">
       <i class="icon-prof"></i>
     </a>
-    <a rel="skills" href="/skills/" class="">
+    <a rel="skills" href="{% url 'skills' %}" class="">
       <i class="icon-gear"></i>
     </a>
-    <a rel="gallery" href="/portfolio/" class="">
+    <a rel="gallery" href="{% url 'portfolio' %}" class="">
       <i class="icon-eye"></i>
     </a>
-    <a rel="contact" href="/contact/" class="">
+    <a rel="contact" href="{% url 'contact' %}" class="">
       <i class="icon-mail"></i>
     </a>
   </nav>
@@ -94,7 +94,7 @@
       </a>
     </li>
     <li>
-      <a href="/feed/" target="_blank">
+      <a href="{% url 'feed' %}" target="_blank">
         <i class="fa fa-rss"></i>
       </a>
     </li>
