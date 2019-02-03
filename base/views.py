@@ -13,6 +13,10 @@ def skills(request):
     return render(request, "skills.html")
 
 
+def resume(request):
+    return render(request, "resume.html")
+
+
 def portfolio(request):
     return render(request, "portfolio.html")
 

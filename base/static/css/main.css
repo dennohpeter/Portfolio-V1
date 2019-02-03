@@ -260,6 +260,7 @@ body {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+/* onhover words */
 #nav_bar nav a:first-child:after {
   content: 'HOME';
 }
@@ -270,7 +271,7 @@ body {
   content: 'SKILLS';
 }
 #nav_bar nav a:first-child + a + a + a:after {
-  content: 'MY WORK';
+  content: 'RÉSUMÉ';
 }
 #nav_bar nav a:first-child + a + a + a + a:after {
   content: 'CONTACT';
