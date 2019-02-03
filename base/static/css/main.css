@@ -213,12 +213,12 @@ body {
 }
 
 /*  Nawigacja  */
-#nav_bar nav {
+#nav_bar nav {  /*to be revisited*/
   display: block;
   text-align: center;
   position: absolute;
   height: 210px;
-  top:50%;
+  top:40%;
   margin-top: -120px;
   width: 100%;
 }
@@ -271,12 +271,15 @@ body {
   content: 'SKILLS';
 }
 #nav_bar nav a:first-child + a + a + a:after {
-  content: 'RÉSUMÉ';
+  content: 'RESUME';
 }
 #nav_bar nav a:first-child + a + a + a + a:after {
   content: 'PROJECTS';
 }
-#nav_bar nav a:first-child + a + a + a + a + a:after {
+#nav_bar nav a:first-child + a + a + a + a +a:after {
+  content: 'MOMENTS';
+}
+#nav_bar nav a:first-child + a + a + a + a + a +a:after {
   content: 'CONTACT';
 }
 
@@ -1823,7 +1826,8 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     left: 50%;
     margin-left: -19%;
     float: left;
-    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
     text-align: center;
     height: 60px;
     top: 0;
@@ -2047,7 +2051,8 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     opacity: 0;
     margin-left: 0;
     float: left;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
     text-align: center;
     height: 60px;
     top: 60px;

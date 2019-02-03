@@ -21,13 +21,13 @@ def portfolio(request):
     return render(request, "portfolio.html")
 
 
+def awards(request):
+    return render(request, "awards.html")
+
+
 def contact(request):
     return render(request, "contact.html")
 
 
 def feed(request):
     return redirect("http://dennohpeter.pythonanywhere.com")
-
-
-def my_work(request):
-    return render(request, "my-work.html")
