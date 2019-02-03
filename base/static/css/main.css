@@ -1286,13 +1286,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 /* ------------------------------------------------ JJ WALL ----------------------------------------- */
 /* ------------------------------------------------ JJ WALL ----------------------------------------- */
-
-.jj-wall {
-  background: #f5f5f0 url(../img/wall-bg.png) no-repeat 5% -100px;
-  background: #f5f5f0 url(../img/wall-bg.png) no-repeat calc(50% - 506px) -100px;
-  overflow: auto;
-
-}
 .width-holder {
   width:1024px;
   margin:0 auto;
