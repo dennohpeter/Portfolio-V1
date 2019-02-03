@@ -274,32 +274,18 @@ body {
   content: 'RÉSUMÉ';
 }
 #nav_bar nav a:first-child + a + a + a + a:after {
+  content: 'PROJECTS';
+}
+#nav_bar nav a:first-child + a + a + a + a + a:after {
   content: 'CONTACT';
 }
-
-#nav_bar nav.pl a:first-child:after {
-  content: 'START';
-}
-#nav_bar nav.pl a:first-child + a:after {
-  content: 'O MNIE';
-}
-#nav_bar nav.pl a:first-child + a +  a:after {
-  content: 'SKILSY';
-}
-#nav_bar nav.pl a:first-child + a + a + a:after {
-  content: 'PORTFOLIO';
-}
-#nav_bar nav.pl a:first-child + a + a + a + a:after {
-  content: 'KONTAKT';
-}
-
 
 #nav_bar nav a:hover:after{
   opacity: 1;
 }
 
 
-/*  sociale  */
+/*  social  */
 #nav_bar ul {
   position: absolute;
   bottom: 20px;
