@@ -20,7 +20,8 @@
       <h1>Contact me</h1>
       <p>If you have any questions, please don&#8217;t hesitate to contact using form below&#8230;</p>
       <div class="contact-form">
-        <form id="contact" autocomplete="off">
+        <form id="contact">
+          {% csrf_token %}
           <ul>
             <li class="half">
               <input class="input__field input__field--hoshi" placeholder="Name" type="text" name="name" />

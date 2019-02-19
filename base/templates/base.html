@@ -27,7 +27,6 @@
   <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="{% static 'css/desktop.min.css' %}?version=1" />
-  <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/third-party.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}?version=1">
@@ -46,6 +45,8 @@
     var image = "{% static 'img/marker.png' %}";  //Removed var path
   </script>
   <script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
+  <!-- feather icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <script src="{% static 'js/vide.js' %}?version=1"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script>
 </head>
@@ -86,27 +87,27 @@
   <ul>
     <li>
       <a href="https://twitter.com/dennohpeter" target="_blank">
-        <i class="fa fa-twitter"></i>
+        <i class="feather" data-feather="twitter"></i>
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/dennis-peterson-563752149/" target="_blank">
-        <i class="fa fa-linkedin"></i>
+      <a href="https://github.com/dennohpeter/" target="_blank">
+        <i class="feather" data-feather="github"></i> cat
       </a>
     </li>
     <li>
       <a href="https://www.facebook.com/dennohpeterson" target="_blank">
-        <i class="fa fa-facebook"></i>
+        <i class="feather" data-feather="facebook"></i>
       </a>
     </li>
     <li>
       <a href="{% url 'feed' %}" target="_blank">
-        <i class="fa fa-rss"></i>
+        <i class="feather" data-feather="feed"></i>
       </a>
     </li>
   </ul>
   <a id="mobile-link" href="">
-    <i class="fa fa-bars"></i>
+    <i class="feather" data-feather="menu"></i>
   </a>
 </div>
 {% block content %}
