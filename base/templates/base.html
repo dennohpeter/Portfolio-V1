@@ -44,7 +44,7 @@
     var msg8 = "Scroll to zoom in/out";
     var image = "{% static 'img/marker.png' %}";  //Removed var path
   </script>
-  <script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- feather icons -->
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <script src="{% static 'js/vide.js' %}?version=1"></script>
@@ -92,7 +92,7 @@
     </li>
     <li>
       <a href="https://github.com/dennohpeter/" target="_blank">
-        <i class="feather" data-feather="github"></i> cat
+        <i class="feather" data-feather="github"></i>
       </a>
     </li>
     <li>
@@ -106,7 +106,7 @@
       </a>
     </li>
   </ul>
-  <a id="mobile-link" href="">
+  <a id="mobile-link" href="" style="color:white;">
     <i class="feather" data-feather="menu"></i>
   </a>
 </div>
@@ -140,7 +140,9 @@
 var app = {};
 app.ajax = null;
 //for feather Icons
+$(document).ready(function(){
 feather.replace();
+});
 </script>
 {% comment %} <script src="{% static 'js/vendor/pixi.min.js' %}?version=1"></script> {% endcomment %}
 <script src="{% static 'js/vendor/TweenLite.min.js' %}?version=1"></script>
