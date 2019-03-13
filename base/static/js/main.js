@@ -201,8 +201,6 @@ app.ui.preloader = {
     $('.progress-bar_bg div').width();
     var a = 0;
     var loader = setInterval(function () {
-
-
       ++a;
       ++a;
       ++a;
