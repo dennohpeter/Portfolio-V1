@@ -1,4 +1,3 @@
-/* custom icons */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?f6xd38');
@@ -9,7 +8,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -47,12 +45,6 @@
   content: "\e901";
   font-size: 27px;
 }
-.icon-donate:before {
-  content: "\e902";
-}
-.icon-blog:before {
-  content: "\e90a";
-}
 .icon-mail:before {
   content: "\f003";
   font-size: 23px;
@@ -72,6 +64,7 @@
 }
 .icon-gift:before {
   content: "\e903";
+  font-size: 22px;
 }
 .icon-github:before {
   content: "\e904";
@@ -80,9 +73,6 @@
 .icon-facebook:before {
   content: "\e90c";
   font-size: 20px;
-}
-.icon-love:before {
-  content: "\f004";
 }
 .icon-love:before {
   content: "\f004";
