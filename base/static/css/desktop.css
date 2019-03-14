@@ -1,245 +1,347 @@
 @media (max-width: 1440px) {
-  #focus {
-    transform: scale(0.7); }
-    h1 {
-      font-size: 42px;
-      width: 400px;
-      margin: 0 auto; }
-      h2 {
-        font-size: 38px; }
-        #section1 .btn {
-          bottom: 38%; }
-          section h3.letter-transition {
-            font-size: 58px; } }
+	#focus {
+		transform: scale(0.7);
+	}
+	h1 {
+		font-size: 42px;
+		width: 400px;
+		margin: 0 auto;
+	}
+	h2 {
+		font-size: 38px;
+	}
+	#section1 .btn {
+		bottom: 38%;
+	}
+	section h3.letter-transition {
+		font-size: 58px;
+	}
+}
 
-            @media (max-width: 1180px) {
-              #wave {
-                top: -38%;
-                left: -16.5%;
-                transform: scale(0.4); }
-                section h3.letter-transition {
-                  font-size: 46px;
-                  padding-left: calc(10% + 140px);
-                  top: 40%; }
-                  .role {
-                    padding: 40px calc(4% - 40px); }
-                    .role .container {
-                      padding: 0 20px; }
-                      .project-content {
-                        margin-top: calc(65vh + 130px);
-                        padding-left: 40px; }
-                        .contact .letter {
-                          font-size: 400px; }
-                          .txt-loading {
-                            font-size: 260px; }
-                            .txt {
-                              font-size: 18px; }
-                              footer .wrap .txt {
-                                font-size: 24px; }
-                                .contact {
-                                  font-size: 36px; }
-                                  .about h3 {
-                                    font-size: 42px; }
-                                    .about p {
-                                      font-size: 14px; }
-                                      .about-contact h3 {
-                                        font-size: 56px; }
-                                        .img-wrapper {
-                                          height: 34vh; }
-                                          .txt-loading {
-                                            font-size: 200px;
-                                            top: 30%; }
-                                            .number {
-                                              font-size: 150px; }
-                                              .click-focus {
-                                                width: 600px;
-                                                height: 400px;
-                                                top: calc(50vh - 200px);
-                                                left: calc(50vw - 300px); }
-                                                #section4 h2 {
-                                                  width: 350px; } }
+@media (max-width: 1180px) {
+	#wave {
+		top: -38%;
+		left: -16.5%;
+		transform: scale(0.4);
+	}
+	section h3.letter-transition {
+		font-size: 46px;
+		padding-left: calc(10% + 140px);
+		top: 40%;
+	}
+	.role {
+		padding: 40px calc(4% - 40px);
+	}
+	.role .container {
+		padding: 0 20px;
+	}
+	.project-content {
+		margin-top: calc(65vh + 130px);
+		padding-left: 40px;
+	}
+	.contact .letter {
+		font-size: 400px;
+	}
+	.txt-loading {
+		font-size: 260px;
+	}
+	.txt {
+		font-size: 18px;
+	}
+	footer .wrap .txt {
+		font-size: 24px;
+	}
+	.contact {
+		font-size: 36px;
+	}
+	.about h3 {
+		font-size: 42px;
+	}
+	.about p {
+		font-size: 14px;
+	}
+	.about-contact h3 {
+		font-size: 56px;
+	}
+	.img-wrapper {
+		height: 34vh;
+	}
+	.txt-loading {
+		font-size: 200px;
+		top: 30%;
+	}
+	.number {
+		font-size: 150px;
+	}
+	.click-focus {
+		width: 600px;
+		height: 400px;
+		top: calc(50vh - 200px);
+		left: calc(50vw - 300px);
+	}
+	#section4 h2 {
+		width: 350px;
+	}
+}
 
-                                                  @media (max-width: 890px) {
-                                                    .about-contact h3 {
-                                                      font-size: 33px; }
-                                                      .about-contact p {
-                                                        font-size: 12px; }
-                                                        .about-contact .wrapper {
-                                                          padding: 100px 16% 40px 100px; }
-                                                          #focus {
-                                                            transform: scale(0.6);
-                                                            pointer-events: none; }
-                                                            #section1 .section-wrap {
-                                                              width: 80%;
-                                                              padding-left: 20%; }
-                                                              section p {
-                                                                width: 100%;
-                                                                padding: 0 40px;
-                                                                font-size: 12px; }
-                                                                .cross {
-                                                                  transform: scale(0.6); }
-                                                                  section h3.letter-transition {
-                                                                    font-size: 32px; }
-                                                                    .project-header .cross.last {
-                                                                      top: 28%; }
-                                                                      .role .container {
-                                                                        padding: 0 10px;
-                                                                        max-width: 192px;
-                                                                        width: auto; }
-                                                                        .role {
-                                                                          padding: 30px 20px; }
-                                                                          .contact .letter {
-                                                                            font-size: 300px; }
-                                                                            .click-focus {
-                                                                              width: 400px;
-                                                                              height: 300px;
-                                                                              top: calc(50vh - 150px);
-                                                                              left: calc(50vw - 200px); } }
+@media (max-width: 890px) {
+	.about-contact h3 {
+		font-size: 33px;
+	}
+	.about-contact p {
+		font-size: 12px;
+	}
+	.about-contact .wrapper {
+		padding: 100px 16% 40px 100px;
+	}
+	#focus {
+		transform: scale(0.6);
+		pointer-events: none;
+	}
+	#section1 .section-wrap {
+		width: 80%;
+		padding-left: 20%;
+	}
+	section p {
+		width: 100%;
+		padding: 0 40px;
+		font-size: 12px;
+	}
+	.cross {
+		transform: scale(0.6);
+	}
+	section h3.letter-transition {
+		font-size: 32px;
+	}
+	.project-header .cross.last {
+		top: 28%;
+	}
+	.role .container {
+		padding: 0 10px;
+		max-width: 192px;
+		width: auto;
+	}
+	.role {
+		padding: 30px 20px;
+	}
+	.contact .letter {
+		font-size: 300px;
+	}
+	.click-focus {
+		width: 400px;
+		height: 300px;
+		top: calc(50vh - 150px);
+		left: calc(50vw - 200px);
+	}
+}
 
-                                                                              @media (max-width: 480px), (max-aspect-ratio: 6 / 5) {
-                                                                                #wave {
-                                                                                  display: none; }
-                                                                                  .img-wrapper {
-                                                                                    display: none; }
-                                                                                    .bg-letter {
-                                                                                      display: none; }
-                                                                                      .bg-letter.mobile {
-                                                                                        display: block; }
-                                                                                        .txt-loading {
-                                                                                          font-size: 80px;
-                                                                                          top: 41%; }
-                                                                                          #fp-nav {
-                                                                                            width: 40px; }
-                                                                                            nav {
-                                                                                              top: 46px;
-                                                                                              left: -50px; }
-                                                                                              nav ul li {
-                                                                                                font-size: 13px;
-                                                                                                margin-right: 20px; }
-                                                                                                #fp-nav.fp-show-active.right ul {
-                                                                                                  left: -8px; }
-                                                                                                  #fp-nav ul li .fp-tooltip.right.close, #close-nav ul li .fp-tooltip.right.close {
-                                                                                                    height: 12px;
-                                                                                                    left: -114px; }
-                                                                                                    h1 {
-                                                                                                      font-size: 28px;
-                                                                                                      width: 100%;
-                                                                                                      padding: 0 40px; }
-                                                                                                      h2 {
-                                                                                                        font-size: 22px; }
-                                                                                                        .btn {
-                                                                                                          letter-spacing: 3px;
-                                                                                                          font-size: 9px;
-                                                                                                          height: 40px;
-                                                                                                          padding-top: 15px; }
-                                                                                                          .section-wrap {
-                                                                                                            padding: 0 0 0 60px; }
-                                                                                                            #section1 .section-wrap {
-                                                                                                              width: 100%;
-                                                                                                              padding: 0 0 0 40px; }
-                                                                                                              #section1 .btn {
-                                                                                                                left: calc(50vw - 64px);
-                                                                                                                margin-left: 0; }
-                                                                                                                #section4 h2 {
-                                                                                                                  width: 228px; }
-                                                                                                                  .btn {
-                                                                                                                    max-width: 168px;
-                                                                                                                    margin-left: calc(50vw - 124px); }
-                                                                                                                    #focus {
-                                                                                                                      transform: scale(0.4) rotate(90deg); }
-                                                                                                                      .click-focus {
-                                                                                                                        width: 300px;
-                                                                                                                        left: calc(50vw - 150px); }
-                                                                                                                        .project-header {
-                                                                                                                          height: 36vh;
-                                                                                                                          top: 0; }
-                                                                                                                          .project-header .cross {
-                                                                                                                            transform: scale(0.4); }
-                                                                                                                            .project-header .cross.first {
-                                                                                                                              top: 2%;
-                                                                                                                              left: 10%; }
-                                                                                                                              .project-header .cross.last {
-                                                                                                                                top: 0;
-                                                                                                                                left: 60%; }
-                                                                                                                                .role {
-                                                                                                                                  top: 36vh;
-                                                                                                                                  width: calc(100% - 40px);
-                                                                                                                                  margin-left: 40px; }
-                                                                                                                                  .role .container {
-                                                                                                                                    display: block;
-                                                                                                                                    margin-bottom: 20px;
-                                                                                                                                    color: #fff;
-                                                                                                                                    font-size: 11px; }
-                                                                                                                                    .role .btn {
-                                                                                                                                      display: block;
-                                                                                                                                      margin: 0; }
-                                                                                                                                      .role h4 {
-                                                                                                                                        font-size: 14px; }
-                                                                                                                                        section h3.letter-transition {
-                                                                                                                                          top: 34%;
-                                                                                                                                          font-size: 26px;
-                                                                                                                                          padding-left: 100px; }
-                                                                                                                                          section .bg.gradient {
-                                                                                                                                            top: 0; }
-                                                                                                                                            .project-content {
-                                                                                                                                              position: absolute;
-                                                                                                                                              width: 100%;
-                                                                                                                                              margin-top: calc(36vh + 200px); }
-                                                                                                                                              .project-content video {
-                                                                                                                                                display: none; }
-                                                                                                                                                .project .bg.gradient {
-                                                                                                                                                  height: 36vh; }
-                                                                                                                                                  .video-gif {
-                                                                                                                                                    display: block;
-                                                                                                                                                    width: 70%;
-                                                                                                                                                    margin: 0 auto; }
-                                                                                                                                                    .video-gif img {
-                                                                                                                                                      width: 100%; }
-                                                                                                                                                      .txt {
-                                                                                                                                                        font-size: 15px;
-                                                                                                                                                        padding: 20px; }
-                                                                                                                                                        .txt p {
-                                                                                                                                                          width: auto; }
-                                                                                                                                                          .img-block:nth-child(odd) img, .img-block:nth-child(odd) p, .img-block:nth-child(even) img, .img-block:nth-child(even) p {
-                                                                                                                                                            float: none; }
-                                                                                                                                                            .img-block:nth-child(odd) p, .img-block:nth-child(even) p {
-                                                                                                                                                              padding-left: 20px; }
-                                                                                                                                                              .img-block p {
-                                                                                                                                                                font-size: 26px;
-                                                                                                                                                                margin-top: -200px; }
-                                                                                                                                                                .img-block:nth-of-type(3) p {
-                                                                                                                                                                  margin-top: -300px; }
-                                                                                                                                                                  #tatoue h3.letter-transition {
-                                                                                                                                                                    width: 285px; }
-                                                                                                                                                                    #tatoue .project-content .txt {
-                                                                                                                                                                      font-size: 16px; }
-                                                                                                                                                                      #mpp h3.letter-transition {
-                                                                                                                                                                        width: 304px;
-                                                                                                                                                                        font-size: 17px; }
-                                                                                                                                                                        footer .wrap {
-                                                                                                                                                                          height: 31vh;
-                                                                                                                                                                          padding: 36px; }
-                                                                                                                                                                          footer .wrap .txt {
-                                                                                                                                                                            font-size: 16px;
-                                                                                                                                                                            padding: 0; }
-                                                                                                                                                                            .contact, .about {
-                                                                                                                                                                              width: calc(100% - 40px);
-                                                                                                                                                                              height: calc(50% - 20px);
-                                                                                                                                                                              left: 20px; }
-                                                                                                                                                                              .linkedin {
-                                                                                                                                                                                margin-top: 10px;
-                                                                                                                                                                                width: 40px; }
-                                                                                                                                                                                .about-contact .wrapper {
-                                                                                                                                                                                  width: 80%; }
-                                                                                                                                                                                  .about-contact .cross.cross-close {
-                                                                                                                                                                                    left: calc(80vw - 55px); }
-                                                                                                                                                                                    .about-contact .wrapper {
-                                                                                                                                                                                      padding: 80px 40px 40px 80px; }
-                                                                                                                                                                                      .about-contact .wrapper h3 {
-                                                                                                                                                                                        font-size: 32px; }
-                                                                                                                                                                                        .about-contact .wrapper p {
-                                                                                                                                                                                          font-size: 12px; } }
+@media (max-width: 480px),
+(max-aspect-ratio: 6 / 5) {
+	#wave {
+		display: none;
+	}
+	.img-wrapper {
+		display: none;
+	}
+	.bg-letter {
+		display: none;
+	}
+	.bg-letter.mobile {
+		display: block;
+	}
+	.txt-loading {
+		font-size: 80px;
+		top: 41%;
+	}
+	#fp-nav {
+		width: 40px;
+	}
+	nav {
+		top: 46px;
+		left: -50px;
+	}
+	nav ul li {
+		font-size: 13px;
+		margin-right: 20px;
+	}
+	#fp-nav.fp-show-active.right ul {
+		left: -8px;
+	}
+	#fp-nav ul li .fp-tooltip.right.close,
+	#close-nav ul li .fp-tooltip.right.close {
+		height: 12px;
+		left: -114px;
+	}
+	h1 {
+		font-size: 28px;
+		width: 100%;
+		padding: 0 40px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.btn {
+		letter-spacing: 3px;
+		font-size: 9px;
+		height: 40px;
+		padding-top: 15px;
+	}
+	.section-wrap {
+		padding: 0 0 0 60px;
+	}
+	#section1 .section-wrap {
+		width: 100%;
+		padding: 0 0 0 40px;
+	}
+	#section1 .btn {
+		left: calc(50vw - 64px);
+		margin-left: 0;
+	}
+	#section4 h2 {
+		width: 228px;
+	}
+	.btn {
+		max-width: 168px;
+		margin-left: calc(50vw - 124px);
+	}
+	#focus {
+		transform: scale(0.4) rotate(90deg);
+	}
+	.click-focus {
+		width: 300px;
+		left: calc(50vw - 150px);
+	}
+	.project-header {
+		height: 36vh;
+		top: 0;
+	}
+	.project-header .cross {
+		transform: scale(0.4);
+	}
+	.project-header .cross.first {
+		top: 2%;
+		left: 10%;
+	}
+	.project-header .cross.last {
+		top: 0;
+		left: 60%;
+	}
+	.role {
+		top: 36vh;
+		width: calc(100% - 40px);
+		margin-left: 40px;
+	}
+	.role .container {
+		display: block;
+		margin-bottom: 20px;
+		color: #fff;
+		font-size: 11px;
+	}
+	.role .btn {
+		display: block;
+		margin: 0;
+	}
+	.role h4 {
+		font-size: 14px;
+	}
+	section h3.letter-transition {
+		top: 34%;
+		font-size: 26px;
+		padding-left: 100px;
+	}
+	section .bg.gradient {
+		top: 0;
+	}
+	.project-content {
+		position: absolute;
+		width: 100%;
+		margin-top: calc(36vh + 200px);
+	}
+	.project-content video {
+		display: none;
+	}
+	.project .bg.gradient {
+		height: 36vh;
+	}
+	.video-gif {
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+	}
+	.video-gif img {
+		width: 100%;
+	}
+	.txt {
+		font-size: 15px;
+		padding: 20px;
+	}
+	.txt p {
+		width: auto;
+	}
+	.img-block:nth-child(odd) img,
+	.img-block:nth-child(odd) p,
+	.img-block:nth-child(even) img,
+	.img-block:nth-child(even) p {
+		float: none;
+	}
+	.img-block:nth-child(odd) p,
+	.img-block:nth-child(even) p {
+		padding-left: 20px;
+	}
+	.img-block p {
+		font-size: 26px;
+		margin-top: -200px;
+	}
+	.img-block:nth-of-type(3) p {
+		margin-top: -300px;
+	}
+	#tatoue h3.letter-transition {
+		width: 285px;
+	}
+	#tatoue .project-content .txt {
+		font-size: 16px;
+	}
+	#mpp h3.letter-transition {
+		width: 304px;
+		font-size: 17px;
+	}
+	footer .wrap {
+		height: 31vh;
+		padding: 36px;
+	}
+	footer .wrap .txt {
+		font-size: 16px;
+		padding: 0;
+	}
+	.contact,
+	.about {
+		width: calc(100% - 40px);
+		height: calc(50% - 20px);
+		left: 20px;
+	}
+	.linkedin {
+		margin-top: 10px;
+		width: 40px;
+	}
+	.about-contact .wrapper {
+		width: 80%;
+	}
+	.about-contact .cross.cross-close {
+		left: calc(80vw - 55px);
+	}
+	.about-contact .wrapper {
+		padding: 80px 40px 40px 80px;
+	}
+	.about-contact .wrapper h3 {
+		font-size: 32px;
+	}
+	.about-contact .wrapper p {
+		font-size: 12px;
+	}
+}
 
-                                                                                                                                                                                          @media (max-width: 360px) {
-                                                                                                                                                                                            h1 {
-                                                                                                                                                                                              font-size: 18px; } }
+@media (max-width: 360px) {
+	h1 {
+		font-size: 18px;
+	}
+}

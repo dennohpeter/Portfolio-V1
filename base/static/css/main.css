@@ -1,20 +1,11 @@
-.feather {
-    width: 30px;
-    height: 30px;
-    stroke: currentcolor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-    padding-right: 10px;
-}
+/* custom icons */
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot');
-  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf') format('truetype'),
-  url('../fonts/icomoon.woff') format('woff'),
-  url('../fonts/icomoon.svg') format('svg');
+  src:  url('../fonts/icomoon.eot?f6xd38');
+  src:  url('../fonts/icomoon.eot?f6xd38#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?f6xd38') format('truetype'),
+    url('../fonts/icomoon.woff?f6xd38') format('woff'),
+    url('../fonts/icomoon.svg?f6xd38#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,24 +24,76 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-eye:before {
-  content: "\e900";
-  font-size: 17px;
-}
-.icon-gear:before {
-  content: "\e901";
-}
-.icon-mail:before {
-  content: "\e902";
-  font-size: 18px;
+.icon-home:before {
+  content: "\e906";
 }
 .icon-prof:before {
+  content: "\f007";
+  font-size: 27px;
+}
+.icon-activity:before {
+  content: "\e900";
+  font-size: 24px;
+}
+.icon-resume:before {
+  content: "\e90d";
+  font-size: 27px;
+}
+.icon-eye:before {
+  content: "\e90b";
+  font-size: 27px;
+}
+.icon-award:before {
+  content: "\e901";
+  font-size: 27px;
+}
+.icon-donate:before {
+  content: "\e902";
+}
+.icon-blog:before {
+  content: "\e90a";
+}
+.icon-mail:before {
+  content: "\f003";
+  font-size: 23px;
+}
+.icon-heart:before {
+  content: "\e905";
+}
+.icon-gear:before {
+  content: "\e90e";
+}
+.icon-sidebar:before {
+  content: "\e907";
+}
+.icon-twitter:before {
+  content: "\e908";
+  font-size: 20px;
+}
+.icon-gift:before {
   content: "\e903";
 }
-.icon-hom:before {
+.icon-github:before {
   content: "\e904";
+  font-size: 20px;
 }
+.icon-facebook:before {
+  content: "\e90c";
+  font-size: 20px;
+}
+.icon-love:before {
+  content: "\f004";
+}
+.icon-love:before {
+  content: "\f004";
+}
+.icon-facebook:before {
+  content: "\e90c";
+}
+.icon-zap:before {
+  content: "\e909";
+}
+/* end of custom icons */
 
 /* ==========================================================================
 Base styles: opinionated defaults

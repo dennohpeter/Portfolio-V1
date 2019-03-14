@@ -45,8 +45,6 @@
     var image = "{% static 'img/marker.png' %}";  //Removed var path
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- feather icons -->
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <script src="{% static 'js/vide.js' %}?version=1"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script>
 </head>
@@ -63,22 +61,23 @@
   </a>
   <nav class="en">
     <a rel="index" href="{% url 'home' %}" class="home-link active">
-      <i class="icon-hom"></i>
+      <i class="icon-home"></i>
+
     </a>
     <a rel="about" href="{% url 'about' %}" class="">
       <i class="icon-prof"></i>
     </a>
     <a rel="skills" href="{% url 'skills' %}" class="">
-      <i class="icon-gear"></i>
+      <i class="icon-activity"></i>
     </a>
     <a rel="resume" href="{% url 'resume' %}" class="">
-      <i class="icon-gear"></i>
+      <i class="icon-resume"></i>
     </a>
     <a rel="gallery" href="{% url 'portfolio' %}" class="">
       <i class="icon-eye"></i>
     </a>
     <a rel="awards" href="{% url 'awards' %}" class="">
-      <i class="icon-eye"></i>
+      <i class="icon-award"></i>
     </a>
     <a rel="contact" href="{% url 'contact' %}" class="">
       <i class="icon-mail"></i>
@@ -87,17 +86,17 @@
   <ul>
     <li>
       <a href="https://twitter.com/PythonMafia" target="_blank">
-        <i class="feather" data-feather="twitter"></i>
+        <i class="icon-twitter"></i>
       </a>
     </li>
     <li>
       <a href="https://github.com/dennohpeter/" target="_blank">
-        <i class="feather" data-feather="github"></i>
+        <i class="icon-github"></i>
       </a>
     </li>
     <li>
       <a href="https://www.facebook.com/dennohpeterson" target="_blank">
-        <i class="feather" data-feather="facebook"></i>
+        <i class="icon-facebook"></i>
       </a>
     </li>
     <li>
@@ -139,10 +138,6 @@
 <script>
 var app = {};
 app.ajax = null;
-//for feather Icons
-$(document).ready(function(){
-feather.replace();
-});
 </script>
 {% comment %} <script src="{% static 'js/vendor/pixi.min.js' %}?version=1"></script> {% endcomment %}
 <script src="{% static 'js/vendor/TweenLite.min.js' %}?version=1"></script>

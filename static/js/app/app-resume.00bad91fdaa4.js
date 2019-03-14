@@ -1,0 +1,4 @@
+app.resume = {
+  init:function(){
+  }
+}
