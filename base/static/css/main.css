@@ -87,8 +87,8 @@
   content: "\e909";
 }
 .icon-menu:before {
-  content: "\e5d2";
-  /* font-size: 27px; */
+  content: "\e90a";
+  font-size: 30px;
 }
 /* end of custom icons */
 
