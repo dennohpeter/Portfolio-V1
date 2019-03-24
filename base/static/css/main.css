@@ -739,9 +739,7 @@ opacity: 0;
 transition: all 0.3s ease-out;
 }
 .container.about .text-zone h1:before {
-content: '
-<h1>
-';
+content: '<h1>';
 font-family: 'La Belle Aurore', cursive;
 color: #515152;
 font-size: 18px;
@@ -749,9 +747,7 @@ position: absolute;
 margin-top: -10px;
 }
 .container.about .text-zone h1:after {
-content: '
-<h1/>
-';
+content: '<h1/>';
 font-family: 'La Belle Aurore', cursive;
 color: #515152;
 font-size: 18px;
