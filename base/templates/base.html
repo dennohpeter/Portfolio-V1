@@ -45,7 +45,7 @@
     var image = "{% static 'img/marker.png' %}";  //Removed var path
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="{% static 'js/vide.js' %}?version=1"></script>
+  {# <script src="{% static 'js/vide.js' %}?version=1"></script> #}
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script>
 </head>
 <body {% block bodyclass %} {% endblock %}>
@@ -125,9 +125,9 @@
 </div>
 <div id="rotate"></div>
 <!--javascript staticfiles  -->
-<script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-<script src="{% static 'js/plugins.js' %}?version=1"></script>
+{# <script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script> #}
+{# <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> #}
+{# <script src="{% static 'js/plugins.js' %}?version=1"></script> #}
 <script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
 <script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script>
 <script>
@@ -135,7 +135,7 @@ var app = {};
 app.ajax = null;
 </script>
 {% comment %} <script src="{% static 'js/vendor/pixi.min.js' %}?version=1"></script> {% endcomment %}
-<script src="{% static 'js/vendor/TweenLite.min.js' %}?version=1"></script>
+{# <script src="{% static 'js/vendor/TweenLite.min.js' %}?version=1"></script> #}
 {% comment %} <script src="{% static 'js/app.js' %}?version=1"></script> {% endcomment %}
 <script src="{% static 'js/app/app-home.js' %}?version=1"></script>
 <script src="{% static 'js/app/app-about.js' %}?version=1"></script>

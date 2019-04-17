@@ -110,139 +110,139 @@ app.ui = {
   },
   initAnimation: function () {
 
-    app.ui.animations.preloaderanim = new TimelineMax().to(document.querySelector('.container'), 0.4, {
-      immediateRender: false,
-      opacity: 0.2,
-      scale: 0.85,
-      ease: Power4.easeOut
-    }).fromTo(document.querySelector('.preloader'), 0.5, {
-      immediateRender: false,
-      x: '-100%',
-      display: 'none',
-      ease: Power4.easeOut
-    }, {
-      x: '0%',
-      display: 'block'
-    }, 0.3).pause(),
-    app.ui.animations.preloaderanimHide = new TimelineMax().fromTo(document.querySelector('.container'), 0.5, {
-      immediateRender: false,
-      opacity: 0,
-      scale: 0.85
-    }, {
-      opacity: 1,
-      scale: 1
-    }, 0.3).fromTo(document.querySelector('.preloader'), 0.6, {
-      immediateRender: false,
-      x: '0%',
-      ease: Power4.easeIn
-    }, {
-      x: '100%',
-      onComplete: function () {
-
-        $('.progress-bar > span').text(0);
-        $('.progress-bar > span').css('width', '0%');
-        $('.progress-bar_bg div').css('width', '0%');
-        $('.preloader').hide();
-
-      }
-    }, 0).pause()
-
-  }
-
-}
-
-
-app.ui.preloader = {
-
-  checkProgress: function (rel) {
-
-    if (app.ajax === null) {
-
-      $("#page").html(app.ui.contents);
-      $('.container').removeClass('fadeIn');
-      app.ui.initAnimation();
-
-      //rozbicie watków zeby bylo to asynchronicznie bardziej
-
-      setTimeout(function () {
-        app.ui.preloader.preloaderHide();
-      }, 30);
-      setTimeout(function () {
-        app.ui.pageInit(rel);
-      }, 10);
-
-    } else {
-
-      setTimeout(function () {
-
-        app.ui.preloader.checkProgress(rel);
-
-      }, 50);
-
-
-    }
-  },
-  preloaderInit: function (rel) {
-
-
-    app.ui.animations.preloaderanim.play(0).call(app.ui.preloader.preloaderCheckRequest, [rel]);
-    if (document.querySelector('.bg')) {
-      TweenMax.to($('.bg'), 0.4, {
-        opacity: 0.2,
-        scale: 0.85,
-        ease: Power4.easeOut
-      });
-    }
-
-
-  },
-  preloaderCheckRequest: function (rel) {
-
-    $('.progress-bar_bg div').width();
-    var a = 0;
-    var loader = setInterval(function () {
-      ++a;
-      ++a;
-      ++a;
-      $('.progress-bar > span').text(a);
-      $('.progress-bar > span').css('width', a + '%');
-      $('.progress-bar_bg div').css('width', a + '%');
-
-      if (a >= 99) {
-
-        clearInterval(loader);
-
-        //sprawdza czy ajax request sie skonczyl
-
-        app.ui.preloader.checkProgress(rel);
-
-
-      }
-
-    }, 25);
-  },
-  preloaderHide: function (rel) {
-
-
-    app.ui.animations.preloaderanimHide.play();
-
-    if (document.querySelector('.bg')) {
-      TweenMax.fromTo($('.bg')[0], 0.5, {
-        opacity: 0.2,
-        scale: 0.85,
-        ease: Power4.easeOut
-      }, {
-        opacity: 1,
-        scale: 1,
-        delay: 0.4
-      });
-    }
-
-
-  }
+  //   app.ui.animations.preloaderanim = new TimelineMax().to(document.querySelector('.container'), 0.4, {
+  //     immediateRender: false,
+  //     opacity: 0.2,
+  //     scale: 0.85,
+  //     ease: Power4.easeOut
+  //   }).fromTo(document.querySelector('.preloader'), 0.5, {
+  //     immediateRender: false,
+  //     x: '-100%',
+  //     display: 'none',
+  //     ease: Power4.easeOut
+  //   }, {
+  //     x: '0%',
+  //     display: 'block'
+  //   }, 0.3).pause(),
+  //   app.ui.animations.preloaderanimHide = new TimelineMax().fromTo(document.querySelector('.container'), 0.5, {
+  //     immediateRender: false,
+  //     opacity: 0,
+  //     scale: 0.85
+  //   }, {
+  //     opacity: 1,
+  //     scale: 1
+  //   }, 0.3).fromTo(document.querySelector('.preloader'), 0.6, {
+  //     immediateRender: false,
+  //     x: '0%',
+  //     ease: Power4.easeIn
+  //   }, {
+  //     x: '100%',
+  //     onComplete: function () {
+  //
+  //       $('.progress-bar > span').text(0);
+  //       $('.progress-bar > span').css('width', '0%');
+  //       $('.progress-bar_bg div').css('width', '0%');
+  //       $('.preloader').hide();
+  //
+  //     }
+  //   }, 0).pause()
+  //
+  // }
 
 }
 
+
+// app.ui.preloader = {
+//
+//   checkProgress: function (rel) {
+//
+//     if (app.ajax === null) {
+//
+//       $("#page").html(app.ui.contents);
+//       $('.container').removeClass('fadeIn');
+//       app.ui.initAnimation();
+//
+//       //rozbicie watków zeby bylo to asynchronicznie bardziej
+//
+//       setTimeout(function () {
+//         app.ui.preloader.preloaderHide();
+//       }, 30);
+//       setTimeout(function () {
+//         app.ui.pageInit(rel);
+//       }, 10);
+//
+//     } else {
+//
+//       setTimeout(function () {
+//
+//         app.ui.preloader.checkProgress(rel);
+//
+//       }, 50);
+//
+//
+//     }
+//   },
+//   preloaderInit: function (rel) {
+//
+//
+//     // app.ui.animations.preloaderanim.play(0).call(app.ui.preloader.preloaderCheckRequest, [rel]);
+//     // if (document.querySelector('.bg')) {
+//     //   TweenMax.to($('.bg'), 0.4, {
+//     //     opacity: 0.2,
+//     //     scale: 0.85,
+//     //     ease: Power4.easeOut
+//     //   });
+//     // }
+//
+//
+//   },
+//   preloaderCheckRequest: function (rel) {
+//
+//     $('.progress-bar_bg div').width();
+//     var a = 0;
+//     var loader = setInterval(function () {
+//       ++a;
+//       ++a;
+//       ++a;
+//       $('.progress-bar > span').text(a);
+//       $('.progress-bar > span').css('width', a + '%');
+//       $('.progress-bar_bg div').css('width', a + '%');
+//
+//       if (a >= 99) {
+//
+//         clearInterval(loader);
+//
+//         //sprawdza czy ajax request sie skonczyl
+//
+//         app.ui.preloader.checkProgress(rel);
+//
+//
+//       }
+//
+//     }, 25);
+//   },
+//   preloaderHide: function (rel) {
+//
+//
+//     app.ui.animations.preloaderanimHide.play();
+//
+//     // if (document.querySelector('.bg')) {
+//     //   TweenMax.fromTo($('.bg')[0], 0.5, {
+//     //     opacity: 0.2,
+//     //     scale: 0.85,
+//     //     ease: Power4.easeOut
+//     //   }, {
+//     //     opacity: 1,
+//     //     scale: 1,
+//     //     delay: 0.4
+//     //   });
+//     // }
+//
+//
+//   }
+//
+// }
+}
 
 $(function () {
 
@@ -305,11 +305,11 @@ if (requested != 'true') {
 
     app.gallery.init();
   }
-
-  TweenMax.to($('.container')[0], 0.4, {
-    opacity: 1,
-    ease: Power2.easeIn
-  });
+  //
+  // TweenMax.to($('.container')[0], 0.4, {
+  //   opacity: 1,
+  //   ease: Power2.easeIn
+  // });
 
 }
 
