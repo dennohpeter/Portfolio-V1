@@ -1,7 +1,7 @@
 @media (max-width:1440px){
   #focus{transform:scale(.7)
   }
-  #section1 .btn{
+  .home-page .btn{
     bottom:38%
   }
   .home-page h3.letter-transition{
@@ -44,7 +44,7 @@
   #focus{
     pointer-events:none
   }
-  #section1 .section-wrap{
+  .home-page .section-wrap{
     width:80%;padding-left:20%
   }
   .home-page p{
@@ -95,10 +95,10 @@
   .section-wrap{
     padding:0 0 0 60px
   }
-  #section1 .section-wrap{
+  .home-page .section-wrap{
     width:100%;padding:0 0 0 40px
   }
-  #section1 .btn{
+  .home-page .btn{
     left:calc(50vw - 64px);margin-left:0
   }
   .btn{

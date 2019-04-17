@@ -89,6 +89,26 @@
   content: "\f0c9";
 }
 /* end of custom icons */
+/* remove default style */
+*{
+  margin: 0;
+  padding: 0;
+}
+a {
+  color:#444;
+  text-decoration:none;
+}
+a:hover {
+  color:#444;
+}
+a:focus {
+  outline:0;
+}
+a:hover,
+a:active {
+  outline:0;
+}
+
 /* ==========================================================================
 Base styles: opinionated defaults
 ========================================================================== */
@@ -102,15 +122,6 @@ html {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
-}
-#outdated {
-  position: absolute;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 9999999999;
 }
 /*
 * Remove text-shadow in selection highlight:
@@ -138,19 +149,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-/*
-* Remove the gap between audio, canvas, iframes,
-* images, videos and the bottom of their containers:
-* https://github.com/h5bp/html5-boilerplate/issues/440
-*/
-/* audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-vertical-align: middle;
-} */
 /*
 * Remove default fieldset styles.
 */
@@ -339,10 +337,9 @@ body {
   height: 90%;
   min-height: 566px;
   position: absolute;
-  opacity:0;
-  top:5%;
+  opacity:1;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 0;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -399,50 +396,6 @@ body {
   height: 100%;
   top: 0px;
 }
-/* .home-page .text-zone{
-position: absolute;
-left:10%;
-top: 50%;
--webkit-transform: translateY(-50%);
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-width: 40%;
-max-height: 90%;
-}
-.home-page .text-zone a {
-font-weight: normal;
-} */
-.home-page .section-wrap h1 {
-  color: #fff;
-  font-size: 60px;
-  line-height: 53px;
-  /* margin: 0; */
-  text-align: center;
-  font-family: font-file-82132;
-  font-weight: normal;
-}
-.home-page .section-wrap h1 div {
-  display: inline-block;
-}
-.home-page .section-wrap h1:before {
-  content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  margin-top: -35px;
-}
-.home-page .section-wrap h1:after {
-  content: '<h1/>';
-  font-family: 'La Belle Aurore', cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  margin-top: 18px;
-  margin-left: 20px;
-  -webkit-animation: myanim2 1s 1.7s backwards;
-  animation: myanim2 1s 1.7s backwards;
-}
 /* .home-page h2 {
 color:#8d8d8d;
 margin-top: 9px;
@@ -450,8 +403,8 @@ font-weight: normal;
 font-size: 11px;
 font-family: "Open Sans", sans-serif;
 letter-spacing: 3px;
--webkit-animation: myanim2 1s 1.8s backwards;
-animation: myanim2 1s 1.8s backwards;
+-webkit-animation: fader_effect 1s 1.8s backwards;
+animation: fader_effect 1s 1.8s backwards;
 } */
 /* .home-page .flat-button {
 color:#08fdd8;
@@ -464,8 +417,8 @@ border: 1px solid #08fdd8;
 margin-top: 25px;
 float: left;
 border-radius: 3px;
--webkit-animation: myanim2 1s 1.8s backwards;
-animation: myanim2 1s 1.8s backwards;
+-webkit-animation: fader_effect 1s 1.8s backwards;
+animation: fader_effect 1s 1.8s backwards;
 }
 .flat-button {
 white-space: nowrap
@@ -512,33 +465,46 @@ background: url(../img/bulba.png) no-repeat bottom center;
 .bulb a:hover {
 background: url(../img/bulb.png) no-repeat bottom center;
 } */
-.bg {
-  z-index: 0;
-  width: 400px;
-  /* height: 609px; */
-  /* opacity:0; */
+/*================================================== Vertical Divisions =====================================  */
+.section-wrap {
   position: absolute;
-  top:0;
-  right: 15%;
-  bottom: 0;
-  left:auto;
-  margin: auto;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 33.33%;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+  flex-direction: column;
+  text-align: center;
 }
-/* .bg svg {
-width: 100%;
-height: auto;
-bottom: 0;
-} */
-/* .bg .jb {
-position: absolute;
-top:auto;
-right: auto;
-bottom: 0;
-left:0;
-margin: auto;
-width: 100%;
-opacity: 0;
-} */
+.home-page .section-wrap h1 {
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  font-family: font-file-82132;
+  font-weight: normal;
+}
+.home-page .section-wrap h1:before {
+  text-align: left;
+  content: '<h1>';
+  left: 0;
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -35px;
+}
+.home-page .section-wrap h1:after {
+  content: '<h1/>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  right: 0;
+  font-size: 18px;
+  position: absolute;
+  -webkit-animation: fader_effect 1s 1.7s backwards;
+  animation: fader_effect 1s 1.7s backwards;
+}
 @keyframes myanim {
   0%   {
     top:-2000px;
@@ -559,7 +525,7 @@ opacity: 0;
     opacity: 1;
   }
 }
-@keyframes myanim2 {
+@keyframes fader_effect {
   0%   {
     opacity: 0;
   }
@@ -567,7 +533,7 @@ opacity: 0;
     opacity: 1;
   }
 }
-@-webkit-keyframes myanim2 {
+@-webkit-keyframes fader_effect {
   0%   { opacity: 0;  }
   100% {opacity: 1;}
 }
@@ -579,84 +545,60 @@ opacity: 0;
   0%   { opacity: 0; top:-20px; }
   100% {opacity: 1;}
 }
-/*================================================== Vertical Divisions =====================================  */
 .letter-transition {
   text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
   will-change: transform;
 }
-/* .letter-transition div span {
-opacity: 0;
-width: auto;
-min-width: 10px;
-display: inline-block;
-vertical-align: top;
-transition: all 1.2s ease, color 3s linear;
-text-align: center;
-} */
-.section-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 30%;
-  display: flex;
-  justify-content: center;
-  perspective: 1000px;
-  flex-direction: column;
-  text-align: center;
+.letter-transition div span {
+  opacity: 1;
+  width: auto;
+  min-width: 10px;
+  display: inline-block;
+  vertical-align: top;
+  transition: all 1.2s ease, color 3s linear;
 }
-/* #section1 .section-wrap {
-width: 100%;
-left: 0;
-padding: 100px 10%; } */
 .flipper-inner {
   transform: preserve-3d;
   height: 100%;
   width: 100%;
   position: relative;
 }
-.bg-letter {
+.home-page .bg-letter {
   position: absolute;
   top: 0;
   height: 100%;
   transition: background 2s ease;
-  border-right: 1px solid #000;
+  border-right: 1px solid #ffffff;
   backface-visibility: hidden;
   will-change: background-position;
 }
-#section1 .bar1 {
+.home-page .bar1 {
   left: 0;
-  width: 33.333%;
+  width: 33.30%;
   background: url(../img/bar_1-01.svg) no-repeat;
-  background-position: bottom center;
+  background-position: center center;
   background-size: 100% auto;
 }
-#section1 .bar2 {
+.home-page .bar2 {
   left: 33.333%;
-  width: 33.333%;
+  width: 33.30%;
   background: url(../img/bar_2-01.svg) no-repeat;
-  background-position: top center;
+  background-position: center center;
   background-size: 100% auto;
 }
-#section1 .bar3 {
+.home-page .bar3 {
   left: 66.666%;
-  width: 33.333%;
+  width: 33.30%;
   background: url(../img/bar_3-01.svg) no-repeat;
-  background-position: bottom center;
+  background-position: center center;
   background-size: 100% auto;
 }
-#section1 p {
+.section-wrap p {
   margin: 40px auto 0;
   color: #fff;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  font-size: 18px;
 }
-/* section .section-wrap p {
-width: 400px;
-text-align: left;
-margin: 40px 0 40px 30%;
-} */
 /*================================================== PRELOADER ============================================== */
 .preloader {
   position: fixed;
@@ -1549,11 +1491,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     .container.about .text-zone h1:after {
       bottom: -44px;
     }
-    .bg {
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2);
-    }
     .home-page h1 img {
       width: 38px;
     }
@@ -1604,10 +1541,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     }
     #pyramid{
       display: none;
-    }
-    .bg {
-      width: 263px;
-      height: 400px;
     }
   }
   @media (max-width: 800px) and (orientation : landscape) {
@@ -1733,11 +1666,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
       position: relative;
       top: 0px;
       overflow: hidden;
-    }
-    .bg {
-      right:0;
-      left:0;
-      opacity: 0.5;
     }
     .container.gallery {
       position: absolute;
