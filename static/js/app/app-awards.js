@@ -1,5 +1,0 @@
-app.awards = {
-  init:function(){
-
-}
-}
