@@ -1700,6 +1700,7 @@ display: none !important;
   }
   .home-page .section-wrap h1 {
     font-size: 47px !important;
+    line-height: 40px !important;
   }
   .flipper-inner {
     display: none;
