@@ -37,16 +37,9 @@
     var msg8 = "Scroll to zoom in/out";
     var image = "{% static 'img/marker.png' %}";  //Removed var path
   </script>
-  {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> {% endcomment %}
-  {# <script src="{% static 'js/vide.js' %}?version=1"></script> #}
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script>
 </head>
 <body {% block bodyclass %} {% endblock %}>
-  {% comment %} <script>
-    if (sessionStorage.intro) {
-      jQuery('body').addClass('second');
-    }
-</script> {% endcomment %}
 <div id="nav_bar">
   <a class="logo" rel="index" href="{% url 'home' %}">
     <img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
@@ -116,7 +109,7 @@
     </div>
   </div>
 </div> {% endcomment %}
-{% comment %} <div id="rotate"></div> {% endcomment %}
+<div id="rotate"></div>
 <!--javascript staticfiles  -->
 {# <script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script> #}
 {# <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> #}
