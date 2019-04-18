@@ -597,6 +597,7 @@ background: url(../img/bulb.png) no-repeat bottom center;
 /*================================================== ABOUT ============================================== */
 .about {
   display: flex;
+  height: 100%;
   justify-content: space-between;
 }
 .about .divider {
@@ -669,11 +670,17 @@ background: url(../img/bulb.png) no-repeat bottom center;
 /* profile  */
 .profile {
   left: 50%;
-  padding-top:50px;
+  padding: 2.5%;
   position: fixed;
   overflow: hidden;
   background-color: whitesmoke;
   z-index: -1;
+}
+.prof_cont {
+  background: url(../images/bg/image-48.jpg) no-repeat;
+  background-size: cover;
+  height: 90%;
+  width: 90%;
 }
 /*================================================== TEXT PAGE ============================================== */
 .text-page .text-zone{
@@ -1464,17 +1471,14 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     font-size: 54px !important;
     line-height: 45px;
   }
-  .about .text-zone {
-    width: 40%;
-  }
   .text-page .text-zone h1:after,
   .about .text-zone h1:after,
-  .container.contact .text-zone h1:after {
+  .about.contact .text-zone h1:after {
     bottom: -40px;
   }
   .text-page .text-zone h1:before,
   .about .text-zone h1:before,
-  .container.contact .text-zone h1:before {
+  .about.contact .text-zone h1:before {
     margin-top: -29px;
   }
   .home-page .text-zone,
@@ -1559,6 +1563,7 @@ display: none !important;
   }
   .lang {float: left;width:auto;margin-top: 0;line-height: 60px;}
   .lang a{margin-top:0;display: inline;margin-right:7px;}
+  /* =============================== nav_bar ==================================  */
   #nav_bar nav {
     width: 52%;
     position: absolute;
@@ -1626,29 +1631,29 @@ display: none !important;
     bottom: auto;
     top: 76px;
   }
-  .bottom-tags {position: absolute;clear:both;float:left;margin-top: 22px;bottom:0}
-  .text-zone {
-    position: static !important;
-    max-height: auto;
-    min-height: 350px;
+  .bottom-tags {
+    position: absolute;clear:both;
     float:left;
-    margin-left: 10%;
-    -webkit-transform: none !important;
-    -ms-transform: none !important;
-    transform: none !important;
-    margin-top: 170px;
+    margin-top: 22px;
+    bottom:0
   }
-  .about  .text-zone,
-  .container.skills .text-zone{
-    width: 80%;
-    min-height: 0;
+  .about .text-zone p, .about .text-zone h1 {
+    padding-left: 30px
   }
-  .profile {
-    position:static;
-    width:80%;
-    margin-left:10%;
-    padding-top:50px;
-    margin-bottom:50px;
+  .about .text-zone h1:before, .about .text-zone h1:after {
+    padding: 0px;
+  }
+  .about .text-zone h1:after {
+    margin-left: 40px;
+  }
+  .about .text-zone {
+    margin-top: 60px;
+  }
+  .about .profile {
+    margin-top: 60px;
+  }
+  .prof_cont {
+    height: 82%;
   }
   #myCanvasContainer {
     position: relative;
@@ -1701,6 +1706,17 @@ display: none !important;
   }
   .chart.small{
     display: none;
+  }
+  .about .text-zone {
+    width: 100%;
+    border: none;
+    clear: right;
+    position: absolute;
+  }
+  .about .profile {
+    width: 100%;
+    display: none;
+    border: none;
   }
 }
 @media (max-width: 625px){
