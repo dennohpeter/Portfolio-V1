@@ -172,16 +172,6 @@ Browser Upgrade Prompt
   color: #000;
   padding: 0.2em 0;
 }
-/* ==========================================================================
-Author's custom styles
-========================================================================== */
-h1 {
-  font-size: 60px !important;
-}
-.text-zone p {
-  font-size: 14px !important;
-  color:#fff;
-}
 body {
   background: #252627;
   overflow: hidden;
@@ -318,19 +308,6 @@ body {
   color:#08fdd8;
 }
 /* end for social icons styling */
-/* tags for about section  */
-.tags {
-  color: #515152;
-  position: absolute;
-  bottom: 0px;
-  left: 80px;
-  font-size: 18px;
-  font-family: 'La Belle Aurore', cursive;
-}
-.top-tags {
-  bottom: auto;
-  top:0px;
-}
 .container {
   width: 100%;
   will-change: contents;
@@ -617,68 +594,84 @@ background: url(../img/bulb.png) no-repeat bottom center;
   display: block;
 }
 /*================================================== ABOUT ============================================== */
-.container.about .text-zone{
-  position: absolute;
-  left:10%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 35%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
+.about {
+  display: flex;
+  justify-content: space-between;
 }
-.container.about .text-zone h1 {
+.about .divider {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #000000;
+}
+.about .text-zone {
+  position: absolute;
+  left:0;
+}
+.about .tags {
+  color: #515152;
+  position: absolute;
+  bottom: 5px;
+  left: 55px;
+  font-size: 18px;
+  font-family: 'La Belle Aurore', cursive;
+}
+.about .top-tags {
+  bottom: auto;
+  top:0px;
+}
+.about .text-zone h1 {
   font-size: 53px;
   font-family: font-file-82132;
   color:#08fdd8;
   font-weight: normal;
-  margin-top: 0;
+  margin-top: 25px;
+  padding-left: 70px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-.container.about h1 .blast {
+.about h1 .blast {
   will-change: transform;
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.container.about .text-zone h1:before {
+.about .text-zone h1:before {
   content: '<h1>';
   font-family: 'La Belle Aurore', cursive;
   color: #515152;
   font-size: 18px;
   position: absolute;
   margin-top: -10px;
+  padding-left: 50px;
 }
-.container.about .text-zone h1:after {
+.about .text-zone h1:after {
   content: '<h1/>';
   font-family: 'La Belle Aurore', cursive;
   color: #515152;
   font-size: 18px;
   position: absolute;
   left:-20px;
+  padding-left: 70px;
   bottom:-20px;
   margin-left: 20px;
 }
-.container.about .text-zone p {
-  font-size: 13px;
-  line-height: 18px;
+.about .text-zone p {
+  font-size: 17px;
+  line-height: 24px;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  padding-right: 10px;
+  padding-left: 70px;
+  font-family: QuickSand;
   font-weight: 300;
 }
-.sound-cloud {
-  will-change: contents;
-  margin-top:50px;
-  width: 30%;
-  top:20%;
-  bottom:auto;
+/* profile  */
+.profile {
+  left: 50%;
+  padding-top:50px;
   position: fixed;
-  left:auto;
-  right:14%;
   overflow: hidden;
+  background-color: whitesmoke;
   z-index: -1;
 }
 /*================================================== TEXT PAGE ============================================== */
@@ -1443,12 +1436,12 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   }
   .container.contact .text-zone h1:before,
   .container.skills .text-zone h1:before,
-  .container.about .text-zone h1:before {
+  .about .text-zone h1:before {
     margin-top: -38px;
   }
   .container.contact .text-zone h1:after,
   .container.skills .text-zone h1:after,
-  .container.about .text-zone h1:after {
+  .about .text-zone h1:after {
     bottom: -44px;
   }
   .home-page h1 img {
@@ -1456,7 +1449,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   }
 }
 @media (min-width: 960px) and (max-height: 800px ){
-  .container.about .text-zone img{
+  .about .text-zone img{
     display: none;
   }
 }
@@ -1470,16 +1463,16 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     font-size: 54px !important;
     line-height: 45px;
   }
-  .container.about .text-zone {
+  .about .text-zone {
     width: 40%;
   }
   .text-page .text-zone h1:after,
-  .container.about .text-zone h1:after,
+  .about .text-zone h1:after,
   .container.contact .text-zone h1:after {
     bottom: -40px;
   }
   .text-page .text-zone h1:before,
-  .container.about .text-zone h1:before,
+  .about .text-zone h1:before,
   .container.contact .text-zone h1:before {
     margin-top: -29px;
   }
@@ -1644,12 +1637,12 @@ display: none !important;
     transform: none !important;
     margin-top: 170px;
   }
-  .container.about  .text-zone,
+  .about  .text-zone,
   .container.skills .text-zone{
     width: 80%;
     min-height: 0;
   }
-  .sound-cloud {
+  .profile {
     position:static;
     width:80%;
     margin-left:10%;
