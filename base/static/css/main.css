@@ -459,6 +459,7 @@ background: url(../img/bulb.png) no-repeat bottom center;
   color: #fff;
   line-height: 60px;
   text-align: center;
+  font-size: 60px !important;
   font-family: font-file-82132;
   font-weight: normal;
 }
