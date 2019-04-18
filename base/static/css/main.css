@@ -1565,7 +1565,7 @@ display: none !important;
     width: auto;
   }
   .logo > img:first-child {
-    height: 30px;
+    height: 27px;
   }
   .lang {float: left;width:auto;margin-top: 0;line-height: 60px;}
   .lang a{margin-top:0;display: inline;margin-right:7px;}
