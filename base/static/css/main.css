@@ -521,34 +521,30 @@ background: url(../img/bulb.png) no-repeat bottom center;
   transform: preserve-3d;
   height: 100%;
   width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: brown;
 }
 .home-page .bg-letter {
-  position: absolute;
   top: 0;
   height: 100%;
+  width: 33.33%;
   transition: background 2s ease;
-  border-right: 1px solid #ffffff;
+  border-right:  2px solid #000000;
   backface-visibility: hidden;
   will-change: background-position;
 }
 .home-page .bar1 {
-  left: 0;
-  width: 33.30%;
   background: url(../img/bar_1-01.svg) no-repeat;
   background-position: center center;
   background-size: 100% auto;
 }
 .home-page .bar2 {
-  left: 33.333%;
-  width: 33.30%;
   background: url(../img/bar_2-01.svg) no-repeat;
   background-position: center center;
   background-size: 100% auto;
 }
 .home-page .bar3 {
-  left: 66.666%;
-  width: 33.30%;
   background: url(../img/bar_3-01.svg) no-repeat;
   background-position: center center;
   background-size: 100% auto;
@@ -1565,7 +1561,7 @@ display: none !important;
     width: auto;
   }
   .logo > img:first-child {
-    height: 27px;
+    height: 25px;
   }
   .lang {float: left;width:auto;margin-top: 0;line-height: 60px;}
   .lang a{margin-top:0;display: inline;margin-right:7px;}
