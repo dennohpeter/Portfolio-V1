@@ -1707,16 +1707,22 @@ display: none !important;
   .chart.small{
     display: none;
   }
-  .about .text-zone {
-    width: 100%;
-    border: none;
-    clear: right;
-    position: absolute;
+  .about {
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .about .profile {
-    width: 100%;
-    display: none;
+    height: 100%;
+  }
+  .about .text-zone {
+    height: unset;
+  }
+  .about .divider {
     border: none;
+    width: 100%;
+    left: unset;
+    position: unset;
   }
 }
 @media (max-width: 625px){
