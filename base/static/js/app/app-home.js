@@ -14,10 +14,10 @@ app.home = {
     $('#nav_bar nav a').removeClass('active');
     $('.home-link').addClass('active');
 
-    // $(".home-page h1").blast({
-    //   delimiter: "character",
-    //   tag: "span"
-    // });
+    $(".home-page h1").blast({
+      delimiter: "character",
+      tag: "span"
+    });
 
     a = 0;
     b= 0;
