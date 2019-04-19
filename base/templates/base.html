@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   {# <link rel="stylesheet" type="text/css" href="{% static 'css/desktop.min.css' %}?version=1" />  #}
   <link rel="stylesheet" type="text/css" href="{% static 'css/third-party.css' %}?version=1">
-  {# <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}?version=1">  #}
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.css">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}?version=1">
   <script>
   var path = "{% static '' %}";
@@ -116,20 +116,12 @@
 
 </script>
 <!--javascript staticfiles  -->
-{# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> #}
-<script type='text/javascript' src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
-{# <script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script> #}
-{# <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> #}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script> #}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/easings.min.js"></script>
 {# <script src="{% static 'js/plugins.js' %}?version=1"></script>  <!-- for alerts --> #}
 <script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
 {# <script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script> #}
-{# <script> #}
-{# var app = {}; #}
-{# app.ajax = null; #}
-{# </script> #}
-{# <script src="{% static 'js/vendor/pixi.min.js' %}?version=1"></script> #}
-{# <script src="{% static 'js/vendor/TweenLite.min.js' %}?version=1"></script> #}
-{# <script src="{% static 'js/app.js' %}?version=1"></script> #}
 <script src="{% static 'js/app/app-home.js' %}?version=1"></script>
 {# <script src="{% static 'js/app/app-about.js' %}?version=1"></script> #}
 <script src="{% static 'js/app/app-contact.js' %}?version=1"></script>
@@ -139,5 +131,29 @@
 {# <script src="{% static 'js/app/app-skills.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-text.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/main.js' %}?version=1"></script> #}
+<script>
+new fullpage('#fullpage', {
+  //Navigation
+	menu: '#nav_bar nav',
+	lockAnchors: false,
+	anchors:['home-page', 'about', 'resume', 'projects', 'awards', 'contact'],
+	navigation: false,
+	navigationPosition: 'right',
+	navigationTooltips: ['home', 'about', 'resume', 'projects', 'awards', 'contact'],
+	showActiveTooltip: false,
+	slidesNavigation: false,
+	slidesNavPosition: 'bottom',
+  //options here
+  autoScrolling:true,
+  scrollHorizontally: true,
+  //Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
+});
+
+//methods
+fullpage_api.setAllowScrolling(false);
+</script>
 </body>
 </html>
