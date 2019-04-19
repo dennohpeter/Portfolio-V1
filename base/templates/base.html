@@ -86,15 +86,15 @@
       </a>
     </li>
   </ul>
-  <a id="mobile-link" href="" style="color:white;">
+  <span id="mobile-link" onclick="show_menu()" style="color:white;">
     <i class="icon-menu"></i>
-  </a>
+  </span>
 </div>
 {% block content %}
 
 {% endblock %}
 {# <div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;"></div> #}
-{% comment %} <div class="preloader">
+<div class="preloader">
   <div class="inner">
     <img src="{% static 'img/logopreload.png' %}"
     alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader"/>
@@ -108,8 +108,16 @@
       </div>
     </div>
   </div>
-</div> {% endcomment %}
+</div>
 <div id="rotate"></div>
+<script>
+function show_menu() {
+  var element = document.querySelector('#nav_bar nav');
+  element.classList.toggle('show');
+
+}
+
+</script>
 <!--javascript staticfiles  -->
 {# <script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script> #}
 {# <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> #}
