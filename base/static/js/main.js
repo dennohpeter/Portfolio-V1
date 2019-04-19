@@ -238,7 +238,7 @@ $(function () {
 
     app.ui.navMenu();
 
-    app.ui.mobileMenu();
+    // app.ui.mobileMenu();
 
     app.ui.initAnimation();
 

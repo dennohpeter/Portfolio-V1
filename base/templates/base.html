@@ -19,9 +19,9 @@
   <link rel="icon" type="image/png" href="{% static 'fav/transparentme.png' %}">
   <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/desktop.min.css' %}?version=1" /> {% endcomment %}
+  {# <link rel="stylesheet" type="text/css" href="{% static 'css/desktop.min.css' %}?version=1" />  #}
   <link rel="stylesheet" type="text/css" href="{% static 'css/third-party.css' %}?version=1">
-  {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}?version=1"> {% endcomment %}
+  {# <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}?version=1">  #}
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}?version=1">
   <script>
     var path = "{% static '' %}";
@@ -119,26 +119,28 @@ function show_menu() {
 
 </script>
 <!--javascript staticfiles  -->
-{# <script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script> #}
-{# <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> #}
-{# <script src="{% static 'js/plugins.js' %}?version=1"></script> #}
-{% comment %} <script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script> {% endcomment %}
-{% comment %} <script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script> {% endcomment %}
+ {# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> #}
+ <script type='text/javascript' src="{% static 'js/vendor/jquery-1.11.2.min.js' %}?version=1"></script>
+<script type='text/javascript' src="{% static 'js/wp-embed.min.js' %}?version=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="{% static 'js/plugins.js' %}?version=1"></script>  <!-- for alerts -->
+<script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
+{# <script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script> #}
 <script>
 var app = {};
 app.ajax = null;
 </script>
-{% comment %} <script src="{% static 'js/vendor/pixi.min.js' %}?version=1"></script> {% endcomment %}
+{# <script src="{% static 'js/vendor/pixi.min.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/vendor/TweenLite.min.js' %}?version=1"></script> #}
-{% comment %} <script src="{% static 'js/app.js' %}?version=1"></script> {% endcomment %}
-{% comment %} <script src="{% static 'js/app/app-home.js' %}?version=1"></script>
-<script src="{% static 'js/app/app-about.js' %}?version=1"></script>
-<script src="{% static 'js/app/app-contact.js' %}?version=1"></script>
+{# <script src="{% static 'js/app.js' %}?version=1"></script> #}
+{# <script src="{% static 'js/app/app-home.js' %}?version=1"></script> #}
+{# <script src="{% static 'js/app/app-about.js' %}?version=1"></script> #}
+{# <script src="{% static 'js/app/app-contact.js' %}?version=1"></script> #}
 <script src="{% static 'js/app/app-gallery.js' %}?version=1"></script>
-<script src="{% static 'js/app/app-resume.js' %}?version=1"></script>
-<script src="{% static 'js/app/app-awards.js' %}?version=1"></script>
-<script src="{% static 'js/app/app-skills.js' %}?version=1"></script>
-<script src="{% static 'js/app/app-text.js' %}?version=1"></script> {% endcomment %}
-{% comment %} <script src="{% static 'js/main.js' %}?version=1"></script> {% endcomment %}
+{# <script src="{% static 'js/app/app-resume.js' %}?version=1"></script> #}
+{# <script src="{% static 'js/app/app-awards.js' %}?version=1"></script> #}
+{# <script src="{% static 'js/app/app-skills.js' %}?version=1"></script> #}
+{# <script src="{% static 'js/app/app-text.js' %}?version=1"></script> #}
+<script src="{% static 'js/main.js' %}?version=1"></script>
 </body>
 </html>
