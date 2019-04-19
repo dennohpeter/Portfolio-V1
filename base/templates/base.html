@@ -37,7 +37,7 @@
     var msg8 = "Scroll to zoom in/out";
     var image = "{% static 'img/marker.png' %}";  //Removed var path
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script>
+  {# <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script> #}
 </head>
 <body {% block bodyclass %} {% endblock %}>
 <div id="nav_bar">
@@ -46,42 +46,42 @@
     <span style="color: #ffffff; padding-left: 8px; letter-spacing: 2px; font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;">Dennis</span>
   </a>
   <nav class="en">
-    <a rel="index" href="{% url 'home' %}" class="home-link active">
+    <a rel="index" href="{% url 'home' %}" class="home-link active" arial-label="home">
       <i class="icon-home"></i>
 
     </a>
-    <a rel="about" href="{% url 'about' %}" class="">
+    <a rel="about" href="{% url 'about' %}" class="" arial-label="about">
       <i class="icon-prof"></i>
     </a>
-    <a rel="skills" href="{% url 'skills' %}" class="">
+    <a rel="skills" href="{% url 'skills' %}" class="" arial-label="skills">
       <i class="icon-activity"></i>
     </a>
-    <a rel="resume" href="{% url 'resume' %}" class="">
+    <a rel="resume" href="{% url 'resume' %}" class="" arial-label="resume">
       <i class="icon-resume"></i>
     </a>
-    <a rel="gallery" href="{% url 'portfolio' %}" class="">
+    <a rel="works" href="{% url 'portfolio' %}" class="" arial-label="works">
       <i class="icon-eye"></i>
     </a>
-    <a rel="awards" href="{% url 'awards' %}" class="">
+    <a rel="awards" href="{% url 'awards' %}" class="" arial-label="awards">
       <i class="icon-award"></i>
     </a>
-    <a rel="contact" href="{% url 'contact' %}" class="">
+    <a rel="contact" href="{% url 'contact' %}" class="" arial-label="contact">
       <i class="icon-mail"></i>
     </a>
   </nav>
   <ul>
     <li>
-      <a href="https://twitter.com/PythonMafia" target="_blank" title="tweet">
+      <a href="https://twitter.com/PythonMafia" target="_blank" title="tweet" rel="noreferrer">
         <i class="icon-twitter"></i>
       </a>
     </li>
     <li>
-      <a href="https://github.com/dennohpeter/" title="github" target="_blank">
+      <a href="https://github.com/dennohpeter/" title="github" target="_blank" rel="noreferrer">
         <i class="icon-github"></i>
       </a>
     </li>
     <li>
-      <a href="#" target="" title="donate">
+      <a href="#" target="" title="donate" rel="noreferrer">
         <i class="icon-gift"></i>
       </a>
     </li>
