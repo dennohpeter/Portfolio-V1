@@ -30,7 +30,7 @@
 }
 .icon-activity:before {
   content: "\e900";
-  font-size: 24px;
+  font-size: 27px;
 }
 .icon-resume:before {
   content: "\e90d";
@@ -46,7 +46,7 @@
 }
 .icon-mail:before {
   content: "\f003";
-  font-size: 23px;
+  font-size: 26px;
 }
 .icon-heart:before {
   content: "\e905";
