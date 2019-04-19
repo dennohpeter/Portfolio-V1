@@ -1,127 +1,120 @@
-app.contact = {
+// $(".contact h1").blast({
+//   delimiter: "character",
+//   tag: "span"
+// });
+a = 0;
+$(".contact .blast").each(function(){
 
-  init:function(){
-    $(".contact h1").blast({
-      delimiter: "character",
-      tag: "span"
-    });
-    a = 0;
-    $(".contact .blast").each(function(){
+  var el = $(this);
 
-      var el = $(this);
+  setTimeout(function(){
 
-      setTimeout(function(){
-
-        el.addClass('animated bounceIn');
+    el.addClass('animated bounceIn');
 
 
-      },a);
+  },a);
 
 
-      a = a + 100;
+  a = a + 100;
 
-    });
-    setTimeout(function(){
+});
+setTimeout(function(){
 
-      $(".contact .blast").removeClass('animated bounceIn');
-      $(".contact .blast").css('opacity',1);
+  $(".contact .blast").removeClass('animated bounceIn');
+  $(".contact .blast").css('opacity',1);
 
-      $(".contact .blast").mouseenter(function (){
+  $(".contact .blast").mouseenter(function (){
 
-        var el = $(this);
+    var el = $(this);
 
-        $(this).addClass('animated rubberBand');
-        $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $(this).addClass('animated rubberBand');
+    $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
-          el.removeClass('animated rubberBand');
-
-        });
-
-      });
-
-    },1000);
-
-    b = 300;
-    $(".contact li").each(function(){
-
-      var el = $(this);
-
-      setTimeout(function(){
-
-        el.addClass('animated fadeInUp');
-
-
-      },b);
-
-
-      b =b + 100;
+      el.removeClass('animated rubberBand');
 
     });
-    window.initialize();
-    $('#submit').click(function(){
-      app.contact.validate();
-      if($('.contact-form .required').size()  > 0 ){
-        alertify.error(msg1);
+
+  });
+
+},1000);
+
+b = 300;
+$(".contact li").each(function(){
+
+  var el = $(this);
+
+  setTimeout(function(){
+
+    el.addClass('animated fadeInUp');
+
+
+  },b);
+
+
+  b =b + 100;
+
+});
+// window.initialize();
+$('#submit').click(function(){
+  validate();
+  if($('.contact-form .required').size()  > 0 ){
+    alertify.error(msg1);
+  }else {
+    alertify.log(msg2);
+    console.log(path);
+    $.post( path + "mail.php", $( "#contact" ).serialize(),function( data ) {
+
+      if(data == '11'){
+
+        alertify.success(msg3);
+
+        $('.contact-form .required').removeClass('required');
+        $('.contact-form input[type="text"],.contact-form input[type="email"],.contact-form textarea').val('');
+
       }else {
-        alertify.log(msg2);
-        console.log(path);
-        $.post( path + "mail.php", $( "#contact" ).serialize(),function( data ) {
 
-          if(data == '11'){
-
-            alertify.success(msg3);
-
-            $('.contact-form .required').removeClass('required');
-            $('.contact-form input[type="text"],.contact-form input[type="email"],.contact-form textarea').val('');
-
-          }else {
-
-            $('.contact-form .required').removeClass('required');
-            $('.contact-form input[type="text"],.contact-form input[type="email"],.contact-form textarea').val('');
+        $('.contact-form .required').removeClass('required');
+        $('.contact-form input[type="text"],.contact-form input[type="email"],.contact-form textarea').val('');
 
 
-            alertify.error(msg4);
-
-          }
-
-        } );
+        alertify.error(msg4);
 
       }
 
-      return false;
+    } );
 
-    });
+  }
 
-    $('.contact-form input, .contact-form textarea').keyup(function(){
+  return false;
 
-      app.contact.validate();
+});
 
-    });
+$('.contact-form input, .contact-form textarea').keyup(function(){
 
+  validate();
 
-
-  },
-  validate:function(){
-
-    if($('input[type=email]').val() == '' || !validateEmail($('input[type=email]').val())){
-
-      $('input[type=email]').parent().addClass('required');
+});
 
 
+function validate(){
+  if($('input[type=email]').val() == '' || !validateEmail($('input[type=email]').val())){
 
-    }else {
+    $('input[type=email]').parent().addClass('required');
 
-      $('input[type=email]').parent().removeClass('required');
-    }
 
-    if($('textarea').val() == ''){
 
-      $('textarea').parent().addClass('required');
+  }else {
 
-    }else{
-      $('textarea').parent().removeClass('required');
+    $('input[type=email]').parent().removeClass('required');
+  }
 
-    }
+  if($('textarea').val() == ''){
+
+    $('textarea').parent().addClass('required');
+
+  }else{
+    $('textarea').parent().removeClass('required');
+
   }
 }
 
