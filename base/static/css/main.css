@@ -774,6 +774,7 @@ background: url(../img/bulb.png) no-repeat bottom center;
   width:100%;
 }
 .contact-form  ul{
+  padding: 10px;
   padding-left: 70px;
 }
 .contact-form  ul li{
