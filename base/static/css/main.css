@@ -592,7 +592,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #ffffff;
-  /* padding-left: 70px; */
+  padding-left: 70px;
   font-family: QuickSand;
   font-weight: 300;
 }
@@ -825,7 +825,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   .text-zone p {
     font-size: 16px !important;
     line-height: 21px !important;
-    padding-left: 70px;
   }
   .contact .text-zone h1:before,
   .about .text-zone h1:before {
