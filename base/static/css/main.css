@@ -159,13 +159,14 @@ fieldset {
 textarea {
   resize: vertical;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background: #252627;
   overflow: hidden;
   display: block;
-}
-#fullpage {
-  width: 100%;
 }
 .lang {
   width:100%;
@@ -341,37 +342,6 @@ body {
   font-size:16px;
 }
 /*================================================== HOME PAGE ============================================== */
-.home-page {
-  height: 100%;
-  top: 0px;
-}
-/* .home-page h2 {
-color:#8d8d8d;
-margin-top: 9px;
-font-weight: normal;
-font-size: 11px;
-font-family: "Open Sans", sans-serif;
-letter-spacing: 3px;
--webkit-animation: fader_effect 1s 1.8s backwards;
-animation: fader_effect 1s 1.8s backwards;
-} */
-/* .home-page .flat-button {
-color:#08fdd8;
-font-size: 11px;
-letter-spacing: 4px;
-font-family: "Open Sans", sans-serif;
-text-decoration: none;
-padding: 8px 12px;
-border: 1px solid #08fdd8;
-margin-top: 25px;
-float: left;
-border-radius: 3px;
--webkit-animation: fader_effect 1s 1.8s backwards;
-animation: fader_effect 1s 1.8s backwards;
-}
-.flat-button {
-white-space: nowrap
-} */
 .blast {
   display:inline-block;
 }
@@ -395,25 +365,6 @@ white-space: nowrap
 .home-page .blast:hover {
   color:#08fdd8;
 }
-/* .bulb {
-width:177px;
-height: 44px;
-background: url(../img/bulb1.png) no-repeat bottom right;
-position: absolute;
-top:12%;
-left:9%;
-opacity: 0;
-}
-.bulb a {
-float:left;
-width: 40px;
-height: 44px;
-background: url(../img/bulba.png) no-repeat bottom center;
-}
-.bulb a.active,
-.bulb a:hover {
-background: url(../img/bulb.png) no-repeat bottom center;
-} */
 /*================================================== Vertical Divisions =====================================  */
 .section-wrap {
   position: absolute;
@@ -641,26 +592,24 @@ background: url(../img/bulb.png) no-repeat bottom center;
   font-size: 17px;
   line-height: 24px;
   color: #ffffff;
-  text-align: justify;
-  padding: 10px;
-  padding-left: 70px;
+  /* padding-left: 70px; */
   font-family: QuickSand;
   font-weight: 300;
 }
 /* profile  */
 .profile {
   left: 50%;
-  padding: 2.5%;
+  /* padding: 2.5%; */
   position: fixed;
   overflow: hidden;
   background-color: whitesmoke;
   z-index: -1;
 }
 .prof_cont {
-  background: url(../images/bg/image-48.jpg) no-repeat;
-  background-size: cover;
-  height: 90%;
-  width: 90%;
+  /* background: url(../images/bg/image-48.jpg) no-repeat; */
+  /* background-size: cover; */
+  /* height: 90%; */
+  /* width: 90%; */
 }
 /*================================================== resume ============================================== */
 .resume {
@@ -876,6 +825,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   .text-zone p {
     font-size: 16px !important;
     line-height: 21px !important;
+    padding-left: 70px;
   }
   .contact .text-zone h1:before,
   .about .text-zone h1:before {
@@ -1064,7 +1014,8 @@ display: none !important;
     top: 76px;
   }
   .bottom-tags {
-    position: absolute;clear:both;
+    position: absolute;
+    clear:both;
     float:left;
     margin-top: 22px;
     bottom:0
@@ -1101,9 +1052,6 @@ display: none !important;
     position: relative;
     width: 100%;
     margin: 0 ;
-  }
-  .blog-link {
-    display:none
   }
   /* .map-wrap {
   float: none;
