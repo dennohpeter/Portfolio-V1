@@ -8,11 +8,9 @@
 {% block ogurl %} content="https://dennispeter.herokuapp.com/" {% endblock %}
 {% block description %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}
 {% block content %}
-<div id="fullpage" class="en section">
-	<!-- <canvas id="wave1" class="disabled"></canvas> -->
+<div id="fullpage" class="en wrapper">
 	<div class="section home-page">
 		<div class="flipper-inner">
-			<!-- <div id="fader-intro" class="bg black-bg"></div> -->
 			<div class="bg-letter bar1"></div>
 			<div class="bg-letter bar2"></div>
 			<div class="bg-letter bar3"></div>
@@ -28,60 +26,49 @@
 			<p>Scroll to discover my Projects!</p>
 		</div>
 	</div>
-	<div class="section">
-		<div class="about">
-			<span class="tags top-tags">
-				&nbsp;&nbsp;&nbsp;&lt;body&gt;
-			</span>
-			<div class="divider text-zone">
-				<h1> About me </h1>
-				<p>
-					Everything started with passion to be a Linux Nerd.
-				</p>
-				<p> The adventure so far. </p>
-				<p>
-					1996 &#8211; My adventure began in Lower Yatta, Kitui — one fateful, very early morning in mid-July. With cake every year, I can't complain about that.
-				</p>
-				<p>
-					2012 &#8211; &lt;&lt;Hacker Dreams&gt;&gt; Started Learning Computer Studies at St Mathias as my technical Subject.Graduated with B+.:happy:
-				</p>
-				<p>
-					2016 &#8211; Joined Maseno University to study Computer Technology.<br>
-					&gt;&gt;I Finally got my own computer.Default O/s was windows, bored as shit
-					I dual booted with Kali Linux and later Dropped Kali for Ubuntu Mate.<br>
-					&gt;&gt;Joined Sololearn to learn Programming at my free time.<br>
-					&gt;&gt;Completed 8 Sololearn Courses &lt;&lt;Html, CSS, Python, Java ,Js,SQL,PHP, &gt;&gt;<br>
-					&gt;&gt;Made my first <a href="https://dennohpeter.github.io/EnterLogiesGames/" target="_blank" aria-label="Enterlogies">Website.</a>
-				</p>
-				<p>
-					2017 &#8211; I formarted Everything on my Computer and installed ParrotSec. I really &lt;3 Parrot.All at one.<br>
-					&gt;&gt;Finally Became Number One in Kenya on Sololearn LeadersBoard till Today.
-				</p>
-				<p>
-					2018 &#8211;Got the love of my life ParrotSec..).ParrotSec is bae.
-				</p>
-				<p>
-					Rest of my experience is  successful cooperatiion as a  freelencer/self employed with IT companies and professionals from India.
-				</p>
-				<p>
-					&nbsp;
-				</p>
+	<div class="section about">
+		<div class="divider text-zone">
+			<h1> About me </h1>
+			<p>
+				Everything started with passion to be a Linux Nerd.
+			</p>
+			<p> The adventure so far. </p>
+			<p>
+				1996 &#8211; My adventure began in Lower Yatta, Kitui — one fateful, very early morning in mid-July. With cake every year, I can't complain about that.
+			</p>
+			<p>
+				2012 &#8211; &lt;&lt;Hacker Dreams&gt;&gt; Started Learning Computer Studies at St Mathias as my technical Subject.Graduated with B+.:happy:
+			</p>
+			<p>
+				2016 &#8211; Joined Maseno University to study Computer Technology.<br>
+				&gt;&gt;I Finally got my own computer.Default O/s was windows, bored as shit
+				I dual booted with Kali Linux and later Dropped Kali for Ubuntu Mate.<br>
+				&gt;&gt;Joined Sololearn to learn Programming at my free time.<br>
+				&gt;&gt;Completed 8 Sololearn Courses &lt;&lt;Html, CSS, Python, Java ,Js,SQL,PHP, &gt;&gt;<br>
+				&gt;&gt;Made my first <a href="https://dennohpeter.github.io/EnterLogiesGames/" target="_blank" aria-label="Enterlogies">Website.</a>
+			</p>
+			<p>
+				2017 &#8211; I formarted Everything on my Computer and installed ParrotSec. I really &lt;3 Parrot.All at one.<br>
+				&gt;&gt;Finally Became Number One in Kenya on Sololearn LeadersBoard till Today.
+			</p>
+			<p>
+				2018 &#8211;Got the love of my life ParrotSec..).ParrotSec is bae.
+			</p>
+			<p>
+				Rest of my experience is  successful cooperatiion as a  freelencer/self employed with IT companies and professionals from India.
+			</p>
+			<p>
+				&nbsp;
+			</p>
+		</div>
+		<div class="divider profile">
+			<div class="prof_cont">
 			</div>
-			<div class="divider profile">
-				<div class="prof_cont">
-				</div>
 
-			</div>
-			<span class="tags bottom-tags">
-				&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/>
-				&lt;/html&gt;
-			</span>
 		</div>
 	</div>
-	<div class="section">
-		<div class="resume"></div>
-	</div>
-	<div  class="section container works magicwall">
+	<div class="section resume"></div>
+	<div class="section container works magicwall">
 		<ul class="magicwall-grid">
 			EnterLogies Games
 			<li data-thumb="{% static 'projects/2016/1943DeadlyDesert_01_1280x720.png' %}">
@@ -217,12 +204,8 @@
 			</li>
 		</ul>
 	</div>
-	<div class="section">
-		<div class="awards"></div>
-	</div>
-	<div class="section">
-		<div class="contact">
-		<span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+	<div class="section awards"></div>
+	<div class="section contact">
 		<div class="divider text-zone">
 			<h1>Contact me</h1>
 			<p>If you have any questions, please don&#8217;t hesitate to contact using form below&#8230;</p>
@@ -253,7 +236,7 @@
 				</form>
 			</div>
 		</div>
-		<!-- <div class="inf-map">
+		<div class="inf-map">
 		Dennis Peterson,<br/>
 		Maseno,Mombasa, Kenya.<br/>
 		<br/>
@@ -263,15 +246,11 @@
 	</span>
 	: &#100;&#101;&#110;&#105;&#115;&#112;&#101;&#116;&#101;&#114;&#115;&#111;&#110;&#057;&#054;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
 </span>
-</div> -->
+</div>
 <div class="divider map-wrap">
 	<div id="map"></div>
 </div>
-<span class="tags bottom-tags">
-	&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/>
-	&lt;/html&gt;
-</span>
 </div>
-</div>
+
 </div>
 {% endblock %}

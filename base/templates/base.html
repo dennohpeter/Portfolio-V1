@@ -39,30 +39,29 @@
   </script>
   {# <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD51WG16sN0txAvzQmIeXMcnEis-TXGwak&amp;v=3.exp&amp;signed_in=true"></script> #}
 </head>
-<body {% block bodyclass %} {% endblock %}>
+<body>
   <div id="nav_bar">
-    <a class="logo" rel="index" href="#home-page">
+    <a class="logo" rel="index" href="#home">
       <img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
       <span style="color: #ffffff; padding-left: 8px; letter-spacing: 2px; font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;">Dennis</span>
     </a>
     <nav class="en">
-      <a rel="index" href="#home-page" class="home-link active" arial-label="home">
+      <a rel="home" class="home-link active">
         <i class="icon-home"></i>
-
       </a>
-      <a rel="about" href="#about" class="" arial-label="about">
+      <a rel="about" class="">
         <i class="icon-prof"></i>
       </a>
-      <a rel="resume" href="#resume" class="" arial-label="resume">
+      <a rel="resume" class="">
         <i class="icon-resume"></i>
       </a>
-      <a rel="works" href="#works" class="" arial-label="works">
+      <a rel="works" class="" >
         <i class="icon-activity"></i>
       </a>
-      <a rel="awards" href="#awards" class="" arial-label="awards">
+      <a rel="awards" class="">
         <i class="icon-award"></i>
       </a>
-      <a rel="contact" href="#contact" class="" arial-label="contact">
+      <a rel="contact" class="" >
         <i class="icon-mail"></i>
       </a>
     </nav>
@@ -90,7 +89,6 @@
   {% block content %}
 
   {% endblock %}
-  {# <div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;"></div> #}
   <div class="preloader">
     <div class="inner">
       <img src="{% static 'img/logopreload.png' %}"
@@ -115,45 +113,21 @@
   }
 
 </script>
-<!--javascript staticfiles  -->
+<!--javascript staticfi les  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script> #}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/easings.min.js"></script>
 {# <script src="{% static 'js/plugins.js' %}?version=1"></script>  <!-- for alerts --> #}
 <script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
 {# <script src="{% static 'js/vendor/tagcanvas.js' %}?version=1"></script> #}
-<script src="{% static 'js/app/app-home.js' %}?version=1"></script>
+{# <script src="{% static 'js/app/app-home.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-about.js' %}?version=1"></script> #}
-<script src="{% static 'js/app/app-contact.js' %}?version=1"></script>
+{# <script src="{% static 'js/app/app-contact.js' %}?version=1"></script> #}
 <script src="{% static 'js/app/app-gallery.js' %}?version=1"></script>
+<script src="{% static 'js/fullpage.js' %}?version=1"></script>
+<script src="{% static 'js/main.js' %}?version=1"></script>
 {# <script src="{% static 'js/app/app-resume.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-awards.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-skills.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-text.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/main.js' %}?version=1"></script> #}
-<script>
-new fullpage('#fullpage', {
-  //Navigation
-	menu: '#nav_bar nav',
-	lockAnchors: false,
-	anchors:['home-page', 'about', 'resume', 'projects', 'awards', 'contact'],
-	navigation: false,
-	navigationPosition: 'right',
-	navigationTooltips: ['home', 'about', 'resume', 'projects', 'awards', 'contact'],
-	showActiveTooltip: false,
-	slidesNavigation: false,
-	slidesNavPosition: 'bottom',
-  //options here
-  autoScrolling:true,
-  scrollHorizontally: true,
-  //Accessibility
-	keyboardScrolling: true,
-	animateAnchor: true,
-	recordHistory: true,
-});
-
-//methods
-fullpage_api.setAllowScrolling(false);
-</script>
 </body>
 </html>

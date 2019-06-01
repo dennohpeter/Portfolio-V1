@@ -166,7 +166,6 @@ textarea {
 body {
   background: #252627;
   overflow: hidden;
-  display: block;
 }
 .lang {
   width:100%;
@@ -222,7 +221,7 @@ body {
   line-height: 51px;
   height: 51px;
   position: relative;
-  text-decoration: none;
+  cursor: pointer;
 }
 #nav_bar nav a i {
   -webkit-transition: all 0.3s ease-out;
@@ -261,10 +260,10 @@ body {
 #nav_bar nav a:first-child + a + a + a:after {
   content: 'PROJECTS';
 }
-#nav_bar nav a:first-child + a + a + a +a:after {
+#nav_bar nav a:first-child + a + a + a + a:after {
   content: 'AWARDS';
 }
-#nav_bar nav a:first-child + a + a + a + a +a:after {
+#nav_bar nav a:first-child + a + a + a + a + a:after {
   content: 'CONTACT';
 }
 #nav_bar nav a:hover:after{
@@ -518,9 +517,11 @@ body {
   display: block;
 }
 /*================================================== ABOUT ============================================== */
+.section {
+  height: 100%;
+}
 .about, .contact {
   display: flex;
-  height: 100%;
   justify-content: space-between;
 }
 .about .divider,
@@ -533,20 +534,6 @@ body {
 .contact .text-zone {
   position: relative;
   left:0;
-}
-.about .tags,
-.contact .tags {
-  color: #515152;
-  position: absolute;
-  bottom: 5px;
-  left: 55px;
-  font-size: 18px;
-  font-family: 'La Belle Aurore', cursive;
-}
-.about .top-tags,
-.contact .top-tags {
-  bottom: auto;
-  top:0px;
 }
 .about .text-zone h1,
 .contact .text-zone h1 {
@@ -1004,21 +991,6 @@ display: none !important;
     margin-left: 0;
     margin-top: 60px;
   }
-  .tags {
-    margin-left:10px;
-    left:0;
-  }
-  .top-tags {
-    bottom: auto;
-    top: 76px;
-  }
-  .bottom-tags {
-    position: absolute;
-    clear:both;
-    float:left;
-    margin-top: 22px;
-    bottom:0
-  }
   .text-zone p, .text-zone h1 {
     padding-left: 30px
   }
@@ -1080,13 +1052,13 @@ display: none !important;
     position: relative;
     padding: 0;
   }
-  .chart.small{
+  /* .chart.small{
     display: none;
-  }
+  } */
   .about {
     display: block;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
   }
   .about .profile, .contact .map-wrap {
     height: 100%;
@@ -1140,9 +1112,6 @@ display: none !important;
   .home-page .text-zone {
     width: 85%;
     left:5%;
-  }
-  body {
-    overflow-x:hidden ;
   }
   .home-page h1:after {
     display: none;
