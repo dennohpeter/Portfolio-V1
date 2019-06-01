@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   {# <link rel="stylesheet" type="text/css" href="{% static 'css/desktop.min.css' %}?version=1" />  #}
   <link rel="stylesheet" type="text/css" href="{% static 'css/third-party.css' %}?version=1">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/fullpage.css' %}?version=1">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}?version=1">
   <script>
   var path = "{% static '' %}";
@@ -46,22 +46,22 @@
       <span style="color: #ffffff; padding-left: 8px; letter-spacing: 2px; font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;">Dennis</span>
     </a>
     <nav class="en">
-      <a rel="home" class="home-link active">
+      <a rel="index" href="#home" class="home-link active" arial-label="home">
         <i class="icon-home"></i>
       </a>
-      <a rel="about" class="">
+      <a rel="about" href="#about" class="" arial-label="about">
         <i class="icon-prof"></i>
       </a>
-      <a rel="resume" class="">
+      <a rel="resume" href="#resume" class="" arial-label="resume">
         <i class="icon-resume"></i>
       </a>
-      <a rel="works" class="" >
+      <a rel="projects" href="#projects" class="" arial-label="projects">
         <i class="icon-activity"></i>
       </a>
-      <a rel="awards" class="">
+      <a rel="awards" href="#awards" class="" arial-label="awards">
         <i class="icon-award"></i>
       </a>
-      <a rel="contact" class="" >
+      <a rel="contact" href="#contact" class="" arial-label="contact">
         <i class="icon-mail"></i>
       </a>
     </nav>
@@ -123,11 +123,10 @@
 {# <script src="{% static 'js/app/app-contact.js' %}?version=1"></script> #}
 <script src="{% static 'js/app/app-gallery.js' %}?version=1"></script>
 <script src="{% static 'js/fullpage.js' %}?version=1"></script>
-<script src="{% static 'js/main.js' %}?version=1"></script>
 {# <script src="{% static 'js/app/app-resume.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-awards.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-skills.js' %}?version=1"></script> #}
 {# <script src="{% static 'js/app/app-text.js' %}?version=1"></script> #}
-{# <script src="{% static 'js/main.js' %}?version=1"></script> #}
+<script src="{% static 'js/main.js' %}?version=1"></script>
 </body>
 </html>

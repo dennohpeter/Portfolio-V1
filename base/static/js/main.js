@@ -17,6 +17,7 @@ $(document).ready(function() {
     keyboardScrolling: true,
     animateAnchor: true,
     recordHistory: true,
+    sectionsColor : ["#FFFFFF", "#282C34", "#CC0000", "#2E3436", "#73D216", "#75507B"]
   })
   //methods
   $.fn.fullpage.setAllowScrolling(false);
