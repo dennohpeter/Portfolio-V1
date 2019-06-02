@@ -605,12 +605,6 @@ body {
   background-color: whitesmoke;
   z-index: -1;
 }
-.prof_cont {
-  /* background: url(../images/bg/image-48.jpg) no-repeat; */
-  /* background-size: cover; */
-  /* height: 90%; */
-  /* width: 90%; */
-}
 /*================================================== resume ============================================== */
 .resume {
   height: 100%;
