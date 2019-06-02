@@ -8,7 +8,7 @@ new fullpage('#fullpage', {
 	navigationTooltips: ['home', 'about', 'resume', 'projects', 'awards', 'contact'],
   sectionsColor:["","","","whitesmoke","#75507B", ""],
 	showActiveTooltip: false,
-	slidesNavigation: false,
+	slidesNavigation: true,
 	slidesNavPosition: 'bottom',
   //options here
   autoScrolling:true,
