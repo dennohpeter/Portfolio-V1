@@ -534,20 +534,6 @@ body {
   position: relative;
   left:0;
 }
-.about .tags,
-.contact .tags {
-  color: #515152;
-  position: absolute;
-  bottom: 5px;
-  left: 55px;
-  font-size: 18px;
-  font-family: 'La Belle Aurore', cursive;
-}
-.about .top-tags,
-.contact .top-tags {
-  bottom: auto;
-  top:0px;
-}
 .about .text-zone h1,
 .contact .text-zone h1 {
   font-size: 53px;
@@ -997,21 +983,6 @@ display: none !important;
   .magicwall .magicwall-grid {
     margin-left: 0;
     margin-top: 60px;
-  }
-  .tags {
-    margin-left:10px;
-    left:0;
-  }
-  .top-tags {
-    bottom: auto;
-    top: 76px;
-  }
-  .bottom-tags {
-    position: absolute;
-    clear:both;
-    float:left;
-    margin-top: 22px;
-    bottom:0
   }
   .text-zone p, .text-zone h1 {
     padding-left: 30px

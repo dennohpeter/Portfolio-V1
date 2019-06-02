@@ -1,10 +1,9 @@
-$(document).ready(function() {
-	$('#fullpage').fullpage({
+new fullpage('#fullpage', {
   //Navigation
 	menu: '#nav_bar nav',
 	lockAnchors: false,
 	anchors:['home', 'about', 'resume', 'projects', 'awards', 'contact'],
-	navigation: true,
+	navigation: false,
 	navigationPosition: 'right',
 	navigationTooltips: ['home', 'about', 'resume', 'projects', 'awards', 'contact'],
   sectionsColor:["#383C4A","#213C39","#FCE94F","","#75507B", "#CC0000"],
@@ -18,8 +17,4 @@ $(document).ready(function() {
 	keyboardScrolling: true,
 	animateAnchor: true,
 	recordHistory: true,
-});
-
-//methods
-$.fn.fullpage.setAllowScrolling(false);
 });
