@@ -166,23 +166,6 @@ textarea {
 body {
   background: #252627;
   overflow: hidden;
-  display: block;
-}
-.lang {
-  width:100%;
-  text-align: center;
-  margin-top: 30px;
-}
-.lang a {
-  display: block;
-  margin-top: 5px;
-  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
-  font-weight: 300;
-  color: #A1A1A1;
-}
-.lang a:hover,
-.lang a.active {
-  color: #08fdd8;
 }
 /* Logo styling */
 .logo {
@@ -349,13 +332,6 @@ body {
   background: #08fdd8;
   color:#252627;
 }
-.home-page h1 img {
-  position: relative;
-  top:-5px;
-  opacity: 0;
-  width: 32px;
-  height: auto;
-}
 .home-page .blast {
   opacity: 0;
   display:inline-block;
@@ -379,12 +355,13 @@ body {
   text-align: center;
 }
 .home-page .section-wrap h1 {
-  color: #fff;
+  color: #F0FFFF;
   line-height: 60px;
   text-align: center;
-  font-size: 60px !important;
-  font-family: font-file-82132;
-  font-weight: normal;
+  font-size: 50px !important;
+  font-family: courier, monospace;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 .home-page .section-wrap h1:before {
   text-align: left;
@@ -545,34 +522,11 @@ body {
   position: relative;
   margin-bottom: 20px;
 }
-.about h1 .blast,
 .contact h1 .blast {
   will-change: transform;
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
-.about .text-zone h1:before,
-.contact .text-zone h1:before {
-  content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  margin-top: -10px;
-  padding-left: 50px;
-}
-.about .text-zone h1:after,
-.contact .text-zone h1:after {
-  content: '<h1/>';
-  font-family: 'La Belle Aurore', cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  left:-20px;
-  padding-left: 70px;
-  bottom:-20px;
-  margin-left: 20px;
 }
 .about .text-zone p, .contact .text-zone p {
   font-size: 17px;
@@ -582,10 +536,9 @@ body {
   font-family: QuickSand;
   font-weight: 300;
 }
-/* profile  */
+/* about ,profile  */
 .profile {
   left: 50%;
-  /* padding: 2.5%; */
   position: fixed;
   overflow: hidden;
   background-color: whitesmoke;
@@ -634,7 +587,7 @@ body {
 .contact-form  ul li{
   list-style: none;
   margin-bottom: 10px;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   display: block;
   clear: both;

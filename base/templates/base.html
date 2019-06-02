@@ -51,7 +51,7 @@
       <a rel="resume" href="#resume" class="" arial-label="resume">
         <i class="icon-resume"></i>
       </a>
-      <a rel="works" href="#works" class="" arial-label="works">
+      <a rel="projects" href="#projects" class="" arial-label="projects">
         <i class="icon-activity"></i>
       </a>
       <a rel="awards" href="#awards" class="" arial-label="awards">
@@ -89,7 +89,7 @@
   <div class="preloader">
     <div class="inner">
       <img src="{% static 'img/logopreload.png' %}"
-      alt="Wordpress Developer Loader, Web Developer Loader , Front End Developer Loader"/>
+      alt="WebGuru"/>
       <span>
         Dennis is thinking
       </span>
@@ -112,8 +112,9 @@
 </script>
 <!--javascript staticfiles  -->
 <script type='text/javascript' src="{% static 'js/fullpage.js' %}?version=1"></script>
-<script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script>
-<script src="{% static 'js/app/app-gallery.js' %}?version=1"></script>
+{% comment %} <script src="{% static 'js/vendor/magicwall.js' %}?version=1"></script> {% endcomment %}
+{% comment %} <script src="{% static 'js/app/app-gallery.js' %}?version=1"></script> {% endcomment %}
+{% comment %} <script src="{% static 'js/app/app-contact.js' %}?version=1"></script> {% endcomment %}
 <script src="{% static 'js/main.js' %}?version=1"></script>
 </body>
 </html>
