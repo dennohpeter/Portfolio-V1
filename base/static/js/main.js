@@ -6,7 +6,7 @@ new fullpage('#fullpage', {
 	navigation: false,
 	navigationPosition: 'right',
 	navigationTooltips: ['home', 'about', 'resume', 'projects', 'awards', 'contact'],
-  sectionsColor:["#383C4A","#213C39","#FCE94F","","#75507B", "#CC0000"],
+  sectionsColor:["#383C4A","#161A1A","#FCE94F","","#75507B", "#CC0000"],
 	showActiveTooltip: false,
 	slidesNavigation: false,
 	slidesNavPosition: 'bottom',
