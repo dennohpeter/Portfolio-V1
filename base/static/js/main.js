@@ -1,6 +1,6 @@
 new fullpage('#fullpage', {
   //Navigation
-	menu: '#nav_bar nav',
+	menu: '#nav_bar #menu',
 	lockAnchors: false,
 	anchors:['home', 'about', 'resume', 'projects', 'awards', 'contact'],
 	navigation: false,
