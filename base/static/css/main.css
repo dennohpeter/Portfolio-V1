@@ -163,6 +163,8 @@ textarea {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .section{
   text-align:center;
@@ -201,6 +203,9 @@ body {
   top:40%;
   margin-top: -130px;
   width: 100%;
+}
+#nav_bar #menu li{
+  list-style: none;
 }
 #nav_bar #menu li a{
   font-size: 22px;
@@ -554,7 +559,7 @@ body {
 }
 /*================================================== PROJECTS ============================================== */
 #content {
-  padding: 40px 0 60px;
+  /* padding: 40px 0 60px; */
 }
 .container {
   padding-right: 15px;
@@ -573,7 +578,7 @@ body {
 }
 @media(min-width: 768px) {
   .container {
-    width:750px
+    width:750px;
   }
 }
 
@@ -632,7 +637,7 @@ body {
 }
 @media(min-width: 1200px) {
   .col-lg-3 {
-        width: 25%
+        width: 25%;
         float: left;
     }
 }
@@ -651,7 +656,7 @@ body {
   -webkit-flex: 1;
   flex: 1;
   -webkit-flex-direction: column;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .project-card .card-image {
