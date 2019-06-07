@@ -248,7 +248,7 @@ body {
 }
 
 #nav_bar #menu li:nth-child(3) a:after {
-  content: 'RESUME';
+  content: 'RÉSUMÉ';
 }
 #nav_bar #menu li:nth-child(4) a:after {
   content: 'PROJECTS';
@@ -1172,6 +1172,7 @@ display: none !important;
     height:60px;
     line-height: 60px;
     margin:0 10px;
+    list-style: none;
   }
   #nav_bar ul.social li a {
     line-height: 60px;
