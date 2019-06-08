@@ -335,6 +335,9 @@ body {
   color:#fff;
   font-size:16px;
 }
+.wrapper {
+  margin-left: 60px;
+}
 /*================================================== HOME PAGE ============================================== */
 .blast {
   display:inline-block;
@@ -522,16 +525,15 @@ body {
   position: relative;
   text-align: left;
   left:0;
+  padding-left: 15px;
   background-color: #252627;
 }
-.about .text-zone h1,
-.contact .text-zone h1 {
+.about .text-zone h1, .contact .text-zone h1 {
   font-size: 53px;
   font-family: font-file-82132;
   color:#08fdd8;
   font-weight: normal;
   margin-top: 25px;
-  padding-left: 70px;
   position: relative;
 }
 .contact h1 .blast {
@@ -544,7 +546,6 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #ffffff;
-  padding-left: 70px;
   padding-right: 10px;
   font-weight: 300;
 }
@@ -1037,7 +1038,6 @@ border: 0;
 }
 .contact-form  ul{
   padding: 10px;
-  padding-left: 70px;
 }
 .contact-form  ul li{
   list-style: none;
