@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		navigation: false,
 		navigationPosition: 'right',
 		navigationTooltips: ['home', 'about', 'resume', 'projects', 'awards', 'contact'],
-		sectionsColor:["","","#FFFFFF","whitesmoke","whitesmoke", ""],
 		showActiveTooltip: false,
 		slidesNavigation: true,
 		slidesNavPosition: 'bottom',

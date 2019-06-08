@@ -381,7 +381,7 @@ body {
   text-align: left;
   content: '<h1>';
   left: 0;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: 'Inconsolata', monospace;
   color: #515152;
   font-size: 18px;
   position: absolute;
@@ -389,13 +389,13 @@ body {
 }
 .home-page .section-wrap h1:after {
   content: '</h1>';
-  font-family: 'monospace', cursive;
+  font-family: 'Inconsolata', monospace;
   color: #515152;
   right: 0;
   font-size: 18px;
   position: absolute;
-  -webkit-animation: fader_effect 1s 1.7s backwards;
-  animation: fader_effect 1s 1.7s backwards;
+  -webkit-animation: fader_effect 1s 1.1s backwards;
+  animation: fader_effect 1s 1.1s backwards;
 }
 .letter-transition {
   text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
@@ -563,8 +563,9 @@ body {
   height: 100%;
 }
 /*================================================== resume ============================================== */
-.resume {
+.resume, .projects, .awards {
   height: 100%;
+  background-color: #FFFFFF;
 }
 /*================================================== PROJECTS ============================================== */
 #content {
@@ -833,9 +834,6 @@ border: 0;
   flex: 1
 }
 /*================================================== AWARDS ============================================== */
-.awards {
-  height: 100%;
-}
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -943,7 +941,6 @@ border: 0;
   text-align: left;
   font-weight: 300;
 }
-
 
 /* TIMELINE ARROWS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1436,14 +1433,6 @@ display: none !important;
   .section-wrap {
     position: relative;
     padding: 0;
-  }
-  .chart.small{
-    display: none;
-  }
-  .about {
-    display: block;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
   .about .profile, .contact .map-wrap {
     height: 100%;
