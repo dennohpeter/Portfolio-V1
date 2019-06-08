@@ -171,7 +171,9 @@ textarea {
 }
 body {
   background: #252627;
-  overflow: hidden;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 300;
 }
 /* Logo styling */
 .logo {
@@ -518,7 +520,9 @@ body {
 .about .text-zone,
 .contact .text-zone {
   position: relative;
+  text-align: left;
   left:0;
+  background-color: #252627;
 }
 .about .text-zone h1,
 .contact .text-zone h1 {
@@ -529,7 +533,6 @@ body {
   margin-top: 25px;
   padding-left: 70px;
   position: relative;
-  margin-bottom: 20px;
 }
 .contact h1 .blast {
   will-change: transform;
@@ -542,16 +545,21 @@ body {
   line-height: 24px;
   color: #ffffff;
   padding-left: 70px;
-  font-family: QuickSand;
+  padding-right: 10px;
   font-weight: 300;
 }
-/* about ,profile  */
-.profile {
+.about .profile {
   left: 50%;
-  position: fixed;
-  overflow: hidden;
+  position: absolute;
+  padding: 20px;
   background-color: whitesmoke;
-  z-index: -1;
+}
+.about .profile .og-img {
+  margin: auto;
+  background: url(../img/og-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 /*================================================== resume ============================================== */
 .resume {
@@ -1489,9 +1497,6 @@ display: none !important;
   .home-page .text-zone {
     width: 85%;
     left:5%;
-  }
-  body {
-    overflow-x:hidden ;
   }
   .home-page h1:after {
     display: none;
