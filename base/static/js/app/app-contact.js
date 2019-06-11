@@ -14,8 +14,7 @@ submit.addEventListener('click', function(event) {
   }
   else {
     // alertify.log(msg2);
-    console.log(path);
-    post(path + "mail.php", contact_data,function(data ) {
+    post("send_mail", contact_data,function(data ) {
       console.log(data);
       if(data == '11'){
 

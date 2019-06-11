@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-	new fullpage('#fullpage', {
+new fullpage('#fullpage', {
 		//Navigation
 		menu: '#nav_bar #menu',
 		lockAnchors: false,
