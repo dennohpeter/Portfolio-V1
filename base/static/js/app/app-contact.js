@@ -13,20 +13,14 @@ submit.addEventListener('click', function(event) {
     alertify.error(msg1);
   }
   else {
-    // alertify.log(msg2);
-    post("send_mail", contact_data,function(data ) {
-      console.log(data);
-      if(data == '11'){
-
+    alertify.notify(msg2, "success", 1);
+    post("send_mail", contact_data,function(data) {
+      if(data == 'cool'){
         alertify.success(msg3);
-
-        contact_form.classList.remove('required');
-        input__fields.val('');
-
+        contact_data.reset();
       }else {
-
         contact_form.classList.remove('required');
-        input__fields.val('');
+        contact_data.reset();
         alertify.error(msg4);
       }
     } );
@@ -73,8 +67,13 @@ function validate(){
   }
 }
 function post(url, data, success){
+  // console.log(data);
   var content = typeof data == 'string' ? data : Object.keys(data).map(
-    function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
+    function(i){
+      // Don't serialize fields without a name, submits
+      if (!data[i].name || data[i].type === 'submit'){}
+      else{return encodeURIComponent(data[i].name) + '=' + encodeURIComponent(data[i].value);}
+    }
   ).join('&');
   var request = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
   request.open('POST', url);

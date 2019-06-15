@@ -1,5 +1,7 @@
 import os
 import dj_database_url
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -9,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9a%xy@#ui!nm@(s9e$%lr3-i!l3-c_@5h95*8#849n7bpkf2h2'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if 'HEROKU' in os.environ:
@@ -93,6 +95,12 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+EMAIL_BACKEND = os.getenv("EMAIL_BACKEND")
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
+DEFAULT_TO_EMAIL = os.getenv("DEFAULT_TO_EMAIL")
+SENDGRID_SANDBOX_MODE_IN_DEBUG=False
+SENDGRID_ECHO_TO_STDOUT=False
 
 
 # Internationalization

@@ -19,9 +19,9 @@
   <link rel="icon" type="image/png" href="{% static 'fav/transparentme.png' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/fullpage.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
   <script>
-  var path = "{% static '' %}"
   var errmsg ='<div class="error-info animated fadeInUp"><span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
   var msg1 ="Please fill in all required fields";
   var msg2 = "Please wait. Processing";
@@ -119,6 +119,7 @@
 </script>
 <!--javascript files  -->
 <script type='text/javascript' src="{% static 'js/fullpage.min.js' %}"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
 <script src="{% static 'js/app/app-contact.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
