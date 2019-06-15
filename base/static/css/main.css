@@ -43,11 +43,11 @@
 }
 .icon-award:before {
   content: "\e901";
-  font-size: 27px;
+  font-size: 28px;
 }
 .icon-mail:before {
   content: "\f003";
-  font-size: 26px;
+  font-size: 24px;
 }
 .icon-heart:before {
   content: "\e905";
@@ -1229,10 +1229,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   }
 }
 @media (max-width: 1024px){
-  .inf-map {
-    top: -10px;
-    right: 25%;
-  }
   h1 {
     font-size: 54px !important;
     line-height: 45px;
@@ -1284,26 +1280,8 @@ display: none !important;
 }
 } */
 @media (max-width: 960px){
-  #world {
-    position: relative !important;
-    width: 90% !important;
-    height: auto !important;
-    margin: auto;
-  }
-  .skills-charts {
-    position: relative;
-    left:0%;
-    width: 80%;
-    top:00px;
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
-    clear: both;
-    margin: auto;
-    overflow: hidden;
-  }
-  .white .logo {
-    padding-bottom: 4px;
+  .wrapper {
+    margin-left: 0;
   }
   #nav_bar {
     width: 100%;
@@ -1349,7 +1327,7 @@ display: none !important;
     line-height: 60px;
     height: 60px;
   }
-  #nav_bar #menu li a:first-child {margin-left: 0;}
+  #nav_bar #menu li:first-child {margin-left: 0;}
   #nav_bar ul.social {
     position: static;
     width: auto;
@@ -1387,36 +1365,6 @@ display: none !important;
   }
   .about .profile {
     margin-top: 60px;
-  }
-  .prof_cont {
-    height: 82%;
-  }
-  #myCanvasContainer {
-    position: relative;
-    margin:0 10% !important;
-    top:0 !important;
-    left:0 !important;;
-    display: block;
-    clear: both;
-    width: 80%;
-    height: auto;
-  }
-  #myCanvas {
-    position: relative;
-    width: 100%;
-    margin: 0 ;
-  }
-  /* .map-wrap {
-  float: none;
-  width: 80%;
-  margin-left:10%;
-  height: 320px;
-  clear: both;
-  } */
-  .inf-map {
-    top: auto;
-    right: 5%;
-    bottom:50px;
   }
 }
 @media (max-width: 750px){
