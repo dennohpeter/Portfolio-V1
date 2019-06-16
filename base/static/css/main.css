@@ -524,6 +524,7 @@ body {
   margin-top: 25px;
   padding-left: 10px;
   position: relative;
+  text-align: left;
 }
 .about .text-zone p, .contact .text-zone p, .contact .reach-me-wrap p {
   font-size: 17px;
@@ -531,6 +532,7 @@ body {
   color: #ffffff;
   padding: 10px;
   font-weight: 300;
+  text-align: left;
 }
 .about .profile {
   left: 50%;
@@ -1139,7 +1141,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 .contact .reach-me-wrap .social .via{
   display: inline-block;
-  padding: 18px;
+  padding: 15px;
   padding-left: 30px;
   width: 50%;
 }
@@ -1154,8 +1156,26 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   display: block;
   cursor: pointer;
 }
-.contact .reach-me-wrap .social li .social_content a:hover{
+.contact .reach-me-wrap .social li .social_content a:hover, .donate_content a:hover{
   text-decoration: underline;
+}
+.donate {
+  background-color: #FFFFFF;
+  list-style: none;
+}
+.donate li {
+  display: flex;
+  list-style: none;
+}
+.donate li .via{
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+.donate .via {
+  color: orangered;
+  font-size: 18px;
+  font-weight: bold;
 }
 /* ========================================================================================= */
 
