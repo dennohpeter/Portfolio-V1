@@ -435,6 +435,21 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   font-size: 18px;
 }
+.home-arrow {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 5%;
+  z-index: 10;
+  display: block;
+  width: 48px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block
+}
 /*================================================== PRELOADER ============================================== */
 .preloader {
   position: fixed;
@@ -553,17 +568,14 @@ body {
   background-color: #FFFFFF;
 }
 /*================================================== PROJECTS ============================================== */
-#content {
-  /* padding: 40px 0 60px; */
-}
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
   margin-right: auto;
   margin-left: auto
 }
 
-.container:before,.container:after {
+/* .container:before,.container:after {
   display: table;
   content: " "
 }
@@ -587,7 +599,7 @@ body {
   .container {
     width:1170px
   }
-}
+} */
 
 .equal-column{
   margin-bottom: 30px;
@@ -729,7 +741,8 @@ border: 0;
   flex-direction: column;
   -webkit-flex-grow: 1;
   flex-grow: 1;
-  padding: 10px 15px
+  padding: 10px 15px;
+  text-align:left;
 }
 
 .project-card .card-body .project-content-type {
@@ -1460,7 +1473,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     top:20px;
   }
 }
-@media (max-width: 440px){
+/* @media (max-width: 440px){
   .chart-group {
     width: 100%;
     margin-bottom: 30px;
@@ -1484,7 +1497,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   .container {
     max-width:1170px
   }
-}
+} */
 .animation-logo {
   -webkit-animation: animation2 1000ms linear both;
   animation: animation2 1000ms linear both;
