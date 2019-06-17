@@ -54,6 +54,7 @@
 }
 .icon-gear:before {
   content: "\e90e";
+  font-size: 27px;
 }
 .icon-sidebar:before {
   content: "\e907";
@@ -80,14 +81,42 @@
 .icon-love:before {
   content: "\f004";
 }
-.icon-facebook:before {
-  content: "\e90c";
-}
 .icon-zap:before {
   content: "\e909";
 }
 .icon-menu:before {
   content: "\f0c9";
+}
+.icon-twitter-col:before {
+  content: "\e90a";
+  color: #1da1f2;
+  font-size: 27px;
+}
+.icon-telegram-col:before {
+  content: "\e90f";
+  color: #2ca5e0;
+  font-size: 27px;
+}
+.icon-gitlab-col:before {
+  content: "\e910";
+  color: #e24329;
+  font-size: 27px;
+}
+.icon-devpost:before {
+  content: "\e911";
+  font-size: 27px;
+}
+.icon-download:before {
+  content: "\f019";
+  font-size: 27px;
+}
+.icon-like:before {
+  content: "\f087";
+  font-size: 27px;
+}
+.icon-bookmark:before {
+  content: "\f097";
+  font-size: 27px;
 }
 /* end of custom icons */
 /* remove default style */
