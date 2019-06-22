@@ -1287,6 +1287,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 @media (max-width: 960px){
   .wrapper {
     margin-left: 0;
+    margin-top: 60px;
   }
   #nav_bar {
     width: 100%;
@@ -1364,12 +1365,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   }
   .text-zone h1:after {
     margin-left: 40px;
-  }
-  .text-zone {
-    margin-top: 60px;
-  }
-  .about .profile {
-    margin-top: 60px;
   }
 }
 @media (max-width: 750px){
