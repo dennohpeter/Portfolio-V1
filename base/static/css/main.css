@@ -165,16 +165,6 @@ html {
   text-shadow: none;
 }
 /*
-* A better looking default horizontal rule
-*/
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
 /*
 * Remove default fieldset styles.
 */
@@ -476,8 +466,8 @@ body {
   margin-left: auto;
 }
 .w-inline-block {
-    max-width: 100%;
-    display: inline-block
+  max-width: 100%;
+  display: inline-block
 }
 /*================================================== PRELOADER ============================================== */
 .preloader {
@@ -605,29 +595,29 @@ body {
 }
 
 /* .container:before,.container:after {
-  display: table;
-  content: " "
+display: table;
+content: " "
 }
 
 .container:after {
-  clear: both
+clear: both
 }
 @media(min-width: 768px) {
-  .container {
-    width:750px;
-  }
+.container {
+width:750px;
+}
 }
 
 @media(min-width: 992px) {
-  .container {
-    width:970px
-  }
+.container {
+width:970px
+}
 }
 
 @media(min-width: 1200px) {
-  .container {
-    width:1170px
-  }
+.container {
+width:1170px
+}
 } */
 
 .equal-column{
@@ -861,137 +851,47 @@ border: 0;
   flex: 1
 }
 /*================================================== AWARDS ============================================== */
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline {
-  white-space: nowrap;
-  overflow-x: hidden;
-}
-
-.timeline ol {
-  font-size: 0;
-  width: 100vw;
-  padding: 250px 0;
-  transition: all 1s;
-}
-
-.timeline ol li {
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
-  width: 160px;
-  height: 3px;
-  background: #ee4d4d;
-}
-
-.timeline ol li:last-child {
-  width: 280px;
-}
-
-.timeline ol li:not(:first-child) {
-  margin-left: 36px;
-}
-
-.timeline ol li:not(:last-child) .timeline-icon {
-  background: ;whitesmoke;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 1px);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  bottom: 0;
-  cursor: pointer;
-}
-.timeline ol li:not(:last-child) .timeline-icon i{
-  position: relative;
-  font-size: 14px;
-  top: 4px;
-}
-.timeline ol li .timeline-item {
-  position: absolute;
-  left: calc(100% + 14px);
-  width: 320px;
-  padding: 25px;
-  font-size: 1rem;
-  white-space: normal;
-  color: black;
-  background: #FFFFFF;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-.timeline ol li .timeline-item::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.timeline ol li:nth-child(odd) div {
-  top: -25px;
-  transform: translateY(-100%);
-}
-
-.timeline ol li:nth-child(odd) div::before {
-  top: 100%;
-  border-width: 8px 8px 0 0;
-  border-color: #ee4d4d transparent transparent transparent;
-}
-
-.timeline ol li:nth-child(even) div {
-  top: calc(100% + 25px);
-}
-
-.timeline ol li:nth-child(even) div::before {
-  top: -8px;
-  border-width: 8px 0 0 8px;
-  box-shadow: none;
-  border-color: transparent transparent transparent #ee4d4d;
-}
-
-.timeline h4 {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: -25px -25px 0 -25px;
-  background: #ee4d4d;
-  color: #FFFFFF;
-  padding: 15px;
+.awards p.intro {
   text-align: left;
-  font-weight: 300;
+  padding: 10px 40px 10px 20px;
 }
-
-/* TIMELINE ARROWS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline .arrows {
+.timeline {
+  padding: 5px 30px 10px 0;
+}
+.timeline .honour {
+  text-align: left;
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.timeline .arrows .arrow__prev {
-  margin-right: 20px;
+.timeline .honour .icon {
+  padding-left: 30px;
+  margin-top: -20px;
 }
-
-.timeline .disabled {
-  opacity: .5;
+.timeline .honour .description {
+  flex: 1;
+  flex-basis: 1px;
+  padding-left: 30px;
 }
-
-.timeline .arrows img {
-  width: 45px;
-  height: 45px;
+.timeline .honour .description h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
-
-
+small{
+  font-size: 80%;
+}
+/*
+* A better looking default horizontal rule
+*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  box-sizing: content-box;
+}
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 599px) {
@@ -1498,29 +1398,29 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   }
 }
 /* @media (max-width: 440px){
-  .chart-group {
-    width: 100%;
-    margin-bottom: 30px;
-  }
+.chart-group {
+width: 100%;
+margin-bottom: 30px;
+}
 }
 @media(min-width: 768px) {
-  .container {
-    width:initial;
-    min-width: 750px
-  }
+.container {
+width:initial;
+min-width: 750px
+}
 }
 
 @media(min-width: 993px) {
-  .container {
-    width:initial;
-    min-width: 970px
-  }
+.container {
+width:initial;
+min-width: 970px
+}
 }
 
 @media(min-width: 1200px) {
-  .container {
-    max-width:1170px
-  }
+.container {
+max-width:1170px
+}
 } */
 .animation-logo {
   -webkit-animation: animation2 1000ms linear both;
