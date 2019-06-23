@@ -20,3 +20,25 @@ def contact(request):
         to_mail = [settings.DEFAULT_TO_EMAIL]
         send_mail(subject, message_body, from_mail, to_mail, fail_silently=False)
     return HttpResponse("cool")
+def about(request):
+    return render(request, "about.html")
+
+
+def skills(request):
+    return render(request, "skills.html")
+
+
+def resume(request):
+    return render(request, "resume.html")
+
+
+def projects(request):
+    return render(request, "projects.html")
+
+
+def awards(request):
+    return render(request, "awards.html")
+
+
+def contact(request):
+    return render(request, "contact.html")
