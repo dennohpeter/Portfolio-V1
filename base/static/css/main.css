@@ -129,7 +129,8 @@
 
 .icon-download:before {
 	content: "\f019";
-	font-size: 27px;
+	font-size: 20px;
+	margin-left: 10px!important;
 }
 
 .icon-like:before {
@@ -718,9 +719,56 @@ body {
 	height: 100%;
 	background-color: #FFFFFF;
 }
-.resume p.intro {
+.resume  {
 	text-align: left;
-	padding: 10px 40px 10px 20px;
+	line-height: 1.8;
+	padding: 10px 40px 10px 40px;
+}
+.resume p.intro {
+	margin: 10px 0 20px 0;
+}
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-outline-dark {
+	color: #343a40;
+	background-color: transparent;
+	background-image: none;
+	border-color: #343a40;
+}
+.btn-outline-dark:hover {
+	color: #fff;
+	background-color: #343a40;
+	border-color: #343a40;
+}
+.long-form-cv {
+	position: relative;
+	font-weight: 600;
+	margin: 10px 0 20px 0;
+	padding: 15px 29px 15px 15px;
+	background: #f8f8f8;
+	color: #666;
+}
+.long-form-cv a {
+	text-decoration: underline;
+	color: #666;
+}
+.danger {
+	background: #fef4f6;
+	color: #f0506e;
 }
 /*================================================== PROJECTS ============================================== */
 
