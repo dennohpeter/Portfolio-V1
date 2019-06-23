@@ -136,11 +136,13 @@
 .icon-like:before {
 	content: "\f087";
 	font-size: 27px;
+	cursor: pointer;
 }
 
 .icon-bookmark:before {
 	content: "\f097";
 	font-size: 27px;
+	cursor: pointer;
 }
 
 
@@ -321,9 +323,7 @@ body {
 	transition: all 0.3s ease-out;
 }
 
-
 /* onhover words */
-
 #nav_bar #menu li:nth-child(1) a:after {
 	content: 'HOME';
 }
@@ -351,10 +351,7 @@ body {
 #nav_bar #menu li a:hover:after {
 	opacity: 1;
 }
-
-
 /*  social icons */
-
 #nav_bar ul.social {
 	position: absolute;
 	bottom: 20px;
@@ -365,13 +362,16 @@ body {
 	text-align: center;
 	margin: 0;
 }
-
+#nav_bar ul.social li {
+	list-style: none;
+}
 #nav_bar ul.social li a {
 	padding: 7px 0;
 	display: block;
 	font-size: 15px;
 	line-height: 16px;
 	color: #4d4d4e;
+	text-decoration: none;
 }
 
 #nav_bar ul.social li a:hover {
@@ -386,8 +386,7 @@ body {
 	color: #08fdd8
 }
 
-
-/* ================================ end for social icons styling  ============ */
+/* ================================ end of social icons styling  ============ */
 
 .error-info {
 	position: absolute;
@@ -712,19 +711,18 @@ body {
 
 
 /*================================================== resume ============================================== */
-
 .resume,
 .projects,
 .awards {
 	height: 100%;
 	background-color: #FFFFFF;
 }
-.resume  {
+.resume, .awards {
 	text-align: left;
 	line-height: 1.8;
 	padding: 10px 40px 10px 40px;
 }
-.resume p.intro {
+.resume p.intro ,.awards p.intro{
 	margin: 10px 0 20px 0;
 }
 .btn {
@@ -995,11 +993,6 @@ body {
 
 /*================================================== AWARDS ============================================== */
 
-.awards p.intro {
-	text-align: left;
-	padding: 10px 40px 10px 20px;
-}
-
 .timeline {
 	padding: 5px 30px 10px 0;
 }
@@ -1013,7 +1006,7 @@ body {
 }
 
 .timeline .honour .icon {
-	padding-left: 30px;
+	padding-left: 20px;
 	margin-top: -20px;
 }
 
@@ -1426,10 +1419,7 @@ input:focus:-ms-input-placeholder {
 		height: 60px;
 		line-height: 60px;
 		display: block;
-		padding: 0;
-		list-style: none;
 		text-align: center;
-		margin: 0;
 		float: right;
 	}
 	#nav_bar ul.social li {
@@ -1437,11 +1427,9 @@ input:focus:-ms-input-placeholder {
 		height: 60px;
 		line-height: 60px;
 		margin: 0 10px;
-		list-style: none;
 	}
 	#nav_bar ul.social li a {
 		line-height: 60px;
-		padding: 0;
 	}
 	.text-zone p,
 	.text-zone h1 {
