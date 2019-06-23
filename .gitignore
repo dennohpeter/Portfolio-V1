@@ -106,5 +106,3 @@ venv.bak/
  # vs code
  .vscode/
  .idea/
-
-static/
