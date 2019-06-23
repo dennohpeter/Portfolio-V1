@@ -49,12 +49,12 @@
 	<div class="section">
 		<div class="resume">
 			<h1>Résumé / CV</h1>
-			<p>I have nearly 4 years of experience in software development. Below is a summary of my skills, recent employment history, and achievements.</p>
-			<a href="/files/peterson-resume.pdf">Download résumé <i class="icon-download"></i></a>
+			<p class="intro">I have nearly 4 years of experience in software development. Below is a summary of my skills, recent employment history, and achievements.</p>
+			<a href="{% static '/files/resume.pdf' %}" class="button">Download résumé <i class="icon-download"></i></a>
 			<div class="long-form-cv">
-				<p>Looking for my long-form CV? <a href="/files/peterson-resume.pdf">Download CV <i class="icon-download"></i></a></p>
+				<p>Looking for my long-form CV? <a href="{% static '/files/resume.pdf' %}">Download CV <i class="icon-download"></i></a></p>
 			</div>
-			<object width="100%" height="79%" type="application/pdf" data="/files/peterson-resume.pdf">
+			<object width="100%" height="79%" type="application/pdf" data="{% static '/files/resume.pdf' %}">
 				<div>
 					<p>Can't see the preview? Try <a href="/files/peterson-resume.pdf">downloading</a> my resume instead.</p>
 				</div>
