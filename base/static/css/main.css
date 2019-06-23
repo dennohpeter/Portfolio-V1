@@ -769,14 +769,40 @@ body {
 	color: #f0506e;
 }
 /*================================================== PROJECTS ============================================== */
-
 .container {
 	margin-right: auto;
 	margin-left: auto
 }
+.row {
+	width: 100%;
+}
+.categories {
+	height: 58px;
+}
+.categories .tab {
+	float: right;
+	padding: 5px;
+}
+.categories .tab button{
+	background-color: inherit;
+	float: left;
+	border: 1px solid #ccc;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 18px;
+	font-weight: lighter;
+}
+.categories .tab button:hover {
+	background-color: #ddd;
+}
+.categories .tab button.active {
+	background-color: #ccc;
+}
 
-.equal-column {
-	margin-bottom: 30px;
+.equal-columns {
+	padding: 20px 0 20px 0;
 }
 
 .col-sm-6 .col-md-4 .col-lg-3 {
@@ -826,12 +852,6 @@ body {
 		float: left;
 	}
 }
-
-.row {
-	margin-right: -15px;
-	margin-left: -15px
-}
-
 .project-card {
 	border: 1px solid #d8d8d8;
 	margin-bottom: 20px;
