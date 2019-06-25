@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="https://pbs.twimg.com/profile_images/978285309145354241/2qsyGFTA_400x400.jpg" />
-  <title>Dennis Peterson | Full Stack Developer | Linux Nerd</title>
-  <link rel="canonical" href="https://dennispeter.herokuapp.com/" />
+  <title>{% block title %} Dennis Peterson | Full Stack Developer | Linux Nerd {% endblock %}</title>
+  <link rel="canonical" {% block canonical %} href="https://dennispeter.herokuapp.com/"{% endblock %}/>
   <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="DP - Full Stack Developer | Python | Linux" />
-  <meta property="og:description" content="I'm Dennis Peterson, Fullstack Developer.This is my personal website" />
-  <meta property="og:url" content="https://dennispeter.herokuapp.com/" />
+  <meta property="og:type" {% block ogtype %} content="website" {% endblock %}/>
+  <meta property="og:title" {% block ogtitle %} content="DP - Full Stack Developer | Python | Linux" {% endblock %} />
+  <meta property="og:description" {% block ogdescription %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website" {% endblock %} />
+  <meta property="og:url" {% block ogurl %} content="https://dennispeter.herokuapp.com/" {% endblock %} />
   <meta property="og:site_name" content="Full Stack Developer | Python | Linux Nerd" />
   <meta name="robots" content="noodp">
-  <meta name="description" content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." />
+  <meta name="description" {% block description %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}/>
   <link rel="icon" type="image/png" href="{% static 'fav/transparentme.png' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css"/>
