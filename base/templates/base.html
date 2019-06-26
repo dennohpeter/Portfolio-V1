@@ -1,128 +1,126 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="https://pbs.twimg.com/profile_images/978285309145354241/2qsyGFTA_400x400.jpg" />
-  <title>{% block title %} Dennis Peterson | Full Stack Developer | Linux Nerd {% endblock %}</title>
-  <link rel="canonical" {% block canonical %} href="https://dennispeter.herokuapp.com/"{% endblock %}/>
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" {% block ogtype %} content="website" {% endblock %}/>
-  <meta property="og:title" {% block ogtitle %} content="DP - Full Stack Developer | Python | Linux" {% endblock %} />
-  <meta property="og:description" {% block ogdescription %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website" {% endblock %} />
-  <meta property="og:url" {% block ogurl %} content="https://dennispeter.herokuapp.com/" {% endblock %} />
-  <meta property="og:site_name" content="Full Stack Developer | Python | Linux Nerd" />
-  <meta name="robots" content="noodp">
-  <meta name="description" {% block description %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}/>
-  <link rel="icon" type="image/png" href="{% static 'fav/transparentme.png' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Overpass:300,300i,400,400i,700,700i" rel="stylesheet">
-  <script>
-  var errmsg ='<div class="error-info animated fadeInUp"><span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
-  var msg1 ="Please fill in all required fields";
-  var msg2 = "Please wait. Processing";
-  var msg3 = "Your e-mail has been successfully sent. Thank You!";
-  var msg4 = "Failed to send your message. Please try later or contact me directly denispeterson96@gmail.com.";
-  var msg7 = "Double click to add more elements.";
-  var msg8 = "Scroll to zoom in/out";
-  </script>
-</head>
-<body>
-  <div id="nav_bar">
-    <a class="logo" rel="index" href="{% url 'home'  %}">
-      <img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
-      <span style="color: #ffffff; padding-left: 8px; letter-spacing: 2px; font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;">Dennis</span>
-    </a>
-    <ul id="menu" class="en">
-      <li data-menuanchor="home" class="active">
-        <a rel="index" href="{% url 'home' %}" class="home-link" arial-label="home">
-          <i class="icon-home"></i>
-        </a>
-      </li>
-      <li data-menuanchor="about">
-        <a rel="about" href="{% url 'about' %}" class="" arial-label="about">
-          <i class="icon-prof"></i>
-        </a>
-      </li>
-      <li data-menuanchor="resume">
-        <a rel="resume" href="{% url 'resume' %}" class="" arial-label="resume">
-          <i class="icon-resume"></i>
-        </a>
-      </li>
-      <li data-menuanchor="projects">
-        <a rel="projects" href="{% url 'projects' %}" class="" arial-label="projects">
-          <i class="icon-activity"></i>
-        </a>
-      </li>
-      <li data-menuanchor="awards">
-        <a rel="awards" href="{% url 'awards' %}" class="" arial-label="awards">
-          <i class="icon-award"></i>
-        </a>
-      </li>
-      <li data-menuanchor="contact">
-        <a rel="contact" href="{% url 'contact' %}" class="" arial-label="contact">
-          <i class="icon-mail"></i>
-        </a>
-      </li>
-    </ul>
-    <ul class="social">
-      <li>
-        <a href="https://twitter.com/PythonMafia" target="_blank" title="tweet" rel="noreferrer">
-          <i class="icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/dennohpeter/" title="github" target="_blank" rel="noreferrer">
-          <i class="icon-github"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="" title="donate" rel="noreferrer">
-          <i class="icon-gift"></i>
-        </a>
-      </li>
-    </ul>
-    <span id="mobile-link" onclick="show_menu()" style="color:white;">
-      <i class="icon-menu"></i>
-    </span>
-  </div>
-
-  <div id="fullpage" class="en wrapper">
-    {% block content %}
-
-    {% endblock %}
-  </div>
-  <div class="preloader">
-    <div class="inner">
-      <img src="{% static 'img/logopreload.png' %}"
-      alt="WebGuru"/>
-      <span>
-        Dennis is thinking
-      </span>
-      <div class="progress-bar">
-        <div class="progress-bar_bg">
-          <div>
-          </div>
-        </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content="https://pbs.twimg.com/profile_images/978285309145354241/2qsyGFTA_400x400.jpg" />
+      <title>{% block title %} Dennis Peterson | Full Stack Developer | Linux Nerd {% endblock %}</title>
+      <link rel="canonical" {% block canonical %} href="https://dennispeter.herokuapp.com/"{% endblock %}/>
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" {% block ogtype %} content="website" {% endblock %}/>
+      <meta property="og:title" {% block ogtitle %} content="DP - Full Stack Developer | Python | Linux" {% endblock %} />
+      <meta property="og:description" {% block ogdescription %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website" {% endblock %} />
+      <meta property="og:url" {% block ogurl %} content="https://dennispeter.herokuapp.com/" {% endblock %} />
+      <meta property="og:site_name" content="Full Stack Developer | Python | Linux Nerd" />
+      <meta name="robots" content="noodp">
+      <meta name="description" {% block description %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}/>
+      <link rel="icon" type="image/png" href="{% static 'fav/transparentme.png' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Overpass:300,300i,400,400i,700,700i" rel="stylesheet">
+      <script>
+         var errmsg ='<div class="error-info animated fadeInUp"><span><span>O</span>ops!</span><p>Something went wrong, please refresh the page or try again later.</p></div>'
+         var msg1 ="Please fill in all required fields";
+         var msg2 = "Please wait. Processing";
+         var msg3 = "Your e-mail has been successfully sent. Thank You!";
+         var msg4 = "Failed to send your message. Please try later or contact me directly denispeterson96@gmail.com.";
+         var msg7 = "Double click to add more elements.";
+         var msg8 = "Scroll to zoom in/out";
+      </script>
+   </head>
+   <body>
+      <div id="nav_bar">
+         <a class="logo" rel="index" href="{% url 'home'  %}">
+         <img src="https://daks2k3a4ib2z.cloudfront.net/53a9a7630dfd86dd31d6fdb4/53de0b634a9366157770dbb7_icon-intro.svg" alt="Dennis">
+         <span style="color: #ffffff; padding-left: 8px; letter-spacing: 2px; font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;">Dennis</span>
+         </a>
+         <ul id="menu" class="en">
+            <li data-menuanchor="home" class="active">
+               <a rel="index" href="{% url 'home' %}" class="home-link" arial-label="home">
+               <i class="icon-home"></i>
+               </a>
+            </li>
+            <li data-menuanchor="about">
+               <a rel="about" href="{% url 'about' %}" class="" arial-label="about">
+               <i class="icon-prof"></i>
+               </a>
+            </li>
+            <li data-menuanchor="resume">
+               <a rel="resume" href="{% url 'resume' %}" class="" arial-label="resume">
+               <i class="icon-resume"></i>
+               </a>
+            </li>
+            <li data-menuanchor="projects">
+               <a rel="projects" href="{% url 'projects' %}" class="" arial-label="projects">
+               <i class="icon-activity"></i>
+               </a>
+            </li>
+            <li data-menuanchor="awards">
+               <a rel="awards" href="{% url 'awards' %}" class="" arial-label="awards">
+               <i class="icon-award"></i>
+               </a>
+            </li>
+            <li data-menuanchor="contact">
+               <a rel="contact" href="{% url 'contact' %}" class="" arial-label="contact">
+               <i class="icon-mail"></i>
+               </a>
+            </li>
+         </ul>
+         <ul class="social">
+            <li>
+               <a href="https://twitter.com/PythonMafia" target="_blank" title="tweet" rel="noreferrer">
+               <i class="icon-twitter"></i>
+               </a>
+            </li>
+            <li>
+               <a href="https://github.com/dennohpeter/" title="github" target="_blank" rel="noreferrer">
+               <i class="icon-github"></i>
+               </a>
+            </li>
+            <li>
+               <a href="#" target="" title="donate" rel="noreferrer">
+               <i class="icon-gift"></i>
+               </a>
+            </li>
+         </ul>
+         <span id="mobile-link" onclick="show_menu()" style="color:white;">
+         <i class="icon-menu"></i>
+         </span>
       </div>
-    </div>
-  </div>
-  <div id="rotate"></div>
-  <script>
-  function show_menu() {
-    var element = document.querySelector('#nav_bar #menu');
-    element.classList.toggle('show');
-
-  }
-
-</script>
-<!--javascript files  -->
-{% comment %} <script type='text/javascript' src="{% static 'js/fullpage.min.js' %}"></script> {% endcomment %}
-<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
-<script src="{% static 'js/app/app-contact.js' %}"></script>
-{% comment %} <script src="{% static 'js/main.js' %}"></script> {% endcomment %}
-</body>
+      <div class="en wrapper">
+         {% block content %}
+         {% endblock %}
+      </div>
+      <div class="preloader">
+         <div class="inner">
+            <img src="{% static 'img/logopreload.png' %}"
+               alt="WebGuru"/>
+            <span>
+            Dennis is thinking
+            </span>
+            <div class="progress-bar">
+               <div class="progress-bar_bg">
+                  <div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="rotate"></div>
+      <script>
+         function show_menu() {
+           var element = document.querySelector('#nav_bar #menu');
+           element.classList.toggle('show');
+         
+         }
+         
+      </script>
+      <!--javascript files  -->
+      {% comment %} <script type='text/javascript' src="{% static 'js/fullpage.min.js' %}"></script> {% endcomment %}
+      <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
+      <script src="{% static 'js/app/app-contact.js' %}"></script>
+      {% comment %} <script src="{% static 'js/main.js' %}"></script> {% endcomment %}
+   </body>
 </html>
