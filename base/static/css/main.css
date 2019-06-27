@@ -1348,8 +1348,8 @@ input:focus:-ms-input-placeholder {
 
 @media (max-width: 960px) {
 	.wrapper {
-		margin-left: 0;
-		margin-top: 60px;
+		padding-left: 0px;
+		padding-top: 60px;
 	}
 	#nav_bar {
 		width: 100%;
