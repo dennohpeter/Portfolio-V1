@@ -176,7 +176,7 @@ Base styles: opinionated defaults
 
 html,body {
 	color: #222;
-	background: #252627;
+	background-color: #FFFFFF;
 	font-size: 1em;
 	font-family: "Overpass";
 	font-style: normal;
@@ -549,25 +549,6 @@ textarea {
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 	font-size: 18px;
 }
-
-.home-arrow {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 5%;
-	z-index: 10;
-	display: block;
-	width: 48px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.w-inline-block {
-	max-width: 100%;
-	display: inline-block
-}
-
-
 /*================================================== PRELOADER ============================================== */
 
 .preloader {
@@ -690,7 +671,6 @@ textarea {
 
 .about .profile {
 	left: 50%;
-	position: absolute;
 	padding: 20px;
 	background-color: whitesmoke;
 }
@@ -709,7 +689,6 @@ textarea {
 .projects,
 .awards {
 	height: 100%;
-	background-color: #FFFFFF;
 }
 .resume, .awards {
 	text-align: left;
@@ -1230,12 +1209,9 @@ input:focus:-ms-input-placeholder {
 	color: transparent;
 }
 
-
-/* IE 10+ */
-
 .reach-me-wrap {
 	left: 50%;
-	background: rgba(8, 253, 216, 0.1);
+	background-color: #252627;
 }
 
 .contact .reach-me-wrap .social {

@@ -16,7 +16,7 @@ def contact(request):
         subject = request.POST.get('subject')
         message = request.POST.get('message')
 
-        message_body = "Subject: {0}\nName: {1}\nEmail: {2}\nMessage: {3}".format(subject, from_name, from_mail,message)
+        message_body = "Subject: {0} \nName: {1}\n Email: {2}\nMessage: {3}".format(subject, from_name, from_mail,message)
         to_mail = [settings.DEFAULT_TO_EMAIL]
         send_mail(subject, message_body, from_mail, to_mail, fail_silently=False)
     return HttpResponse("cool")
