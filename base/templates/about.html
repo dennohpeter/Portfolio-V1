@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %} About me | Dennis Peterson  {% endblock %}
+{% block canonical %} href="/about/" {% endblock %}
+{% block ogtype %} content="article" {% endblock %}
+{% block ogtitle %} content="About me | Dennis Peterson" {% endblock %}
+{% block ogdescription %} content="Everything started with passion to be a Linux Nerd." {% endblock %}
+{% block ogurl %} content="/about/" {% endblock %}
+{% block description %} content="About me | Dennis Peterson." {% endblock %}
+{% block content %}
+<div class="about">
+   <div class="text-zone divider">
+      <h1>About me</h1>
+      <p> My name is Dennis Peterson. I go online as PythonMafia.
+         I'm a security researcher, free software Developer and a gopher.
+      </p>
+      <p>At my free time you will find me reverse engineering malware
+         and building automation tools for malware analysis.
+      </p>
+      <p>
+         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+         pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+         in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <br>
+      <p>
+         Excepteur sint occaecat cupidatat non proident, sunt
+         in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+   </div>
+   <div class="profile divider">
+      <div class="og-img"></div>
+   </div>
+</div>
+{% endblock %}

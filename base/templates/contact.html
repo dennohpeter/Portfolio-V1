@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %} Contact | Dennis Peterson  {% endblock %}
+{% block canonical %} href="/contact/ {% endblock %}
+{% block ogtype %} content="article" {% endblock %}
+{% block ogtitle %} content="Contact | Dennis Peterson" {% endblock %}
+{% block ogdescription %} content="Web developer portfolio, looking for great remote/freelance propositions.Contact me!" {% endblock %}
+{% block ogurl %} content="/contact/" {% endblock %}
+{% block description %} content="Web developer portfolio, looking for great remote/freelance propositions.Contact me!" {% endblock %}
+{% block content %}
+<div class="contact">
+   <div class="divider text-zone">
+      <h1>Contact me</h1>
+      <p>If you have any questions, please don&#8217;t hesitate to contact using form below&#8230;</p>
+      <div class="contact-form">
+         <form id="contact_form" method="POST">
+            {% csrf_token %}
+            <ul>
+               <li class="half">
+                  <input class="input__field input__field--hoshi" placeholder="Name" type="text" name="name" />
+                  <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+               </li>
+               <li class="half">
+                  <input class="input__field input__field--hoshi" placeholder="Email" type="email" name="email" />
+                  <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+               </li>
+               <li>
+                  <input class="input__field input__field--hoshi" placeholder="Subject" type="text" name="subject" />
+                  <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+               </li>
+               <li>
+                  <textarea class="input__field input__field--hoshi" placeholder="Message" name="message"></textarea>
+                  <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
+               </li>
+               <li class="submit">
+                  <input id="submit" type="submit" class="flat-button" value="SEND"/>
+               </li>
+            </ul>
+         </form>
+      </div>
+   </div>
+   <div class="divider reach-me-wrap">
+      <h3> Follow me on the web</h3>
+      <p>Want to make me super happy?. Open an issue/merge request for a thing I'm working on :-)</p>
+      <ul class="social">
+         <li>
+            <div class="via">
+               <i class="icon-gitlab-col"></i>
+               <div class="social_content">
+                  <h4>Gitlab</h4>
+                  <a href="https://gitlab.com/dennohpeter" target="_blank">@dennohpeter</a>
+               </div>
+            </div>
+            <div class="via">
+               <i class="icon-github"></i>
+               <div class="social_content">
+                  <h4>Github</h4>
+                  <a href="https://github.com/dennohpeter" target="_blank">@dennohpeter</a>
+               </div>
+            </div>
+         </li>
+         <li>
+            <div class="via">
+               <i class="icon-mail"></i>
+               <div class="social_content">
+                  <h4>Email</h4>
+                  <a href="mailto:denispeterson96@gmail.com" target="_blank">denispeterson96@gmail.com</a>
+               </div>
+            </div>
+            <div class="via">
+               <i class="icon-devpost"></i>
+               <div class="social_content">
+                  <h4>DevPost</h4>
+                  <a href="https://devpost.com/dennohpeter" target="_blank">@dennohpeter</a>
+               </div>
+            </div>
+         </li>
+         <li>
+            <div class="via">
+               <i class="icon-twitter-col"></i>
+               <div class="social_content">
+                  <h4>Twitter</h4>
+                  <a href="https://twitter.com/PythonMafia" target="_blank">@PythonMafia</a>
+               </div>
+            </div>
+            <div class="via">
+               <i class="icon-telegram-col"></i>
+               <div class="social_content">
+                  <h4>Telegram</h4>
+                  <a href="https://t.me/dennohpeter" target="_blank">@dennohpeter</a>
+               </div>
+            </div>
+         </li>
+         <li>
+            <div class="via">
+               <i class="icon-gear"></i>
+               <div class="social_content">
+                  <h4>Codewars</h4>
+                  <a href="https://www.codewars.com/users/PythonMafia" target="_blank">@PythonMafia</a>
+               </div>
+            </div>
+            <div class="via">
+               <i class="icon-gear"></i>
+               <div class="social_content">
+                  <h4>Sololearn</h4>
+                  <a href="https://www.sololearn.com/Profile/3618381/?ref=app" target="_blank">@dennohpeter</a>
+               </div>
+            </div>
+         </li>
+      </ul>
+      <p>If you enjoy my software, artwork and want to support further development,
+         I would really appreciate a small donation. Donations help me pay for server-space, hardware, and occasionally buy me coffee.
+      </p>
+      <ul class="donate">
+         <li>
+            <div class="via">
+               <i class="icon-gift"></i>
+               <span class="donate_content">
+               <span>Paypal</span>
+               <a href="" target="_blank">Paypal.me/dennohpeter</a>
+               </span>
+            </div>
+            <div class="via">
+               <i class="icon-donate"></i>
+               <span class="donate_content">
+               <span>BTC Wallet</span>
+               <a href="https://t.me/dennohpeter" target="_blank">@dennohpeter</a>
+               </span>
+            </div>
+         </li>
+      </ul>
+   </div>
+</div>
+{% endblock %}
