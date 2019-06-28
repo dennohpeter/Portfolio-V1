@@ -1,21 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-new fullpage('#fullpage', {
-		//Navigation
-		menu: '#nav_bar #menu',
-		lockAnchors: false,
-		anchors:['home', 'about', 'resume', 'projects', 'awards', 'contact'],
-		navigation: false,
-		navigationPosition: 'right',
-		navigationTooltips: ['home', 'about', 'resume', 'projects', 'awards', 'contact'],
-		showActiveTooltip: false,
-		slidesNavigation: true,
-		slidesNavPosition: 'bottom',
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true,
-		//Accessibility
-		keyboardScrolling: true,
-		animateAnchor: true,
-		recordHistory: true,
-	});
+	preloaderCheckRequest();
 });
+  function preloaderCheckRequest() {
+
+    var preloader = document.getElementsByClassName('preloader');
+    console.log(preloader[0]);
+    // preloader[0].style.display = "block";
+
+  }
