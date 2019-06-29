@@ -75,6 +75,7 @@
 
 .icon-donate:before {
 	content: "\e902";
+	font-size: 22px;
 }
 
 .icon-gift:before {
@@ -145,10 +146,6 @@
 	cursor: pointer;
 }
 
-
-/* end of custom icons */
-
-
 /* remove default style */
 
 a {
@@ -177,7 +174,7 @@ Base styles: opinionated defaults
 html,body {
 	color: #222;
 	background-color: #FFFFFF;
-	font-size: 1em;
+	font-size: 1.0825em;
 	font-family: "Overpass";
 	font-style: normal;
 	font-weight: 300;
@@ -233,7 +230,7 @@ textarea {
 	-webkit-box-sizing: border-box;
 }
 
-/* Logo styling */
+/* ==================================================== Logo styling ==========================================  */
 
 .logo {
 	background: #070707;
@@ -249,7 +246,7 @@ textarea {
 }
 
 
-/*================================================== Nav_bar ============================================== */
+/* ================================================== Nav_bar ============================================== */
 
 #nav_bar {
 	background: #080808;
@@ -342,7 +339,7 @@ textarea {
 #nav_bar #menu li a:hover:after {
 	opacity: 1;
 }
-/*  social icons */
+/* ============================================ Social icons ============================================ */
 #nav_bar ul.social {
 	position: absolute;
 	bottom: 20px;
@@ -412,23 +409,6 @@ textarea {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 }
-
-.text-zone p a span,
-.text-zone p a {
-	color: #08fdd8;
-	text-decoration: underline;
-}
-
-.text-zone p a:hover span,
-.text-zone p a:hover {
-	color: #fff;
-}
-
-.text-zone h2 {
-	color: #fff;
-	font-size: 16px;
-}
-
 .wrapper {
 	padding-left: 60px;
 	height: 100%;
@@ -458,7 +438,6 @@ textarea {
 	perspective: 1000px;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #252627;
 }
 
 .home-page .section-wrap h1 {
@@ -553,18 +532,18 @@ textarea {
 /*================================================== PRELOADER ============================================== */
 
 .preloader {
-	position: fixed;
-	will-change: transform;
 	top: 0;
 	left: 0;
-	bottom: 0;
 	right: 0;
-	background: #252627;
+	bottom: 0;
 	z-index: 2;
-	display: none;
-	overflow: hidden;
-	height: 100%;
 	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	overflow: hidden;
+	background: #252627;
+	will-change: transform;
 }
 
 .preloader .inner {
@@ -636,40 +615,6 @@ textarea {
 	height: 100%;
 	border-right: 1px solid #000000;
 }
-
-.about .text-zone,
-.contact .text-zone {
-	position: relative;
-	text-align: left;
-	left: 0;
-	padding-left: 15px;
-	background-color: #252627;
-}
-
-.about .text-zone h1,
-.contact .text-zone h1,
-.contact .reach-me-wrap h3 {
-	font-size: 53px;
-	font-family: font-file-82132;
-	color: #08fdd8;
-	font-weight: normal;
-	padding-left: 10px;
-	position: relative;
-	text-align: left;
-}
-
-.about .text-zone p,
-.contact .text-zone p,
-.contact .reach-me-wrap p {
-	font-size: 17px;
-	line-height: 24px;
-	color: #ffffff;
-	padding: 10px;
-	font-weight: 300;
-	text-align: left;
-	background-color: #252627;
-}
-
 .about .profile {
 	left: 50%;
 	padding: 20px;
@@ -691,13 +636,18 @@ textarea {
 .awards {
 	height: 100%;
 }
-.resume, .awards {
+.text-zone {
 	text-align: left;
 	line-height: 1.8;
-	padding: 10px 40px 10px 40px;
+	padding: 10px 20px 10px 30px;
+	height: 100%;
 }
-.resume p.intro ,.awards p.intro{
-	margin: 10px 0 20px 0;
+.title {
+	display: inline-block;
+	padding: 10px 20px 10px 20px;
+}
+p.intro {
+	margin: 0 0 10px 0;
 }
 .btn {
 	display: inline-block;
@@ -1039,11 +989,6 @@ hr {
 .contact-form {
 	width: 100%;
 }
-
-.contact-form ul {
-	padding: 10px;
-}
-
 .contact-form ul li {
 	list-style: none;
 	margin-bottom: 10px;
@@ -1073,7 +1018,7 @@ hr {
 .contact-form input[type="email"] {
 	width: 100%;
 	border: 0;
-	background: #37393b;
+	background: whitesmoke;
 	height: 50px;
 	font-size: 16px;
 	color: #8d8d8d;
@@ -1084,7 +1029,7 @@ hr {
 .contact-form textarea {
 	width: 100%;
 	border: 0;
-	background: #37393b;
+	background: whitesmoke;
 	height: 50px;
 	font-size: 16px;
 	color: #8d8d8d;
@@ -1212,64 +1157,44 @@ input:focus:-ms-input-placeholder {
 
 .reach-me-wrap {
 	left: 50%;
-	background-color: #252627;
 }
 
-.contact .reach-me-wrap .social {
-	background: #091E42;
+.reach-me-wrap ul.social, ul.donate {
 	list-style: none;
 }
 
-.contact .reach-me-wrap .social li {
+.reach-me-wrap ul.social li, ul.donate li {
 	display: flex;
-	color: #3c9;
 	font-size: 18px;
 	list-style: none;
 	text-align: left;
 	border-bottom: 1px solid #e0e0e0;
 }
 
-.contact .reach-me-wrap .social .via {
+.social .via, .donate .via {
 	display: inline-block;
-	padding: 15px;
-	padding-left: 30px;
+	padding: 8px;
 	width: 50%;
 }
-
-.contact .reach-me-wrap .social li .social_content {
+.contact .via i{ 
+	font-size: 40px;
+}
+.social li .social_content, .donate_content {
 	display: inline-block;
 	margin-left: 10px;
 }
 
-.contact .reach-me-wrap .social li .social_content a {
+.social li .social_content a, .donate_content a {
 	text-decoration: none;
 	font-size: 16px;
-	color: whitesmoke;
 	display: block;
 	cursor: pointer;
 }
 
-.contact .reach-me-wrap .social li .social_content a:hover,
+.social li .social_content a:hover,
 .donate_content a:hover {
 	text-decoration: underline;
 }
-
-.donate {
-	background-color: #FFFFFF;
-	list-style: none;
-}
-
-.donate li {
-	display: flex;
-	list-style: none;
-}
-
-.donate li .via {
-	width: 50%;
-	text-align: left;
-	padding: 20px;
-}
-
 .donate .via {
 	color: orangered;
 	font-size: 18px;
@@ -1292,57 +1217,8 @@ input:focus:-ms-input-placeholder {
 	.home-page h2 {
 		font-size: 14px !important;
 	}
-	.text-zone p {
-		font-size: 16px !important;
-		line-height: 21px !important;
-	}
-	.contact .text-zone h1:before,
-	.about .text-zone h1:before {
-		margin-top: -38px;
-	}
-	.contact .text-zone h1:after,
-	.about .text-zone h1:after {
-		bottom: -44px;
-	}
 	.home-page h1 img {
 		width: 38px;
-	}
-}
-
-@media (min-width: 960px) and (max-height: 800px) {
-	.about .text-zone img {
-		display: none;
-	}
-}
-
-@media (max-width: 1024px) {
-	h1 {
-		line-height: 45px;
-	}
-	.text-page .text-zone h1:after,
-	.about .text-zone h1:after,
-	.contact .text-zone h1:after {
-		bottom: -40px;
-	}
-	.text-page .text-zone h1:before,
-	.about .text-zone h1:before,
-	.contact .text-zone h1:before {
-		margin-top: -29px;
-	}
-	.home-page .text-zone,
-	.text-page .text-zone {
-		width: 80%;
-		min-height: 0;
-	}
-	.text-page .right-col {
-		margin-top: 10px;
-		position: static !important;
-		max-height: auto;
-		float: left;
-		margin-left: 10%;
-		-webkit-transform: none !important;
-		-ms-transform: none !important;
-		transform: none !important;
 	}
 }
 
@@ -1368,17 +1244,6 @@ input:focus:-ms-input-placeholder {
 	}
 	.logo>img:first-child {
 		height: 25px;
-	}
-	.lang {
-		float: left;
-		width: auto;
-		margin-top: 0;
-		line-height: 60px;
-	}
-	.lang a {
-		margin-top: 0;
-		display: inline;
-		margin-right: 7px;
 	}
 	/* =============================== nav_bar ==================================  */
 	#nav_bar #menu {
@@ -1421,17 +1286,6 @@ input:focus:-ms-input-placeholder {
 	#nav_bar ul.social li a {
 		line-height: 60px;
 	}
-	.text-zone p,
-	.text-zone h1 {
-		padding-left: 30px
-	}
-	.text-zone h1:before,
-	.text-zone h1:after {
-		padding: 0px;
-	}
-	.text-zone h1:after {
-		margin-left: 40px;
-	}
 	.timeline {
 		padding: 5px 10px 10px 0px
 	}
@@ -1451,6 +1305,7 @@ input:focus:-ms-input-placeholder {
 	.section-wrap {
 		position: relative;
 		padding: 0;
+		background: #252627;
 	}
 	.timeline .honour .icon,
 	.timeline .honour .description {
@@ -1462,11 +1317,6 @@ input:focus:-ms-input-placeholder {
 	}
 	.about, .contact {
 		display: block;
-	}
-	.about .text-zone,
-	.contact .text-zone {
-		height: unset;
-		padding-left: 0px;
 	}
 	.about .divider,
 	.contact .divider {
@@ -1504,10 +1354,6 @@ input:focus:-ms-input-placeholder {
 	}
 	#nav_bar ul.social {
 		display: none
-	}
-	.home-page .text-zone {
-		width: 85%;
-		left: 5%;
 	}
 	.home-page h1:after {
 		display: none;
