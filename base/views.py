@@ -9,7 +9,7 @@ def home(request):
     return render(request, "index.html")
 
 @csrf_exempt
-def contact(request):
+def mail(request):
     if request.method == "POST":
         from_name = request.POST.get("name")
         from_mail = request.POST.get("email")
