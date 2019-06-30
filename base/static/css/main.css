@@ -103,6 +103,7 @@
 
 .icon-menu:before {
 	content: "\f0c9";
+	cursor: pointer;
 }
 
 .icon-twitter-col:before {
@@ -684,6 +685,10 @@ p.intro {
 .long-form-cv a {
 	text-decoration: underline;
 	color: #666;
+}
+.long-form-cv-container {
+	height: 100%;
+	margin-top: -20px;
 }
 .danger {
 	background: #fef4f6;
@@ -1356,6 +1361,9 @@ input:focus:-ms-input-placeholder {
 	}
 	.home-page h1:after {
 		display: none;
+	}
+	.section-wrap p {
+		font-size: 16px;
 	}
 	#nav_bar {
 		position: fixed;
