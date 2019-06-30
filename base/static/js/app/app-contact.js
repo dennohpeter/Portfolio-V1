@@ -15,7 +15,7 @@ submit.addEventListener('click', function(event) {
   else {
     alertify.notify(msg2, "success", 1);
     post("send_mail", contact_data,function(data) {
-      if(data == 'cool'){
+      if(data == 'sent'){
         alertify.success(msg3);
         contact_data.reset();
       }else {

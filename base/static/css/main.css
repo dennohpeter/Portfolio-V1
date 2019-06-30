@@ -5,6 +5,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
 [class^="icon-"],
 [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
@@ -147,6 +148,7 @@
 	cursor: pointer;
 }
 
+
 /* remove default style */
 
 a {
@@ -172,7 +174,8 @@ a:active {
 Base styles: opinionated defaults
 ========================================================================== */
 
-html,body {
+html,
+body {
 	color: #222;
 	background-color: #FFFFFF;
 	font-size: 1.0825em;
@@ -180,10 +183,11 @@ html,body {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.4;
-	-webkit-text-size-adjust:100%;
-	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 	height: 100%;
 }
+
 
 /*
 * Remove text-shadow in selection highlight:
@@ -230,6 +234,7 @@ textarea {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+
 
 /* ==================================================== Logo styling ==========================================  */
 
@@ -312,7 +317,9 @@ textarea {
 	transition: all 0.3s ease-out;
 }
 
+
 /* onhover words */
+
 #nav_bar #menu li:nth-child(1) a:after {
 	content: 'HOME';
 }
@@ -340,7 +347,10 @@ textarea {
 #nav_bar #menu li a:hover:after {
 	opacity: 1;
 }
+
+
 /* ============================================ Social icons ============================================ */
+
 #nav_bar ul.social {
 	position: absolute;
 	bottom: 20px;
@@ -351,9 +361,11 @@ textarea {
 	text-align: center;
 	margin: 0;
 }
+
 #nav_bar ul.social li {
 	list-style: none;
 }
+
 #nav_bar ul.social li a {
 	padding: 7px 0;
 	display: block;
@@ -374,6 +386,7 @@ textarea {
 #mobile-link:hover {
 	color: #08fdd8
 }
+
 
 /* ================================ end of social icons styling  ============ */
 
@@ -410,6 +423,7 @@ textarea {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 }
+
 .wrapper {
 	padding-left: 60px;
 	height: 100%;
@@ -418,9 +432,11 @@ textarea {
 
 
 /*================================================== HOME PAGE ============================================== */
+
 .home-page {
 	height: 100%;
 }
+
 .home-page .flat-button:hover {
 	background: #08fdd8;
 	color: #252627;
@@ -529,75 +545,6 @@ textarea {
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 	font-size: 18px;
 }
-/*================================================== PRELOADER ============================================== */
-
-.preloader {
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	display: none;
-	position: fixed;
-	overflow: hidden;
-	background: #252627;
-	will-change: transform;
-}
-
-.preloader .inner {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	width: 400px;
-	max-width: 100%;
-	height: 160px;
-	text-align: center;
-}
-
-.preloader .inner>img {
-	display: block;
-	margin: 0 auto;
-}
-
-.preloader .inner>span {
-	color: #8d8d8d;
-	margin-top: 9px;
-	font-size: 12px;
-	font-family: "Open Sans", sans-serif;
-	letter-spacing: 3px;
-	margin-bottom: 30px;
-	display: block;
-}
-
-.preloader .progress-bar {
-	text-align: left;
-}
-
-.preloader .progress-bar_bg {
-	height: 1px;
-	background: #047765;
-}
-
-.preloader .progress-bar_bg div {
-	height: 1px;
-	background: #08fdd8;
-	width: 0;
-}
-
-.preloader .progress-bar span {
-	color: #fff;
-	text-align: right;
-	float: left;
-	font-size: 27px;
-	font-family: font-file-82132;
-	margin-bottom: 10px;
-	display: block;
-}
 
 
 /*================================================== ABOUT ============================================== */
@@ -613,6 +560,7 @@ textarea {
 	width: 50%;
 	border-right: 1px solid #000000;
 }
+
 .about .profile {
 	left: 50%;
 	padding: 20px;
@@ -630,23 +578,28 @@ textarea {
 
 
 /* ================================================== resume ============================================== */
+
 .resume,
 .projects,
 .awards {
 	height: 100%;
 }
+
 .text-zone {
 	text-align: left;
 	line-height: 1.8;
 	padding: 10px 20px 10px 30px;
 }
+
 .title {
 	display: inline-block;
 	padding: 10px 20px 10px 20px;
 }
+
 p.intro {
 	margin: 0 0 10px 0;
 }
+
 .btn {
 	display: inline-block;
 	font-weight: 400;
@@ -661,19 +614,22 @@ p.intro {
 	font-size: 1rem;
 	line-height: 1.5;
 	border-radius: .25rem;
-	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 .btn-outline-dark {
 	color: #343a40;
 	background-color: transparent;
 	background-image: none;
 	border-color: #343a40;
 }
+
 .btn-outline-dark:hover {
 	color: #fff;
 	background-color: #343a40;
 	border-color: #343a40;
 }
+
 .long-form-cv {
 	position: relative;
 	font-weight: 600;
@@ -682,34 +638,44 @@ p.intro {
 	background: #f8f8f8;
 	color: #666;
 }
+
 .long-form-cv a {
 	text-decoration: underline;
 	color: #666;
 }
+
 .long-form-cv-container {
 	height: 100%;
 	margin-top: -20px;
 }
+
 .danger {
 	background: #fef4f6;
 	color: #f0506e;
 }
+
+
 /*================================================== PROJECTS ============================================== */
+
 .container {
 	margin-right: auto;
 	margin-left: auto
 }
+
 .row {
 	width: 100%;
 }
+
 .categories {
 	height: 58px;
 }
+
 .categories .tab {
 	float: right;
 	padding: 5px;
 }
-.categories .tab button{
+
+.categories .tab button {
 	background-color: inherit;
 	float: left;
 	border: 1px solid #ccc;
@@ -720,9 +686,11 @@ p.intro {
 	font-size: 18px;
 	font-weight: lighter;
 }
+
 .categories .tab button:hover {
 	background-color: #ddd;
 }
+
 .categories .tab button.active {
 	background-color: #ccc;
 }
@@ -778,6 +746,7 @@ p.intro {
 		float: left;
 	}
 }
+
 .project-card {
 	border: 1px solid #d8d8d8;
 	margin-bottom: 20px;
@@ -991,6 +960,7 @@ hr {
 .contact-form {
 	width: 100%;
 }
+
 .contact-form ul li {
 	list-style: none;
 	margin-bottom: 10px;
@@ -1161,11 +1131,13 @@ input:focus:-ms-input-placeholder {
 	left: 50%;
 }
 
-.reach-me-wrap ul.social, ul.donate {
+.reach-me-wrap ul.social,
+ul.donate {
 	list-style: none;
 }
 
-.reach-me-wrap ul.social li, ul.donate li {
+.reach-me-wrap ul.social li,
+ul.donate li {
 	display: flex;
 	font-size: 18px;
 	list-style: none;
@@ -1173,20 +1145,25 @@ input:focus:-ms-input-placeholder {
 	border-bottom: 1px solid #e0e0e0;
 }
 
-.social .via, .donate .via {
+.social .via,
+.donate .via {
 	display: inline-block;
 	padding: 8px;
 	width: 50%;
 }
-.contact .via i{ 
+
+.contact .via i {
 	font-size: 40px;
 }
-.social li .social_content, .donate_content {
+
+.social li .social_content,
+.donate_content {
 	display: inline-block;
 	margin-left: 10px;
 }
 
-.social li .social_content a, .donate_content a {
+.social li .social_content a,
+.donate_content a {
 	text-decoration: none;
 	font-size: 16px;
 	display: block;
@@ -1197,6 +1174,7 @@ input:focus:-ms-input-placeholder {
 .donate_content a:hover {
 	text-decoration: underline;
 }
+
 .donate .via {
 	color: orangered;
 	font-size: 18px;
@@ -1204,7 +1182,7 @@ input:focus:-ms-input-placeholder {
 }
 
 
-/* ========================================================================================= */
+/*================================================== PRELOADER ============================================== */
 
 
 /***
@@ -1228,6 +1206,10 @@ input:focus:-ms-input-placeholder {
 	.wrapper {
 		padding-left: 0px;
 		padding-top: 60px;
+	}
+	.wrap-loader {
+		left: 0px;
+		top: 60px;
 	}
 	#nav_bar {
 		width: 100%;
@@ -1312,7 +1294,8 @@ input:focus:-ms-input-placeholder {
 	.timeline .honour .description {
 		padding-left: 20px;
 	}
-	.about, .contact {
+	.about,
+	.contact {
 		display: block;
 	}
 	.about .divider,
@@ -1322,7 +1305,6 @@ input:focus:-ms-input-placeholder {
 		left: unset;
 		position: unset;
 	}
-
 }
 
 @media (max-width: 625px) {
@@ -1340,8 +1322,8 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 530px) {
-	.preloader .inner {
-		width: 80%;
+	.long-form-cv-container {
+		height: unset;
 	}
 	#mobile-link {
 		font-size: 30px;
@@ -1403,9 +1385,6 @@ input:focus:-ms-input-placeholder {
 	.contact-form ul li.half {
 		width: 100%;
 		margin-left: 0;
-	}
-	.preloader .inner {
-		top: 20px;
 	}
 }
 

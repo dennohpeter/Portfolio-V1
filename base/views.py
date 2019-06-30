@@ -19,7 +19,7 @@ def mail(request):
         message_body = "\n Subject: {0}\n Name: {1}\n Email: {2}\n Message: {3}".format(subject, from_name, from_mail,message)
         to_mail = [settings.DEFAULT_TO_EMAIL]
         send_mail(subject, message_body, from_mail, to_mail, fail_silently=False)
-    return HttpResponse("cool")
+    return HttpResponse("sent")
 def about(request):
     return render(request, "about.html")
 

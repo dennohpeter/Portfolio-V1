@@ -93,32 +93,9 @@
          {% block content %}
          {% endblock %}
       </div>
-      <div class="preloader">
-         <div class="inner">
-            <img src="{% static 'img/logopreload.png' %}"
-            alt="WebGuru"/>
-            <span>
-               Dennis is thinking
-            </span>
-            <div class="progress-bar">
-               <div class="progress-bar_bg">
-                  <div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <script>
-      function show_menu() {
-      var element = document.querySelector('#nav_bar #menu');
-      element.classList.toggle('show');
-      
-      }
-      
-      </script>
       <!--javascript files  -->
       <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
-      <script src="{% static 'js/app/app-contact.js' %}"></script>
+      {% block contact %} {% endblock %}
       <script src="{% static 'js/main.js' %}"></script>
    </body>
 </html>
