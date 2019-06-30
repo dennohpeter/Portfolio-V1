@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /contact/send_mail/
+Disallow: /static/

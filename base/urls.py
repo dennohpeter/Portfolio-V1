@@ -1,4 +1,6 @@
 from django.conf.urls import url
+from django.views.generic import TemplateView
+
 from . import views
 
 urlpatterns = [
@@ -10,4 +12,5 @@ urlpatterns = [
     url(r'^awards/$', views.awards, name='awards'),
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^contact/send_mail$', views.mail, name='mail'),
+    url(r'^robots\.txt$', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
 ]

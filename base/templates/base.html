@@ -17,7 +17,7 @@
       <meta name="robots" content="noodp">
       <meta name="description" {% block description %} content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %}/>
       <link rel="icon" type="image/png" href="{% static 'fav/transparentme.png' %}">
-      <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/main.min.css' %}">
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css"/>
       <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Overpass:300,300i,400,400i,700,700i" rel="stylesheet">
       <script>
@@ -96,6 +96,6 @@
       <!--javascript files  -->
       <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
       {% block contact %} {% endblock %}
-      <script src="{% static 'js/main.js' %}"></script>
+      <script src="{% static 'js/main.min.js' %}"></script>
    </body>
 </html>
