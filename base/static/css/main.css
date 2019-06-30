@@ -590,10 +590,6 @@ textarea {
 	line-height: 1.8;
 	padding: 10px 20px 10px 30px;
 }
-
-.title {
-	padding: 10px 20px 10px 20px;
-}
 .color {
 	display: inline-block;
 	background-size: 120% 100%;
@@ -671,7 +667,8 @@ p.intro {
 
 .container {
 	margin-right: auto;
-	margin-left: auto
+	margin-left: auto;
+	padding: 10px;
 }
 
 .row {
@@ -681,7 +678,9 @@ p.intro {
 .categories {
 	height: 58px;
 }
-
+.title {
+	padding: 0 10px 0 15px;
+}
 .categories .tab {
 	float: right;
 	padding: 5px;
@@ -1280,6 +1279,9 @@ ul.donate li {
 		padding: 0;
 		/*background: #252627;*/
 		background: url(../img/bjbjbj.jpg);
+	}
+	.title {
+	padding: 0 10px 0 0;
 	}
 	.timeline .honour .icon,
 	.timeline .honour .description {
