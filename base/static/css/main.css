@@ -797,28 +797,6 @@ p.intro {
 	width: 100%
 }
 
-.project-card .card-image-overlay {
-	bottom: 0;
-	left: 0;
-	opacity: 0;
-	overflow: hidden;
-	padding: 15px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transition: all .15s ease;
-	visibility: hidden;
-	font-size: 14px;
-	line-height: 18px
-}
-
-.project-card:hover .card-image-overlay {
-	background-color: rgba(255, 255, 255, .95);
-	color: #4a4a4a;
-	opacity: 1;
-	visibility: visible
-}
-
 .project-card .card-body {
 	display: -webkit-flex;
 	display: flex;
@@ -1331,6 +1309,9 @@ ul.donate li {
 	#nav_bar #menu li a {
 		transition: 0.3s;
 		margin-left: 6.2%;
+	}
+	.temporary {
+		width: 100%;
 	}
 }
 
