@@ -20,124 +20,38 @@
          </div>
       </div>
       <div class="row equal-columns">
-         <div class="mobile-scroll-row-item project-thumb-container col-sm-6 col-md-4 col-lg-3" data-offset="0" data-ref="tag" data-ref-id="python">
+         {% for project in projects %}
+         <div class="mobile-scroll-row-item project-thumb-container col-sm-6 col-md-4 col-lg-3" data-offset="0" data-ref="tag" data-ref-id="{{ project.category }}">
             <div class="project-card">
-               <a class="card-image" href="" title="Betting website with the most accurate games">
+               <div class="card-image">
                   <div class="img-container">
-                     <img alt="The Belters" src="{% static 'projects/2018/the-belters.png' %}" width="400" height="300" class="img-loader loaded">
+                     <img alt="{{ project.name }}" src="../static/{{ project.img_url }}" width="400" height="300" class="img-loader loaded">
                   </div>
-               </a>
+               </div>
                <div class="card-body">
-                  <span>The Belters</span>
+                  <span class="project_name">{{ project.name }}</span>
                   <h4>
-                     <a class="" href="https://thebelters.herokuapp.com" target="_blank">
-                     Betting website with the most accurate games
-                     </a>
+                     <span>
+                     {{ project.description }}
+                     </span>
                   </h4>
                </div>
                <div class="card-bottom">
                   <div class="stats">
                      <span class="stat">
-                     <i class="icon-like">808</i>
+                     <i class="icon-like">{{ project.likes }}</i>
                      </span>
                      <span class="stat">
-                     <i class="icon-eye">808</i>
+                     <i class="icon-eye">{{ project.views }}</i>
                      </span>
                   </div>
-                  <div class="project-difficulty">
-                     <i class="icon-bookmark">808</i>
+                  <div class="project-more-info">
+                     <a href="#" class="see_more">SEE PROJECT</a>
                   </div>
                </div>
             </div>
          </div>
-         <div class="mobile-scroll-row-item project-thumb-container col-sm-6 col-md-4 col-lg-3" data-offset="0" data-ref="tag" data-ref-id="python">
-            <div class="project-card">
-               <a class="card-image" href="https://hairways.herokuapp.com/" title="Best salon booking website out there">
-                  <div class="img-container">
-                     <img alt="The Belters" src="{% static 'projects/2018/hairwars.jpg' %}" width="400" height="300" class="img-loader loaded">
-                  </div>
-               </a>
-               <div class="card-body">
-                  <span>Hairways</span>
-                  <h4>
-                     <a class="" href="https://hairways.herokuapp.com/" target="_blank">
-                     Best salon booking website out there, Everything done right.
-                     </a>
-                  </h4>
-               </div>
-               <div class="card-bottom">
-                  <div class="stats">
-                     <span class="stat">
-                     <i class="icon-like">808</i>
-                     </span>
-                     <span class="stat">
-                     <i class="icon-eye">808</i>
-                     </span>
-                  </div>
-                  <div class="project-difficulty">
-                     <i class="icon-bookmark">808</i>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="mobile-scroll-row-item project-thumb-container col-sm-6 col-md-4 col-lg-3" data-offset="0" data-ref="tag" data-ref-id="python">
-            <div class="project-card">
-               <a class="card-image" href="" title="Betting website with the most accurate games">
-                  <div class="img-container">
-                     <img alt="The Belters" src="https://hackster.imgix.net/uploads/attachments/914904/project_O0KTttMGol.png?auto=compress%2Cformat&w=400&h=300&fit=min" class="img-loader loaded">
-                  </div>
-               </a>
-               <div class="card-body">
-                  <h4>
-                     <a class="" href="https://dennohpeter.github.io/EnterLogiesGames/" target="_blank">
-                     Betting website with the most accurate games
-                     </a>
-                  </h4>
-               </div>
-               <div class="card-bottom">
-                  <div class="stats">
-                     <span class="stat">
-                     <i class="icon-like">808</i>
-                     </span>
-                     <span class="stat">
-                     <i class="icon-eye">808</i>
-                     </span>
-                  </div>
-                  <div class="project-difficulty">
-                     <i class="icon-bookmark">808</i>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="mobile-scroll-row-item project-thumb-container col-sm-6 col-md-4 col-lg-3" data-offset="0" data-ref="tag" data-ref-id="python">
-            <div class="project-card">
-               <a class="card-image" href="" title="Betting website with the most accurate games">
-                  <div class="img-container">
-                     <img alt="Processing with PYNQ & OpenMV Cam" src="https://hackster.imgix.net/uploads/attachments/905401/20190525_192831_fuuYqq3f2Y.jpg?auto=compress%2Cformat&w=900&h=675&fit=min" class="img-loader loaded">
-                  </div>
-               </a>
-               <div class="card-body">
-                  <h4>
-                     <a class="" href="#" target="_blank">
-                     Accelerating Image Processing with PYNQ & OpenMV Cam
-                     </a>
-                  </h4>
-               </div>
-               <div class="card-bottom">
-                  <div class="stats">
-                     <span class="stat">
-                     <i class="icon-like">808</i>
-                     </span>
-                     <span class="stat">
-                     <i class="icon-eye">808</i>
-                     </span>
-                  </div>
-                  <div class="project-difficulty">
-                     <i class="icon-bookmark">808</i>
-                  </div>
-               </div>
-            </div>
-         </div>
+         {% endfor %}
       </div>
    </div>
 </div>

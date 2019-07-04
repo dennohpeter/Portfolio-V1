@@ -44,6 +44,7 @@
 .icon-eye:before {
 	content: "\e90b";
 	font-size: 27px;
+	cursor: pointer;
 }
 
 .icon-award:before {
@@ -154,6 +155,7 @@
 a {
 	color: #444;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {
@@ -821,6 +823,9 @@ p.intro {
 	font-size: 15px;
 	line-height: 21px
 }
+.project-card .card-body .project_name {
+	text-transform: uppercase;
+}
 
 .project-card .card-body h4 a {
 	color: #333
@@ -883,7 +888,7 @@ p.intro {
 	margin-left: 12px
 }
 
-.project-card .project-difficulty {
+.project-card .project-more-info {
 	-webkit-justify-content: flex-end;
 	justify-content: flex-end;
 	-webkit-align-items: center;
@@ -891,9 +896,17 @@ p.intro {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex: 1;
-	flex: 1
+	flex: 1;
+    padding: 0 30px;
+    font-size: .875rem;
+    line-height: 38px;
+    text-transform: uppercase;
 }
-
+.project-card .project-more-info .see_more:hover{
+	color: #333;
+    border-bottom: 1px solid #333;
+    transition: .3s ease-out;
+}
 
 /*================================================== AWARDS ============================================== */
 
@@ -1156,7 +1169,6 @@ ul.donate li {
 	text-decoration: none;
 	font-size: 16px;
 	display: block;
-	cursor: pointer;
 }
 
 .social li .social_content a:hover,
