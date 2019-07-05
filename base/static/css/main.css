@@ -557,9 +557,10 @@ textarea {
 	justify-content: space-between;
 }
 
-.about .divider,
-.contact .divider {
+.divider {
 	width: 50%;
+}
+.divider:not(:last-child) {
 	border-right: 1px solid #000000;
 }
 
@@ -567,7 +568,7 @@ textarea {
 	left: 50%;
 	padding: 20px;
 	height: 100vh;
-	background-color: whitesmoke;
+	background-color: #252627;
 }
 
 .about .profile .og-img {
@@ -897,7 +898,7 @@ p.intro {
 	display: flex;
 	-webkit-flex: 1;
 	flex: 1;
-    padding: 0 30px;
+    padding: 0 5px;
     font-size: .875rem;
     line-height: 38px;
     text-transform: uppercase;
@@ -958,7 +959,12 @@ hr {
 
 
 /*================================================== CONTACT ============================================== */
-
+.contact_theme {
+	background-color: #252627;
+}
+.contact .contact_theme p.intro {
+	color: #FFFFFF;
+}
 .contact-form {
 	width: 100%;
 }
@@ -992,7 +998,7 @@ hr {
 .contact-form input[type="email"] {
 	width: 100%;
 	border: 0;
-	background: whitesmoke;
+	background: #37393b;
 	height: 50px;
 	font-size: 16px;
 	color: #8d8d8d;
@@ -1003,17 +1009,18 @@ hr {
 .contact-form textarea {
 	width: 100%;
 	border: 0;
-	background: whitesmoke;
+	background: #37393b;
 	height: 50px;
 	font-size: 16px;
 	color: #8d8d8d;
 	padding: 20px;
 	box-sizing: border-box;
-	min-height: 150px;
+	min-height: 200px;
 }
 
 .contact-form .flat-button {
 	color: #08fdd8;
+	cursor: pointer;
 	font-size: 14px;
 	letter-spacing: 3px;
 	font-family: "Open Sans", sans-serif;
@@ -1026,7 +1033,7 @@ hr {
 	text-transform: uppercase;
 	float: right;
 	text-align: center;
-	margin-right: 10px;
+	margin-right: 10px;	
 }
 
 .contact-form .flat-button:hover {
@@ -1394,6 +1401,9 @@ ul.donate li {
 	.contact-form ul li.half {
 		width: 100%;
 		margin-left: 0;
+	}
+	.contact-form textarea {
+		min-height: 150px;
 	}
 }
 
