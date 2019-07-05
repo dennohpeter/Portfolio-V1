@@ -589,7 +589,7 @@ textarea {
 }
 
 .text-zone {
-	text-align: left;
+	text-align: justify;
 	line-height: 1.8;
 	padding: 10px 20px 10px 30px;
 }
