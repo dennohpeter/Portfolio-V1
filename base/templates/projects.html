@@ -32,7 +32,7 @@
 						<div class="project-card">
 							<div class="card-image">
 								<div class="img-container">
-									<img alt="{{ project.name }}" src="../static/{{ project.img_url }}" width="400" height="300" class="img-loader loaded">
+									<img alt="{{ project.name }}" src="../static/{{ project.img_url }}" >
 								</div>
 							</div>
 							<div class="card-body">
@@ -80,7 +80,7 @@
 		event.currentTarget.className += " active";
 	}
 	document.addEventListener("DOMContentLoaded", function() {
-		document.getElementsByClassName("tablinks")[0].click()
+		document.getElementsByClassName("tablinks")[0].click();
 	});
 	</script>
 {% endblock %}
