@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %} {{ project.name }} {% endblock %}
+{% block canonical %} href="https://dennispeter.org/{{ project.name }}" {% endblock %}
+{% block ogtype %} content="website" {% endblock %}
+{% block ogtitle %} content="{{ project.name }}" {% endblock %}
+{% block ogdescription %} content="{{ project.name }}" {% endblock %}
+{% block ogurl %} content="https://dennispeter.org/{{ project.name }}" {% endblock %}
+{% block description %} content="{{ project.description }}" {% endblock %}
+{% block content %}
+<div class="container">
+	<div class="image-holder">
+		<div>
+			<img src="../../static/projects/{{ project.img_url }}" alt="{{ project.name }} preview">
+		</div>
+	</div>
+	<h4>What is this?</h4>
+	<p>{{ project.description }}</p>
+	<p>{{ project.more_info }}</p>
+	<pre>
+	<code>
+	cd {{ project.url }}
+	git clone https://github.com/dennohpeter/{{ project.url }}.git
+	</code>
+	</pre>
+	<h4>Installation</h4>
+	<p>{{ project.more_info }}</p>
+	<pre>
+	<code>
+	./configure
+	</code>
+	</pre>
+
+	<h4>Credits</h4>
+	<p>{{ project.more_info }}</p>
+
+	<h4>Licence</h4>
+	<p>{{ project.name }} is free software released under the MIT license.See
+	<a href="https://github.com/dennohpeter/{{ project.url }}/master/LICENSE" target="_blank">
+	LICENSE</a> for details.
+	</p>
+</div>
+{% endblock %}

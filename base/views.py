@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 from django.conf import settings
@@ -34,9 +34,11 @@ def resume(request):
 
 def projects(request):
     projects = Projects.objects.all().order_by('-created_date')
-    return render(request, "projects.html", {"projects": projects})
+    return render(request, "projects/index.html", {"projects": projects})
 
-
+def project_details(request, name):
+    project = get_object_or_404(Projects, url=name)
+    return render(request, "projects/show.html", {"project": project})
 def awards(request):
     return render(request, "awards.html")
 

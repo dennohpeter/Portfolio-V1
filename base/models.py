@@ -3,6 +3,7 @@ from django.utils import timezone
 
 class Projects(models.Model):
 	name = models.CharField(max_length=40)
+	url = models.CharField(max_length=40)
 	category = models.CharField(max_length=40)
 	description = models.CharField(max_length=100)
 	more_info = models.TextField()

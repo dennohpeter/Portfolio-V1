@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block title %} Projects | Dennis Peterson {% endblock %}
-{% block canonical %} href="/projects/" {% endblock %}
+{% block canonical %} href="https://dennispeter.org/projects" {% endblock %}
 {% block ogtype %} content="website" {% endblock %}
 {% block ogtitle %} content="Projects | Dennis Peterson" {% endblock %}
 {% block ogdescription %} content="Projects | Dennis Peterson" {% endblock %}
-{% block ogurl %} content="https://dennispeter.org/" {% endblock %}
+{% block ogurl %} content="https://dennispeter.org/projects" {% endblock %}
 {% block description %} content="Projects | Dennis Peterson" {% endblock %}
 {% block content %}
 	<div class="projects">
@@ -32,7 +32,7 @@
 						<div class="project-card">
 							<div class="card-image">
 								<div class="img-container">
-									<img alt="{{ project.name }}" src="../static/{{ project.img_url }}" >
+									<img alt="{{ project.name }}" src="../static/projects/{{ project.img_url }}" >
 								</div>
 							</div>
 							<div class="card-body">
@@ -53,7 +53,7 @@
 									</span>
 								</div>
 								<div class="project-more-info">
-									<a href="#" class="see_more">SEE PROJECT</a>
+									<a href="{% url  'project_details' name=project.url %}" class="see_more">SEE PROJECT</a>
 								</div>
 							</div>
 						</div>
