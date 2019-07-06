@@ -13,11 +13,11 @@
 			<div class="row categories">
 				<h1 class="title color">Projects</h1>
 				<div class="tab">
-					<select name="" id="">
-					<option class="tablinks" onclick="toggleTab(event, 'tabcontent')">All Projects</option>
-					<option class="tablinks" onclick="toggleTab(event, 'fun')">For Fun</option>
-					<option class="tablinks" onclick="toggleTab(event, 'profit')">For Profit</option>
-					<option class="tablinks" onclick="toggleTab(event, 'wip')">WIP</option>
+					<select name="" id="" onchange="toggleTab(event, this.options[this.selectedIndex].value)">
+					<option class="tablinks" value="tabcontent">All Projects</option>
+					<option class="tablinks" value="fun">For Fun</option>
+					<option class="tablinks" value="profit">For Profit</option>
+					<option class="tablinks" value="wip">WIP</option>
 					</select>
 
 					<button class="tablinks" onclick="toggleTab(event, 'tabcontent')">All Projects</button>
@@ -80,7 +80,7 @@
 		event.currentTarget.className += " active";
 	}
 	document.addEventListener("DOMContentLoaded", function() {
-		document.getElementsByClassName("tablinks")[0].click();
+		document.querySelector("button.tablinks").click();
 	});
 	</script>
 {% endblock %}
