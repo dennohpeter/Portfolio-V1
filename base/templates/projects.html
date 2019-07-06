@@ -8,51 +8,72 @@
 {% block ogurl %} content="https://dennispeter.org/" {% endblock %}
 {% block description %} content="Projects | Dennis Peterson" {% endblock %}
 {% block content %}
-<div class="projects">
-   <div class="container">
-      <div class="row categories">
-         <h1 class="title color">Projects</h1>
-         <div class="tab">
-            <button>All Projects</button>
-            <button>For Fun</button>
-            <button>For Profit</button>
-            <button>WIP</button>
-         </div>
-      </div>
-      <div class="row equal-columns">
-         {% for project in projects %}
-         <div class="mobile-scroll-row-item project-thumb-container col-sm-6 col-md-4 col-lg-3" data-offset="0" data-ref="tag" data-ref-id="{{ project.category }}">
-            <div class="project-card">
-               <div class="card-image">
-                  <div class="img-container">
-                     <img alt="{{ project.name }}" src="../static/{{ project.img_url }}" width="400" height="300" class="img-loader loaded">
-                  </div>
-               </div>
-               <div class="card-body">
-                  <span class="project_name">{{ project.name }}</span>
-                  <h4>
-                     <span>
-                     {{ project.description }}
-                     </span>
-                  </h4>
-               </div>
-               <div class="card-bottom">
-                  <div class="stats">
-                     <span class="stat">
-                     <i class="icon-like">{{ project.likes }}</i>
-                     </span>
-                     <span class="stat">
-                     <i class="icon-eye">{{ project.views }}</i>
-                     </span>
-                  </div>
-                  <div class="project-more-info">
-                     <a href="#" class="see_more">SEE PROJECT</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         {% endfor %}
-      </div>
-   </div>
-</div>
+	<div class="projects">
+		<div class="container">
+			<div class="row categories">
+				<h1 class="title color">Projects</h1>
+				<div class="tab">
+					<button class="tablinks" onclick="toggleTab(event, 'tabcontent')">All Projects</button>
+					<button class="tablinks" onclick="toggleTab(event, 'fun')">For Fun</button>
+					<button class="tablinks" onclick="toggleTab(event, 'profit')">For Profit</button>
+					<button class="tablinks" onclick="toggleTab(event, 'wip')">WIP</button>
+				</div>
+			</div>
+			<div class="row equal-columns">
+				{% for project in projects %}
+					<div class="tabcontent project-thumb-container col-sm-6 col-md-4 col-lg-3 {{ project.category }}" data-offset="0" data-ref="tag" data-ref-id="{{ project.category }}">
+						<div class="project-card">
+							<div class="card-image">
+								<div class="img-container">
+									<img alt="{{ project.name }}" src="../static/{{ project.img_url }}" width="400" height="300" class="img-loader loaded">
+								</div>
+							</div>
+							<div class="card-body">
+								<span class="project_name">{{ project.name }}</span>
+								<h4>
+								<span>
+									{{ project.description }}
+								</span>
+								</h4>
+							</div>
+							<div class="card-bottom">
+								<div class="stats">
+									<span class="stat">
+										<i class="icon-like">{{ project.likes }}</i>
+									</span>
+									<span class="stat">
+										<i class="icon-eye">{{ project.views }}</i>
+									</span>
+								</div>
+								<div class="project-more-info">
+									<a href="#" class="see_more">SEE PROJECT</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<script>
+	function toggleTab(event, category) {
+		var categories = document.getElementsByClassName("tabcontent");
+		for (var i = 0; i < categories.length; i++) {
+			if(categories[i].classList.contains(category)){
+				categories[i].style.display = "flex";
+			}
+			else {
+				categories[i].style.display = "none";
+			}
+		}
+		var tablinks = document.getElementsByClassName("tablinks");
+		for (var i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		event.currentTarget.className += " active";
+	}
+	document.addEventListener("DOMContentLoaded", function() {
+		document.getElementsByClassName("tablinks")[0].click()
+	});
+	</script>
 {% endblock %}

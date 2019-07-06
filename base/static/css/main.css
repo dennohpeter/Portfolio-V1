@@ -713,6 +713,9 @@ p.intro {
 	padding: 20px 0 20px 0;
 }
 
+.project-thumb-container {
+	display: none;
+}
 .col-sm-6 .col-md-4 .col-lg-3 {
 	position: relative;
 	min-height: 1px;
@@ -729,7 +732,7 @@ p.intro {
 	}
 	.equal-columns>[class*=col-] {
 		display: -webkit-flex;
-		display: flex;
+		display: none;
 		-webkit-flex-direction: column;
 		flex-direction: column
 	}
