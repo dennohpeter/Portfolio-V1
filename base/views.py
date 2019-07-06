@@ -33,7 +33,7 @@ def resume(request):
 
 
 def projects(request):
-    projects = Projects.objects.all()
+    projects = Projects.objects.all().order_by('-created_date')
     return render(request, "projects.html", {"projects": projects})
 
 
