@@ -13,7 +13,7 @@ class Projects(models.Model):
 	img_url = models.CharField(max_length=150)
 	created_date = models.DateTimeField(default=timezone.now)
 	installation = models.CharField(max_length=200)
-	credits = models.CharField(max_length=200)
+	credits = models.TextField()
 	license = models.CharField(max_length=200)
 
 	def __str__(self):
