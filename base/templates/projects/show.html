@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %} {{ project.name }} {% endblock %}
+{% block title %} {{ project.name }} | {{ project.intro }} {% endblock %}
 {% block canonical %} href="https://dennispeter.org/{{ project.name }}" {% endblock %}
 {% block ogtype %} content="website" {% endblock %}
-{% block ogtitle %} content="{{ project.name }}" {% endblock %}
-{% block ogdescription %} content="{{ project.name }}" {% endblock %}
+{% block ogtitle %} content="{{ project.name }} | {{ project.intro }}" {% endblock %}
+{% block ogdescription %} content="{{ project.name }} | {{ project.intro }}" {% endblock %}
 {% block ogurl %} content="https://dennispeter.org/{{ project.name }}" {% endblock %}
-{% block description %} content="{{ project.description }}" {% endblock %}
+{% block description %} content="{{ project.description }} | {{ project.intro }}" {% endblock %}
 {% block content %}
 <div class="project-preview">
 	<div class="preview_card">
@@ -25,17 +25,18 @@
 	<h2>What is this?</h2>
 	<p><code>{{ project.name }}</code> {{ project.description }}</p>
 	<p>{{ project.more_info }}</p>
-	<pre><code>cd {{ project.url }}<br>git clone https://github.com/dennohpeter/{{ project.url }}.git</code></pre>
+	<pre><code>cd {{ project.link }}<br>git clone https://github.com/dennohpeter/{{ project.link }}.git</code></pre>
+
 	<h2>Installation</h2>
-	<p>{{ project.more_info }}</p>
+	<p>{{ project.installation }}</p>
 	<pre><code> ./configure</code></pre>
 
 	<h2>Credits</h2>
-	<p>{{ project.more_info }}</p>
+	<p>{{ project.credits }}</p>
 
 	<h2>Licence</h2>
 	<p>{{ project.name }} is free software released under the MIT license. See
-	<a href="https://github.com/dennohpeter/{{ project.url }}/master/LICENSE" target="_blank" class="link-blue">
+	<a href="https://github.com/dennohpeter/{{ project.link }}/master/LICENSE" target="_blank" class="link-blue">
 	LICENSE</a> for more details.
 	</p>
 	<br>
