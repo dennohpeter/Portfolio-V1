@@ -9,10 +9,17 @@
 {% block ogurl %} content="https://dennispeter.org/{{ project.name }}" {% endblock %}
 {% block description %} content="{{ project.description }}" {% endblock %}
 {% block content %}
-<div class="container">
-	<div class="image-holder">
-		<div>
-			<img src="../../static/projects/{{ project.img_url }}" alt="{{ project.name }} preview">
+<div class="project-preview">
+	<div class="preview_card">
+		<div class="card-top">
+			<img class="align-center" src="../../static/projects/{{ project.img_url }}" alt="{{ project.name }} preview">
+		</div>
+		<div class="card-body">
+			<h1>{{ project.name }} — {{ project.description }}</h1>
+			<hr>
+			<a href=""><i class="icon-github small-right"></i>Github</a>
+			<a href=""><i class="icon-download small-right"></i>Releases</a>
+			<a href=""><i class="icon-github small-right"></i>OpenDesktop</a>
 		</div>
 	</div>
 	<h4>What is this?</h4>
