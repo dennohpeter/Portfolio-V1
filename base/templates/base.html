@@ -37,32 +37,32 @@
             <span style="color: #ffffff; padding-left: 8px; letter-spacing: 2px; font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;">Dennis</span>
          </a>
          <ul id="menu" class="en">
-            <li data-menuanchor="home" class="active">
-               <a rel="index" href="{% url 'home' %}" class="home-link" arial-label="home">
+            <li data-menuanchor="home" class="{% if request.path == '/' %}active{% endif %}">
+               <a rel="index" href="{% url 'home' %}" arial-label="home">
                   <i class="icon-home"></i>
                </a>
             </li>
-            <li data-menuanchor="about">
-               <a rel="about" href="{% url 'about' %}" class="" arial-label="about">
+            <li data-menuanchor="about" class="{% if request.path == '/about/' %}active{% endif %}">
+               <a rel="about" href="{% url 'about' %}" arial-label="about">
                   <i class="icon-prof"></i>
                </a>
             </li>
-            <li data-menuanchor="resume">
-               <a rel="resume" href="{% url 'resume' %}" class="" arial-label="resume">
+            <li data-menuanchor="resume" class="{% if request.path == '/resume/' %}active{% endif %}">
+               <a rel="resume" href="{% url 'resume' %}" arial-label="resume">
                   <i class="icon-resume"></i>
                </a>
             </li>
-            <li data-menuanchor="projects">
-               <a rel="projects" href="{% url 'projects' %}" class="" arial-label="projects">
+            <li data-menuanchor="projects" class="{% if '/projects/' in request.path %}active{% endif %}">
+               <a rel="projects" href="{% url 'projects' %}" arial-label="projects">
                   <i class="icon-activity"></i>
                </a>
             </li>
-            <li data-menuanchor="awards">
-               <a rel="awards" href="{% url 'awards' %}" class="" arial-label="awards">
+            <li data-menuanchor="awards" class="{% if request.path == '/awards/' %}active{% endif %}">
+               <a rel="awards" href="{% url 'awards' %}" arial-label="awards">
                   <i class="icon-award"></i>
                </a>
             </li>
-            <li data-menuanchor="contact">
+            <li data-menuanchor="contact" class="{% if request.path == '/contact/' %}active{% endif %}">
                <a rel="contact" href="{% url 'contact' %}" class="" arial-label="contact">
                   <i class="icon-mail"></i>
                </a>
