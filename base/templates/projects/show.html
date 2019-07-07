@@ -11,9 +11,11 @@
 {% block content %}
 <div class="project-preview">
 	<div class="preview_card">
-		<div class="card-top">
+		<div class="card-image">
+		<div class="img-container">
 			<img class="align-center" src="../../static/projects/{{ project.img_url }}" alt="{{ project.name }} preview">
 		</div>
+	</div>
 		<div class="card-body">
 			<h1>{{ project.name }} — {{ project.intro }}</h1>
 			<hr>

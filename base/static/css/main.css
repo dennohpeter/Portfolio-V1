@@ -775,13 +775,13 @@ p.intro {
 	flex-direction: column;
 }
 
-.project-card .card-image {
+.card-image {
 	display: block;
 	position: relative;
 	width: 100%
 }
 
-.project-card .img-container {
+.img-container {
 	display: block;
 	height: 0;
 	position: relative;
@@ -789,7 +789,7 @@ p.intro {
 	padding-top: 75%;
 	margin: 0 auto;
 }
-.project-card .img-container img {
+.img-container img {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
   color: transparent;
@@ -919,6 +919,7 @@ p.intro {
 		margin-bottom: 20px !important;
 		padding-left: 40px;
 		padding-right: 40px;
+
 }
  .project-preview h1, .project-preview h2 {
     margin: 0 0 20px 0;
@@ -934,18 +935,16 @@ p.intro {
 	box-shadow: 0 5px 15px rgba(0,0,0,.08);
 	position: relative;
 	transition: box-shadow .1s ease-in-out;
+	border-radius: 4px;
+	    border: 1px solid #d8d8d8;
 }
 .align-center {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-  margin-bottom: 30px;   
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
 }
 .card-body {
-    padding: 30px 20px;
+    padding: 20px 20px 30px 20px;
  }
  .card-body h1 {
  	font-size: 1.5rem;
