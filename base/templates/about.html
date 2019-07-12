@@ -9,6 +9,7 @@
 {% block description %} content="About me | Dennis Peterson." {% endblock %}
 {% block content %}
 <div class="about">
+   <div class="me">
    <div class="text-zone divider">
       <h1 class="color">About me</h1>
       <p> My name is Dennis Peterson. I go online as PythonMafia.
@@ -32,5 +33,55 @@
    <div class="profile divider">
       <div class="og-img"></div>
    </div>
+</div>
+<div class="text-zone">
+<div class="small-card">
+   <p class="small-left">
+      <i class="icon-love small-right"></i> Want to get to know me better? Lets 
+      <a href="{% url 'contact' %}">get in touch</a>
+   </p>
+   </div>
+</div>
+<div class="philosphies text-zone">
+   <h1>Philosophies</h1>
+   <small>A handful of things that I seriously believe in. (Click to expand, if you're interested.)</small>
+   <ul class="phil_list list">
+      <li>Occam's razor is still sharp</li>
+      <li>80% of work is design</li>
+      <li>Information ought to be free</li>
+   </ul>
+</div>
+<div class="my_team text-zone">
+   <h1>My Team</h1>
+   <small>The shortlist of people that inspire me and continue to shape who I am.</small>
+   <div class="friends">
+      <div class="friend-card">
+         <div class="friend-top">
+            <div class="friend-prof"></div>
+            <div class="friend-name"><h1>Symons</h1></div>
+            <div class="friend-website"><a href="">symons.com</a></div>            
+         </div>
+         <div class="friend-description">
+         <p>I'm looking forward to continuing the adventure of life with him, forever into the future. The world is big, and we want to experience it together. If he were a rock, he would be nice.</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="my_team text-zone">
+   <h1>My Friends</h1>
+   <small>Some people that I think are rad.</small>
+   <div class="friends">
+      <div class="friend-card">
+         <div class="friend-top">
+            <div class="friend-prof"></div>
+            <div class="friend-name"><h1>Jaymoh</h1></div>
+            <div class="friend-website"><a href="">Jaymoh.com</a></div>            
+         </div>
+         <div class="friend-description">
+         <p>'m looking forward to continuing the adventure of life with him, forever into the future. The world is big, and we want to experience it together. If he were a rock, he would be nice.</p>
+         </div>
+      </div>
+   </div>
+</div>
 </div>
 {% endblock %}

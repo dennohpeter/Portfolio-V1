@@ -15,7 +15,7 @@
       <div class="contact-form">
          <form id="contact_form" method="POST">
             {% csrf_token %}
-            <ul>
+            <ul class="list">
                <li class="half">
                   <input class="input__field input__field--hoshi" placeholder="Name" type="text" name="name" />
                   <label class="input__label input__label--hoshi input__label--hoshi-color-2" ></label>
@@ -42,7 +42,7 @@
    <div class="divider text-zone reach-me-wrap">
       <h1 class="color"> Follow me on the web</h1>
       <p class="intro">Want to make me super happy?. Open an issue/merge request for a thing I'm working on :-)</p>
-      <ul class="social">
+      <ul class="social list">
          <li>
             <div class="via">
                <i class="icon-gitlab-col"></i>
@@ -112,7 +112,7 @@
       <p>If you enjoy my software, artwork and want to support further development,
          I would really appreciate a small donation. Donations help me pay for server-space, hardware, and occasionally buy me coffee.
       </p>
-      <ul class="donate">
+      <ul class="donate list">
          <li>
             <div class="via">
                <i class="icon-gift"></i>
