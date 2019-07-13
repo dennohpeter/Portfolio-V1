@@ -10,7 +10,7 @@
 {% block content %}
 <div class="about">
    <div class="me">
-   <div class="text-zone divider">
+   <div class=" divider text-zone">
       <h1 class="color">About me</h1>
       <p> My name is Dennis Peterson. I go online as PythonMafia.
          I'm a security researcher, free Software Developer and open source activist.
@@ -40,20 +40,41 @@
       <i class="icon-love small-right"></i> Want to get to know me better? Lets 
       <a href="{% url 'contact' %}">get in touch</a>
    </p>
-   </div>
 </div>
-<div class="philosphies text-zone">
+<div class="philosphies">
    <h1>Philosophies</h1>
-   <small>A handful of things that I seriously believe in. (Click to expand, if you're interested.)</small>
+   <p class="text-meta">A handful of things that I seriously believe in. (Click to expand, if you're interested.)</p>
    <ul class="phil_list list">
-      <li>Occam's razor is still sharp</li>
-      <li>80% of work is design</li>
-      <li>Information ought to be free</li>
+      <li>
+         <div class="collapsible-header">
+            <span>Occam's razor is still sharp</span>
+            <div><i class="icon-add"></i></div>
+         </div>
+         <div class="collapsible-body">
+            <span></span>
+         </div>
+      </li>
+      <li>
+      <div class="collapsible-header">
+            <span>80% of work is design</span>
+            <div><i class="icon-add"></i></div>
+         </div>
+         <div class="collapsible-body">
+            <span></span>
+         </div></li>
+      <li>
+      <div class="collapsible-header">
+            <span>Information ought to be free</span>
+            <div><i class="icon-add"></i></div>
+         </div>
+         <div class="collapsible-body">
+            <span></span>
+         </div></li>
    </ul>
 </div>
-<div class="my_team text-zone">
+<div class="my_team">
    <h1>My Team</h1>
-   <small>The shortlist of people that inspire me and continue to shape who I am.</small>
+   <p class="text-meta">The shortlist of people that inspire me and continue to shape who I am.</p>
    <div class="friends">
       <div class="friend-card">
          <div class="friend-top">
@@ -67,9 +88,9 @@
       </div>
    </div>
 </div>
-<div class="my_team text-zone">
+<div class="my_team">
    <h1>My Friends</h1>
-   <small>Some people that I think are rad.</small>
+   <p class="text-meta">Some people that I think are rad.</p>
    <div class="friends">
       <div class="friend-card">
          <div class="friend-top">
@@ -82,6 +103,7 @@
          </div>
       </div>
    </div>
+</div>
 </div>
 </div>
 {% endblock %}

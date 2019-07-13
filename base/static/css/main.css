@@ -177,7 +177,7 @@ body {
 	font-family: "Overpass";
 	font-style: normal;
 	font-weight: 300;
-	line-height: 1.4;
+	line-height: 1.5;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	height: 100%;
@@ -581,7 +581,7 @@ textarea {
 	left: 50%;
 	padding: 20px;
 	height: 100vh;
-	background-color: #252627;
+	/*background-color: #252627;*/
 }
 
 .about .profile .og-img {
@@ -591,7 +591,16 @@ textarea {
 	background-size: cover;
 	height: 100%;
 }
-
+.phil_list li {
+	margin-bottom: 2px;
+}
+.collapsible-header {
+	display: block;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #333;
+    overflow: hidden;
+}
 
 /* ================================================== resume ============================================== */
 
@@ -605,6 +614,11 @@ textarea {
 	text-align: left;
 	line-height: 1.8;
 	padding: 10px 20px 10px 30px;
+}
+.text-meta {
+	font-size: .875rem;
+    line-height: 1.4;
+    color: #777;
 }
 
 .color {
@@ -1449,7 +1463,7 @@ ul.donate li {
 	.contact {
 		display: block;
 	}
-	.about .divider,
+	.about .me .divider,
 	.contact .divider {
 		border: none;
 		width: 100%;
