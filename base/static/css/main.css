@@ -602,8 +602,8 @@ textarea {
     padding: 10px 0 10px 0;
     overflow: hidden;
     cursor: pointer;
-    font-weight: 600;
     transition: 0.4s;
+    font-weight: 400;
 }
 .collapsible-body {
 	overflow: hidden;
@@ -625,6 +625,14 @@ textarea {
 }
 .collapsible-header.active::after {
  background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E)
+}
+blockquote {   
+	margin: 10px 0;
+    font-style: italic;
+    font-size: 1rem;
+    border-left: 2px solid black;
+    padding-left: 1rem;
+    color: #333;
 }
 /* ================================================== resume ============================================== */
 
