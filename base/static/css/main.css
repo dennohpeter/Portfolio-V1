@@ -210,7 +210,9 @@ body {
 .list li {
 	list-style: none;
 }
-
+.margin-top-and-bottom {
+	margin: 20px 0 20px 0;
+}
 
 /*
 * Remove text-shadow in selection highlight:
@@ -643,7 +645,6 @@ blockquote {
 	margin-bottom: 20px;
 	display: flex;
     flex-wrap: wrap;
-    list-style: none;
     margin-left: -30px; 
 }
 .friend-img {
@@ -668,9 +669,9 @@ width: 1px;
 }
 .code {
     font-family: "Overpass Mono";
-  	margin: 0!important;   
   	font-weight: 400;
-  	color: inherit!important;
+  	color: #333;
+  	text-transform: none;
 }
 .comment-title {
 	font-size: 1.25rem;
@@ -680,8 +681,6 @@ width: 1px;
 	display: flex;
     flex-wrap: wrap;
     margin-left: -20px;
-    padding: 0;
-    list-style: none;
     font-size: .875rem;
     line-height: 1.4;
     color: #999;
@@ -697,7 +696,7 @@ width: 1px;
     padding-left: 20px;
     position: relative;
 }
-.comment-meta>:nth-child(n+2)::before {
+.comment-meta>:nth-child(n+2):not(.first-column)::before {
     content: "";
     height: 1.5em;
     margin-left: 0;
@@ -711,6 +710,13 @@ width: 1px;
     text-transform: uppercase;
     transition: .1s ease-in-out;
     transition-property: color,background-color;
+}
+.grid {
+	display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
 /* ================================================== resume ============================================== */
 
