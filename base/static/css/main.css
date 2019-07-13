@@ -599,14 +599,13 @@ textarea {
     font-size: 1.25rem;
     line-height: 1.4;
     color: #333;
-    padding: 10px 0 10px 5px;
+    padding: 10px 0 10px 0;
     overflow: hidden;
     cursor: pointer;
     font-weight: 600;
     transition: 0.4s;
 }
 .collapsible-body {
-	padding: 0 20px;   
 	overflow: hidden;
 	 max-height: 0;
 	-webkit-transition: height 0.2s ease-out;
