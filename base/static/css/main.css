@@ -591,17 +591,42 @@ textarea {
 	background-size: cover;
 	height: 100%;
 }
-.phil_list li {
-	margin-bottom: 2px;
+.phil_list {
+	margin: 20px 0 20px 0;
 }
 .collapsible-header {
 	display: block;
     font-size: 1.25rem;
     line-height: 1.4;
     color: #333;
+    padding: 10px 0 10px 5px;
     overflow: hidden;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.4s;
 }
-
+.collapsible-body {
+	padding: 0 20px;   
+	overflow: hidden;
+	 max-height: 0;
+	-webkit-transition: height 0.2s ease-out;
+	transition: max-height 0.2s ease-out;
+}
+.collapsible-header::after {
+    content: "";
+    width: 1.4em;
+    height: 1.4em;
+    float: right;
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%221%22%20height%3D%2213%22%20x%3D%226%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.collapsible-header.active {
+  background-color: whitesmoke;
+}
+.collapsible-header.active::after {
+ background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E)
+}
 /* ================================================== resume ============================================== */
 
 .resume,
