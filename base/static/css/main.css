@@ -634,6 +634,84 @@ blockquote {
     padding-left: 1rem;
     color: #333;
 }
+.friends {
+	padding: 30px;
+	background-color: #f8f8f8;
+}
+.friend-top {
+	align-items: center;
+	margin-bottom: 20px;
+	display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -30px; 
+}
+.friend-img {
+	width: auto;
+	max-width: 100%;
+ padding-left: 30px;
+}
+.img-circle {
+	border-radius: 50%;
+	max-width: 100%;
+    height: auto;
+    box-sizing: border-box;    
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.friend-profile {
+width: 1px;
+    flex: 1;
+    min-width: 0;
+    flex-basis: 1px;
+        padding-left: 30px;
+}
+.code {
+    font-family: "Overpass Mono";
+  	margin: 0!important;   
+  	font-weight: 400;
+  	color: inherit!important;
+}
+.comment-title {
+	font-size: 1.25rem;
+    line-height: 1.4;
+}
+.comment-meta {
+	display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    padding: 0;
+    list-style: none;
+    font-size: .875rem;
+    line-height: 1.4;
+    color: #999;
+}
+.remove-margin-top {
+    margin-top: 0!important;
+        margin-bottom: 0;
+}
+.comment-meta li {
+	    display: flex;
+    align-items: center;
+    flex: none;
+    padding-left: 20px;
+    position: relative;
+}
+.comment-meta>:nth-child(n+2)::before {
+    content: "";
+    height: 1.5em;
+    margin-left: 0;
+    margin-right: 20px;
+    border-left: 1px solid #e5e5e5;
+    }
+.comment-meta>*>:first-child {
+    display: block;
+    color: #999;
+    font-size: .875rem;
+    text-transform: uppercase;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color;
+}
 /* ================================================== resume ============================================== */
 
 .resume,
