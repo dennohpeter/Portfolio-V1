@@ -437,15 +437,17 @@ textarea {
 	perspective: 1000px;
 	justify-content: center;
 	flex-direction: column;
+
+
+    background: #000000;
+    color: #00FF00;
+    font-family: monospace;
 }
 
 .home-page .section-wrap h1 {
-	color: #F0FFFF;
 	line-height: 60px;
-	text-align: center;
 	font-family: courier, monospace;
-	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .home-page .section-wrap h1:before {
@@ -482,6 +484,18 @@ textarea {
 	display: inline-block;
 	vertical-align: top;
 	transition: all 1.2s ease, color 3s linear;
+}
+.shell-body li:before {
+  content: '$';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.shell-body li {
+  word-wrap: break-word;
+  position: relative;
+  padding: 0 0 0 20px;
 }
 
 .flipper-inner {
@@ -1530,9 +1544,6 @@ ul.donate li {
 	}
 	.section-wrap {
 		position: relative;
-		padding: 0;
-		/*background: #252627;*/
-		background: url(../img/bjbjbj.jpg);
 	}
 	.title {
 		padding: 0 10px 0 0;
