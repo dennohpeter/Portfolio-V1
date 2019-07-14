@@ -176,8 +176,8 @@ html, body {
 .list li {
 	list-style: none;
 }
-.margin-top-and-bottom {
-	margin: 20px 0 20px 0;
+.margin-bottom {
+	margin-bottom: 20px;
 }
 
 /*
@@ -595,7 +595,7 @@ textarea {
  background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E)
 }
 blockquote {   
-	margin: 10px 0;
+	margin: 20px 0;
     font-style: italic;
     font-size: 1rem;
     border-left: 2px solid black;
@@ -679,9 +679,12 @@ width: 1px;
 .grid {
 	display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none
+}
+.first-column {
+	width: 100%;
+}
+strong{
+	color: #666;
 }
 /* ================================================== resume ============================================== */
 
@@ -1417,6 +1420,9 @@ ul.donate li {
 @media (min-width: 960px) {
 	.img-container.preview-for-desktop {
 		padding-top: 60%;
+	}
+	.first-column {
+		width: 50%;
 	}
 }
 
