@@ -1675,7 +1675,6 @@ ul.donate li {
 	@media (max-width: 450px) {
 		.follow-web {
 			font-size: 1.8em;
-		}
 	}
 	/* ================================================ All Animations ============================================ */
 	@keyframes fader_effect {
