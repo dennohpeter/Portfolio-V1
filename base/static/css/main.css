@@ -273,10 +273,10 @@ textarea {
 	line-height: 51px;
 	height: 51px;
 	position: relative;
-	text-decoration: none;
 }
 
 #nav_bar #menu li a i {
+	font-size: 27px;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
@@ -351,12 +351,12 @@ textarea {
 #nav_bar ul.social li a {
 	padding: 7px 0;
 	display: block;
-	font-size: 15px;
 	line-height: 16px;
 	color: #4d4d4e;
-	text-decoration: none;
 }
-
+#nav_bar ul.social li a i {
+	font-size: 20px;
+}
 #nav_bar ul.social li a:hover {
 	color: #08fdd8;
 }
@@ -1111,6 +1111,9 @@ pre code {
 	padding-left: 20px;
 	margin-top: -20px;
 }
+.timeline .honour .icon i{
+	font-size: 27px;
+}
 
 .timeline .honour .description {
 	flex: 1;
@@ -1210,7 +1213,6 @@ hr {
 	font-size: 14px;
 	letter-spacing: 3px;
 	font-family: "Open Sans", sans-serif;
-	text-decoration: none;
 	padding: 8px 10px;
 	border: 1px solid #08fdd8;
 	float: left;
@@ -1353,7 +1355,6 @@ ul.donate li {
 
 .social li .social_content a,
 .donate_content a {
-	text-decoration: none;
 	font-size: 16px;
 	display: block;
 }
