@@ -246,7 +246,7 @@ textarea {
 /* ================================================== Nav_bar ============================================== */
 
 #nav_bar {
-	background: #080808;
+	background: #181818;
 	width: 60px;
 	height: 100%;
 	position: fixed;
@@ -1645,7 +1645,7 @@ ul.donate li {
 			height: 60px;
 			top: 60px;
 			margin-top: 0;
-			background: #080808;
+			background: #181818;
 			-webkit-transition: all 0.3s ease-out;
 			transition: all 0.3s ease-out;
 		}
