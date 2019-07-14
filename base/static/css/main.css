@@ -1339,38 +1339,30 @@ ul.donate li {
 	border-bottom: 1px solid #e0e0e0;
 }
 
-.social .via,
-.donate .via {
-	display: inline-block;
+.via {
 	padding: 8px;
 	width: 50%;
+	overflow: hidden;
 }
 
 .contact .via i {
 	font-size: 27px;
 }
-
-.social li .social_content,
-.donate_content {
-	display: inline-block;
-	margin-left: 10px;
+.via-header {
+	display: flex;
 }
 
-.social li .social_content a,
-.donate_content a {
+.social li .social_content{
+	display: inline-block;
+}
+
+.social li .social_content a{
 	font-size: 16px;
 	display: block;
 }
 
-.social li .social_content a:hover,
-.donate_content a:hover {
+.social li .social_content a:hover {
 	text-decoration: underline;
-}
-
-.donate .via {
-	color: orangered;
-	font-size: 18px;
-	font-weight: bold;
 }
 
 
@@ -1678,6 +1670,11 @@ ul.donate li {
 		}
 		.contact-form textarea {
 			min-height: 150px;
+		}
+	}
+	@media (max-width: 450px) {
+		.follow-web {
+			font-size: 1.5rem;
 		}
 	}
 	/* ================================================ All Animations ============================================ */
