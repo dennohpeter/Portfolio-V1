@@ -169,11 +169,10 @@ a:active {
 Base styles: opinionated defaults
 ========================================================================== */
 
-html,
-body {
+html, body {
 	color: #222;
 	background-color: #FFFFFF;
-	font-size: 1.0825em;
+	font-size: 1.0725em;
 	font-family: "Overpass";
 	font-style: normal;
 	font-weight: 300;
@@ -670,7 +669,6 @@ width: 1px;
 .code {
     font-family: "Overpass Mono";
   	font-weight: 400;
-  	color: #333;
   	text-transform: none;
 }
 .comment-title {
@@ -729,7 +727,9 @@ width: 1px;
 .text-zone {
 	text-align: left;
 	line-height: 1.8;
-	padding: 10px 20px 10px 30px;
+	padding: 10px 20px 10px 30px;    
+	overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 .text-meta {
 	font-size: .875rem;
@@ -1597,6 +1597,9 @@ ul.donate li {
 		padding-left: 20px;
 		padding-right: 15px;
 	}
+	.text-zone {
+		padding: 10px 20px 10px 20px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -1626,6 +1629,13 @@ ul.donate li {
 		cursor: pointer;
 		border: 1px solid #999;
 	}
+	.text-zone {
+		padding: 10px 15px 10px 15px;
+	}
+	.comment-title {
+		font-size: 1.1rem;
+	}
+}
 	@media (max-width: 530px) {
 		.long-form-cv-container {
 			height: unset;
