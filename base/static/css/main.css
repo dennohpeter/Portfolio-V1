@@ -442,6 +442,12 @@ textarea {
     font-family: monospace;
 }
 
+.section-wrap > *{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingAnim 5s steps(50);
+}
+
 .home-page .section-wrap h1 {
 	line-height: 60px;
 	font-family: courier, monospace;
@@ -460,26 +466,6 @@ textarea {
 	display: inline-block;
 	vertical-align: top;
 	transition: all 1.2s ease, color 3s linear;
-}
-.home-page .section-wrap h1:before {
-	content: '<h1>';
-	left: 10px;
-	color: #515152;
-	font-size: 14px;
-	position: absolute;
-	margin-top: -35px;
-	-webkit-animation: fader_effect 1s 1.1s backwards;
-	animation: fader_effect 1s 1.1s backwards;
-}
-
-.home-page .section-wrap h1:after {
-	content: '</h1>';
-	color: #515152;
-	right: 10px;
-	font-size: 14px;
-	position: absolute;
-	-webkit-animation: fader_effect 1s 1.1s backwards;
-	animation: fader_effect 1s 1.1s backwards;
 }
 .shell-body li:before {
   content: '$';
@@ -1589,9 +1575,6 @@ ul.donate li {
 			padding: 0 20px 0 20px;
 			text-transform: none;
 		}
-		.home-page h1:after {
-			display: none;
-		}
 		.section-wrap p {
 			font-size: 16px;
 			cursor: pointer;
@@ -1648,22 +1631,11 @@ ul.donate li {
 	}
 }
 	/* ================================================ All Animations ============================================ */
-	@keyframes fader_effect {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	@-webkit-keyframes fader_effect {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
+
+@keyframes typingAnim{
+  from { width: 0 }
+  to { width: 100% }
+}
 	/* ================================================ Glitch ===================================================== */
 	.shake {
 		position: relative;
