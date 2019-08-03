@@ -1456,6 +1456,10 @@ ul.donate li {
 }
 
 @media (max-width: 625px) {
+	.home-page h1 {
+    	font-size: 47px !important;
+    	line-height: 1.3;
+	}
 	#nav_bar #menu li a {
 		margin-left: 7.5%;
 		transition: 0.3s;
@@ -1504,6 +1508,10 @@ ul.donate li {
 	}
 }
 	@media (max-width: 530px) {
+		.home-page h1 {
+    font-size: 40px !important;
+    	line-height: 1.2;
+	}
 		.long-form-cv-container {
 			height: unset;
 		}
@@ -1570,10 +1578,6 @@ ul.donate li {
 }
 	/* ================================================ All Animations ============================================ */
 
-@keyframes typingAnim{
-  from { width: 0 }
-  to { width: 100% }
-}
 	/* ================================================ Glitch ===================================================== */
 	.shake {
 		position: relative;
