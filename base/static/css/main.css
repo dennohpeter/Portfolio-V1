@@ -437,47 +437,19 @@ textarea {
 	flex-direction: column;
 
 
-    background: #000000;
+    background: #161A1A;
     color: #00FF00;
     font-family: monospace;
 }
 
 .section-wrap > *{
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingAnim 5s steps(50);
+  /*animation: typingAnim 5s steps(50);*/
 }
 
 .home-page .section-wrap h1 {
 	line-height: 60px;
 	font-family: courier, monospace;
 	font-weight: 400;
-}
-
-.letter-transition {
-	text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
-	will-change: transform;
-}
-
-.letter-transition div span {
-	opacity: 1;
-	width: auto;
-	min-width: 10px;
-	display: inline-block;
-	vertical-align: top;
-	transition: all 1.2s ease, color 3s linear;
-}
-.shell-body li:before {
-  content: '$';
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.shell-body li {
-  word-wrap: break-word;
-  position: relative;
-  padding: 0 0 0 20px;
 }
 
 .section-wrap p {

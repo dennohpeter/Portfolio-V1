@@ -1,18 +1,22 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-<div class="home-page">
-   <div class="section-wrap text-zone">
+  <div class="home-page">
+    <div class="section-wrap text-zone">
       <h1 class="letter-transition">
-         <ul class="shell-body list">
-          <li>Hey,</li>
-            <li> I'm Dennis Peterson. </li>
-            <li> I'm a security researcher, free software Developer 
-         and open source activist.</li>
-          </ul>
+      Hey,
+      I'm Dennis Peterson.
+      I'm a security researcher, free software Developer
+      and open source activist.
       </h1>
       <p class="shake"><a href="{% url 'projects' %}" style="color: #ffffff">Click to discover my Projects!</a></p>
       <p class="shake"> <img src="{% static 'projects/2018/under-construction.gif' %}" class="temporary" alt="under-construction gif"></p>
-   </div>
-</div>
+    </div>
+  </div>
+  <script src="{% static 'js/index.js' %}"></script>
+  <script>
+  const charming = require('charming')
+  const element = document.querySelector('h1')
+  charming(element)
+  </script>
 {% endblock %}
