@@ -417,48 +417,49 @@ textarea {
 
 .home-page {
 	height: 100%;
+    background: #161A1A;
+    color: #00FF00;
+}
+.home-page .section-wrap {
+    position: absolute;
+    top: 20%;
+
+}
+.section-wrap a{
+	text-transform: uppercase;
+}
+.home-page .flat-button {
+	color: #08fdd8;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-family: "Open Sans",sans-serif;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #08fdd8;
+    margin-top: 25px;
+    float: left;
+    border-radius: 3px;
+}
+.home-page h1 {
+    color: #fff;
+    font-size: 56px;
+    line-height: 1.4;
+    font-family: font-file-82132;
+    font-weight: 400;
+}
+.home-page h2 {
+    color: #8d8d8d;
+    margin-top: 9px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Open Sans",sans-serif;
+    letter-spacing: 3px;
 }
 
 .home-page .flat-button:hover {
 	background: #08fdd8;
 	color: #252627;
 }
-
-
-/*================================================== Vertical Divisions =====================================  */
-
-.section-wrap {
-	height: 100%;
-	display: flex;
-	text-align: center;
-	position: absolute;
-	perspective: 1000px;
-	justify-content: center;
-	flex-direction: column;
-
-
-    background: #161A1A;
-    color: #00FF00;
-    font-family: monospace;
-}
-
-.section-wrap > *{
-  /*animation: typingAnim 5s steps(50);*/
-}
-
-.home-page .section-wrap h1 {
-	line-height: 60px;
-	font-family: courier, monospace;
-	font-weight: 400;
-}
-
-.section-wrap p {
-	margin: 30px 10px 0 10px;
-	color: #fff;
-	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-	font-size: 18px;
-}
-
 
 /*================================================== ABOUT ============================================== */
 
@@ -871,32 +872,13 @@ p.intro {
 	min-height: 40px
 }
 
-.project-card .stats {
-	-webkit-align-items: center;
-	align-items: center;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex: 1;
-	flex: 1
-}
+
 
 .project-card .stat {
 	display: -webkit-flex;
 	display: flex;
 	font-size: 12px;
 	font-weight: 400
-}
-
-.project-card .stat svg {
-	height: 16px
-}
-
-.project-card .stat span {
-	margin-left: 5px
-}
-
-.project-card .stat+.stat {
-	margin-left: 12px
 }
 
 .project-card .project-more-info {
@@ -1453,12 +1435,6 @@ ul.donate li {
 	#nav_bar #menu li a {
 		margin-left: 8%;
 	}
-	.home-page .section-wrap h1 {
-		line-height: 40px !important;
-	}
-	.section-wrap {
-		position: relative;
-	}
 	.title {
 		padding: 0 10px 0 0;
 	}
@@ -1541,16 +1517,6 @@ ul.donate li {
 		#nav_bar ul.social {
 			display: none
 		}
-		.home-page .section-wrap h1 {
-			font-size: 24px;
-			text-align: left;
-			padding: 0 20px 0 20px;
-			text-transform: none;
-		}
-		.section-wrap p {
-			font-size: 16px;
-			cursor: pointer;
-		}
 		#nav_bar {
 			position: fixed;
 		}
@@ -1612,9 +1578,7 @@ ul.donate li {
 	.shake {
 		position: relative;
 		letter-spacing: 6px;
-		font-size: 10vw;
 		font-weight: 900;
-		display: inline-block;
 		animation: .8s shake infinite alternate;
 	}
 	@keyframes shake {

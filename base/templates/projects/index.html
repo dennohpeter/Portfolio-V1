@@ -14,12 +14,11 @@
 				<h1 class="title color">Projects</h1>
 				<div class="tab">
 					<select name="" id="" onchange="toggleTab(event, this.value)">
-					<option class="tablinks" value="tabcontent">All Projects</option>
-					<option class="tablinks" value="fun">For Fun</option>
-					<option class="tablinks" value="profit">For Profit</option>
-					<option class="tablinks" value="wip">WIP</option>
+						<option class="tablinks" value="tabcontent">All Projects</option>
+						<option class="tablinks" value="fun">For Fun</option>
+						<option class="tablinks" value="profit">For Profit</option>
+						<option class="tablinks" value="wip">WIP</option>
 					</select>
-
 					<button class="tablinks" onclick="toggleTab(event, 'tabcontent')">All Projects</button>
 					<button class="tablinks" onclick="toggleTab(event, 'fun')">For Fun</button>
 					<button class="tablinks" onclick="toggleTab(event, 'profit')">For Profit</button>
@@ -44,14 +43,6 @@
 								</h4>
 							</div>
 							<div class="card-bottom">
-								<div class="stats">
-									<span class="stat">
-										<i class="icon-like">{{ project.likes }}</i>
-									</span>
-									<span class="stat">
-										<i class="icon-eye">{{ project.views }}</i>
-									</span>
-								</div>
 								<div class="project-more-info">
 									<a href="{% url  'project_details' name=project.link %}" class="nicehover">SEE PROJECT</a>
 								</div>
