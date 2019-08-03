@@ -641,16 +641,9 @@ strong{
 
 .color {
 	display: inline-block;
-	background-size: 120% 100%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-	-ms-background-clip: text;
-	-ms-text-fill-color: transparent;
-	background-clip: text;
-	text-fill-color: transparent;
-	background-image: linear-gradient(45deg, #7794ff, #44107A, #FF1361, #FFF800);
+	font-family: font-file-82132;
+    color: #000;
+    position: relative;
 }
 
 p.intro {
@@ -1508,7 +1501,7 @@ ul.donate li {
 }
 	@media (max-width: 530px) {
 		.home-page h1 {
-    	font-size: 47px !important;
+    	font-size: 45px !important;
 		}
 		.long-form-cv-container {
 			height: unset;
