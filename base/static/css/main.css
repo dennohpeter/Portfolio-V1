@@ -417,7 +417,6 @@ textarea {
 
 .home-page {
 	height: 100%;
-    background: #161A1A;
     color: #00FF00;
 }
 .home-page .section-wrap {
@@ -425,15 +424,12 @@ textarea {
     top: 20%;
 
 }
-.section-wrap a{
-	text-transform: uppercase;
-}
 .home-page .flat-button {
 	color: #08fdd8;
     font-size: 11px;
     letter-spacing: 4px;
     font-family: "Open Sans",sans-serif;
-    text-decoration: none;
+	text-transform: uppercase;
     padding: 8px 12px;
     border: 1px solid #08fdd8;
     margin-top: 25px;
@@ -812,28 +808,14 @@ p.intro {
 	text-align: left;
 }
 
-.project-card .card-body .project-content-type {
-	color: #7e7e7e;
+.project-card .card-body h4{
 	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 700;
-	line-height: 14px
 }
 
-.project-card .card-body h4 {
-	margin: 0 8px 0 0;
-	font-weight: 700;
-	font-size: 15px;
+.project-card .card-body p {
+	font-size: 1rem;
 	line-height: 21px;
 	color: #333;
-}
-
-.project-card .card-body .project_name {
-	text-transform: uppercase;
-}
-
-.project-card .card-body h4 a {
-	color: #333
 }
 
 .project-card .card-body .spacer {
@@ -1056,11 +1038,11 @@ hr {
 
 /*================================================== CONTACT ============================================== */
 
-.contact_theme {
-	background-color: #252627;
+.theme {
+    background: #161A1A;
 }
 
-.contact .contact_theme p.intro {
+.contact .theme p.intro {
 	color: #FFFFFF;
 }
 
