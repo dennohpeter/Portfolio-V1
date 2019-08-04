@@ -401,7 +401,6 @@ textarea {
 .error-info p {
 	font-size: 18px;
 	line-height: 28px;
-	color: #ffffff;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 }
@@ -411,8 +410,43 @@ textarea {
 	height: 100%;
 	width: 100%;
 }
+.modal-container {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1010;
+  display: none; 
+  position: fixed; 
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 15px 15px;
+    background: rgba(0,0,0,.6);
+}
+.modal-body{
+  background-color: #fefefe;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 85%;
+  max-width: calc(100% - .01px)!important;
+}
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-
+.close:hover,
+.close:focus {
+  color: #f44336!important;
+  cursor: pointer;
+}
+.d-inline {
+	display: inline-block !important;
+}
 /*================================================== HOME PAGE ============================================== */
 
 .home-page {
@@ -437,7 +471,6 @@ textarea {
     border-radius: 3px;
 }
 .home-page h1 {
-    color: #fff;
     font-size: 56px;
     line-height: 1.4;
     font-family: font-file-82132;
@@ -981,7 +1014,14 @@ pre code {
 .link-blue {
 	color: #1e87f0 !important;
 }
-
+.text-white {
+	color: #FFFFFF !important;
+}
+.sidebar-text {
+	padding-left: 8px; 
+	letter-spacing: 2px; 
+	font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 /*================================================== AWARDS ============================================== */
 
@@ -1040,10 +1080,6 @@ hr {
 
 .theme {
     background: #161A1A;
-}
-
-.contact .theme p.intro {
-	color: #FFFFFF;
 }
 
 .contact-form {
@@ -1490,7 +1526,6 @@ ul.donate li {
 		}
 		#mobile-link {
 			font-size: 30px;
-			color: #fff;
 			float: right;
 			margin: 10px 20px 10px 10px;
 			display: block;
