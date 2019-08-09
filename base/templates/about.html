@@ -8,17 +8,17 @@
 {% block ogurl %} content="https://dennispeter.org/about/" {% endblock %}
 {% block description %} content="About me | Dennis Peterson." {% endblock %}
 {% block content %}
-   <div class="about">
+   <div class="about theme text-white">
       <div class="me">
          <div class=" divider text-zone">
-            <h1 class="color">About me</h1>
+            <h1 class="color-title">About me</h1>
             <p>
-               My name is Dennis Peterson. I go online as PythonMafia.
+               My name is Dennis Peterson. I go online as Dexter.
                I'm a security researcher, free Software Developer and open source activist.
             </p>
             <p>
                At my free time you will find me reverse engineering malware
-               and building automation tools for malware analysis.
+               and building <a href="{% url 'projects' %}" class="link-blue">automation tools</a> for malware analysis.
             </p>
          </div>
          <div class="profile divider">
