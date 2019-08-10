@@ -219,6 +219,32 @@ textarea {
 	resize: vertical;
 }
 
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	box-sizing: content-box;
+}
+.theme {
+    background: #161A1A;
+}
+.text-meta {
+	font-size: .875rem;
+    line-height: 1.4;
+    color: #ccc;
+}
+.link-blue {
+	color: #1e87f0 !important;
+}
+.text-white {
+	color: #FFFFFF !important;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -510,7 +536,6 @@ textarea {
 	left: 50%;
 	padding: 20px;
 	height: 100vh;
-	/*background-color: #252627;*/
 }
 
 .about .profile .og-img {
@@ -527,14 +552,14 @@ textarea {
 	display: block;
     font-size: 1.25rem;
     line-height: 1.4;
-    color: #333;
     padding: 10px 0 10px 0;
     overflow: hidden;
     cursor: pointer;
     transition: 0.4s;
-    font-weight: 400;
 }
 .collapsible-body {
+	font-size: 1rem;
+	padding: 5px;
 	overflow: hidden;
 	 max-height: 0;
 	-webkit-transition: height 0.2s ease-out;
@@ -550,7 +575,7 @@ textarea {
     background-position: 50% 50%;
 }
 .collapsible-header.active {
-  background-color: whitesmoke;
+  background-color: #121212;
 }
 .collapsible-header.active::after {
  background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E)
@@ -559,13 +584,16 @@ blockquote {
 	margin: 20px 0;
     font-style: italic;
     font-size: 1rem;
-    border-left: 2px solid black;
-    padding-left: 1rem;
-    color: #333;
+    border-left: 5px solid #e5e5e5;
+    padding:.75rem 1rem;;
+    background-color: #222;
+    color: #fffafa;
 }
 .friends {
 	padding: 30px;
-	background-color: #f8f8f8;
+}
+.cards-theme {
+	background-color: #fffafa;
 }
 .friend-top {
 	align-items: center;
@@ -588,11 +616,14 @@ blockquote {
     vertical-align: middle;
 }
 .friend-profile {
-width: 1px;
+	width: 1px;
     flex: 1;
     min-width: 0;
     flex-basis: 1px;
-        padding-left: 30px;
+    padding-left: 30px;
+}
+.friend-description {
+	color: #222;
 }
 .code {
     font-family: "Overpass Mono";
@@ -609,7 +640,7 @@ width: 1px;
     margin-left: -20px;
     font-size: .875rem;
     line-height: 1.4;
-    color: #999;
+    color: #777;
 }
 .remove-margin-top {
     margin-top: 0!important;
@@ -631,7 +662,7 @@ width: 1px;
     }
 .comment-meta>*>:first-child {
     display: block;
-    color: #999;
+    color: #777;
     font-size: .875rem;
     text-transform: uppercase;
     transition: .1s ease-in-out;
@@ -643,9 +674,7 @@ width: 1px;
 }
 .first-column {
 	width: 100%;
-}
-strong{
-	color: #666;
+	color: #fffafa;
 }
 /* ================================================== resume ============================================== */
 
@@ -661,11 +690,6 @@ strong{
 	padding: 10px 20px 10px 30px;    
 	overflow-wrap: break-word;
     word-wrap: break-word;
-}
-.text-meta {
-	font-size: .875rem;
-    line-height: 1.4;
-    color: #777;
 }
 
 .color {
@@ -723,7 +747,7 @@ p.intro {
 }
 
 
-/*================================================== PROJECTS ============================================== */
+/*==================  PROJECTS  ==================*/
 
 .container {
 	margin-right: auto;
@@ -924,7 +948,7 @@ p.intro {
     transition: right .3s ease-out;
 }
 
-/* ================================= Show Page Styling =============================================== */
+/*==================  Project Show Page Styling  ==================*/
 
 .project-preview {
 	height: 100%;
@@ -1014,19 +1038,13 @@ pre code {
 	background: #f8f8f8;
 }
 
-.link-blue {
-	color: #1e87f0 !important;
-}
-.text-white {
-	color: #FFFFFF !important;
-}
 .sidebar-text {
 	padding-left: 8px; 
 	letter-spacing: 2px; 
 	font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/*================================================== AWARDS ============================================== */
+/*==================  AWARDS  ==================*/
 
 .timeline {
 	padding: 5px 30px 10px 0;
@@ -1065,25 +1083,7 @@ small {
 }
 
 
-/*
-* A better looking default horizontal rule
-*/
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	box-sizing: content-box;
-}
-
-
-/*================================================== CONTACT ============================================== */
-
-.theme {
-    background: #161A1A;
-}
+/*==================  CONTACT  ==================*/
 
 .contact-form {
 	width: 100%;

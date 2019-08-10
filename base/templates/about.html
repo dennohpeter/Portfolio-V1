@@ -8,9 +8,9 @@
 {% block ogurl %} content="https://dennispeter.org/about/" {% endblock %}
 {% block description %} content="About me | Dennis Peterson." {% endblock %}
 {% block content %}
-   <div class="about theme text-white">
+   <div class="about theme">
       <div class="me">
-         <div class=" divider text-zone">
+         <div class=" divider text-zone text-white">
             <h1 class="color-title">About me</h1>
             <p>
                My name is Dennis Peterson. I go online as Dexter.
@@ -32,15 +32,15 @@
                <a href="{% url 'contact' %}" class="link-blue">get in touch</a>
             </p>
          </div>
-         <div class="philosphies">
+         <div class="philosphies text-white">
             <h1>Philosophies</h1>
             <p class="text-meta">A handful of things that I seriously believe in. (Click to expand, if you're interested.)</p>
             <ul class="phil_list list">
                <li>
                   <div class="collapsible-header">
-                     <span>Occam's razor is still sharp</span>
+                     <span class="small-left">Occam's razor is still sharp</span>
                   </div>
-                  <div class="collapsible-body">
+                  <div class="collapsible-body small-left">
                      <p>In problem solving, the simplest solution tends to be the correct one. Simple things are easier to understand and prove for correctness. I also assert that nearly all complicated things may be broken down into simple parts.</p>
                      <p>Easier to understand and prove for correctness. I also assert that nearly all complicated things may be broken down into simple parts.</p>
                      <blockquote>
@@ -52,28 +52,28 @@
                </li>
                <li>
                   <div class="collapsible-header">
-                     <span>80% of work is design</span>
+                     <span class="small-left">80% of work is design</span>
                   </div>
-                  <div class="collapsible-body">
+                  <div class="collapsible-body small-left">
                      <p>In problem solving, the simplest solution tends to be the correct one. Simple things are easier to understand and prove for correctness. I also assert that nearly all complicated things may be broken down into simple parts.</p>
                      <p>Easier to understand and prove for correctness. I also assert that nearly all complicated things may be broken down into simple parts.</p>
                   </div>
                </li>
                <li>
                   <div class="collapsible-header">
-                     <span>Information ought to be free</span>
+                     <span class="small-left">Information ought to be free</span>
                   </div>
-                  <div class="collapsible-body">
+                  <div class="collapsible-body small-left">
                      <p>In problem solving, the simplest solution tends to be the correct one. Simple things are easier to understand and prove for correctness. I also assert that nearly all complicated things may be broken down into simple parts.</p>
                      <p>Easier to understand and prove for correctness. I also assert that nearly all complicated things may be broken down into simple parts.</p>
                   </div>
                </li>
             </ul>
          </div>
-         <div class="my_team">
+         <div class="my_team text-white">
             <h2>My Team</h2>
             <p class="text-meta margin-bottom">The shortlist of people that inspire me and continue to shape who I am.</p>
-            <div class="friends">
+            <div class="friends cards-theme">
                <div class="friend-card">
                   <div class="friend-top">
                      <div class="friend-img">
@@ -83,7 +83,7 @@
                         <h4 class="code comment-title">
                         <a href="#">Kyle Farwell</a></h4>
                         <ul class="list comment-meta remove-margin-top">
-                           <li class="text-meta">Blockchain Ninja</li>
+                           <li>Blockchain Ninja</li>
                            <li>
                               <a href="https://symonss.github.io" target="_blank"><i class="icon-web small-right"></i>KFARWELL.ORG</a>
                            </li>
@@ -91,12 +91,12 @@
                      </div>
                   </div>
                   <div class="friend-description">
-                     <p>Kyle and I have literally been friends since 1st grade. In 2015, we co-founded Tokumei. Sometimes we make crappy video games together with our friends at Gelato Labs.</p>
+                     <p>Kyle and I have literally been friends cards-theme since 1st grade. In 2015, we co-founded Tokumei. Sometimes we make crappy video games together with our friends cards-theme at Gelato Labs.</p>
                   </div>
                </div>
             </div>
             <hr>
-            <div class="friends">
+            <div class="friends cards-theme">
                <div class="friend-card">
                   <div class="friend-top">
                      <div class="friend-img">
@@ -106,7 +106,7 @@
                         <h4 class="code comment-title">
                         <a href="#">Jaymoh Kiarie</a></h4>
                         <ul class="list comment-meta remove-margin-top">
-                           <li class="text-meta">Coder</li>
+                           <li>Coder</li>
                            <li>
                               <a href="#" target="_blank"><i class="icon-web small-right"></i>jaymoh.org</a>
                            </li>
@@ -119,9 +119,9 @@
                </div>
             </div>
             <hr>
-            <h2>My Friends</h2>
+            <h2>My friends</h2>
             <p class="text-meta margin-bottom">Some people that I think are rad.</p>
-            <div class="friends">
+            <div class="friends cards-theme">
                <div class="friend-card">
                   <div class="friend-top">
                      <div class="friend-img">
@@ -131,7 +131,7 @@
                         <h4 class="code comment-title">
                         <a href="#">Symons Ombori</a></h4>
                         <ul class="list comment-meta remove-margin-top">
-                           <li class="text-meta">Blockchain Ninja</li>
+                           <li>Blockchain Ninja</li>
                            <li>
                               <a href="https://symonss.github.io" target="_blank"><i class="icon-web small-right"></i>symonss.github.io</a>
                            </li>
@@ -144,7 +144,7 @@
                </div>
             </div>
             <hr>
-            <div class="friends">
+            <div class="friends cards-theme">
                <div class="friend-card">
                   <div class="friend-top">
                      <div class="friend-img">
@@ -154,7 +154,7 @@
                         <h4 class="code comment-title">
                         <a href="#">Jaymoh Kiarie</a></h4>
                         <ul class="list comment-meta remove-margin-top">
-                           <li class="text-meta">Coder</li>
+                           <li>Coder</li>
                            <li>
                               <a href="#" target="_blank"><i class="icon-web small-right"></i>jaymoh.org</a>
                            </li>
@@ -168,7 +168,7 @@
             </div>
             <hr>
             <p class="text-meta">And the list goes on! This is an incomplete, always changing list. 
-            <a class="link-blue" href="/contact/">Let me know </a>if you think you should be here.</p>
+            <a class="link-blue" href="{% url 'contact' %}">Let me know </a>if you think you should be here.</p>
             <h2>Famous people I like</h2>
             <p class="text-meta">(and quotes to live by)</p>
          <div class="quotes grid">
