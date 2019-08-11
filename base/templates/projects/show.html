@@ -19,7 +19,7 @@
 		<div class="card-body">
 			<h1>{{ project.name }} — {{ project.intro }}</h1>
 			<hr>
-			{% if open_source %}
+			{% if project.open_source %}
 			<a href="{{ project.source_url }}" target="_blank" class="nicehover text-upper"><i class="icon-{{ project.source }} small-right"></i>{{ project.source }}</a>
 			<a href="{{ project.release_url }}" target="_blank" class="nicehover text-upper"><i class="icon-download small-right"></i>{{ project.releases }}</a>				
 			{% endif %}
