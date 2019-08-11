@@ -208,6 +208,7 @@
       var acc = document.getElementsByClassName('collapsible-header');
       for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
+      console.log(this.classList);
       this.classList.toggle("active");
       var collapsible_body = this.nextElementSibling;
       if(collapsible_body.style.maxHeight){
