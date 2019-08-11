@@ -19,7 +19,7 @@
 		<div class="card-body">
 			<h1>{{ project.name }} — {{ project.intro }}</h1>
 			<hr>
-			{% if open_source %}
+			{% if project.open_source %}
 			<a href="{{ project.source_url }}" target="_blank" class="nicehover text-upper"><i class="icon-{{ project.source }} small-right"></i>{{ project.source }}</a>
 			<a href="{{ project.release_url }}" target="_blank" class="nicehover text-upper"><i class="icon-download small-right"></i>{{ project.releases }}</a>				
 			{% endif %}
@@ -30,24 +30,17 @@
 	<p>{{ project.name }} {{ project.description }}</p>
 
 	<h2>How it works</h2>
-	<p>{{ project.name }} {{ project.works }}</p>
+	<p>{{ project.name }} {{ project.works | safe }}</p>
 
 	<h2>Getting Started</h2>
 	<p>{{ project.get_started | safe }}</p>
 
 	{% if project.has_installation %}
 	<h2>Installation | Setup</h2>
-	<pre>git clone {{ project.source_url }}.git <br><code>cd {{ project.link }}</code></pre>
-	<p>Create a Virtual Env by running </p>
-	<pre><code> python3 -m venv venv</code></pre>
-	<p>Activate it </p>
-	<pre>source venv/bin/activate </code></pre>
-	<p>Then install dependencies </p>
-	<pre><code> pip install -r requirements.txt </code></pre>
-	<p>After you have installed deps, get today games by </p>
-	<pre><code> python manage.py updater </code></pre>
-	<p>And tada!! Open another Terminal and Runserver.</p>
-	<pre><code> python manage.py runserver </code></pre>
+	{{ project.installation | safe }}
+
+	<h2>Usage</h2>
+	{{ project.usage | safe }}
 	{% endif %}
 
 	<h2>Credits</h2>

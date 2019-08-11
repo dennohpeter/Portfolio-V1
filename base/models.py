@@ -1,11 +1,17 @@
 from django.db import models
 from django.utils import timezone
+from django.template.defaultfilters import slugify
 
 class Project(models.Model):
 	name = models.CharField(max_length=40)
+	slug_name = models.SlugField()
 	intro = models.CharField(max_length=150)
-	link = models.CharField(max_length=40)
-	category = models.CharField(max_length=40)
+	options = [
+	('wip', 'wip'),
+	('code', 'code'),
+	('art', 'art'),
+	('fun', 'fun')]
+	category = models.CharField(max_length=4, choices=options, default='code')
 	preview = models.CharField(max_length=150)
 	open_source= models.BooleanField(default=False)
 	source = models.CharField(blank=True, max_length=40)
@@ -19,10 +25,16 @@ class Project(models.Model):
 	extra_info = models.TextField(blank=True)
 	get_started = models.TextField()
 	has_installation = models.BooleanField(default=False)
-	created_date = models.DateTimeField(editable=False, default=timezone.now)
 	installation = models.TextField(blank=True)
+	usage = models.TextField(blank=True)
 	credits = models.TextField()
 	license = models.TextField()
+	created_date = models.DateTimeField(editable=False, default=timezone.now)
 
 	def __str__(self):
 		return self.name
+
+	def save(self, *args, **kwargs):
+		if not self.id:
+			self.slug_name = slugify(self.name)
+		super(Project, self).save(*args, **kwargs)

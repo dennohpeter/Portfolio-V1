@@ -15,14 +15,14 @@
 				<div class="tab">
 					<select name="" id="" onchange="toggleTab(event, this.value)">
 						<option class="tablinks" value="tabcontent">All Projects</option>
-						<option class="tablinks" value="fun">For Fun</option>
-						<option class="tablinks" value="profit">For Profit</option>
-						<option class="tablinks" value="wip">WIP</option>
+						{% for catergory in project.options %}							
+						<option class="tablinks" value="{{ category }}">{{ category }}</option>
+						{% endfor %}
 					</select>
 					<button class="tablinks" onclick="toggleTab(event, 'tabcontent')">All Projects</button>
-					<button class="tablinks" onclick="toggleTab(event, 'fun')">For Fun</button>
-					<button class="tablinks" onclick="toggleTab(event, 'profit')">For Profit</button>
-					<button class="tablinks" onclick="toggleTab(event, 'wip')">WIP</button>
+					{% for catergory in project.category  %}
+					<button class="tablinks" onclick="toggleTab(event, '{{ category }}')">{{ category }}</button>
+					{% endfor %}
 				</div>
 			</div>
 			<div class="row equal-columns">
@@ -42,7 +42,7 @@
 							</div>
 							<div class="card-bottom">
 								<div class="project-more-info text-upper">
-									<a href="{% url  'project_details' name=project.link %}" class="nicehover">SEE PROJECT</a>
+									<a href="{% url  'more' name=project.slug_name %}" class="nicehover">SEE PROJECT</a>
 								</div>
 							</div>
 						</div>
