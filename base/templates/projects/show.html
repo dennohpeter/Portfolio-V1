@@ -19,8 +19,10 @@
 		<div class="card-body">
 			<h1>{{ project.name }} — {{ project.intro }}</h1>
 			<hr>
+			{% if open_source %}
 			<a href="{{ project.source_url }}" target="_blank" class="nicehover text-upper"><i class="icon-{{ project.source }} small-right"></i>{{ project.source }}</a>
-			<a href="{{ project.release_url }}" target="_blank" class="nicehover text-upper"><i class="icon-download small-right"></i>{{ project.releases }}</a>
+			<a href="{{ project.release_url }}" target="_blank" class="nicehover text-upper"><i class="icon-download small-right"></i>{{ project.releases }}</a>				
+			{% endif %}
 			<a href="{{ project.homepage_url }}" target="_blank" class="nicehover text-upper"><i class="icon-web small-right"></i>{{ project.homepage }}</a>
 		</div>
 	</div>
@@ -42,7 +44,7 @@
 	<pre>source venv/bin/activate </code></pre>
 	<p>Then install dependencies </p>
 	<pre><code> pip install -r requirements.txt </code></pre>
-	<p>After you have installed deps run to get today games</p>
+	<p>After you have installed deps, get today games by </p>
 	<pre><code> python manage.py updater </code></pre>
 	<p>And tada!! Open another Terminal and Runserver.</p>
 	<pre><code> python manage.py runserver </code></pre>
