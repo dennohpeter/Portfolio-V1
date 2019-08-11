@@ -235,7 +235,7 @@ hr {
     background: #161A1A;
 }
 .text-meta {
-	font-size: .875rem;
+	font-size: .895rem;
     line-height: 1.4;
     color: #ccc;
 }
@@ -244,6 +244,9 @@ hr {
 }
 .text-white {
 	color: #FFFFFF !important;
+}
+.text-upper {
+	text-transform: uppercase;
 }
 * {
 	margin: 0;
@@ -489,7 +492,6 @@ hr {
     font-size: 11px;
     letter-spacing: 4px;
     font-family: "Open Sans",sans-serif;
-	text-transform: uppercase;
     padding: 8px 12px;
     border: 1px solid #08fdd8;
     margin-top: 25px;
@@ -644,10 +646,10 @@ blockquote {
 }
 .remove-margin-top {
     margin-top: 0!important;
-        margin-bottom: 0;
+    margin-bottom: 0;
 }
 .comment-meta li {
-	    display: flex;
+	display: flex;
     align-items: center;
     flex: none;
     padding-left: 20px;
@@ -657,8 +659,8 @@ blockquote {
     content: "";
     height: 1.5em;
     margin-left: 0;
-    margin-right: 20px;
-    border-left: 1px solid #e5e5e5;
+    margin-right: 10px;
+    border-left: 1px solid #d5d5d5;
     }
 .comment-meta>*>:first-child {
     display: block;
@@ -676,7 +678,8 @@ blockquote {
 	width: 100%;
 	color: #fffafa;
 }
-/* ================================================== resume ============================================== */
+
+/*==================  RESUME  ==================*/
 
 .resume,
 .projects,
@@ -868,10 +871,6 @@ p.intro {
 	text-align: left;
 }
 
-.project-card .card-body h4{
-	text-transform: uppercase;
-}
-
 .project-card .card-body p {
 	font-size: 1rem;
 	line-height: 21px;
@@ -928,7 +927,6 @@ p.intro {
 	padding: 0 5px;
 	font-size: .875rem;
 	line-height: 38px;
-	text-transform: uppercase;
 }
 
 .nicehover {
@@ -995,7 +993,6 @@ p.intro {
 .card-body a {
 	margin-right: 20px !important;
 	line-height: 1.5;
-	text-transform: uppercase;
 	transition: .1s ease-in-out;
 	transition-property: color, background-color, border-color;
 	vertical-align: middle;
@@ -1148,7 +1145,6 @@ small {
 	float: left;
 	border-radius: 4px;
 	background: transparent;
-	text-transform: uppercase;
 	float: right;
 	text-align: center;
 	margin-right: 10px;
