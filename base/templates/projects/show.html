@@ -46,11 +46,13 @@
 	<h2>Credits</h2>
 	<p>{{ project.credits | safe }}</p>
 
+	{% if project.open_source %}
 	<h2>Licence</h2>
 	<p>{{ project.name }} is a free software released under the MIT license. See
 	<a href="{{ project.source_url }}/blob/master/LICENSE" target="_blank" class="link-blue">
 	LICENSE</a> for more details.
 	</p>
+	{% endif %}
 	<br>
 </div>
 {% endblock %}
