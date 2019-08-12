@@ -849,6 +849,13 @@ p.intro {
 	position: relative;
 	width: 100%
 }
+.card-badge {
+	font-size: 14px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+}
 
 .img-container {
 	display: block;
