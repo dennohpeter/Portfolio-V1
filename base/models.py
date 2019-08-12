@@ -14,6 +14,8 @@ class Project(models.Model):
 	category = models.CharField(max_length=4, choices=options, default='code')
 	preview = models.CharField(max_length=150)
 	open_source= models.BooleanField(default=False)
+	status = models.CharField(max_length=12, choices=[('maintained', 'maintained'),
+	('unmaintained', 'unmaintained')], default='maintained')
 	source = models.CharField(blank=True, max_length=40)
 	source_url = models.URLField(blank=True)
 	releases = models.CharField(blank=True, max_length=40)

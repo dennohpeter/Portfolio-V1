@@ -41,6 +41,9 @@
 								</p>
 							</div>
 							<div class="card-bottom">
+								<span class="status text-upper badge badge-{% if project.status == 'maintained' %}success{% else %}danger{% endif %}">
+									{{ project.status }}
+								</span>
 								<div class="project-more-info text-upper">
 									<a href="{% url  'more' name=project.slug_name %}" class="nicehover">SEE PROJECT</a>
 								</div>
