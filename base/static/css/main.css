@@ -859,7 +859,9 @@ p.intro {
   -moz-text-align-last: right; 
   text-align-last: right;
 }
-
+ .card-badge span{
+    margin-bottom: 5px;
+}
 .img-container {
 	display: block;
 	height: 0;

@@ -3,7 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import HttpResponse
-from base.models import Project
+from base.models import Project, Tag
 
 def home(request):
     return render(request, "index.html")
@@ -34,7 +34,8 @@ def resume(request):
 
 def projects(request):
     projects = Project.objects.all().order_by('-created_date') 
-    return render(request, "projects/index.html", {"projects": projects})
+    tags = Tag.objects.all()
+    return render(request, "projects/index.html", {"projects": projects, "tags": tags} )
 
 def project_details(request, name):
     project = get_object_or_404(Project, slug_name=name)

@@ -34,11 +34,13 @@
 									<img alt="{{ project.name }}" src="../static/projects/{{ project.preview }}" >
 								</div>
 								<div class="card-badge">
-									<span class="badge text-upper">Python</span>
-									<span class="badge text-upper">Bs4</span>
-									<span class="badge text-upper">Requests</span>
-									<span class="badge text-upper">JS</span>
-									<span class="badge badge-danger text-upper">HTML5</span>									
+									{% for tag in tags %}
+									{% if tag.project.slug_name == project.slug_name %}
+									<span class="badge text-upper"> 
+										{{ tag.label }}
+									</span>					
+									{% endif %}
+									{% endfor %}						
 								</div>
 							</div>
 							<div class="card-body">

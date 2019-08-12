@@ -40,3 +40,10 @@ class Project(models.Model):
 		if not self.id:
 			self.slug_name = slugify(self.name)
 		super(Project, self).save(*args, **kwargs)
+
+class Tag(models.Model):
+	project = models.ForeignKey(Project, related_name='tags', on_delete=models.CASCADE)
+	label = models.CharField(max_length=20)
+
+	def __str__(self):
+		return self.project.name + ' | ' + self.label
