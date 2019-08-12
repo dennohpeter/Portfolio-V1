@@ -15,14 +15,14 @@
 				<div class="tab">
 					<select name="" id="" onchange="toggleTab(event, this.value)">
 						<option class="tablinks" value="tabcontent">All Projects</option>
-						{% for catergory in project.options %}							
-						<option class="tablinks" value="{{ category }}">{{ category }}</option>
-						{% endfor %}
+						<option class="tablinks" value="fun">Fun</option>
+						<option class="tablinks" value="art">Art</option>
+						<option class="tablinks" value="wip">Wip</option>
 					</select>
 					<button class="tablinks" onclick="toggleTab(event, 'tabcontent')">All Projects</button>
-					{% for catergory in project.category  %}
-					<button class="tablinks" onclick="toggleTab(event, '{{ category }}')">{{ category }}</button>
-					{% endfor %}
+					<button class="tablinks" onclick="toggleTab(event, 'fun')">Fun</button>
+					<button class="tablinks" onclick="toggleTab(event, 'art')">Art</button>
+					<button class="tablinks" onclick="toggleTab(event, 'wip')">Wip</button>
 				</div>
 			</div>
 			<div class="row equal-columns">
