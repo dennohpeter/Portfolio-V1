@@ -17,41 +17,19 @@
       High school awards are omitted for brevity.
    </p>
    <div class="timeline">
+      {% for award in awards  %}
       <div class="honour">
          <div class="icon"><i class="icon-award"></i></div>
          <div class="description">
-            <h4>MLH Ethical Tech Initiative Scholarship ($10 000 USD)</h4>
-            <p>Awarded in January 2019 by the School of Computer Science Co-operative Education Department,
-               I received this award in recognition of high academic acheivement,
-               workplace performance, innovation and contributions, and involvement within
-               the community and Guelph Co-op program during my 2018 co-op placement.
-            </p>
-            <small>Referred by: Dr. Daniel Gillis, Dr. Judi McCuaig</small>
+            <h4>{{ award.title }}</h4>
+            <p>{{ award.description }}</p>
+            {% if award.credit %}
+            <small>Referred by: {{ award.credit }}</small>
+            {% endif %}
             <hr>
          </div>
-      </div>
-      <div class="honour">
-         <div class="icon"><i class="icon-star"></i></div>
-         <div class="description">
-            <h4>Michele and Maria Vanneli Scholarship ($1000 CAD)</h4>
-            <p>Awarded in October 2018 by the Dean of the College of Engineering & Physical Science
-               for academic excellence and community leadership.
-            </p>
-            <small>Referred by: Dr. Daniel Gillis, Dr. Judi McCuaig</small>
-            <hr>
-         </div>
-      </div>
-      <div class="honour">
-         <div class="icon"><i class="icon-award"></i></div>
-         <div class="description">
-            <h4>Michele and Maria Vanneli Scholarship ($1000 CAD)</h4>
-            <p>Awarded in October 2018 by the Dean of the College of Engineering & Physical Science
-               for academic excellence and community leadership.
-            </p>
-            <small>Referred by: Dr. Daniel Gillis, Dr. Judi McCuaig</small>
-            <hr>
-         </div>
-      </div>
+      </div>    
+      {% endfor %}
    </div>
    </div>
 </div>
