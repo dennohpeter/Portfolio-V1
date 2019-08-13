@@ -248,6 +248,11 @@ hr {
 .text-upper {
 	text-transform: uppercase;
 }
+.subtitle {
+	color: #555;
+	font-size: 1.25rem;
+	font-family: monospace;
+}
 .badge {
 	display: inline-block;
 	padding: 2px 10px;
@@ -1498,7 +1503,7 @@ ul.donate li {
 		transition: 0.3s;
 	}
 	.project-preview {
-		padding-left: 20px;
+		padding-left: 15px;
 		padding-right: 15px;
 	}
 	.text-zone {
