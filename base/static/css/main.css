@@ -1117,7 +1117,6 @@ small {
 
 .contact-form ul li {
 	margin-bottom: 10px;
-	opacity: 1;
 	overflow: hidden;
 	display: block;
 	clear: both;
@@ -1141,25 +1140,20 @@ small {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
-	width: 100%;
-	border: 0;
-	background: #37393b;
-	height: 50px;
-	font-size: 16px;
-	color: #8d8d8d;
 	padding: 0 20px;
-	box-sizing: border-box;
 }
-
-.contact-form textarea {
+.input__field {
 	width: 100%;
 	border: 0;
 	background: #37393b;
 	height: 50px;
 	font-size: 16px;
 	color: #8d8d8d;
+	border-radius: 4px;
+
+}
+.contact-form textarea {
 	padding: 20px;
-	box-sizing: border-box;
 	min-height: 200px;
 }
 
