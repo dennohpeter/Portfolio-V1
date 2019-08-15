@@ -17,7 +17,7 @@
 		</div>
 	</div>
 		<div class="card-body">
-			<h1>{{ project.name }} — <span class="subtitle">{{ project.intro }}</span></h1>
+			<h1>{{ project.name }} — <span class="subtitle">{{ project.subtitle }}</span></h1>
 			<hr>
 			{% if project.open_source %}
 			<a href="{{ project.source_url }}" target="_blank" class="nicehover text-upper"><i class="icon-{{ project.source }} small-right"></i>{{ project.source }}</a>
@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	<h2>What is this?</h2>
-	<p>{{ project.name }} {{ project.description }}</p>
+	<p>{{ project.name }} {{ project.description | safe }}</p>
 
 	<h2>How it works</h2>
 	<p>{{ project.name }} {{ project.works | safe }}</p>

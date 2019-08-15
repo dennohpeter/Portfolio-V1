@@ -7,6 +7,7 @@ class Project(models.Model):
     name = models.CharField(max_length=40)
     slug_name = models.SlugField()
     intro = models.CharField(max_length=150)
+    subtitle = models.CharField(max_length=150)
     options = [
         ('wip', 'wip'),
         ('code', 'code'),
