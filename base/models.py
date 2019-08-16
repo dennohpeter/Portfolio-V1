@@ -6,13 +6,14 @@ from django.template.defaultfilters import slugify
 class Project(models.Model):
     name = models.CharField(max_length=40)
     slug_name = models.SlugField()
-    intro = models.CharField(max_length=150)
+    intro = models.TextField()
     subtitle = models.CharField(max_length=150)
     options = [
-        ('wip', 'wip'),
-        ('code', 'code'),
-        ('art', 'art'),
-        ('fun', 'fun')]
+        ('web', 'web'),
+        ('games', 'games'),
+        ('plugins', 'plugins'),
+        ('design', 'art & design'),
+        ('deepshit', 'deepshit')]
     category = models.CharField(max_length=4, choices=options, default='code')
     preview = models.CharField(max_length=150)
     open_source = models.BooleanField(default=False)
@@ -28,7 +29,6 @@ class Project(models.Model):
     homepage_url = models.URLField()
     description = models.TextField()
     works = models.TextField()
-    extra_info = models.TextField(blank=True)
     get_started = models.TextField()
     has_installation = models.BooleanField(default=False)
     installation = models.TextField(blank=True)
