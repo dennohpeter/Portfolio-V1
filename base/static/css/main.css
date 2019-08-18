@@ -81,9 +81,6 @@
 .icon-home:before {
   content: "\e906";
 }
-.icon-gear:before {
-  content: "\e90e";
-}
 .icon-twitter:before {
   content: "\e908";
 }
@@ -110,6 +107,12 @@
 }
 .icon-prof:before {
   content: "\f007";
+}
+.icon-point_down:before {
+  content: "\e915";
+}
+.icon-smiley:before {
+  content: "\e90e";
 }
 
 
