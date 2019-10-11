@@ -1,26 +1,19 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
-{% block title %} RÉSUMÉ | Dennis Peterson {% endblock %}
-{% block canonical %} href="https://dennispeter.org/resume" {% endblock %}
-{% block ogtype %} content="resume" {% endblock %}
-{% block ogtitle %} content="RÉSUMÉ | Dennis Peterson" {% endblock %}
-{% block ogdescription %} content="Dennis Peterson's professional résumé." {% endblock %}
-{% block ogurl %} content="https://dennispeter.org/resume" {% endblock %}
-{% block description %} content="Dennis Peterson's professional résumé." {% endblock %}
-{% block content %}
+{% extends 'base.html' %} {% load staticfiles %} {% block title %} RÉSUMÉ | Dennis Peterson {% endblock %} {% block canonical %} href="https://dennispeter.org/resume" {% endblock %} {% block ogtype %} content="resume" {% endblock %} {% block ogtitle %}
+content="RÉSUMÉ | Dennis Peterson" {% endblock %} {% block ogdescription %} content="Dennis Peterson's professional résumé." {% endblock %} {% block ogurl %} content="https://dennispeter.org/resume" {% endblock %} {% block description %} content="Dennis
+Peterson's professional résumé." {% endblock %} {% block content %}
 <div class="resume">
-   <div class="text-zone">
-   <h1 class="color">Résumé / CV</h1>
-   <p class="intro">I have nearly 4 years of experience in software development. Below is a summary of my skills, recent employment history, and achievements.</p>
-   <a href="{% static '/files/resume.pdf' %}" class="btn btn-outline-dark">Download résumé <i class="icon-download"></i></a>
-   <div class="small-card">
-      <p>Looking for my long-form CV?
-         <a href="{% static '/files/resume.pdf' %}">Download CV</a>
-      </p>
-   </div>
-   </div>
-   <div class="text-zone long-form-cv-container">
-   <object width="100%" height="100%" type="application/pdf" data="{% static '/files/resume.pdf' %}">
+    <div class="text-zone">
+        <h1 class="color">Résumé / CV</h1>
+        <p class="intro">I have nearly 4 years of experience in software development. Below is a summary of my skills, recent employment history, and achievements.</p>
+        <a href="{% static '/files/resume.pdf' %}" class="btn btn-outline-dark">Download résumé <i class="icon-download"></i></a>
+        <div class="small-card">
+            <p>Looking for my long-form CV?
+                <a href="{% static '/files/resume.pdf' %}">Download CV</a>
+            </p>
+        </div>
+    </div>
+    <div class="text-zone long-form-cv-container">
+        <object width="100%" height="100%" type="application/pdf" data="{% static '/files/resume.pdf' %}">
       <div class="badge-danger small-card">
          <p>Can't see the preview? Try
             <a href="{% static '/files/resume.pdf' %}">downloading</a>
@@ -28,6 +21,6 @@
          </p>
       </div>
    </object>
-   </div>
+    </div>
 </div>
 {% endblock %}
