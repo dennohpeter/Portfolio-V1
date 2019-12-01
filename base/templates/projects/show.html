@@ -2,11 +2,11 @@
 {% load staticfiles %}
 
 {% block title %} {{ project.name }} | {{ project.intro }} {% endblock %}
-{% block canonical %} href="https://dennispeter.org/{{ project.name }}" {% endblock %}
+{% block canonical %} href="http://www.dennohpeter.com/{{ project.name }}" {% endblock %}
 {% block ogtype %} content="website" {% endblock %}
 {% block ogtitle %} content="{{ project.name }} | {{ project.intro }}" {% endblock %}
 {% block ogdescription %} content="{{ project.name }} {{ project.description }}" {% endblock %}
-{% block ogurl %} content="https://dennispeter.org/{{ project.slug_name }}" {% endblock %}
+{% block ogurl %} content="http://www.dennohpeter.com/{{ project.slug_name }}" {% endblock %}
 {% block description %} content="{{ project.name }} {{ project.description }}" {% endblock %}
 {% block content %}
 <div class="project-preview">
